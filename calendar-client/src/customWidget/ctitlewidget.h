@@ -29,6 +29,10 @@ public:
      */
     void setShowState(Title_State state);
 
+    void setSidebarStatus(bool);
+
+    bool getSidevarStatus();
+
     DButtonBox *buttonBox() const;
 
     DSearchEdit *searchEdit() const;
@@ -51,12 +55,20 @@ private:
      */
     void normalStateUpdateSearchEditWidth();
 
+    /**
+     * @brief updateSidebarIconStatus
+     * 更新侧边栏控制图标按钮的状态
+     */
+    void updateSidebarIconStatus();
+
 protected:
     void resizeEvent(QResizeEvent *event) Q_DECL_OVERRIDE;
     bool eventFilter(QObject *o, QEvent *e) override;
 signals:
     void signalSetButtonFocus();
     void signalSearchFocusSwitch();
+    //侧边栏状态发生改变
+    void signalSidebarStatusChange(bool);
 public slots:
     /**
      * @brief slotShowSearchEdit    搜索按钮点击下切换搜索框
@@ -68,7 +80,12 @@ public slots:
      */
     void slotSearchEditFocusChanged(bool onFocus);
 
+    void slotSidebarIconClicked();
+
 private:
+    bool m_sidebarstatus = true; //侧边栏状态
+
+    DIconButton *m_sidebarIcon {nullptr};   //侧边栏状态控制按钮
     CButtonBox *m_buttonBox {nullptr};
     DSearchEdit *m_searchEdit {nullptr};
     DIconButton *m_newScheduleBtn {nullptr}; //全局的新建日程按钮

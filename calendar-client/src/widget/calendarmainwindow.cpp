@@ -8,6 +8,7 @@
 #include "dbuscalendar_adaptor.h"
 #include "widget/weekWidget/weekwindow.h"
 #include "widget/dayWidget/daywindow.h"
+#include "sidebarWidget/sidebarview.h"
 #include "colorWidget/colorpickerWidget.h"
 #include "scheduledatamanage.h"
 #include "myscheduleview.h"
@@ -348,6 +349,13 @@ void Calendarmainwindow::initUI()
     m_buttonBox = m_titleWidget->buttonBox();
     m_newScheduleBtn = m_titleWidget->newScheduleBtn();
 
+    QHBoxLayout *tMainLayout = new QHBoxLayout;
+    tMainLayout->setContentsMargins(10, 10, 10, 10);
+    tMainLayout->setSpacing(1);
+
+    m_sidebarView = new SidebarView(this);
+    tMainLayout->addWidget(m_sidebarView, 1);
+
     m_stackWidget = new AnimationStackedWidget();
     m_stackWidget->setObjectName("StackedWidget");
     m_stackWidget->setAccessibleName("StackedWidget");
@@ -355,11 +363,8 @@ void Calendarmainwindow::initUI()
     m_stackWidget->setContentsMargins(0, 0, 0, 0);
     m_stackWidget->setDuration(250);
     createview();
-    QHBoxLayout *tMainLayout = new QHBoxLayout;
-    tMainLayout->setMargin(0);
-    tMainLayout->setSpacing(0);
-    tMainLayout->setContentsMargins(0, 0, 0, 0);
-    tMainLayout->addWidget(m_stackWidget);
+
+    tMainLayout->addWidget(m_stackWidget, 4);
     m_contentBackground = new DFrame;
     m_contentBackground->setAccessibleName("ScheduleSearchWidgetBackgroundFrame");
     m_contentBackground->setObjectName("ScheduleSearchWidgetBackgroundFrame");
@@ -377,7 +382,6 @@ void Calendarmainwindow::initUI()
     QVBoxLayout *ssLayout = new QVBoxLayout;
     ssLayout->setMargin(0);
     ssLayout->setSpacing(0);
-    ssLayout->setContentsMargins(0, 10, 0, 10);
     ssLayout->addWidget(m_scheduleSearchView);
     m_contentBackground->setLayout(ssLayout);
     tMainLayout->addWidget(m_contentBackground);
@@ -432,6 +436,7 @@ void Calendarmainwindow::initConnection()
     connect(m_newScheduleBtn, &DToolButton::clicked, this, &Calendarmainwindow::slotNewSchedule);
 
     connect(qApp, &QGuiApplication::applicationStateChanged, this, &Calendarmainwindow::slotapplicationStateChanged);
+    connect(m_titleWidget, &CTitleWidget::signalSidebarStatusChange, this, &Calendarmainwindow::slotSidebarStatusChange);
 }
 
 /**
@@ -737,6 +742,12 @@ void Calendarmainwindow::slotSearchFocusSwitch()
     if (m_contentBackground->isVisible() && m_scheduleSearchView->getHasScheduleShow()) {
         m_scheduleSearchView->setFocus(Qt::TabFocusReason);
     }
+}
+
+void Calendarmainwindow::slotSidebarStatusChange(bool status)
+{
+    //设置账户侧边栏显示状态
+    m_sidebarView->setVisible(status);
 }
 
 void Calendarmainwindow::mouseMoveEvent(QMouseEvent *event)

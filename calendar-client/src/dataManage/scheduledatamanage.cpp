@@ -90,6 +90,7 @@ void JobTypeInfoManager::updateInfo()
 }
 JobTypeInfoManager::JobTypeInfoManager()               //私有静态构造函数
 {
+    updateInfo();
 }
 JobTypeInfoManager *JobTypeInfoManager::instance()
 {
