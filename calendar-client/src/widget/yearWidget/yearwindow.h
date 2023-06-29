@@ -13,7 +13,7 @@
 #include <DIconButton>
 #include <DLabel>
 #include <DWidget>
-
+#include <QDesktopWidget>
 #include <QDate>
 #include <QHBoxLayout>
 #include <QGestureEvent>

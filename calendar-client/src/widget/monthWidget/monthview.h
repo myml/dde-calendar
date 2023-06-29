@@ -11,7 +11,7 @@
 #include "dschedule.h"
 
 #include <DWidget>
-
+#include <QDesktopWidget>
 #include <QDate>
 #include <QAction>
 

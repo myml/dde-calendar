@@ -10,7 +10,7 @@
 #include "graphicsview.h"
 
 #include <DFrame>
-
+#include <QDesktopWidget>
 #include <QDate>
 
 DWIDGET_USE_NAMESPACE
