@@ -21,9 +21,6 @@ DHuangliService::DHuangliService(QObject *parent)
 QString DHuangliService::getFestivalMonth(quint32 year, quint32 month)
 {
     DServiceExitControl exitControl;
-    if (!clientWhite(0)) {
-        return QString();
-    }
     QString festivalInfo = m_huangli->getFestivalMonth(year, month);
     return festivalInfo;
 }
@@ -35,9 +32,6 @@ QString DHuangliService::getHuangLiDay(quint32 year, quint32 month, quint32 day)
     if( 0 >= year || 0 >= month || 0 >= day)
         return "";
     DServiceExitControl exitControl;
-    if (!clientWhite(0)) {
-        return QString();
-    }
     QString huangliInfo = m_huangli->getHuangLiDay(year, month, day);
     return huangliInfo;
 }
@@ -46,9 +40,6 @@ QString DHuangliService::getHuangLiDay(quint32 year, quint32 month, quint32 day)
 QString DHuangliService::getHuangLiMonth(quint32 year, quint32 month, bool fill)
 {
     DServiceExitControl exitControl;
-    if (!clientWhite(0)) {
-        return QString();
-    }
     QString huangliInfo = m_huangli->getHuangLiMonth(year, month, fill);
     return huangliInfo;
 }
@@ -57,9 +48,6 @@ QString DHuangliService::getHuangLiMonth(quint32 year, quint32 month, bool fill)
 CaLunarDayInfo DHuangliService::getLunarInfoBySolar(quint32 year, quint32 month, quint32 day)
 {
     DServiceExitControl exitControl;
-    if (!clientWhite(0)) {
-        return CaLunarDayInfo();
-    }
     CaLunarDayInfo huangliInfo = m_huangli->getLunarInfoBySolar(year, month, day);
     return huangliInfo;
 }
@@ -68,9 +56,6 @@ CaLunarDayInfo DHuangliService::getLunarInfoBySolar(quint32 year, quint32 month,
 CaLunarMonthInfo DHuangliService::getLunarMonthCalendar(quint32 year, quint32 month, bool fill)
 {
     DServiceExitControl exitControl;
-    if (!clientWhite(0)) {
-        return CaLunarMonthInfo();
-    }
     CaLunarMonthInfo huangliInfo = m_huangli->getLunarCalendarMonth(year, month, fill);
     return huangliInfo;
 }
