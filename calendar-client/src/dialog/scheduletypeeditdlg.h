@@ -13,6 +13,7 @@
 
 #include <DDialog>
 #include <DLineEdit>
+#include <DFileChooserEdit>
 
 DWIDGET_USE_NAMESPACE
 
@@ -20,21 +21,24 @@ class ScheduleTypeEditDlg : public DDialog
 {
     Q_OBJECT
 public:
+    enum DialogType
+    {                    // 对话框类型
+        DialogNewType,   // 新建日程类型
+        DialogEditType,  // 编辑日程类型
+        DialogImportType // 导入日程类型
+    };
     //新增
     explicit ScheduleTypeEditDlg(QWidget *parent = nullptr);
     //iJobTypeNo==0 ？ 新增 or 修改
     explicit ScheduleTypeEditDlg(const DScheduleType &jobTypeOld, QWidget *parent = nullptr);
+    // 新增 or 导入
+    explicit ScheduleTypeEditDlg(const DialogType &type, QWidget *parent = nullptr);
 
     DScheduleType newJsonType();
 
     void setAccount(AccountItem::Ptr account);
 
 private:
-    enum DialogType { //对话框类型
-        DialogNewType, //新建日程类型
-        DialogEditType //编辑日程类型
-    };
-
 signals:
     /**
      * @brief refreshInfo:刷新信息信号
@@ -63,30 +67,27 @@ public slots:
      */
     void slotEditingFinished();
 
-    void setLabelText();
+    // 获取ICS文件
+    QString getIcsFile();
+
+    // 检查确认按钮是否需要禁用
+    void slotCheckConfirmBtn();
 
 private:
     void init();
     void initView();
     void initData();
-protected:
-    void changeEvent(QEvent *) override;
 private:
     DScheduleType m_jobTypeOld; //被修改的日程类型
     DScheduleType m_jobTypeNew; //修改后的日程类型
     QString m_title = "";   //弹窗名
-    DLineEdit *m_lineEdit = nullptr;    //编辑器
-    QLabel *m_titleLabel = nullptr;     //弹窗名控件
+    DLineEdit *m_lineEdit = nullptr; // 类型名编辑框
+    DFileChooserEdit *m_fileEdit = nullptr; // ics文件编辑框
+    QLabel *m_titleLabel = nullptr; //弹窗名控件
     ColorSeletorWidget *m_colorSeletor = nullptr; //颜色选择器
     DialogType m_dialogType;
     QString m_typeText; //输入框上一次输入后的文本
 
-    QLabel * m_eName = Q_NULLPTR;
-    QLabel * m_cName = Q_NULLPTR;
-
-
-    QString m_strLabelName;
-    QString m_strLabelColor;
 };
 
 #endif // SCHEDULETYPEEDITDLG_H

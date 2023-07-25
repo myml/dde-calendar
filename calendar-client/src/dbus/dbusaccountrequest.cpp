@@ -351,3 +351,13 @@ void DbusAccountRequest::onPropertiesChanged(const QString &, const QVariantMap 
         }
     }
 }
+
+void DbusAccountRequest::importSchedule(QString icsFilePath, QString typeID, bool cleanExists)
+{
+    asyncCall("importSchedule", QVariant(icsFilePath), QVariant(typeID), QVariant(cleanExists));
+}
+
+void DbusAccountRequest::exportSchedule(QString icsFilePath, QString typeID)
+{
+    asyncCall("exportSchedule", QVariant(icsFilePath), QVariant(typeID));
+}

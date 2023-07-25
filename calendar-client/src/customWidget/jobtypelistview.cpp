@@ -14,6 +14,8 @@
 #include <QToolTip>
 #include <QPainter>
 #include <QHeaderView>
+#include <QTimer>
+#include <DSpinner>
 
 //Qt::UserRole + 1,会影响item的高度
 static const int RoleJobTypeInfo = Qt::UserRole + 2;
@@ -175,6 +177,54 @@ void JobTypeListView::slotAddScheduleType()
     if (QDialog::Accepted == dialog.exec()) {
         DScheduleType::Ptr type(new DScheduleType(dialog.newJsonType()));
         account->createJobType(type);
+    }
+}
+
+void JobTypeListView::slotImportScheduleType()
+{
+    AccountItem::Ptr account = gAccountManager->getAccountItemByAccountId(m_account_id);
+    if (!account)
+        return;
+
+    ScheduleTypeEditDlg dialog(ScheduleTypeEditDlg::DialogImportType, this);
+    dialog.setAccount(account);
+    // 按保存键退出则触发保存数据
+    if (QDialog::Accepted == dialog.exec()) {
+        // 显示等待对话框
+        auto waitDialog = new DDialog(this);
+        // 延迟销毁
+        waitDialog->deleteLater();
+        waitDialog->setFixedSize(400, 280);
+        auto progress = new DSpinner(waitDialog);
+        progress->setFixedSize(100, 100);
+        progress->start();
+        waitDialog->addContent(progress, Qt::AlignCenter);
+        waitDialog->show();
+        DScheduleType::Ptr type(new DScheduleType(dialog.newJsonType()));
+        auto icsFile = dialog.getIcsFile();
+        QEventLoop event;
+        QString typeID;
+        // 创建日程类型
+        account->createJobType(type, [&event, &typeID](CallMessge msg) {
+            if (msg.code == 0) {
+                // 记录创建的类型ID
+                typeID = msg.msg.toString();
+            }
+            // 延迟一秒后再退出
+            // 一来可以避免导入小文件时，进度过快引起等待对话框闪烁
+            // 二来在导入大文件时堵塞dbus调用，延迟可以避免客户端在日程类型更新信号执行的槽函数被堵塞。
+            QTimer::singleShot(1000, &event, &QEventLoop::quit);
+        });
+        // 等待日程创建完毕
+        event.exec();
+        // 导入ics文件
+        if (!typeID.isEmpty()) {
+            account->importSchedule(icsFile, typeID, true, [&event](CallMessge msg) {
+                event.quit();
+            });
+            // 等待导入完毕
+            event.exec();
+        }
     }
 }
 

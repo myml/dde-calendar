@@ -53,6 +53,8 @@ public slots:
     void slotUpdateJobType();
     void slotDeleteJobType();
     void slotAddScheduleType();
+    // 导入ics文件
+    void slotImportScheduleType();
 
     bool updateJobType();
     void updateCalendarAccount(QString account_id);

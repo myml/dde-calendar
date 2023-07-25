@@ -128,6 +128,9 @@ public:
 
     //获取最后一次同步时间
     QString getDtLastUpdate();
+
+    void importSchedule(QString icsFilePath, QString TypeID, bool cleanExists);
+    void exportSchedule(QString icsFilePath, QString TypeID);
 signals:
     void signalGetAccountInfoFinish(DAccount::Ptr);
     void signalGetScheduleTypeListFinish(DScheduleType::List);

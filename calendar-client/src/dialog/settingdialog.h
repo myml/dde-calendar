@@ -40,6 +40,7 @@ public slots:
     void slotTimeTypeCurrentChanged(int index);
     void slotAccountCurrentChanged(int index);
     void slotTypeAddBtnClickded();
+    void slotTypeImportBtnClickded();
     void slotSetUosSyncFreq(int freq);
     void slotUosManualSync();
     void slotNetworkStateChange(DOANetWorkDBus::NetWorkState state);
@@ -85,6 +86,7 @@ private:
     QComboBox *m_syncFreqComboBox = nullptr;
 
     DIconButton *m_typeAddBtn = nullptr;
+    DIconButton *m_typeImportBtn = nullptr;
 
     JobTypeListView *m_scheduleTypeWidget = nullptr;
 

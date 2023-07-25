@@ -14,6 +14,7 @@
 
 #include <QLabel>
 #include <QRadioButton>
+#include <QFormLayout>
 
 ScheduleTypeEditDlg::ScheduleTypeEditDlg(QWidget *parent)
     : DDialog(parent)
@@ -31,6 +32,22 @@ ScheduleTypeEditDlg::ScheduleTypeEditDlg(const DScheduleType &jobTypeOld, QWidge
     , m_dialogType(DialogEditType)
 
 {
+    init();
+}
+
+ScheduleTypeEditDlg::ScheduleTypeEditDlg(const DialogType &type, QWidget *parent)
+    : DDialog(parent)
+{
+    switch (type) {
+    case DialogImportType:
+        m_title = tr("Import ICS file");
+        m_dialogType = DialogImportType;
+        break;
+    default:
+        m_title = tr("New event type");
+        m_dialogType = DialogNewType;
+        break;
+    }
     init();
 }
 
@@ -94,6 +111,9 @@ void ScheduleTypeEditDlg::init()
     connect(m_lineEdit, &DLineEdit::textChanged, this, &ScheduleTypeEditDlg::slotEditTextChanged);
     connect(m_lineEdit, &DLineEdit::focusChanged, this, &ScheduleTypeEditDlg::slotFocusChanged);
     connect(m_lineEdit, &DLineEdit::editingFinished, this, &ScheduleTypeEditDlg::slotEditingFinished);
+    // 在编辑框变动时，设置确认按钮状态
+    connect(m_lineEdit, &DLineEdit::textChanged, this, &ScheduleTypeEditDlg::slotCheckConfirmBtn);
+    connect(m_fileEdit, &DLineEdit::textChanged, this, &ScheduleTypeEditDlg::slotCheckConfirmBtn);
 }
 
 void ScheduleTypeEditDlg::initView()
@@ -109,48 +129,29 @@ void ScheduleTypeEditDlg::initView()
     m_titleLabel->move(0, 19);
     m_titleLabel->setFont(titlelabelF);
 
-    QVBoxLayout *maintlayout = new QVBoxLayout;
-    maintlayout->setMargin(0);
-    maintlayout->setSpacing(10);
-
-    QHBoxLayout *eLayout = new QHBoxLayout;
-    m_eName = new QLabel(tr("Name:"));
-    m_eName->setToolTip(m_eName->text());
-    m_eName->setFixedWidth(42);
-
     m_lineEdit = new DLineEdit();
     m_lineEdit->setClearButtonEnabled(false); //不显示按钮
-    eLayout->addWidget(m_eName);
-    eLayout->addWidget(m_lineEdit, 1);
-
-    QHBoxLayout *cLayout = new QHBoxLayout;
-    m_cName = new QLabel(tr("Color:"));
-    m_cName->setToolTip(m_cName->text());
-    m_strLabelName = m_eName->text();
-    m_strLabelColor = m_cName->text();
-    m_cName->setFixedWidth(42);
     m_colorSeletor = new ColorSeletorWidget();
+    m_fileEdit = new DFileChooserEdit;
 
-    cLayout->addWidget(m_cName);
-    cLayout->addWidget(m_colorSeletor);
-    cLayout->addStretch(1);
+    QFormLayout *formLayout = new QFormLayout(this);
+    formLayout->setHorizontalSpacing(10);
+    formLayout->setVerticalSpacing(20);
+    formLayout->addRow(tr("Name:"), m_lineEdit);
+    formLayout->addRow(tr("Color:"), m_colorSeletor);
 
-    maintlayout->addLayout(eLayout);
-    maintlayout->addLayout(cLayout);
-
-    eLayout->setSpacing(10);
-    eLayout->setMargin(0);
-    cLayout->setSpacing(10);
-    cLayout->setMargin(0);
-    maintlayout->setSpacing(20);
-    maintlayout->setContentsMargins(0, 10, 0, 0);
+    if (m_dialogType == DialogImportType){
+        setFixedSize(QSize(400, 300));
+        auto icsLabel = new QLabel(tr("<a href='https://wikipedia.org/wiki/ICalendar'>ICS</a> File:"), this);
+        icsLabel->setOpenExternalLinks(true);
+        formLayout->addRow(icsLabel, m_fileEdit);
+    }
 
     DFrame *gwi = new DFrame(this);
     gwi->setFrameShape(QFrame::NoFrame);
-    gwi->setLayout(maintlayout);
+    gwi->setLayout(formLayout);
     gwi->setMinimumWidth(360);
     addContent(gwi, Qt::AlignCenter);
-    setLabelText();
     //添加按钮
     addButton(tr("Cancel", "button"));
     addButton(tr("Save", "button"), false, DDialog::ButtonRecommend);
@@ -196,7 +197,6 @@ void ScheduleTypeEditDlg::slotEditTextChanged(const QString &strName)
         //内容清空时，消除警告色和提示信息
         m_lineEdit->setAlert(false);
         m_lineEdit->hideAlertMessage();
-        this->getButton(1)->setEnabled(false);
 
         return;
     }
@@ -204,23 +204,15 @@ void ScheduleTypeEditDlg::slotEditTextChanged(const QString &strName)
         //名称为全空格，返回
         m_lineEdit->showAlertMessage(tr("The name can not only contain whitespaces"));
         m_lineEdit->setAlert(true);
-        this->getButton(1)->setEnabled(false);
         return;
     }
     m_jobTypeNew.setDisplayName(tStitlename);
 
     m_lineEdit->setAlert(false);
     m_lineEdit->hideAlertMessage();
-    this->getButton(1)->setEnabled(true);
     return;
 }
-void ScheduleTypeEditDlg::changeEvent(QEvent *e)  {
-    DDialog::changeEvent(e);
-    if(e->type() == QEvent::FontChange) {
-        setLabelText();
-    }
 
-}
 void ScheduleTypeEditDlg::slotFocusChanged(bool onFocus)
 {
     //如果焦点移出,且输入内容为空
@@ -229,23 +221,7 @@ void ScheduleTypeEditDlg::slotFocusChanged(bool onFocus)
         emit m_lineEdit->editingFinished();
     }
 }
-void ScheduleTypeEditDlg::setLabelText() {
-    QLocale local;
-    if(local.language() == QLocale::Chinese) {
-        return;
-    }
-    QString str  = m_strLabelName.trimmed();
-    QFontMetrics fontMetrice(m_eName->font());
-    if(fontMetrice.width(str) > (m_eName->width()+6)) {
-         str = fontMetrice.elidedText(str,Qt::ElideRight,m_eName->width());
-    }
-    m_eName->setText(str);
-    str = m_strLabelColor.trimmed();
-    if(fontMetrice.width(str) > (m_eName->width()+5)) {
-      str = fontMetrice.elidedText(str,Qt::ElideRight,m_cName->width());
-    }
-    m_cName->setText(str);
-}
+
 void ScheduleTypeEditDlg::slotBtnCancel()
 {
     this->reject();
@@ -264,6 +240,32 @@ void ScheduleTypeEditDlg::slotEditingFinished()
         //名称为空，返回
         m_lineEdit->showAlertMessage(tr("Enter a name please"));
         m_lineEdit->setAlert(true);
-        this->getButton(1)->setEnabled(false);
     }
+}
+
+// 获取ICS文件路径
+QString ScheduleTypeEditDlg::getIcsFile()
+{
+    return m_fileEdit->text();
+}
+
+// 检查并设置‘确认按钮’的状态
+void ScheduleTypeEditDlg::slotCheckConfirmBtn()
+{
+    auto confirmBtn = this->getButton(1);
+
+    if (m_lineEdit->text().isEmpty() || m_lineEdit->isAlert())
+    {
+        confirmBtn->setEnabled(false);
+        return;
+    }
+    if (m_dialogType == DialogType::DialogImportType)
+    {
+        if (m_fileEdit->text().isEmpty() || m_fileEdit->isAlert())
+        {
+            confirmBtn->setEnabled(false);
+            return;
+        }
+    }
+    confirmBtn->setEnabled(true);
 }

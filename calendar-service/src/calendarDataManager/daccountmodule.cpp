@@ -974,3 +974,47 @@ void DAccountModule::slotDateUpdate(const DDataSyncBase::UpdateTypes updateType)
         emit signalScheduleTypeUpdate();
     }
 }
+
+// 导入日程
+bool DAccountModule::importSchedule(const QString &icsFilePath, const QString &typeID, const bool cleanExists)
+{
+    KCalendarCore::ICalFormat icalformat;
+    QTimeZone timezone = QDateTime::currentDateTime().timeZone();
+    KCalendarCore::MemoryCalendar::Ptr cal(new KCalendarCore::MemoryCalendar(timezone));
+    auto ok = icalformat.load(cal, icsFilePath);
+    if (!ok) {
+        qWarning() << "can not load ics file from" << icsFilePath;
+        return false;
+    }
+    auto events = cal->events();
+    if (cleanExists) {
+        ok = m_accountDB->deleteSchedulesByScheduleTypeID(typeID, true);
+        if (!ok) {
+            qWarning() << "can not clean schedules from" << typeID;
+            return false;
+        }
+    };
+    foreach (auto event, events) {
+        auto data = event.data();
+        auto sch = DSchedule::Ptr(new DSchedule(*data));
+        sch->setScheduleTypeID(typeID);
+        qInfo() << "import schedule" << event.data()->dtStart().toString()
+                << event.data()->summary() << m_accountDB->createSchedule(sch);
+    };
+    // 发送日程更新信号
+    emit signalScheduleUpdate();
+    return true;
+}
+
+// 导出日程
+bool DAccountModule::exportSchedule(const QString &icsFilePath, const QString &typeID)
+{
+    KCalendarCore::ICalFormat icalformat;
+    KCalendarCore::MemoryCalendar::Ptr cal(new KCalendarCore::MemoryCalendar(nullptr));
+    auto ids = m_accountDB->getScheduleIDListByTypeID(typeID);
+    foreach (auto id, ids) {
+        auto schedule = m_accountDB->getScheduleByScheduleID(id);
+        cal->addEvent(schedule);
+    }
+    return icalformat.save(cal, icsFilePath);
+}

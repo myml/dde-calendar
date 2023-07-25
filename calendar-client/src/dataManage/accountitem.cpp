@@ -453,3 +453,13 @@ void AccountItem::slotSearchUpdata()
     }
 }
 
+void AccountItem::importSchedule(QString icsFilePath, QString typeID, bool cleanExists, CallbackFunc func)
+{
+    m_dbusRequest->setCallbackFunc(func);
+    m_dbusRequest->importSchedule(icsFilePath, typeID, cleanExists);
+}
+
+void AccountItem::exportSchedule(QString icsFilePath, QString typeID)
+{
+    m_dbusRequest->exportSchedule(icsFilePath, typeID);
+}

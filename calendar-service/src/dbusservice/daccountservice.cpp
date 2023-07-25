@@ -180,3 +180,13 @@ QString DAccountService::getDtLastUpdate()
 {
     return m_accountModel->getDtLastUpdate();
 }
+
+bool DAccountService::importSchedule(const QString &icsFilePath, const QString &typeID, const bool cleanExists)
+{
+    return m_accountModel->importSchedule(icsFilePath, typeID, cleanExists);
+}
+
+bool DAccountService::exportSchedule(const QString &icsFilePath, const QString &typeID)
+{
+    return m_accountModel->exportSchedule(icsFilePath, typeID);
+}

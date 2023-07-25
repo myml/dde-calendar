@@ -10,6 +10,8 @@
 #include "dschedule.h"
 #include "dalarmmanager.h"
 #include "ddatasyncbase.h"
+#include "icalformat.h"
+#include "memorycalendar.h"
 
 #include <QObject>
 #include <QSharedPointer>
@@ -52,6 +54,9 @@ public:
     QString getScheduleByScheduleID(const QString &scheduleID);
     bool deleteScheduleByScheduleID(const QString &scheduleID);
     QString querySchedulesWithParameter(const QString &params);
+
+    bool exportSchedule(const QString &icsFilePath, const QString &typeID);                         // 导出ICS文件
+    bool importSchedule(const QString &icsFilePath, const QString &typeID, const bool cleanExists); // 导入ICS文件
 
     //获取需要提醒的日程
     DSchedule::List getRemindScheduleList(const QDateTime &dtStart, const QDateTime &dtEnd);

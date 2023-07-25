@@ -106,6 +106,23 @@ public slots:
      */
     Q_SCRIPTABLE QString querySchedulesWithParameter(const QString &params);
 
+    /**
+     * @brief querySchedulesWithParameter       导出日程到ics文件
+     * @param icsFilePath                       ics文件路径
+     * @param typeID                            导入到的类型ID
+     * @return                                  是否成功，true: 成功
+     */
+    Q_SCRIPTABLE bool exportSchedule(const QString &icsFilePath, const QString &typeID);
+
+    /**
+     * @brief querySchedulesWithParameter       导入ics文件到日程
+     * @param icsFilePath                       ics文件路径
+     * @param typeID                            导入到的类型ID
+     * @param cleanExists                       是否清理已存在的日程
+     * @return                                  是否成功，true: 成功
+     */
+    Q_SCRIPTABLE bool importSchedule(const QString &icsFilePath, const QString &typeID, const bool cleanExists);
+
     ///////获取内置类型颜色
 
     Q_SCRIPTABLE QString getSysColors();

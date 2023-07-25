@@ -100,7 +100,10 @@ public:
     //对外请求接口，同步
     QString querySchedulesByExternal(const QString &key, const QDateTime &start, const QDateTime &end);
     bool querySchedulesByExternal(const QString &key, const QDateTime &start, const QDateTime &end, QMap<QDate, DSchedule::List>& out);
-
+    // 导入日程
+    void importSchedule(QString icsFilePath, QString TypeID, bool cleanExists, CallbackFunc func);
+    // 导出日程
+    void exportSchedule(QString icsFilePath, QString TypeID);
 signals:
     void signalAccountDataUpdate();
     void signalScheduleUpdate();

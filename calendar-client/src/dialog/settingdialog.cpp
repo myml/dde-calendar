@@ -212,6 +212,7 @@ void CSettingDialog::initView()
                 wid->layout()->addItem(spaceitem);
                 DIconButton *addButton = this->createTypeAddButton();
                 wid->layout()->addWidget(addButton);
+                wid->layout()->addWidget(m_typeImportBtn);
                 //使addButton的右边距等于view的右边距
                 int leftMargin = wid->layout()->contentsMargins().left();
                 wid->layout()->setContentsMargins(leftMargin, 0, leftMargin, 0);
@@ -288,8 +289,10 @@ void CSettingDialog::initConnect()
     connect(m_timeTypeCombobox, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &CSettingDialog::slotTimeTypeCurrentChanged);
     connect(m_accountComboBox, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &CSettingDialog::slotAccountCurrentChanged);
     connect(m_typeAddBtn, &DIconButton::clicked, this, &CSettingDialog::slotTypeAddBtnClickded);
+    connect(m_typeImportBtn, &DIconButton::clicked, this, &CSettingDialog::slotTypeImportBtnClickded);
     //当日常类型超过上限时，更新button的状态
     connect(m_scheduleTypeWidget, &JobTypeListView::signalAddStatusChanged, m_typeAddBtn, &DIconButton::setEnabled);
+    connect(m_scheduleTypeWidget, &JobTypeListView::signalAddStatusChanged, m_typeImportBtn, &DIconButton::setEnabled);
     //TODO:更新union帐户的的同步频率
     connect(m_syncFreqComboBox, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &CSettingDialog::slotSetUosSyncFreq);
     connect(m_syncBtn, &QPushButton::clicked, this, &CSettingDialog::slotUosManualSync);
@@ -315,6 +318,7 @@ void CSettingDialog::initData()
     slotAccountUpdate();
     //日程类型添加按钮初始化
     m_typeAddBtn->setEnabled(m_scheduleTypeWidget->canAdd());
+    m_typeImportBtn->setEnabled(m_scheduleTypeWidget->canAdd());
     //同步频率数据初始化
     {
         int index = 0;
@@ -377,6 +381,10 @@ void CSettingDialog::initTypeAddWidget()
 {
     m_typeAddBtn = new DIconButton(DStyle::SP_IncreaseElement, nullptr);
     m_typeAddBtn->setFixedSize(20, 20);
+
+    m_typeImportBtn = new DIconButton(DStyle::SP_ArrowDown, nullptr);
+    m_typeImportBtn->setToolTip(tr("import ICS file"));
+    m_typeImportBtn->setFixedSize(20, 20);
 }
 
 void CSettingDialog::initScheduleTypeWidget()
@@ -481,6 +489,13 @@ void CSettingDialog::slotTypeAddBtnClickded()
 {
     if (m_scheduleTypeWidget) {
         m_scheduleTypeWidget->slotAddScheduleType();
+    }
+}
+
+void CSettingDialog::slotTypeImportBtnClickded()
+{
+    if (m_scheduleTypeWidget) {
+        m_scheduleTypeWidget->slotImportScheduleType();
     }
 }
 
@@ -636,10 +651,12 @@ void CSettingDialog::setTypeEnable(int index)
     if (account->getAccount()->accountType() == DAccount::Account_Local || gUosAccountItem->isCanSyncShedule()) {
         if (account->getScheduleTypeList().count() < 20) {
             m_typeAddBtn->setEnabled(true);
+            m_typeImportBtn->setEnabled(true);
             m_scheduleTypeWidget->setItemEnabled(true);
         }
     } else {
         m_typeAddBtn->setEnabled(false);
+        m_typeImportBtn->setEnabled(false);
         m_scheduleTypeWidget->setItemEnabled(false);
     }
 }
