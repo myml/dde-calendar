@@ -48,6 +48,14 @@ int main(int argc, char *argv[])
         app->setOrganizationName("deepin");
         app->setApplicationName("dde-calendar");
         app->loadTranslator();
+#ifdef QT_DEBUG
+        // 在开发调试时使用项目内的翻译文件
+        auto tf = "../translations/dde-calendar_zh_CN";
+        qDebug() << "load translate" << tf;
+        QTranslator translator;
+        translator.load(tf);
+        app->installTranslator(&translator);
+#endif
         app->setApplicationVersion(VERSION);
         // meta information that necessary to create the about dialog.
         app->setProductName(QApplication::translate("CalendarWindow", "Calendar"));

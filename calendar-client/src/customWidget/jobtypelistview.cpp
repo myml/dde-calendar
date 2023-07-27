@@ -16,6 +16,7 @@
 #include <QHeaderView>
 #include <QTimer>
 #include <DSpinner>
+#include <DDesktopServices>
 
 //Qt::UserRole + 1,会影响item的高度
 static const int RoleJobTypeInfo = Qt::UserRole + 2;
@@ -49,6 +50,16 @@ void JobTypeListView::initUI()
     verticalHeader()->hide();
     //
     updateJobType();
+    
+    // 初始化等待对话框
+    m_waitDialog = new DDialog(this);
+    m_waitDialog->setFixedSize(400, 280);
+    m_waitDialog->setModal(true);
+    m_waitDialog->setCloseButtonVisible(false);
+    auto progress = new DSpinner(m_waitDialog);
+    progress->setFixedSize(100, 100);
+    progress->start();
+    m_waitDialog->addContent(progress, Qt::AlignCenter);
 
     connect(gAccountManager, &AccountManager::signalScheduleTypeUpdate, this, &JobTypeListView::updateJobType);
     connect(this, &QTableView::entered, this, [&](const QModelIndex & index) {
@@ -121,8 +132,17 @@ bool JobTypeListView::viewportEvent(QEvent *event)
                 // 设置其他style时，转换指针为空
                 if (DStyle *ds = qobject_cast<DStyle *>(style())) {
                     Q_UNUSED(ds)
-                    if (!itemJobType->data(RoleJobTypeEditable).toBool())
+                    auto actionExport = new DViewItemAction(Qt::AlignRight, QSize(30, 0), QSize(30, 0), true);
+                    actionExport->setIconVisibleInMenu(false);
+                    actionExport->setText(tr("export"));
+                    actionExport->setParent(this);
+                    connect(actionExport, &QAction::triggered, this, &JobTypeListView::slotExportScheduleType);
+                    if (!itemJobType->data(RoleJobTypeEditable).toBool()) {
+                        if (!itemJobType->data(RoleJobTypeLine).toBool()) {
+                            itemJobType->setActionList(Qt::Edge::RightEdge, { actionExport });
+                        }
                         return true;
+                    }
                     auto actionEdit = new DViewItemAction(Qt::AlignVCenter, QSize(20, 20), QSize(20, 20), true);
                     actionEdit->setIcon(DHiDPIHelper::loadNxPixmap(":/icons/deepin/builtin/icons/dde_calendar_edit_32px.svg"));
                     actionEdit->setParent(this);
@@ -133,7 +153,7 @@ bool JobTypeListView::viewportEvent(QEvent *event)
                     actionDelete->setParent(this);
                     connect(actionDelete, &QAction::triggered, this, &JobTypeListView::slotDeleteJobType);
 
-                    itemJobType->setActionList(Qt::Edge::RightEdge, {actionEdit, actionDelete});
+                    itemJobType->setActionList(Qt::Edge::RightEdge, {actionEdit, actionDelete, actionExport});
                 }
             }
         }
@@ -191,15 +211,7 @@ void JobTypeListView::slotImportScheduleType()
     // 按保存键退出则触发保存数据
     if (QDialog::Accepted == dialog.exec()) {
         // 显示等待对话框
-        auto waitDialog = new DDialog(this);
-        // 延迟销毁
-        waitDialog->deleteLater();
-        waitDialog->setFixedSize(400, 280);
-        auto progress = new DSpinner(waitDialog);
-        progress->setFixedSize(100, 100);
-        progress->start();
-        waitDialog->addContent(progress, Qt::AlignCenter);
-        waitDialog->show();
+        m_waitDialog->show();
         DScheduleType::Ptr type(new DScheduleType(dialog.newJsonType()));
         auto icsFile = dialog.getIcsFile();
         QEventLoop event;
@@ -224,8 +236,37 @@ void JobTypeListView::slotImportScheduleType()
             });
             // 等待导入完毕
             event.exec();
+            m_waitDialog->hide();
         }
     }
+}
+
+void JobTypeListView::slotExportScheduleType()
+{
+    DStandardItem *item = dynamic_cast<DStandardItem *>(m_modelJobType->item(m_iIndexCurrentHover));
+    if (!item)
+        return;
+    AccountItem::Ptr account = gAccountManager->getAccountItemByAccountId(m_account_id);
+    if (!account)
+        return;
+    DScheduleType info = item->data(RoleJobTypeInfo).value<DScheduleType>();
+    auto filename = QFileDialog::getSaveFileName(nullptr, "", info.displayName() + ".ics", "");
+    if (filename.isEmpty()) {
+        return;
+    }
+    QEventLoop event;
+    m_waitDialog->show();
+    auto typeID = info.typeID();
+    qDebug() << "export" << typeID;
+    account->exportSchedule(filename, typeID, [&filename, &event](CallMessge msg) {
+        qDebug() << msg.code << msg.msg;
+        if (msg.code == 0) {
+            DDesktopServices::showFileItem(filename);
+        }
+        QTimer::singleShot(1000, &event, &QEventLoop::quit);
+    });
+    event.exec();
+    m_waitDialog->hide();
 }
 
 bool JobTypeListView::canAdd()

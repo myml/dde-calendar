@@ -15,6 +15,7 @@
 #include <QWidget>
 #include <QList>
 #include <QTableView>
+#include <DDialog>
 
 DWIDGET_USE_NAMESPACE
 
@@ -55,7 +56,8 @@ public slots:
     void slotAddScheduleType();
     // 导入ics文件
     void slotImportScheduleType();
-
+    // 导出ics文件
+    void slotExportScheduleType();
     bool updateJobType();
     void updateCalendarAccount(QString account_id);
 
@@ -66,6 +68,7 @@ private:
     friend JobTypeListViewStyle;
 
     QString m_account_id;
+    DDialog *m_waitDialog = nullptr;
 };
 
 class JobTypeListViewStyle : public DStyledItemDelegate

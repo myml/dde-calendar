@@ -18,6 +18,11 @@ Files: *.pro *.prf *.pri *.txt *.cmake
 Copyright: None
 License: CC0-1.0
 
+# format
+Files: .clang-format
+Copyright: None
+License: CC0-1.0
+
 # css
 Files: *.css
 Copyright: None

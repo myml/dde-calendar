@@ -103,7 +103,8 @@ public:
     // 导入日程
     void importSchedule(QString icsFilePath, QString TypeID, bool cleanExists, CallbackFunc func);
     // 导出日程
-    void exportSchedule(QString icsFilePath, QString TypeID);
+    void exportSchedule(QString icsFilePath, QString TypeID, CallbackFunc func);
+
 signals:
     void signalAccountDataUpdate();
     void signalScheduleUpdate();

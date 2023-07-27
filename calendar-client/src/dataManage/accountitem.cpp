@@ -459,7 +459,8 @@ void AccountItem::importSchedule(QString icsFilePath, QString typeID, bool clean
     m_dbusRequest->importSchedule(icsFilePath, typeID, cleanExists);
 }
 
-void AccountItem::exportSchedule(QString icsFilePath, QString typeID)
+void AccountItem::exportSchedule(QString icsFilePath, QString typeID, CallbackFunc func)
 {
+    m_dbusRequest->setCallbackFunc(func);
     m_dbusRequest->exportSchedule(icsFilePath, typeID);
 }
