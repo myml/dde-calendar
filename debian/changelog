@@ -1,3 +1,12 @@
+dde-calendar (5.11.0) unstable; urgency=medium
+
+  [ Deepin Packages Builder ]
+  * feat: support for import ics file(Issue: https://github.com/linuxdeepin/developer-center/issues/5018)
+  * feat: support for export ics file(Issue: https://github.com/linuxdeepin/developer-center/issues/5018)
+  * feat: simplify the import process
+
+ -- myml <wurongjie@deepin.org>  Thu, 27 Jul 2023 14:17:10 +0800
+
 dde-calendar (5.10.1) unstable; urgency=medium
 
   * fix: remove illegal gcc option
