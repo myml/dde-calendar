@@ -7,6 +7,8 @@
 #include "scheduletypeeditdlg.h"
 #include "schedulectrldlg.h"
 #include "accountmanager.h"
+#include "icalformat.h"
+#include "memorycalendar.h"
 
 #include <DHiDPIHelper>
 #include <DStyle>
@@ -17,6 +19,8 @@
 #include <QTimer>
 #include <DSpinner>
 #include <DDesktopServices>
+#include <QStandardPaths>
+#include <QRandomGenerator>
 
 //Qt::UserRole + 1,会影响item的高度
 static const int RoleJobTypeInfo = Qt::UserRole + 2;
@@ -202,42 +206,75 @@ void JobTypeListView::slotAddScheduleType()
 
 void JobTypeListView::slotImportScheduleType()
 {
+    // 选择ICS文件
+    auto docDir = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation);
+    auto filename =
+        QFileDialog::getOpenFileName(nullptr, tr("import ICS file"), docDir, "ICS (*.ics)");
+    if (filename.isEmpty()) {
+        return;
+    }
+    auto fileinfo = QFileInfo(filename);
+    if (!fileinfo.exists()) {
+        qWarning() << "ics file not exists";
+        return;
+    }
     AccountItem::Ptr account = gAccountManager->getAccountItemByAccountId(m_account_id);
     if (!account)
         return;
+    // 从ics文件读取内置的基本信息
+    KCalendarCore::ICalFormat icalformat;
+    QTimeZone timezone = QDateTime::currentDateTime().timeZone();
+    KCalendarCore::MemoryCalendar::Ptr cal(new KCalendarCore::MemoryCalendar(timezone));
+    auto ok = icalformat.load(cal, filename);
+    auto typeID = cal->nonKDECustomProperty("X-DDE-CALENDAR-TYPE-ID");
+    auto typeName = cal->nonKDECustomProperty("X-DDE-CALENDAR-TYPE-NAME");
+    auto typeColor = cal->nonKDECustomProperty("X-DDE-CALENDAR-TYPE-COLOR");
+    // 如果没有颜色，使用随机颜色
+    if (typeColor.isEmpty()) {
+        auto colorList = account->getColorTypeList();
+        auto rindex = QRandomGenerator::global()->generate() % colorList.length();
+        typeColor = colorList[rindex]->colorCode();
+    }
+    // 如果没有显示名，使用推荐的显示名
+    if (typeName.isEmpty()) {
+        typeName = cal->nonKDECustomProperty("X-WR-CALNAME");
+    }
+    // 如果没有推荐显示名，使用文件名
+    if (typeName.isEmpty()) {
+        typeName = fileinfo.baseName();
+    }
+    // 仅使用前二十个字符，避免显示名过长
+    typeName = typeName.mid(0, 20);
+    // 显示等待对话框
+    m_waitDialog->show();
 
-    ScheduleTypeEditDlg dialog(ScheduleTypeEditDlg::DialogImportType, this);
-    dialog.setAccount(account);
-    // 按保存键退出则触发保存数据
-    if (QDialog::Accepted == dialog.exec()) {
-        // 显示等待对话框
-        m_waitDialog->show();
-        DScheduleType::Ptr type(new DScheduleType(dialog.newJsonType()));
-        auto icsFile = dialog.getIcsFile();
-        QEventLoop event;
-        QString typeID;
-        // 创建日程类型
-        account->createJobType(type, [&event, &typeID](CallMessge msg) {
-            if (msg.code == 0) {
-                // 记录创建的类型ID
-                typeID = msg.msg.toString();
-            }
-            // 延迟一秒后再退出
-            // 一来可以避免导入小文件时，进度过快引起等待对话框闪烁
-            // 二来在导入大文件时堵塞dbus调用，延迟可以避免客户端在日程类型更新信号执行的槽函数被堵塞。
-            QTimer::singleShot(1000, &event, &QEventLoop::quit);
-        });
-        // 等待日程创建完毕
-        event.exec();
-        // 导入ics文件
-        if (!typeID.isEmpty()) {
-            account->importSchedule(icsFile, typeID, true, [&event](CallMessge msg) {
-                event.quit();
-            });
-            // 等待导入完毕
-            event.exec();
-            m_waitDialog->hide();
+    DScheduleType::Ptr type(new DScheduleType());
+    type->setColorCode(typeColor);
+    type->setDisplayName(typeName);
+
+    QEventLoop event;
+    // 创建日程类型
+    account->createJobType(type, [&event, &typeID](CallMessge msg) {
+        if (msg.code == 0) {
+            // 记录创建的类型ID
+            typeID = msg.msg.toString();
         }
+        // 延迟一秒后再退出
+        // 一来可以避免导入小文件时，进度过快引起等待对话框闪烁
+        // 二来在导入大文件时堵塞dbus调用，延迟可以避免客户端在日程类型更新信号执行的槽函数被堵塞。
+        QTimer::singleShot(1000, &event, &QEventLoop::quit);
+    });
+    qDebug() << "import" << typeID << "from" << filename;
+    // 等待日程创建完毕
+    event.exec();
+    // 导入ics文件
+    if (!typeID.isEmpty()) {
+        account->importSchedule(filename, typeID, true, [&event](CallMessge msg) {
+            event.quit();
+        });
+        // 等待导入完毕
+        event.exec();
+        m_waitDialog->hide();
     }
 }
 
@@ -249,15 +286,17 @@ void JobTypeListView::slotExportScheduleType()
     AccountItem::Ptr account = gAccountManager->getAccountItemByAccountId(m_account_id);
     if (!account)
         return;
+    auto docDir = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation);
     DScheduleType info = item->data(RoleJobTypeInfo).value<DScheduleType>();
-    auto filename = QFileDialog::getSaveFileName(nullptr, "", info.displayName() + ".ics", "");
+    auto filename =
+        QFileDialog::getSaveFileName(nullptr, "", docDir + "/" + info.displayName() + ".ics", "");
     if (filename.isEmpty()) {
         return;
     }
     QEventLoop event;
     m_waitDialog->show();
     auto typeID = info.typeID();
-    qDebug() << "export" << typeID;
+    qDebug() << "export" << typeID << "to" << filename;
     account->exportSchedule(filename, typeID, [&filename, &event](CallMessge msg) {
         qDebug() << msg.code << msg.msg;
         if (msg.code == 0) {
