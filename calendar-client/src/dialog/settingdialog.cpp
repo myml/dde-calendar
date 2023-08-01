@@ -382,7 +382,7 @@ void CSettingDialog::initTypeAddWidget()
     m_typeAddBtn = new DIconButton(DStyle::SP_IncreaseElement, nullptr);
     m_typeAddBtn->setFixedSize(20, 20);
 
-    m_typeImportBtn = new DIconButton(DStyle::SP_ArrowDown, nullptr);
+    m_typeImportBtn = new DIconButton(DStyle::SP_SelectElement, nullptr);
     m_typeImportBtn->setToolTip(tr("import ICS file"));
     m_typeImportBtn->setFixedSize(20, 20);
 }

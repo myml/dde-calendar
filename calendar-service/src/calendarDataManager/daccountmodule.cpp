@@ -1009,12 +1009,19 @@ bool DAccountModule::importSchedule(const QString &icsFilePath, const QString &t
 // 导出日程
 bool DAccountModule::exportSchedule(const QString &icsFilePath, const QString &typeID)
 {
-    KCalendarCore::ICalFormat icalformat;
+    auto typeInfo = m_accountDB->getScheduleTypeByID(typeID);
     KCalendarCore::MemoryCalendar::Ptr cal(new KCalendarCore::MemoryCalendar(nullptr));
+    // 附加扩展信息
+    cal->setNonKDECustomProperty("X-DDE-CALENDAR-TYPE-ID", typeID);
+    cal->setNonKDECustomProperty("X-DDE-CALENDAR-TYPE-NAME", typeInfo->displayName());
+    cal->setNonKDECustomProperty("X-DDE-CALENDAR-TYPE-COLOR", typeInfo->getColorCode());
+    cal->setNonKDECustomProperty("X-WR-CALNAME", typeInfo->displayName());
+
     auto ids = m_accountDB->getScheduleIDListByTypeID(typeID);
     foreach (auto id, ids) {
         auto schedule = m_accountDB->getScheduleByScheduleID(id);
         cal->addEvent(schedule);
     }
+    KCalendarCore::ICalFormat icalformat;
     return icalformat.save(cal, icsFilePath);
 }
