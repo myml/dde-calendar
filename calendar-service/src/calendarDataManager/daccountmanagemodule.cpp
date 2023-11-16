@@ -6,6 +6,7 @@
 
 #include "units.h"
 #include "calendarprogramexitcontrol.h"
+#include <DSysInfo>
 
 DAccountManageModule::DAccountManageModule(QObject *parent)
     : QObject(parent)
@@ -13,6 +14,9 @@ DAccountManageModule::DAccountManageModule(QObject *parent)
     , m_accountManagerDB(new DAccountManagerDataBase)
 {
     m_isSupportUid = m_syncFileManage->getSyncoperation()->hasAvailable();
+    if(Dtk::Core::DSysInfo::isCommunityEdition()){
+        m_isSupportUid = false;
+    }
     //新文件路径
     QString newDbPath = getDBPath();
     QString newDB(newDbPath + "/" + "accountmanager.db");
