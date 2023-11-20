@@ -533,6 +533,34 @@
         <source>Last sync</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>import ICS file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tuesday</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Wednesday</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Thursday</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Friday</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Saturday</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Please go to the &lt;a href=&apos;/&apos;&gt;Control Center&lt;/a&gt; to change settings</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CTimeEdit</name>
@@ -779,6 +807,14 @@
         <comment>button</comment>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>export</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>import ICS file</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>QObject</name>
@@ -881,6 +917,14 @@
     </message>
     <message>
         <source>Enter a name please</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Import ICS file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;a href=&apos;https://wikipedia.org/wiki/ICalendar&apos;&gt;ICS&lt;/a&gt; File:</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
