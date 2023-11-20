@@ -70,6 +70,9 @@ find_package(DtkWidget REQUIRED)
 find_package(DtkGui REQUIRED)
 find_package(Qt5Network REQUIRED)
 
+set_source_files_properties(src/dbus/org.deepin.dde.ControlCenter.xml PROPERTIES CLASSNAME ControlCenterProxy)
+qt5_add_dbus_interface(Calendar_SRC src/dbus/org.deepin.dde.ControlCenter.xml controlCenterProxy)
+
 include_directories(${Qt5Gui_PRIVATE_INCLUDE_DIRS})
 # Tell CMake to create the executable
 add_executable(${PROJECT_NAME} ${Calendar_SRC} ${APP_QRC})

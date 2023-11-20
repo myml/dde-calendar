@@ -7,11 +7,21 @@
 #include "units.h"
 #include "calendarprogramexitcontrol.h"
 
+const QString firstDayOfWeek_key = "firstDayOfWeek";
+const QString shortTimeFormat_key = "shortTimeFormat";
+
 DAccountManageModule::DAccountManageModule(QObject *parent)
     : QObject(parent)
     , m_syncFileManage(new SyncFileManage())
     , m_accountManagerDB(new DAccountManagerDataBase)
+    , m_reginFormatConfig(DTK_CORE_NAMESPACE::DConfig::createGeneric("org.deepin.region-format", QString(), this))
 {
+    if (m_reginFormatConfig->isValid()) {
+        connect(m_reginFormatConfig,
+                &DTK_CORE_NAMESPACE::DConfig::valueChanged,
+                this,
+                &DAccountManageModule::slotSettingChange);
+    }
     m_isSupportUid = m_syncFileManage->getSyncoperation()->hasAvailable();
     //新文件路径
     QString newDbPath = getDBPath();
@@ -45,7 +55,7 @@ DAccountManageModule::DAccountManageModule(QObject *parent)
             }
         }
     }
-    m_generalSetting = m_accountManagerDB->getCalendarGeneralSettings();
+    m_generalSetting = getGeneralSettings();
 
     connect(&m_timer, &QTimer::timeout, this, &DAccountManageModule::slotClientIsOpen);
     m_timer.start(2000);
@@ -69,7 +79,7 @@ QString DAccountManageModule::getAccountList()
 QString DAccountManageModule::getCalendarGeneralSettings()
 {
     QString cgSetStr;
-    m_generalSetting = m_accountManagerDB->getCalendarGeneralSettings();
+    m_generalSetting = getGeneralSettings();
     DCalendarGeneralSettings::toJsonString(m_generalSetting, cgSetStr);
     return cgSetStr;
 }
@@ -79,7 +89,7 @@ void DAccountManageModule::setCalendarGeneralSettings(const QString &cgSet)
     DCalendarGeneralSettings::Ptr cgSetPtr = DCalendarGeneralSettings::Ptr(new DCalendarGeneralSettings);
     DCalendarGeneralSettings::fromJsonString(cgSetPtr, cgSet);
     if (m_generalSetting != cgSetPtr) {
-        m_accountManagerDB->setCalendarGeneralSettings(cgSetPtr);
+        setGeneralSettings(cgSetPtr);
         DCalendarGeneralSettings::Ptr tmpSetting = DCalendarGeneralSettings::Ptr(m_generalSetting->clone());
         m_generalSetting = cgSetPtr;
         if (tmpSetting->firstDayOfWeek() != m_generalSetting->firstDayOfWeek()) {
@@ -100,7 +110,7 @@ void DAccountManageModule::setFirstDayOfWeek(const int firstday)
 {
     if (m_generalSetting->firstDayOfWeek() != firstday) {
         m_generalSetting->setFirstDayOfWeek(static_cast<Qt::DayOfWeek>(firstday));
-        m_accountManagerDB->setCalendarGeneralSettings(m_generalSetting);
+        setGeneralSettings(m_generalSetting);
         foreach (auto account, m_accountList) {
             if (account->accountType() == DAccount::Account_UnionID) {
                 m_accountModuleMap[account->accountID()]->accountDownload();
@@ -118,7 +128,7 @@ void DAccountManageModule::setTimeFormatType(const int timeType)
 {
     if (m_generalSetting->timeShowType() != timeType) {
         m_generalSetting->setTimeShowType(static_cast<DCalendarGeneralSettings::TimeShowType>(timeType));
-        m_accountManagerDB->setCalendarGeneralSettings(m_generalSetting);
+        setGeneralSettings(m_generalSetting);
         foreach (auto account, m_accountList) {
             if (account->accountType() == DAccount::Account_UnionID) {
                 m_accountModuleMap[account->accountID()]->accountDownload();
@@ -312,6 +322,37 @@ void DAccountManageModule::setUidSwitchStatus(const DAccount::Ptr &account)
     account->setAccountState(accountState);
 }
 
+// 获取通用配置
+DCalendarGeneralSettings::Ptr DAccountManageModule::getGeneralSettings()
+{
+    auto cg = m_accountManagerDB->getCalendarGeneralSettings();
+    // 如果读取控制中心的配置失败，则使用数据库的配置
+    if (!m_reginFormatConfig->isValid()) {
+        qWarning() << "regin format config invalid";
+        return cg;
+    }
+    bool ok;
+    auto dayofWeek = Qt::DayOfWeek(m_reginFormatConfig->value(firstDayOfWeek_key).toInt(&ok));
+    if (ok) {
+        cg->setFirstDayOfWeek(dayofWeek);
+    } else {
+        qWarning() << "Unable to get first day of week from control center";
+    }
+    auto shortTimeFormat = m_reginFormatConfig->value(shortTimeFormat_key).toString();
+    if (shortTimeFormat.contains("ap")) {
+        cg->setTimeShowType(DCalendarGeneralSettings::Twelve);
+    } else {
+        cg->setTimeShowType(DCalendarGeneralSettings::TwentyFour);
+    }
+    return cg;
+}
+
+// 更改通用配置
+void DAccountManageModule::setGeneralSettings(const DCalendarGeneralSettings::Ptr &cgSet)
+{
+    m_accountManagerDB->setCalendarGeneralSettings(cgSet);
+};
+
 void DAccountManageModule::slotFirstDayOfWeek(const int firstDay)
 {
     if (getfirstDayOfWeek() != firstDay) {
@@ -423,7 +464,7 @@ void DAccountManageModule::slotSwitcherChange(const bool state)
 
 void DAccountManageModule::slotSettingChange()
 {
-    DCalendarGeneralSettings::Ptr newSetting = m_accountManagerDB->getCalendarGeneralSettings();
+    DCalendarGeneralSettings::Ptr newSetting = getGeneralSettings();
     if (newSetting->firstDayOfWeek() != m_generalSetting->firstDayOfWeek()) {
         m_generalSetting->setFirstDayOfWeek(newSetting->firstDayOfWeek());
         emit firstDayOfWeekChange();
