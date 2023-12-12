@@ -22,10 +22,6 @@
 
 #include <qglobal.h>
 
-const QString ControlCenterDBusName = "org.deepin.dde.ControlCenter1";
-const QString ControlCenterDBusPath = "/org/deepin/dde/ControlCenter1";
-const QString ControlCenterPage = "datetime/region";
-
 using namespace SettingWidget;
 //静态的翻译不会真的翻译，但是会更新ts文件
 //像static QString a = QObject::tr("hello"), a实际等于hello，但是ts会有hello这个词条
@@ -146,19 +142,26 @@ static CalendarSettingSetting setting_general = {
             "general",
             QObject::tr("General"),
             {
-                { "firstday", QObject::tr("First day of week"), "FirstDayofWeek", "", "Sunday" },
-                { "time", QObject::tr("Time"), "Time", "" },
-                { "control-center-button", "", "ControlCenterLink", "" },
-            },
-        },
+                {
+                    "firstday",                       //key
+                    QObject::tr("First day of week"), //name
+                    "FirstDayofWeek",                 //type
+                    "",                               //default
+                    "Sunday"                          //text
+                },
+
+                {
+                    "time",               //key
+                    QObject::tr("Time"),  //name
+                    "Time",               //type
+                    ""                    //default
+                }
+            }
+        }
     }
 };
 CSettingDialog::CSettingDialog(QWidget *parent) : DSettingsDialog(parent)
 {
-    m_controlCenterProxy = new ControlCenterProxy(ControlCenterDBusName,
-                                                  ControlCenterDBusPath,
-                                                  QDBusConnection::sessionBus(),
-                                                  this);
     initWidget();
     initConnect();
     initData();
@@ -173,7 +176,6 @@ void CSettingDialog::initView()
     widgetFactory()->registerWidget("login",              UserloginWidget::createloginButton);
     widgetFactory()->registerWidget("FirstDayofWeek",     std::bind(&CSettingDialog::createFirstDayofWeekWidget,  this, std::placeholders::_1));
     widgetFactory()->registerWidget("Time",               std::bind(&CSettingDialog::createTimeTypeWidget,        this, std::placeholders::_1));
-    widgetFactory()->registerWidget("ControlCenterLink",  std::bind(&CSettingDialog::createControlCenterLink,     this, std::placeholders::_1));
     widgetFactory()->registerWidget("AccountCombobox",    std::bind(&CSettingDialog::createAccountCombobox,       this, std::placeholders::_1));
     widgetFactory()->registerWidget("JobTypeListView",    std::bind(&CSettingDialog::createJobTypeListView,       this, std::placeholders::_1));
     widgetFactory()->registerWidget("SyncTagRadioButton", std::bind(&CSettingDialog::createSyncTagRadioButton,    this, std::placeholders::_1));
@@ -283,6 +285,8 @@ void CSettingDialog::initConnect()
     connect(gAccountManager, &AccountManager::signalAccountUpdate, this, &CSettingDialog::slotAccountUpdate);
     connect(gAccountManager, &AccountManager::signalLogout, this, &CSettingDialog::slotLogout);
     connect(gAccountManager, &AccountManager::signalAccountStateChange, this, &CSettingDialog::slotAccountStateChange);
+    connect(m_firstDayofWeekCombobox, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &CSettingDialog::slotFirstDayofWeekCurrentChanged);
+    connect(m_timeTypeCombobox, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &CSettingDialog::slotTimeTypeCurrentChanged);
     connect(m_accountComboBox, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &CSettingDialog::slotAccountCurrentChanged);
     connect(m_typeAddBtn, &DIconButton::clicked, this, &CSettingDialog::slotTypeAddBtnClickded);
     connect(m_typeImportBtn, &DIconButton::clicked, this, &CSettingDialog::slotTypeImportBtnClickded);
@@ -333,29 +337,36 @@ void CSettingDialog::initWidgetDisplayStatus()
 
 void CSettingDialog::initFirstDayofWeekWidget()
 {
-    m_firstDayofWeekWidget = new QWidget(this);
+    m_firstDayofWeekWidget = new QWidget();
 
-    m_firstDayofWeekLabel = new QLabel(m_firstDayofWeekWidget);
+    m_firstDayofWeekCombobox = new QComboBox(m_firstDayofWeekWidget);
+    m_firstDayofWeekCombobox->setFixedSize(150, 36);
+    m_firstDayofWeekCombobox->addItem(tr("Sunday"));
+    m_firstDayofWeekCombobox->addItem(tr("Monday"));
+
     QHBoxLayout *layout = new QHBoxLayout(m_firstDayofWeekWidget);
     layout->setContentsMargins(0, 0, 0, 0);
     layout->setSpacing(0);
     layout->addStretch(10);
-    layout->addWidget(m_firstDayofWeekLabel, 1);
+    layout->addWidget(m_firstDayofWeekCombobox, 1);
 
     m_firstDayofWeekWidget->setLayout(layout);
 }
 
 void CSettingDialog::initTimeTypeWidget()
 {
-    m_timeTypeWidget = new QWidget(this);
+    m_timeTypeWidget = new QWidget();
 
-    m_timeTypeLabel = new QLabel(m_timeTypeWidget);
+    m_timeTypeCombobox = new QComboBox(m_timeTypeWidget);
+    m_timeTypeCombobox->setFixedSize(150, 36);
+    m_timeTypeCombobox->addItem(tr("24-hour clock"));
+    m_timeTypeCombobox->addItem(tr("12-hour clock"));
 
     QHBoxLayout *layout = new QHBoxLayout(m_timeTypeWidget);
     layout->setContentsMargins(0, 0, 0, 0);
     layout->setSpacing(0);
     layout->addStretch(10);
-    layout->addWidget(m_timeTypeLabel, 1);
+    layout->addWidget(m_timeTypeCombobox, 1);
 
     m_timeTypeWidget->setLayout(layout);
 }
@@ -582,34 +593,31 @@ void CSettingDialog::slotAccountStateChange()
 
 void CSettingDialog::setFirstDayofWeek(int value)
 {
-    if (!m_firstDayofWeekLabel) {
+    if (!m_firstDayofWeekCombobox) {
         return;
     }
-    if (value < 1 || value > 7) {
-        value = 1;
+    //设置一周首日并刷新界面
+    if (value == 1) {
+        m_firstDayofWeekCombobox->setCurrentIndex(1);
+        gCalendarManager->setFirstDayOfWeek(1, true);
+    } else {
+        m_firstDayofWeekCombobox->setCurrentIndex(0);
+        gCalendarManager->setFirstDayOfWeek(7, true);
     }
-    QHash<Qt::DayOfWeek, QString> m = {
-        { Qt::DayOfWeek::Monday, tr("Monday") }, 
-        { Qt::DayOfWeek::Tuesday, tr("Tuesday") },
-        { Qt::DayOfWeek::Wednesday, tr("Wednesday") },
-        { Qt::DayOfWeek::Thursday, tr("Thursday") },
-        { Qt::DayOfWeek::Friday, tr("Friday") },
-        { Qt::DayOfWeek::Saturday, tr("Saturday") },
-        { Qt::DayOfWeek::Sunday, tr("Sunday") },
-    };
-    m_firstDayofWeekLabel->setText(m.value(Qt::DayOfWeek(value)));
 }
+
 
 void CSettingDialog::setTimeType(int value)
 {
-    if (!m_timeTypeLabel) {
+    if (!m_timeTypeCombobox) {
         return;
     }
-    if (value == DCalendarGeneralSettings::Twelve) {
-        m_timeTypeLabel->setText(tr("12-hour clock"));
-    } else {
-        m_timeTypeLabel->setText(tr("24-hour clock"));
+    if (value > 1 || value < 0) {
+        value = 0;
     }
+    //设置时间显示格式并刷新界面
+    m_timeTypeCombobox->setCurrentIndex(value);
+    gCalendarManager->setTimeShowType(value, true);
 }
 
 void CSettingDialog::accountUpdate()
@@ -733,24 +741,4 @@ QWidget *CSettingDialog::createJobTypeListView(QObject *)
 DIconButton *CSettingDialog::createTypeAddButton()
 {
     return m_typeAddBtn;
-}
-
-QWidget *CSettingDialog::createControlCenterLink(QObject *obj)
-{
-    DLabel *myLabel = new DLabel(tr("Please go to the <a href='/'>Control Center</a> to change settings"), this);
-    myLabel->setTextFormat(Qt::RichText);
-    myLabel->setFixedHeight(36);
-    connect(myLabel, &DLabel::linkActivated, this, [this]{
-        qDebug() << "open control center";
-        this->m_controlCenterProxy->ShowPage(ControlCenterPage);
-    });
-    auto w = new QWidget(this);
-    QHBoxLayout *layout = new QHBoxLayout(w);
-    layout->setContentsMargins(0, 0, 10, 0);
-    layout->setSpacing(0);
-    layout->addStretch(10);
-    layout->addWidget(myLabel, 1);
-
-    w->setLayout(layout);
-    return w;
 }

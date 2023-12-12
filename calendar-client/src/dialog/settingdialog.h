@@ -7,10 +7,8 @@
 
 #include "settingWidget/settingwidgets.h"
 #include "doanetworkdbus.h"
-#include "controlCenterProxy.h"
 #include <DSettingsDialog>
 #include <DIconButton>
-#include <DCommandLinkButton>
 
 DWIDGET_USE_NAMESPACE
 
@@ -29,7 +27,6 @@ private:
     QWidget *createManualSyncButton(QObject *obj);
     QWidget *createJobTypeListView(QObject *obj);
     DIconButton *createTypeAddButton();
-    QWidget *createControlCenterLink(QObject *obj);
 
 public slots:
     void slotGeneralSettingsUpdate();
@@ -77,11 +74,11 @@ private:
 private:
     //一周首日
     QWidget *m_firstDayofWeekWidget = nullptr;
-    QLabel *m_firstDayofWeekLabel= nullptr;
+    QComboBox *m_firstDayofWeekCombobox = nullptr;
 
     //时间格式
     QWidget *m_timeTypeWidget = nullptr;
-    QLabel *m_timeTypeLabel = nullptr;
+    QComboBox *m_timeTypeCombobox = nullptr;
 
     //帐户选择
     QComboBox *m_accountComboBox = nullptr;
@@ -100,7 +97,6 @@ private:
     DOANetWorkDBus *m_ptrNetworkState;
     SettingWidget::SyncTagRadioButton *m_radiobuttonAccountCalendar = nullptr;
     SettingWidget::SyncTagRadioButton *m_radiobuttonAccountSetting = nullptr;
-    ControlCenterProxy *m_controlCenterProxy;
 };
 
 #endif // SETTINGDIALOG_H
