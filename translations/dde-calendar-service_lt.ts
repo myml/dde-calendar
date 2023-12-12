@@ -9,7 +9,7 @@
     </message>
     <message>
         <source>Network error</source>
-        <translation>Tinklo klaida</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Server exception</source>
@@ -35,63 +35,63 @@
     <name>CColorPickerWidget</name>
     <message>
         <source>Color</source>
-        <translation>Spalva</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Atsisakyti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save</source>
         <comment>button</comment>
-        <translation>Įrašyti</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CDayMonthView</name>
     <message>
         <source>Monday</source>
-        <translation>Pirmadienis</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tuesday</source>
-        <translation>Antradienis</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Wednesday</source>
-        <translation>Trečiadienis</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Thursday</source>
-        <translation>Ketvirtadienis</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Friday</source>
-        <translation>Penktadienis</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Saturday</source>
-        <translation>Šeštadienis</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sunday</source>
-        <translation>Sekmadienis</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CDayWindow</name>
     <message>
         <source>Y</source>
-        <translation>M</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>M</source>
-        <translation>m</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>D</source>
-        <translation>d</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Lunar</source>
@@ -102,7 +102,7 @@
     <name>CGraphicsView</name>
     <message>
         <source>New Event</source>
-        <translation>Naujas įvykis</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -116,18 +116,18 @@
     <name>CMonthView</name>
     <message>
         <source>New event</source>
-        <translation>Naujas įvykis</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>New Event</source>
-        <translation>Naujas įvykis</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CMonthWindow</name>
     <message>
         <source>Y</source>
-        <translation>M</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -139,17 +139,17 @@
     <message>
         <source>OK</source>
         <comment>button</comment>
-        <translation>Gerai</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
         <comment>button</comment>
-        <translation>Ištrinti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Edit</source>
         <comment>button</comment>
-        <translation>Redaguoti</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -163,7 +163,7 @@
     <name>CScheduleDlg</name>
     <message>
         <source>New Event</source>
-        <translation>Naujas įvykis</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Edit Event</source>
@@ -176,11 +176,11 @@
     <message>
         <source>OK</source>
         <comment>button</comment>
-        <translation>Gerai</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Never</source>
-        <translation>Niekada</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>At time of event</source>
@@ -228,11 +228,11 @@
     </message>
     <message>
         <source>Type:</source>
-        <translation>Tipas:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Description:</source>
-        <translation>Aprašas:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>All Day:</source>
@@ -260,19 +260,19 @@
     </message>
     <message>
         <source>Calendar account:</source>
-        <translation>Kalendoriaus paskyra:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Calendar account</source>
-        <translation>Kalendoriaus paskyra</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Tipas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Description</source>
-        <translation>Aprašas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>All Day</source>
@@ -284,7 +284,7 @@
     </message>
     <message>
         <source>Time</source>
-        <translation>Laikas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Solar</source>
@@ -308,7 +308,7 @@
     </message>
     <message>
         <source>Repeat</source>
-        <translation>Pakartokite</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Daily</source>
@@ -340,17 +340,17 @@
     </message>
     <message>
         <source>On</source>
-        <translation>Įjungta</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Atsisakyti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save</source>
         <comment>button</comment>
-        <translation>Įrašyti</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -366,7 +366,7 @@
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Atsisakyti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Change All</source>
@@ -382,12 +382,12 @@
     </message>
     <message>
         <source>Are you sure you want to delete this event?</source>
-        <translation>Ar tikrai norite ištrinti šį įvykį?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
         <comment>button</comment>
-        <translation>Ištrinti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Do you want to delete all occurrences of this event, or only the selected occurrence?</source>
@@ -440,33 +440,33 @@
     <message>
         <source>OK</source>
         <comment>button</comment>
-        <translation>Gerai</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CScheduleSearchDateItem</name>
     <message>
         <source>Y</source>
-        <translation>M</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>M</source>
-        <translation>m</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>D</source>
-        <translation>d</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CScheduleSearchItem</name>
     <message>
         <source>Edit</source>
-        <translation>Redaguoti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Ištrinti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>All Day</source>
@@ -477,7 +477,7 @@
     <name>CScheduleSearchView</name>
     <message>
         <source>No search results</source>
-        <translation>Paieškos rezultatų nėra</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -490,67 +490,11 @@
 <context>
     <name>CSettingDialog</name>
     <message>
-        <source>import ICS file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Manual</source>
-        <translation>Rankinis</translation>
-    </message>
-    <message>
-        <source>15 mins</source>
-        <translation>15 minučių</translation>
-    </message>
-    <message>
-        <source>30 mins</source>
-        <translation>30 minučių</translation>
-    </message>
-    <message>
-        <source>1 hour</source>
-        <translation>1 valanda</translation>
-    </message>
-    <message>
-        <source>24 hours</source>
-        <translation>24 valandos</translation>
-    </message>
-    <message>
-        <source>Sync Now</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Last sync</source>
+        <source>Sunday</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Monday</source>
-        <translation>Pirmadienis</translation>
-    </message>
-    <message>
-        <source>Tuesday</source>
-        <translation type="unfinished">Antradienis</translation>
-    </message>
-    <message>
-        <source>Wednesday</source>
-        <translation type="unfinished">Trečiadienis</translation>
-    </message>
-    <message>
-        <source>Thursday</source>
-        <translation type="unfinished">Ketvirtadienis</translation>
-    </message>
-    <message>
-        <source>Friday</source>
-        <translation type="unfinished">Penktadienis</translation>
-    </message>
-    <message>
-        <source>Saturday</source>
-        <translation type="unfinished">Šeštadienis</translation>
-    </message>
-    <message>
-        <source>Sunday</source>
-        <translation>Sekmadienis</translation>
-    </message>
-    <message>
-        <source>12-hour clock</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -558,7 +502,35 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Please go to the &lt;a href=&apos;/&apos;&gt;Control Center&lt;/a&gt; to change settings</source>
+        <source>12-hour clock</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Manual</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>15 mins</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>30 mins</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>1 hour</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>24 hours</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Sync Now</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Last sync</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -581,11 +553,11 @@
     <name>CTitleWidget</name>
     <message>
         <source>Y</source>
-        <translation>M</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>M</source>
-        <translation>m</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>W</source>
@@ -593,7 +565,7 @@
     </message>
     <message>
         <source>D</source>
-        <translation>d</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Search events and festivals</source>
@@ -604,42 +576,42 @@
     <name>CWeekWidget</name>
     <message>
         <source>Sun</source>
-        <translation>Sek</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Mon</source>
-        <translation>Pir</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tue</source>
-        <translation>Ant</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Wed</source>
-        <translation>Tre</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Thu</source>
-        <translation>Ket</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Fri</source>
-        <translation>Pen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sat</source>
-        <translation>Šeš</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CWeekWindow</name>
     <message>
         <source>Week</source>
-        <translation>Savaitė</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Y</source>
-        <translation>M</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -657,14 +629,14 @@
     <name>CYearWindow</name>
     <message>
         <source>Y</source>
-        <translation>M</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CalendarWindow</name>
     <message>
         <source>Calendar</source>
-        <translation>Kalendorius</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Calendar is a tool to view dates, and also a smart daily planner to schedule all things in life. </source>
@@ -675,7 +647,7 @@
     <name>Calendarmainwindow</name>
     <message>
         <source>Calendar</source>
-        <translation>Kalendorius</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Manage</source>
@@ -687,7 +659,7 @@
     </message>
     <message>
         <source>Syncing...</source>
-        <translation>Sinchronizuojama...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sync successful</source>
@@ -772,31 +744,23 @@
     <name>DragInfoGraphicsView</name>
     <message>
         <source>Edit</source>
-        <translation>Redaguoti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Ištrinti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>New event</source>
-        <translation>Naujas įvykis</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>New Event</source>
-        <translation>Naujas įvykis</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>JobTypeListView</name>
-    <message>
-        <source>export</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>import ICS file</source>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
         <source>You are deleting an event type.</source>
         <translation type="unfinished"></translation>
@@ -808,23 +772,23 @@
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Atsisakyti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
         <comment>button</comment>
-        <translation>Ištrinti</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
         <source>Account settings</source>
-        <translation>Paskyros nustatymai</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Account</source>
-        <translation>Paskyra</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Select items to be synced</source>
@@ -844,11 +808,11 @@
     </message>
     <message>
         <source>Manage calendar</source>
-        <translation>Tvarkyti kalendorių</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Calendar account</source>
-        <translation type="unfinished">Kalendoriaus paskyra</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Event types</source>
@@ -856,7 +820,7 @@
     </message>
     <message>
         <source>General</source>
-        <translation>Bendra</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>First day of week</source>
@@ -864,7 +828,7 @@
     </message>
     <message>
         <source>Time</source>
-        <translation>Laikas</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -872,7 +836,7 @@
     <message>
         <source>Today</source>
         <comment>Return</comment>
-        <translation>Šiandien</translation>
+        <translation type="unfinished">Šiandien</translation>
     </message>
 </context>
 <context>
@@ -880,7 +844,7 @@
     <message>
         <source>Today</source>
         <comment>Return Today</comment>
-        <translation>Šiandien</translation>
+        <translation type="unfinished">Šiandien</translation>
     </message>
 </context>
 <context>
@@ -894,30 +858,22 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Import ICS file</source>
+        <source>Name:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Name:</source>
-        <translation>Pavadinimas:</translation>
-    </message>
-    <message>
         <source>Color:</source>
-        <translation>Spalva:</translation>
-    </message>
-    <message>
-        <source>&lt;a href=&apos;https://wikipedia.org/wiki/ICalendar&apos;&gt;ICS&lt;/a&gt; File:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Atsisakyti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save</source>
         <comment>button</comment>
-        <translation>Įrašyti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>The name can not only contain whitespaces</source>
@@ -932,42 +888,42 @@
     <name>Shortcut</name>
     <message>
         <source>Help</source>
-        <translation>Žinynas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete event</source>
-        <translation>Ištrinti įvykį</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Kopijuoti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cut</source>
-        <translation>Iškirpti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Paste</source>
-        <translation>Įdėti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Ištrinti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation>Žymėti viską</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>SidebarCalendarWidget</name>
     <message>
         <source>Y</source>
-        <translation>M</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>M</source>
-        <translation>m</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -983,19 +939,19 @@
     <message>
         <source>Sign In</source>
         <comment>button</comment>
-        <translation>Prisijungti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sign Out</source>
         <comment>button</comment>
-        <translation>Atsijungti</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>YearFrame</name>
     <message>
         <source>Y</source>
-        <translation>M</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1003,7 +959,7 @@
     <message>
         <source>Today</source>
         <comment>Today</comment>
-        <translation>Šiandien</translation>
+        <translation type="unfinished">Šiandien</translation>
     </message>
 </context>
 </TS>

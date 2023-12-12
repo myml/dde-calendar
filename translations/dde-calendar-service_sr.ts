@@ -35,121 +35,121 @@
     <name>CColorPickerWidget</name>
     <message>
         <source>Color</source>
-        <translation>Боја</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Откажи</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save</source>
         <comment>button</comment>
-        <translation>Сачувај</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CDayMonthView</name>
     <message>
         <source>Monday</source>
-        <translation>Понедељак</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tuesday</source>
-        <translation>Уторак</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Wednesday</source>
-        <translation>Среда</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Thursday</source>
-        <translation>Четвртак</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Friday</source>
-        <translation>Петак</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Saturday</source>
-        <translation>Субота</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sunday</source>
-        <translation>Недеља</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CDayWindow</name>
     <message>
         <source>Y</source>
-        <translation>Г</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>M</source>
-        <translation>М</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>D</source>
-        <translation>Д</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Lunar</source>
-        <translation>Лунарно</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CGraphicsView</name>
     <message>
         <source>New Event</source>
-        <translation>Нови догађај</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CMonthScheduleNumItem</name>
     <message>
         <source>%1 more</source>
-        <translation>Још %1</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CMonthView</name>
     <message>
         <source>New event</source>
-        <translation>Нови догађај</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>New Event</source>
-        <translation>Нови догађај</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CMonthWindow</name>
     <message>
         <source>Y</source>
-        <translation>Г</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CMyScheduleView</name>
     <message>
         <source>My Event</source>
-        <translation>Мој догађај</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>OK</source>
         <comment>button</comment>
-        <translation>У реду</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
         <comment>button</comment>
-        <translation>Обриши</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Edit</source>
         <comment>button</comment>
-        <translation>Уреди</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -163,60 +163,60 @@
     <name>CScheduleDlg</name>
     <message>
         <source>New Event</source>
-        <translation>Нови догађај</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Edit Event</source>
-        <translation>Уреди догађај</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>End time must be greater than start time</source>
-        <translation>Крајње време мора бити након почетног</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>OK</source>
         <comment>button</comment>
-        <translation>У реду</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Never</source>
-        <translation>Никад</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>At time of event</source>
-        <translation>У време догађаја</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>15 minutes before</source>
-        <translation>15 минута раније</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>30 minutes before</source>
-        <translation>30 минута раније</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>1 hour before</source>
-        <translation>1 сат раније</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>1 day before</source>
-        <translation>1 дан раније</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>2 days before</source>
-        <translation>2 дана раније</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>1 week before</source>
-        <translation>1 седмица раније</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>On start day (9:00 AM)</source>
-        <translation>На дан почетка (9:00 АМ)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>time(s)</source>
-        <translation>пут(а)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Enter a name please</source>
@@ -228,35 +228,35 @@
     </message>
     <message>
         <source>Type:</source>
-        <translation>Врста:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Description:</source>
-        <translation>Опис:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>All Day:</source>
-        <translation>Цео дан:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Starts:</source>
-        <translation>Почетак:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ends:</source>
-        <translation>Крај:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Remind Me:</source>
-        <translation>Подсетник:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Repeat:</source>
-        <translation>Понови:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>End Repeat:</source>
-        <translation>Окончај:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Calendar account:</source>
@@ -268,15 +268,15 @@
     </message>
     <message>
         <source>Type</source>
-        <translation>Врста</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Description</source>
-        <translation>Опис</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>All Day</source>
-        <translation>Цео дан</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Time:</source>
@@ -284,7 +284,7 @@
     </message>
     <message>
         <source>Time</source>
-        <translation>Време</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Solar</source>
@@ -292,146 +292,146 @@
     </message>
     <message>
         <source>Lunar</source>
-        <translation>Лунарно</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Starts</source>
-        <translation>Почетак</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ends</source>
-        <translation>Крај</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Remind Me</source>
-        <translation>Подсетник</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Repeat</source>
-        <translation>Понови</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Daily</source>
-        <translation>Свакодневно</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Weekdays</source>
-        <translation>Радним данима</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Weekly</source>
-        <translation>Седмично</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Monthly</source>
-        <translation>Месечно</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Yearly</source>
-        <translation>Годишње</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>End Repeat</source>
-        <translation>Окончај</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>After</source>
-        <translation>Након</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>On</source>
-        <translation>Укључ.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Откажи</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save</source>
         <comment>button</comment>
-        <translation>Сачувај</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CScheduleOperation</name>
     <message>
         <source>All occurrences of a repeating event must have the same all-day status.</source>
-        <translation>Све појаве понављајућег догађаја морају имати исти целодневни статус.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Do you want to change all occurrences?</source>
-        <translation>Желите ли да промените све појаве?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Откажи</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Change All</source>
-        <translation>Промени све</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>You are changing the repeating rule of this event.</source>
-        <translation>Мењате правило понављања овог догађаја.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>You are deleting an event.</source>
-        <translation>Бришете догађај.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Are you sure you want to delete this event?</source>
-        <translation>Заиста желите да обришете овај догађај?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
         <comment>button</comment>
-        <translation>Обриши</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Do you want to delete all occurrences of this event, or only the selected occurrence?</source>
-        <translation>Да ли желите да обришете све појаве овог догађаја или само изабрану ставку?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete All</source>
-        <translation>Обриши све</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete Only This Event</source>
-        <translation>Обриши само овај догађај</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Do you want to delete this and all future occurrences of this event, or only the selected occurrence?</source>
-        <translation>Желите ли да обришете ову и све будуће појаве овог догађаја или само изабрану ставку?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete All Future Events</source>
-        <translation>Обриши све будуће догађаје</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>You are changing a repeating event.</source>
-        <translation>Мењате понаљајући догађај.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Do you want to change only this occurrence of the event, or all occurrences?</source>
-        <translation>Желите ли да промените само ову појаву догађаја или све?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>All</source>
-        <translation>Све</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Only This Event</source>
-        <translation>Само овај догађај</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Do you want to change only this occurrence of the event, or this and all future occurrences?</source>
-        <translation>Желите ли да промените ову појаву догађаја или ову појаву и све будуће појаве?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>All Future Events</source>
-        <translation>Сви будући догађаји</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>You have selected a leap month, and will be reminded according to the rules of the lunar calendar.</source>
@@ -440,62 +440,74 @@
     <message>
         <source>OK</source>
         <comment>button</comment>
-        <translation>У реду</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CScheduleSearchDateItem</name>
     <message>
         <source>Y</source>
-        <translation>Г</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>M</source>
-        <translation>М</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>D</source>
-        <translation>Д</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CScheduleSearchItem</name>
     <message>
         <source>Edit</source>
-        <translation>Уреди</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Обриши</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>All Day</source>
-        <translation>Цео дан</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CScheduleSearchView</name>
     <message>
         <source>No search results</source>
-        <translation>Нема резултата претраге</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CScheduleView</name>
     <message>
         <source>ALL DAY</source>
-        <translation>ЦЕО ДАН</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CSettingDialog</name>
     <message>
-        <source>import ICS file</source>
+        <source>Sunday</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Monday</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>24-hour clock</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>12-hour clock</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Manual</source>
-        <translation>Ручно</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>15 mins</source>
@@ -507,7 +519,7 @@
     </message>
     <message>
         <source>1 hour</source>
-        <translation>1 сат</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>24 hours</source>
@@ -519,46 +531,6 @@
     </message>
     <message>
         <source>Last sync</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Monday</source>
-        <translation>Понедељак</translation>
-    </message>
-    <message>
-        <source>Tuesday</source>
-        <translation type="unfinished">Уторак</translation>
-    </message>
-    <message>
-        <source>Wednesday</source>
-        <translation type="unfinished">Среда</translation>
-    </message>
-    <message>
-        <source>Thursday</source>
-        <translation type="unfinished">Четвртак</translation>
-    </message>
-    <message>
-        <source>Friday</source>
-        <translation type="unfinished">Петак</translation>
-    </message>
-    <message>
-        <source>Saturday</source>
-        <translation type="unfinished">Субота</translation>
-    </message>
-    <message>
-        <source>Sunday</source>
-        <translation>Недеља</translation>
-    </message>
-    <message>
-        <source>12-hour clock</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>24-hour clock</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Please go to the &lt;a href=&apos;/&apos;&gt;Control Center&lt;/a&gt; to change settings</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -581,19 +553,19 @@
     <name>CTitleWidget</name>
     <message>
         <source>Y</source>
-        <translation>Г</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>M</source>
-        <translation>М</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>W</source>
-        <translation>С</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>D</source>
-        <translation>Д</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Search events and festivals</source>
@@ -604,78 +576,78 @@
     <name>CWeekWidget</name>
     <message>
         <source>Sun</source>
-        <translation>Нед</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Mon</source>
-        <translation>Пон</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tue</source>
-        <translation>уто</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Wed</source>
-        <translation>Сре</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Thu</source>
-        <translation>чет</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Fri</source>
-        <translation>Пет</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sat</source>
-        <translation>Суб</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CWeekWindow</name>
     <message>
         <source>Week</source>
-        <translation>Седмица</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Y</source>
-        <translation>Г</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CYearScheduleView</name>
     <message>
         <source>All Day</source>
-        <translation>Цео дан</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>No event</source>
-        <translation>Нема догађаја</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CYearWindow</name>
     <message>
         <source>Y</source>
-        <translation>Г</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CalendarWindow</name>
     <message>
         <source>Calendar</source>
-        <translation>Календар</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Calendar is a tool to view dates, and also a smart daily planner to schedule all things in life. </source>
-        <translation>Календар је алат за приказ датума и паметани роковник за подсећање на све догађаје у животу.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Calendarmainwindow</name>
     <message>
         <source>Calendar</source>
-        <translation>Календар</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Manage</source>
@@ -683,11 +655,11 @@
     </message>
     <message>
         <source>Privacy Policy</source>
-        <translation>Политика приватности</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Syncing...</source>
-        <translation>Синхронизација...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sync successful</source>
@@ -702,7 +674,7 @@
     <name>CenterWidget</name>
     <message>
         <source>All Day</source>
-        <translation>Цео дан</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -772,31 +744,23 @@
     <name>DragInfoGraphicsView</name>
     <message>
         <source>Edit</source>
-        <translation>Уреди</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Обриши</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>New event</source>
-        <translation>Нови догађај</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>New Event</source>
-        <translation>Нови догађај</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>JobTypeListView</name>
-    <message>
-        <source>export</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>import ICS file</source>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
         <source>You are deleting an event type.</source>
         <translation type="unfinished"></translation>
@@ -808,12 +772,12 @@
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Откажи</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
         <comment>button</comment>
-        <translation>Обриши</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -824,7 +788,7 @@
     </message>
     <message>
         <source>Account</source>
-        <translation>Налог</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Select items to be synced</source>
@@ -856,7 +820,7 @@
     </message>
     <message>
         <source>General</source>
-        <translation>Опште</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>First day of week</source>
@@ -864,7 +828,7 @@
     </message>
     <message>
         <source>Time</source>
-        <translation>Време</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -872,7 +836,7 @@
     <message>
         <source>Today</source>
         <comment>Return</comment>
-        <translation>Данас</translation>
+        <translation type="unfinished">Данас</translation>
     </message>
 </context>
 <context>
@@ -880,7 +844,7 @@
     <message>
         <source>Today</source>
         <comment>Return Today</comment>
-        <translation>Данас</translation>
+        <translation type="unfinished">Данас</translation>
     </message>
 </context>
 <context>
@@ -894,30 +858,22 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Import ICS file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Name:</source>
-        <translation>Име:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Color:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>&lt;a href=&apos;https://wikipedia.org/wiki/ICalendar&apos;&gt;ICS&lt;/a&gt; File:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Откажи</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save</source>
         <comment>button</comment>
-        <translation>Сачувај</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>The name can not only contain whitespaces</source>
@@ -932,42 +888,42 @@
     <name>Shortcut</name>
     <message>
         <source>Help</source>
-        <translation>Помоћ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete event</source>
-        <translation>Обриши догађај</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Копирај</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cut</source>
-        <translation>Исеци</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Paste</source>
-        <translation>Убаци</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Обриши</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation>Изабери све</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>SidebarCalendarWidget</name>
     <message>
         <source>Y</source>
-        <translation>Г</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>M</source>
-        <translation>М</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -983,19 +939,19 @@
     <message>
         <source>Sign In</source>
         <comment>button</comment>
-        <translation>Пријави се</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sign Out</source>
         <comment>button</comment>
-        <translation>Одајави се</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>YearFrame</name>
     <message>
         <source>Y</source>
-        <translation>Г</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1003,7 +959,7 @@
     <message>
         <source>Today</source>
         <comment>Today</comment>
-        <translation>Данас</translation>
+        <translation type="unfinished">Данас</translation>
     </message>
 </context>
 </TS>

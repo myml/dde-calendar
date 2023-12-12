@@ -40,58 +40,58 @@
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>გაუქმება</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save</source>
         <comment>button</comment>
-        <translation>შენახვა</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CDayMonthView</name>
     <message>
         <source>Monday</source>
-        <translation>ორშაბათი</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tuesday</source>
-        <translation>სამშაბათი</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Wednesday</source>
-        <translation>ოთხშაბათი</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Thursday</source>
-        <translation>ხუთშაბათი</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Friday</source>
-        <translation>პარასკევი</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Saturday</source>
-        <translation>შაბათი</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sunday</source>
-        <translation>კვირა</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CDayWindow</name>
     <message>
         <source>Y</source>
-        <translation>წ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>M</source>
-        <translation>თ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>D</source>
-        <translation>დ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Lunar</source>
@@ -102,54 +102,54 @@
     <name>CGraphicsView</name>
     <message>
         <source>New Event</source>
-        <translation>ახალი ივენთი</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CMonthScheduleNumItem</name>
     <message>
         <source>%1 more</source>
-        <translation>%1 მეტი</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CMonthView</name>
     <message>
         <source>New event</source>
-        <translation>ახალი ივენთი</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>New Event</source>
-        <translation>ახალი ივენთი</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CMonthWindow</name>
     <message>
         <source>Y</source>
-        <translation>წ</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CMyScheduleView</name>
     <message>
         <source>My Event</source>
-        <translation>ჩემი ივენთები</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>OK</source>
         <comment>button</comment>
-        <translation>OK</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
         <comment>button</comment>
-        <translation>წაშლა</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Edit</source>
         <comment>button</comment>
-        <translation>რედაქტირება</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -163,60 +163,60 @@
     <name>CScheduleDlg</name>
     <message>
         <source>New Event</source>
-        <translation>ჩემი ივენთები</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Edit Event</source>
-        <translation>ივენთის რედაქტირება</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>End time must be greater than start time</source>
-        <translation>დასრულების დრო უნდა აღემატებოდეს დაწყების დროს</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>OK</source>
         <comment>button</comment>
-        <translation>OK</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Never</source>
-        <translation>არასდროს</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>At time of event</source>
-        <translation>ივენთის სრული დრო</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>15 minutes before</source>
-        <translation>15 წუთით ადრე</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>30 minutes before</source>
-        <translation>30 წუთით ადრე</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>1 hour before</source>
-        <translation>1 საათით ადრე</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>1 day before</source>
-        <translation>1 დღით ადრე</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>2 days before</source>
-        <translation>2 დღით ადრე</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>1 week before</source>
-        <translation>1 კვირით ადრე</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>On start day (9:00 AM)</source>
-        <translation>დრის დასაწყისში (9:00 AM)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>time(s)</source>
-        <translation>ჯერ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Enter a name please</source>
@@ -228,35 +228,35 @@
     </message>
     <message>
         <source>Type:</source>
-        <translation>ტიპი: </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Description:</source>
-        <translation>აღწერა: </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>All Day:</source>
-        <translation>მთელი დღე: </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Starts:</source>
-        <translation>დასაწყისი: </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ends:</source>
-        <translation>დასასრული: </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Remind Me:</source>
-        <translation>შემახსენე: </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Repeat:</source>
-        <translation>გამეორება: </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>End Repeat:</source>
-        <translation>გამეორების დასასრული: </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Calendar account:</source>
@@ -268,15 +268,15 @@
     </message>
     <message>
         <source>Type</source>
-        <translation>ტიპი</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Description</source>
-        <translation>აღწერა</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>All Day</source>
-        <translation>ყველა დღე</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Time:</source>
@@ -296,142 +296,142 @@
     </message>
     <message>
         <source>Starts</source>
-        <translation>დასაწყისი</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ends</source>
-        <translation>დასასრული</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Remind Me</source>
-        <translation>შემახსენე</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Repeat</source>
-        <translation>განმეორება</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Daily</source>
-        <translation>დღიური</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Weekdays</source>
-        <translation>ვიქენდი</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Weekly</source>
-        <translation>კვირეული</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Monthly</source>
-        <translation>თვიური</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Yearly</source>
-        <translation>წლიური</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>End Repeat</source>
-        <translation>განმეორების დასასრული</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>After</source>
-        <translation>შემდეგ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>On</source>
-        <translation>ზე</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>გაუქმება</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save</source>
         <comment>button</comment>
-        <translation>შენახვა</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CScheduleOperation</name>
     <message>
         <source>All occurrences of a repeating event must have the same all-day status.</source>
-        <translation>ყველა განმეორებად მოვლენებს უნდა ჰქონდეს ყველა დღის სტატუს</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Do you want to change all occurrences?</source>
-        <translation>გსურთი მოვლენების შეცვლა?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>გაუქმება</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Change All</source>
-        <translation>ყველას შეცვლა</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>You are changing the repeating rule of this event.</source>
-        <translation>თქვენ ცვლით განმეორების რულებს აღნიშნული ივენთისთვის</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>You are deleting an event.</source>
-        <translation>თქვენ შლით ივენთს</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Are you sure you want to delete this event?</source>
-        <translation>დაწრმუნებული ხართ, რომ გსურთ ამ ივენთის წაშლა?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
         <comment>button</comment>
-        <translation>წაშლა</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Do you want to delete all occurrences of this event, or only the selected occurrence?</source>
-        <translation>გსრუთ აღნიშნული მოვლენების ივენთიდან ამოშლა?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete All</source>
-        <translation>ყველას წაშლა</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete Only This Event</source>
-        <translation>მხოლოდ ამ ივენთის წაშლა</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Do you want to delete this and all future occurrences of this event, or only the selected occurrence?</source>
-        <translation>გსურთ წაშალოთ ყველა შემდგომი მოვლენა, თუ მხოლოდ არჩეული მოვლენები?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete All Future Events</source>
-        <translation>ყველა მომდევნო მოვლენის წაშლა</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>You are changing a repeating event.</source>
-        <translation>თქვენ ცვლით განმეორებად ივენთს</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Do you want to change only this occurrence of the event, or all occurrences?</source>
-        <translation>გსრუთ ყველა მოვლენის შეცვლა, თუ მხოლოდ მონიშნულის?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>All</source>
-        <translation>ყველა</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Only This Event</source>
-        <translation>მხოლოდ ეს ივენთი</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Do you want to change only this occurrence of the event, or this and all future occurrences?</source>
-        <translation>მხოლოდ ამ ერთი მოვლენის შეცვლა, თუ ყველა მომდევნო მოვლენის შეცვლა?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>All Future Events</source>
-        <translation>ყველა მომდევნო ივენთი</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>You have selected a leap month, and will be reminded according to the rules of the lunar calendar.</source>
@@ -440,62 +440,74 @@
     <message>
         <source>OK</source>
         <comment>button</comment>
-        <translation>OK</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CScheduleSearchDateItem</name>
     <message>
         <source>Y</source>
-        <translation>წ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>M</source>
-        <translation>თ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>D</source>
-        <translation>დ</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CScheduleSearchItem</name>
     <message>
         <source>Edit</source>
-        <translation>რედაქტირება</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>წაშლა</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>All Day</source>
-        <translation>ყველა დღე</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CScheduleSearchView</name>
     <message>
         <source>No search results</source>
-        <translation>არ არის ძებნის რეზულტატი</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CScheduleView</name>
     <message>
         <source>ALL DAY</source>
-        <translation>ყველა დღე</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CSettingDialog</name>
     <message>
-        <source>import ICS file</source>
+        <source>Sunday</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Monday</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>24-hour clock</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>12-hour clock</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Manual</source>
-        <translation>მექნიკურად</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>15 mins</source>
@@ -521,46 +533,6 @@
         <source>Last sync</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <source>Monday</source>
-        <translation>ორშაბათი</translation>
-    </message>
-    <message>
-        <source>Tuesday</source>
-        <translation type="unfinished">სამშაბათი</translation>
-    </message>
-    <message>
-        <source>Wednesday</source>
-        <translation type="unfinished">ოთხშაბათი</translation>
-    </message>
-    <message>
-        <source>Thursday</source>
-        <translation type="unfinished">ხუთშაბათი</translation>
-    </message>
-    <message>
-        <source>Friday</source>
-        <translation type="unfinished">პარასკევი</translation>
-    </message>
-    <message>
-        <source>Saturday</source>
-        <translation type="unfinished">შაბათი</translation>
-    </message>
-    <message>
-        <source>Sunday</source>
-        <translation>კვირა</translation>
-    </message>
-    <message>
-        <source>12-hour clock</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>24-hour clock</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Please go to the &lt;a href=&apos;/&apos;&gt;Control Center&lt;/a&gt; to change settings</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
     <name>CTimeEdit</name>
@@ -581,19 +553,19 @@
     <name>CTitleWidget</name>
     <message>
         <source>Y</source>
-        <translation>წ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>M</source>
-        <translation>თ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>W</source>
-        <translation>კ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>D</source>
-        <translation>დ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Search events and festivals</source>
@@ -635,47 +607,47 @@
     <name>CWeekWindow</name>
     <message>
         <source>Week</source>
-        <translation>კვირა</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Y</source>
-        <translation>წ</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CYearScheduleView</name>
     <message>
         <source>All Day</source>
-        <translation>ყველა დღე</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>No event</source>
-        <translation>არ არის ივენთი</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CYearWindow</name>
     <message>
         <source>Y</source>
-        <translation>წ</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CalendarWindow</name>
     <message>
         <source>Calendar</source>
-        <translation>კალენდარი</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Calendar is a tool to view dates, and also a smart daily planner to schedule all things in life. </source>
-        <translation>კალენდარი არის ხელსაწყო თარიღების სანახავად და გრაფიკის დასაგეგმად</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Calendarmainwindow</name>
     <message>
         <source>Calendar</source>
-        <translation>კალენდარი</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Manage</source>
@@ -702,7 +674,7 @@
     <name>CenterWidget</name>
     <message>
         <source>All Day</source>
-        <translation>ყველა დღე</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -772,31 +744,23 @@
     <name>DragInfoGraphicsView</name>
     <message>
         <source>Edit</source>
-        <translation>რედაქტირება</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>წაშლა</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>New event</source>
-        <translation>ახალი ივენთი</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>New Event</source>
-        <translation>ახალი ივენთი</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>JobTypeListView</name>
-    <message>
-        <source>export</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>import ICS file</source>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
         <source>You are deleting an event type.</source>
         <translation type="unfinished"></translation>
@@ -808,12 +772,12 @@
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>გაუქმება</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
         <comment>button</comment>
-        <translation>წაშლა</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -856,7 +820,7 @@
     </message>
     <message>
         <source>General</source>
-        <translation>ძირითადი</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>First day of week</source>
@@ -872,7 +836,7 @@
     <message>
         <source>Today</source>
         <comment>Return</comment>
-        <translation>დღეს</translation>
+        <translation type="unfinished">დღეს</translation>
     </message>
 </context>
 <context>
@@ -880,7 +844,7 @@
     <message>
         <source>Today</source>
         <comment>Return Today</comment>
-        <translation>დღეს</translation>
+        <translation type="unfinished">დღეს</translation>
     </message>
 </context>
 <context>
@@ -894,10 +858,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Import ICS file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Name:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -906,18 +866,14 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>&lt;a href=&apos;https://wikipedia.org/wiki/ICalendar&apos;&gt;ICS&lt;/a&gt; File:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>გაუქმება</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save</source>
         <comment>button</comment>
-        <translation>შენახვა</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>The name can not only contain whitespaces</source>
@@ -932,42 +888,42 @@
     <name>Shortcut</name>
     <message>
         <source>Help</source>
-        <translation>დახმარება</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete event</source>
-        <translation>ივენთის წაშლა</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>კოპირება</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cut</source>
-        <translation>ამოჭრა</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Paste</source>
-        <translation>ჩასმა</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>წაშლა</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation>ყველას მონიშნვა</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>SidebarCalendarWidget</name>
     <message>
         <source>Y</source>
-        <translation>წ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>M</source>
-        <translation>თ</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -995,7 +951,7 @@
     <name>YearFrame</name>
     <message>
         <source>Y</source>
-        <translation>წ</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1003,7 +959,7 @@
     <message>
         <source>Today</source>
         <comment>Today</comment>
-        <translation>დღეს</translation>
+        <translation type="unfinished">დღეს</translation>
     </message>
 </context>
 </TS>

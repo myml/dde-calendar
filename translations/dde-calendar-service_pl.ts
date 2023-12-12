@@ -5,560 +5,532 @@
     <name>AccountItem</name>
     <message>
         <source>Sync successful</source>
-        <translation>Synchronizacja zakończona</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Network error</source>
-        <translation>Błąd sieci</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Server exception</source>
-        <translation>Wyjątek serwera</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Storage full</source>
-        <translation>Pamięć zapełniona</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>AccountManager</name>
     <message>
         <source>Local account</source>
-        <translation>Konto lokalne</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Event types</source>
-        <translation>Typy wydarzeń</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CColorPickerWidget</name>
     <message>
         <source>Color</source>
-        <translation>Kolor</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Anuluj</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save</source>
         <comment>button</comment>
-        <translation>Zapisz</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CDayMonthView</name>
     <message>
         <source>Monday</source>
-        <translation>Poniedziałek</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tuesday</source>
-        <translation>Wtorek</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Wednesday</source>
-        <translation>Środa</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Thursday</source>
-        <translation>Czwartek</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Friday</source>
-        <translation>Piątek</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Saturday</source>
-        <translation>Sobota</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sunday</source>
-        <translation>Niedziela</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CDayWindow</name>
     <message>
         <source>Y</source>
-        <translation>R</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>M</source>
-        <translation>M</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>D</source>
-        <translation>D</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Lunar</source>
-        <translation>Księżycowy</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CGraphicsView</name>
     <message>
         <source>New Event</source>
-        <translation>Nowe wydarzenie</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CMonthScheduleNumItem</name>
     <message>
         <source>%1 more</source>
-        <translation>jeszcze 1%</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CMonthView</name>
     <message>
         <source>New event</source>
-        <translation>Nowe wydarzenie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>New Event</source>
-        <translation>Nowe wydarzenie</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CMonthWindow</name>
     <message>
         <source>Y</source>
-        <translation>R</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CMyScheduleView</name>
     <message>
         <source>My Event</source>
-        <translation>Moje wydarzenie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>OK</source>
         <comment>button</comment>
-        <translation>OK</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
         <comment>button</comment>
-        <translation>Usuń</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Edit</source>
         <comment>button</comment>
-        <translation>Edytuj</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CPushButton</name>
     <message>
         <source>New event type</source>
-        <translation>Nowy typ wydarzenia</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CScheduleDlg</name>
     <message>
         <source>New Event</source>
-        <translation>Nowe wydarzenie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Edit Event</source>
-        <translation>Edytuj wydarzenie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>End time must be greater than start time</source>
-        <translation>Czas zakończenia musi być późniejszy niż czas rozpoczęcia</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>OK</source>
         <comment>button</comment>
-        <translation>OK</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Never</source>
-        <translation>Nigdy</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>At time of event</source>
-        <translation>W czasie wydarzenia</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>15 minutes before</source>
-        <translation>15 minut przed</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>30 minutes before</source>
-        <translation>30 minut przed</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>1 hour before</source>
-        <translation>1 godzinę przed</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>1 day before</source>
-        <translation>1 dzień przed</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>2 days before</source>
-        <translation>2 dni przed</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>1 week before</source>
-        <translation>1 tydzień przed</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>On start day (9:00 AM)</source>
-        <translation>W dniu rozpoczęcia (9:00)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>time(s)</source>
-        <translation>raz(y)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Enter a name please</source>
-        <translation>Wprowadź nazwę</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>The name can not only contain whitespaces</source>
-        <translation>Nazwa nie może zawierać tylko białych znaków</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Type:</source>
-        <translation>Typ:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Description:</source>
-        <translation>Opis:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>All Day:</source>
-        <translation>Cały dzień:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Starts:</source>
-        <translation>Początek:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ends:</source>
-        <translation>Koniec:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Remind Me:</source>
-        <translation>Przypomnij mi:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Repeat:</source>
-        <translation>Powtórz:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>End Repeat:</source>
-        <translation>Zakończ powtarzanie:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Calendar account:</source>
-        <translation>Konto kalendarza:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Calendar account</source>
-        <translation>Konto kalendarza</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Typ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Description</source>
-        <translation>Opis</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>All Day</source>
-        <translation>Cały dzień</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Time:</source>
-        <translation>Czas:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Time</source>
-        <translation>Czas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Solar</source>
-        <translation>Słoneczny</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Lunar</source>
-        <translation>Księżycowy</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Starts</source>
-        <translation>Początek</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ends</source>
-        <translation>Koniec</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Remind Me</source>
-        <translation>Przypomnij mi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Repeat</source>
-        <translation>Powtórz</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Daily</source>
-        <translation>Codziennie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Weekdays</source>
-        <translation>W dni robocze</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Weekly</source>
-        <translation>Co tydzień</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Monthly</source>
-        <translation>Co miesiąc</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Yearly</source>
-        <translation>Co rok</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>End Repeat</source>
-        <translation>Zakończ Powtarzanie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>After</source>
-        <translation>Po</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>On</source>
-        <translation>Wł</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Anuluj</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save</source>
         <comment>button</comment>
-        <translation>Zapisz</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CScheduleOperation</name>
     <message>
         <source>All occurrences of a repeating event must have the same all-day status.</source>
-        <translation>Wszystkie wystąpienia powtarzającego się wydarzenia muszą zawierać ten sam stan całodniowy.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Do you want to change all occurrences?</source>
-        <translation>Czy chcesz zmienić wszystkie wystąpienia?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Anuluj</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Change All</source>
-        <translation>Zmień wszystkie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>You are changing the repeating rule of this event.</source>
-        <translation>Zmieniasz regułę powtarzania tego wydarzenia.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>You are deleting an event.</source>
-        <translation>Usuwasz wydarzenie.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Are you sure you want to delete this event?</source>
-        <translation>Czy na pewno chcesz usunąć to wydarzenie?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
         <comment>button</comment>
-        <translation>Usuń</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Do you want to delete all occurrences of this event, or only the selected occurrence?</source>
-        <translation>Czy chcesz usunąć wszystkie wystąpienia tego zdarzenia, czy tylko wybrane wystąpienie?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete All</source>
-        <translation>Usuń wszystkie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete Only This Event</source>
-        <translation>Usuń tylko to wydarzenie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Do you want to delete this and all future occurrences of this event, or only the selected occurrence?</source>
-        <translation>Czy chcesz usunąć to i wszystkie przyszłe wystąpienia tego wydarzenia, czy tylko wybrane wystąpienie?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete All Future Events</source>
-        <translation>Usuń wszystkie przyszłe wydarzenia</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>You are changing a repeating event.</source>
-        <translation>Zmieniasz powtarzające się wydarzenie.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Do you want to change only this occurrence of the event, or all occurrences?</source>
-        <translation>Czy chcesz zmienić tylko to wystąpienie wydarzenia, czy wszystkie wydarzenia?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>All</source>
-        <translation>Wszystko</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Only This Event</source>
-        <translation>Tylko to wydarzenie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Do you want to change only this occurrence of the event, or this and all future occurrences?</source>
-        <translation>Czy chcesz zmienić tylko to wystąpienie wydarzenia, czy to i wszystkie przyszłe wydarzenia?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>All Future Events</source>
-        <translation>Wszystkie przyszłe wydarzenia</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>You have selected a leap month, and will be reminded according to the rules of the lunar calendar.</source>
-        <translation>Zaznaczono miesiąc przestępny, przypomnienie będzie działać zgodnie z zasadami kalendarza księżycowego.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>OK</source>
         <comment>button</comment>
-        <translation>OK</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CScheduleSearchDateItem</name>
     <message>
         <source>Y</source>
-        <translation>R</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>M</source>
-        <translation>M</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>D</source>
-        <translation>D</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CScheduleSearchItem</name>
     <message>
         <source>Edit</source>
-        <translation>Edytuj</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Usuń</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>All Day</source>
-        <translation>Cały dzień</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CScheduleSearchView</name>
     <message>
         <source>No search results</source>
-        <translation>Brak wyników wyszukiwania</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CScheduleView</name>
     <message>
         <source>ALL DAY</source>
-        <translation>CAŁY DZIEŃ</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CSettingDialog</name>
     <message>
-        <source>import ICS file</source>
-        <translation>Importuj plik ICS</translation>
-    </message>
-    <message>
-        <source>Manual</source>
-        <translation>Ręcznie</translation>
-    </message>
-    <message>
-        <source>15 mins</source>
-        <translation>15 min</translation>
-    </message>
-    <message>
-        <source>30 mins</source>
-        <translation>30 min</translation>
-    </message>
-    <message>
-        <source>1 hour</source>
-        <translation>1 godz</translation>
-    </message>
-    <message>
-        <source>24 hours</source>
-        <translation>24 godz</translation>
-    </message>
-    <message>
-        <source>Sync Now</source>
-        <translation>Synchronizuj teraz</translation>
-    </message>
-    <message>
-        <source>Last sync</source>
-        <translation>Ostatnia synchronizacja</translation>
+        <source>Sunday</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Monday</source>
-        <translation>Poniedziałek</translation>
-    </message>
-    <message>
-        <source>Tuesday</source>
-        <translation type="unfinished">Wtorek</translation>
-    </message>
-    <message>
-        <source>Wednesday</source>
-        <translation type="unfinished">Środa</translation>
-    </message>
-    <message>
-        <source>Thursday</source>
-        <translation type="unfinished">Czwartek</translation>
-    </message>
-    <message>
-        <source>Friday</source>
-        <translation type="unfinished">Piątek</translation>
-    </message>
-    <message>
-        <source>Saturday</source>
-        <translation type="unfinished">Sobota</translation>
-    </message>
-    <message>
-        <source>Sunday</source>
-        <translation>Niedziela</translation>
-    </message>
-    <message>
-        <source>12-hour clock</source>
-        <translation>Zegar 12-godzinny</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>24-hour clock</source>
-        <translation>Zegar 24-godzinny</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Please go to the &lt;a href=&apos;/&apos;&gt;Control Center&lt;/a&gt; to change settings</source>
+        <source>12-hour clock</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Manual</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>15 mins</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>30 mins</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>1 hour</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>24 hours</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Sync Now</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Last sync</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -566,143 +538,143 @@
     <name>CTimeEdit</name>
     <message>
         <source>(%1 mins)</source>
-        <translation>(%1 minut)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>(%1 hour)</source>
-        <translation>(%1 godzina)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>(%1 hours)</source>
-        <translation>(%1 godzin)</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CTitleWidget</name>
     <message>
         <source>Y</source>
-        <translation>R</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>M</source>
-        <translation>M</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>W</source>
-        <translation>T</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>D</source>
-        <translation>D</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Search events and festivals</source>
-        <translation>Szukaj wydarzeń i festiwalów</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CWeekWidget</name>
     <message>
         <source>Sun</source>
-        <translation>Nie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Mon</source>
-        <translation>Pon</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tue</source>
-        <translation>Wt</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Wed</source>
-        <translation>Śr</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Thu</source>
-        <translation>Czw</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Fri</source>
-        <translation>Pt</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sat</source>
-        <translation>Sob</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CWeekWindow</name>
     <message>
         <source>Week</source>
-        <translation>Tydzień</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Y</source>
-        <translation>R</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CYearScheduleView</name>
     <message>
         <source>All Day</source>
-        <translation>Cały dzień</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>No event</source>
-        <translation>Brak wydarzeń</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CYearWindow</name>
     <message>
         <source>Y</source>
-        <translation>R</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CalendarWindow</name>
     <message>
         <source>Calendar</source>
-        <translation>Kalendarz</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Calendar is a tool to view dates, and also a smart daily planner to schedule all things in life. </source>
-        <translation>Kalendarz to narzędzie umożliwiające przeglądanie dat, jak i inteligentny terminarz, w którym możesz zaplanować wszystkie wydarzenia w życiu.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Calendarmainwindow</name>
     <message>
         <source>Calendar</source>
-        <translation>Kalendarz</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Manage</source>
-        <translation>Zarządzaj</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Privacy Policy</source>
-        <translation>Polityka prywatności</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Syncing...</source>
-        <translation>Synchronizuję...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sync successful</source>
-        <translation>Synchronizacja zakończona</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sync failed, please try later</source>
-        <translation>Błąd synchronizacji, spróbuj ponownie później</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CenterWidget</name>
     <message>
         <source>All Day</source>
-        <translation>Cały dzień</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -772,99 +744,91 @@
     <name>DragInfoGraphicsView</name>
     <message>
         <source>Edit</source>
-        <translation>Edytuj</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Usuń</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>New event</source>
-        <translation>Nowe wydarzenie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>New Event</source>
-        <translation>Nowe wydarzenie</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>JobTypeListView</name>
     <message>
-        <source>export</source>
-        <translation>Eksportuj</translation>
-    </message>
-    <message>
-        <source>import ICS file</source>
-        <translation type="unfinished">Importuj plik ICS</translation>
-    </message>
-    <message>
         <source>You are deleting an event type.</source>
-        <translation>Usuwasz typ wydarzenia.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>All events under this type will be deleted and cannot be recovered.</source>
-        <translation>Wszystkie wydarzenia skatalogowane pod tym typem zostaną usunięte i nie będzie można ich przywrócić.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Anuluj</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
         <comment>button</comment>
-        <translation>Usuń</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
         <source>Account settings</source>
-        <translation>Ustawienia konta</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Account</source>
-        <translation>Konto</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Select items to be synced</source>
-        <translation>Wybierz przedmioty do synchronizacji</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Events</source>
-        <translation>Wydarzenia</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>General settings</source>
-        <translation>Ustawienia ogólne</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sync interval</source>
-        <translation>Interwał synchronizacji</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Manage calendar</source>
-        <translation>Zarządzaj kalendarzem</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Calendar account</source>
-        <translation>Konto kalendarza</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Event types</source>
-        <translation>Typy wydarzeń</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>General</source>
-        <translation>Ogólne</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>First day of week</source>
-        <translation>Pierwszy dzień tygodnia</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Time</source>
-        <translation>Czas</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -872,7 +836,7 @@
     <message>
         <source>Today</source>
         <comment>Return</comment>
-        <translation>Dzisiaj</translation>
+        <translation type="unfinished">Dzisiaj</translation>
     </message>
 </context>
 <context>
@@ -880,94 +844,86 @@
     <message>
         <source>Today</source>
         <comment>Return Today</comment>
-        <translation>Dzisiaj</translation>
+        <translation type="unfinished">Dzisiaj</translation>
     </message>
 </context>
 <context>
     <name>ScheduleTypeEditDlg</name>
     <message>
         <source>New event type</source>
-        <translation>Nowy typ wydarzenia</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Edit event type</source>
-        <translation>Edytuj typ wydarzenia</translation>
-    </message>
-    <message>
-        <source>Import ICS file</source>
-        <translation>Importuj plik ICS</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Name:</source>
-        <translation>Nazwa:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Color:</source>
-        <translation>Kolor:</translation>
-    </message>
-    <message>
-        <source>&lt;a href=&apos;https://wikipedia.org/wiki/ICalendar&apos;&gt;ICS&lt;/a&gt; File:</source>
-        <translation>Plik &lt;a href=&apos;https://wikipedia.org/wiki/ICalendar&apos;&gt;ICS&lt;/a&gt;:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Anuluj</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save</source>
         <comment>button</comment>
-        <translation>Zapisz</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>The name can not only contain whitespaces</source>
-        <translation>Nazwa nie może zawierać tylko znaków spacji</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Enter a name please</source>
-        <translation>Wprowadź nazwę</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Shortcut</name>
     <message>
         <source>Help</source>
-        <translation>Pomoc</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete event</source>
-        <translation>Usuń wydarzenie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Kopiuj</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cut</source>
-        <translation>Wytnij</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Paste</source>
-        <translation>Wklej</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Usuń</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation>Zaznacz wszystko</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>SidebarCalendarWidget</name>
     <message>
         <source>Y</source>
-        <translation>R</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>M</source>
-        <translation>M</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -975,7 +931,7 @@
     <message>
         <source>Go</source>
         <comment>button</comment>
-        <translation>Przejdź</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -983,19 +939,19 @@
     <message>
         <source>Sign In</source>
         <comment>button</comment>
-        <translation>Zaloguj się</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sign Out</source>
         <comment>button</comment>
-        <translation>Wyloguj się</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>YearFrame</name>
     <message>
         <source>Y</source>
-        <translation>R</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1003,7 +959,7 @@
     <message>
         <source>Today</source>
         <comment>Today</comment>
-        <translation>Dzisiaj</translation>
+        <translation type="unfinished">Dzisiaj</translation>
     </message>
 </context>
 </TS>

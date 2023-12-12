@@ -6,22 +6,22 @@
     <message>
         <location filename="../calendar-client/src/dataManage/accountitem.cpp" line="40"/>
         <source>Sync successful</source>
-        <translation>ماس قەدەملەندى</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/dataManage/accountitem.cpp" line="41"/>
         <source>Network error</source>
-        <translation>تور خاتالىقى </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/dataManage/accountitem.cpp" line="42"/>
         <source>Server exception</source>
-        <translation>مۇلازىمىتېر نورمالسىز</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/dataManage/accountitem.cpp" line="43"/>
         <source>Storage full</source>
-        <translation>بوشلۇق توشۇپ كەتتى</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -29,12 +29,12 @@
     <message>
         <location filename="../calendar-client/src/dataManage/accountmanager.cpp" line="209"/>
         <source>Local account</source>
-        <translation>يەرلىك ھېسابات</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/dataManage/accountmanager.cpp" line="211"/>
         <source>Event types</source>
-        <translation>كۈنتەرتىپ تۈرى</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -42,19 +42,19 @@
     <message>
         <location filename="../calendar-client/src/customWidget/colorWidget/colorpickerWidget.cpp" line="77"/>
         <source>Color</source>
-        <translation>رەڭ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/customWidget/colorWidget/colorpickerWidget.cpp" line="90"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>بىكار قىلىش</translation>
+        <translation type="unfinished">بىكار قىلىش</translation>
     </message>
     <message>
         <location filename="../calendar-client/src/customWidget/colorWidget/colorpickerWidget.cpp" line="92"/>
         <source>Save</source>
         <comment>button</comment>
-        <translation>ساقلاش</translation>
+        <translation type="unfinished">ساقلاش</translation>
     </message>
 </context>
 <context>
@@ -115,7 +115,7 @@
     <message>
         <location filename="../calendar-client/src/widget/dayWidget/daywindow.cpp" line="170"/>
         <source>Lunar</source>
-        <translation>دېھقانلار كالېندارى</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -137,12 +137,12 @@
 <context>
     <name>CMonthView</name>
     <message>
-        <location filename="../calendar-client/src/widget/monthWidget/monthview.cpp" line="51"/>
+        <location filename="../calendar-client/src/widget/monthWidget/monthview.cpp" line="50"/>
         <source>New event</source>
         <translation>كۈنتەرتىپ قۇرۇش</translation>
     </message>
     <message>
-        <location filename="../calendar-client/src/widget/monthWidget/monthview.cpp" line="209"/>
+        <location filename="../calendar-client/src/widget/monthWidget/monthview.cpp" line="208"/>
         <source>New Event</source>
         <translation>يېڭى كۈنتەرتىپ قۇرۇش</translation>
     </message>
@@ -186,7 +186,7 @@
     <message>
         <location filename="../calendar-client/src/customWidget/cpushbutton.cpp" line="17"/>
         <source>New event type</source>
-        <translation>كۈنتەرتىپ تۈرى قوشۇش</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -268,28 +268,20 @@
         <translation>كۈنتەرتىپ باشلانغان كۈن (چۈشتىن بۇرۇن 9 دا)</translation>
     </message>
     <message>
-        <location filename="../calendar-client/src/dialog/scheduledlg.cpp" line="557"/>
-        <location filename="../calendar-client/src/dialog/scheduledlg.cpp" line="765"/>
-        <location filename="../calendar-client/src/dialog/scheduledlg.cpp" line="1163"/>
-        <location filename="../calendar-client/src/dialog/scheduledlg.cpp" line="1164"/>
-        <source>time(s)</source>
-        <translation>ۋاقىت</translation>
-    </message>
-    <message>
         <location filename="../calendar-client/src/dialog/scheduledlg.cpp" line="572"/>
         <source>Enter a name please</source>
-        <translation>نام قۇرۇق قالمىسۇن</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/dialog/scheduledlg.cpp" line="667"/>
         <source>The name can not only contain whitespaces</source>
-        <translation>نامنىڭ ھەممىسى بوشلۇق بولسا بولمايدۇ، ئۆزگەرتىڭ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/dialog/scheduledlg.cpp" line="723"/>
         <location filename="../calendar-client/src/dialog/scheduledlg.cpp" line="845"/>
         <source>Type:</source>
-        <translation>تۈرى:</translation>
+        <translation>تىپى: </translation>
     </message>
     <message>
         <location filename="../calendar-client/src/dialog/scheduledlg.cpp" line="728"/>
@@ -336,17 +328,17 @@
     <message>
         <location filename="../calendar-client/src/dialog/scheduledlg.cpp" line="814"/>
         <source>Calendar account:</source>
-        <translation>كالېندار ھېساباتى:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/dialog/scheduledlg.cpp" line="815"/>
         <source>Calendar account</source>
-        <translation>كالېندار ھېساباتى:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/dialog/scheduledlg.cpp" line="842"/>
         <source>Type</source>
-        <translation>تۈر</translation>
+        <translation>تىپ</translation>
     </message>
     <message>
         <location filename="../calendar-client/src/dialog/scheduledlg.cpp" line="884"/>
@@ -361,22 +353,22 @@
     <message>
         <location filename="../calendar-client/src/dialog/scheduledlg.cpp" line="938"/>
         <source>Time:</source>
-        <translation>ۋاقىت:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/dialog/scheduledlg.cpp" line="939"/>
         <source>Time</source>
-        <translation>ۋاقىت</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/dialog/scheduledlg.cpp" line="946"/>
         <source>Solar</source>
-        <translation>مىلادىيە كالېندارى</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/dialog/scheduledlg.cpp" line="947"/>
         <source>Lunar</source>
-        <translation>دېھقانلار كالېندارى</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/dialog/scheduledlg.cpp" line="980"/>
@@ -446,6 +438,14 @@
         <translation>غىچە ۋاقىت</translation>
     </message>
     <message>
+        <location filename="../calendar-client/src/dialog/scheduledlg.cpp" line="557"/>
+        <location filename="../calendar-client/src/dialog/scheduledlg.cpp" line="765"/>
+        <location filename="../calendar-client/src/dialog/scheduledlg.cpp" line="1163"/>
+        <location filename="../calendar-client/src/dialog/scheduledlg.cpp" line="1164"/>
+        <source>time(s)</source>
+        <translation>ۋاقىت</translation>
+    </message>
+    <message>
         <location filename="../calendar-client/src/dialog/scheduledlg.cpp" line="1214"/>
         <source>Cancel</source>
         <comment>button</comment>
@@ -472,18 +472,6 @@
         <translation>بارلىق تەكرارلاشلارنى ئۆزگەرتمەكچىمۇ؟</translation>
     </message>
     <message>
-        <location filename="../calendar-client/src/scheduleTask/cscheduleoperation.cpp" line="80"/>
-        <location filename="../calendar-client/src/scheduleTask/cscheduleoperation.cpp" line="97"/>
-        <location filename="../calendar-client/src/scheduleTask/cscheduleoperation.cpp" line="127"/>
-        <location filename="../calendar-client/src/scheduleTask/cscheduleoperation.cpp" line="146"/>
-        <location filename="../calendar-client/src/scheduleTask/cscheduleoperation.cpp" line="166"/>
-        <location filename="../calendar-client/src/scheduleTask/cscheduleoperation.cpp" line="238"/>
-        <location filename="../calendar-client/src/scheduleTask/cscheduleoperation.cpp" line="268"/>
-        <source>Cancel</source>
-        <comment>button</comment>
-        <translation>بىكار قىلىش</translation>
-    </message>
-    <message>
         <location filename="../calendar-client/src/scheduleTask/cscheduleoperation.cpp" line="81"/>
         <location filename="../calendar-client/src/scheduleTask/cscheduleoperation.cpp" line="98"/>
         <source>Change All</source>
@@ -505,6 +493,18 @@
         <location filename="../calendar-client/src/scheduleTask/cscheduleoperation.cpp" line="126"/>
         <source>Are you sure you want to delete this event?</source>
         <translation>بۇ كۈنتەرتىپنى ئۆچۈرمەكچىمۇ؟</translation>
+    </message>
+    <message>
+        <location filename="../calendar-client/src/scheduleTask/cscheduleoperation.cpp" line="80"/>
+        <location filename="../calendar-client/src/scheduleTask/cscheduleoperation.cpp" line="97"/>
+        <location filename="../calendar-client/src/scheduleTask/cscheduleoperation.cpp" line="127"/>
+        <location filename="../calendar-client/src/scheduleTask/cscheduleoperation.cpp" line="146"/>
+        <location filename="../calendar-client/src/scheduleTask/cscheduleoperation.cpp" line="166"/>
+        <location filename="../calendar-client/src/scheduleTask/cscheduleoperation.cpp" line="238"/>
+        <location filename="../calendar-client/src/scheduleTask/cscheduleoperation.cpp" line="268"/>
+        <source>Cancel</source>
+        <comment>button</comment>
+        <translation>بىكار قىلىش</translation>
     </message>
     <message>
         <location filename="../calendar-client/src/scheduleTask/cscheduleoperation.cpp" line="128"/>
@@ -573,13 +573,13 @@
     <message>
         <location filename="../calendar-client/src/scheduleTask/cscheduleoperation.cpp" line="381"/>
         <source>You have selected a leap month, and will be reminded according to the rules of the lunar calendar.</source>
-        <translation>تاللىغىنىڭىز كەبىسە ئېيى، دېھقانلار كالېندارى بويىچە ئەسكەرتىدۇ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/scheduleTask/cscheduleoperation.cpp" line="382"/>
         <source>OK</source>
         <comment>button</comment>
-        <translation>جەزىملەشتۈرۈش</translation>
+        <translation type="unfinished">تامام</translation>
     </message>
 </context>
 <context>
@@ -629,7 +629,7 @@
 <context>
     <name>CScheduleView</name>
     <message>
-        <location filename="../calendar-client/src/customWidget/scheduleview.cpp" line="314"/>
+        <location filename="../calendar-client/src/customWidget/scheduleview.cpp" line="313"/>
         <source>ALL DAY</source>
         <translation>پۈتۈن كۈن</translation>
     </message>
@@ -637,93 +637,58 @@
 <context>
     <name>CSettingDialog</name>
     <message>
-        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="598"/>
+        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="340"/>
         <source>Sunday</source>
-        <translation>يەكشەنبە</translation>
+        <translation type="unfinished">يەكشەنبە</translation>
     </message>
     <message>
-        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="592"/>
+        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="341"/>
         <source>Monday</source>
-        <translation>دۈشەنبە</translation>
+        <translation type="unfinished">دۈشەنبە</translation>
     </message>
     <message>
-        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="593"/>
-        <source>Tuesday</source>
-        <translation type="unfinished">سەيشەنبە</translation>
-    </message>
-    <message>
-        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="594"/>
-        <source>Wednesday</source>
-        <translation type="unfinished">چارشەنبە</translation>
-    </message>
-    <message>
-        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="595"/>
-        <source>Thursday</source>
-        <translation type="unfinished">پەيشەنبە</translation>
-    </message>
-    <message>
-        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="596"/>
-        <source>Friday</source>
-        <translation type="unfinished">جۈمە</translation>
-    </message>
-    <message>
-        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="597"/>
-        <source>Saturday</source>
-        <translation type="unfinished">شەنبە</translation>
-    </message>
-    <message>
-        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="611"/>
+        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="358"/>
         <source>24-hour clock</source>
-        <translation>24 سائەتلىك</translation>
-    </message>
-    <message>
-        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="609"/>
-        <source>12-hour clock</source>
-        <translation>12 سائەتلىك</translation>
-    </message>
-    <message>
-        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="375"/>
-        <source>import ICS file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="389"/>
-        <source>Manual</source>
-        <translation>قولدا</translation>
-    </message>
-    <message>
-        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="390"/>
-        <source>15 mins</source>
-        <translation>ھەر 15 مىنۇتتا</translation>
-    </message>
-    <message>
-        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="391"/>
-        <source>30 mins</source>
-        <translation>ھەر 30 مىنۇتتا</translation>
+        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="359"/>
+        <source>12-hour clock</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="392"/>
-        <source>1 hour</source>
-        <translation>ھەر 1 سائەتتە</translation>
+        <source>Manual</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="393"/>
+        <source>15 mins</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="394"/>
+        <source>30 mins</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="395"/>
+        <source>1 hour</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="396"/>
         <source>24 hours</source>
-        <translation>ھەر 24 سائەتتە</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="404"/>
+        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="407"/>
         <source>Sync Now</source>
-        <translation>ماس قەدەملەش</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="554"/>
+        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="550"/>
         <source>Last sync</source>
-        <translation>يېقىنقى ماس قەدەملىگەن ۋاقىت</translation>
-    </message>
-    <message>
-        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="740"/>
-        <source>Please go to the &lt;a href=&apos;/&apos;&gt;Control Center&lt;/a&gt; to change settings</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -732,17 +697,17 @@
     <message>
         <location filename="../calendar-client/src/customWidget/timeedit.cpp" line="72"/>
         <source>(%1 mins)</source>
-        <translation>(%1 مىنۇت)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/customWidget/timeedit.cpp" line="74"/>
         <source>(%1 hour)</source>
-        <translation>(%1 سائەت)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/customWidget/timeedit.cpp" line="76"/>
         <source>(%1 hours)</source>
-        <translation>(%1 سائەت)</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -771,7 +736,7 @@
         <location filename="../calendar-client/src/customWidget/ctitlewidget.cpp" line="92"/>
         <location filename="../calendar-client/src/customWidget/ctitlewidget.cpp" line="93"/>
         <source>Search events and festivals</source>
-        <translation>كۈنتەرتىپ/بايرام ئىزدەش</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -779,37 +744,37 @@
     <message>
         <location filename="../calendar-client/src/customWidget/cweekwidget.cpp" line="72"/>
         <source>Sun</source>
-        <translation>كۈن</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/customWidget/cweekwidget.cpp" line="72"/>
         <source>Mon</source>
-        <translation>دۈشەنبە</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/customWidget/cweekwidget.cpp" line="72"/>
         <source>Tue</source>
-        <translation>سەيشەنبە</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/customWidget/cweekwidget.cpp" line="72"/>
         <source>Wed</source>
-        <translation>چارشەنبە</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/customWidget/cweekwidget.cpp" line="72"/>
         <source>Thu</source>
-        <translation>پەيشەنبە</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/customWidget/cweekwidget.cpp" line="72"/>
         <source>Fri</source>
-        <translation>جۈمە</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/customWidget/cweekwidget.cpp" line="72"/>
         <source>Sat</source>
-        <translation>شەنبە</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -842,7 +807,7 @@
 <context>
     <name>CYearWindow</name>
     <message>
-        <location filename="../calendar-client/src/widget/yearWidget/yearwindow.cpp" line="616"/>
+        <location filename="../calendar-client/src/widget/yearWidget/yearwindow.cpp" line="615"/>
         <source>Y</source>
         <translation>يىلى</translation>
     </message>
@@ -850,12 +815,12 @@
 <context>
     <name>CalendarWindow</name>
     <message>
-        <location filename="../calendar-client/src/main.cpp" line="61"/>
+        <location filename="../calendar-client/src/main.cpp" line="53"/>
         <source>Calendar</source>
         <translation>كالېندار</translation>
     </message>
     <message>
-        <location filename="../calendar-client/src/main.cpp" line="64"/>
+        <location filename="../calendar-client/src/main.cpp" line="56"/>
         <source>Calendar is a tool to view dates, and also a smart daily planner to schedule all things in life. </source>
         <translation>كالېندار چېسلا كۆرۈش، كۈنتەرتىپ باشقۇرۇشتا ئىشلىتىلىدىغان كىچىك قورال.</translation>
     </message>
@@ -870,27 +835,27 @@
     <message>
         <location filename="../calendar-client/src/widget/calendarmainwindow.cpp" line="355"/>
         <source>Manage</source>
-        <translation>باشقۇرۇش</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/widget/calendarmainwindow.cpp" line="362"/>
         <source>Privacy Policy</source>
-        <translation>شەخسىيەت سىياسىتى</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/widget/calendarmainwindow.cpp" line="939"/>
         <source>Syncing...</source>
-        <translation>ماس قەدەملەۋاتىدۇ...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/widget/calendarmainwindow.cpp" line="949"/>
         <source>Sync successful</source>
-        <translation>ماس قەدەملەندى</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/widget/calendarmainwindow.cpp" line="957"/>
         <source>Sync failed, please try later</source>
-        <translation>ماس قەدەملەنمىدى، قايتا سىناڭ</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -906,17 +871,17 @@
     <message>
         <location filename="../calendar-service/src/dbmanager/daccountdatabase.cpp" line="1143"/>
         <source>Work</source>
-        <translation>Work</translation>
+        <translation type="unfinished">خىزمەت</translation>
     </message>
     <message>
         <location filename="../calendar-service/src/dbmanager/daccountdatabase.cpp" line="1145"/>
         <source>Life</source>
-        <translation>Life</translation>
+        <translation type="unfinished">تۇرمۇش</translation>
     </message>
     <message>
         <location filename="../calendar-service/src/dbmanager/daccountdatabase.cpp" line="1147"/>
         <source>Other</source>
-        <translation>Other</translation>
+        <translation type="unfinished">باشقا</translation>
     </message>
 </context>
 <context>
@@ -928,61 +893,61 @@
         <location filename="../calendar-service/src/alarmManager/dalarmmanager.cpp" line="188"/>
         <source>Close</source>
         <comment>button</comment>
-        <translation>تاقاش</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-service/src/alarmManager/dalarmmanager.cpp" line="169"/>
         <source>One day before start</source>
-        <translation>1 كۈن بۇرۇن ئەسكەرتىش</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-service/src/alarmManager/dalarmmanager.cpp" line="174"/>
         <source>Remind me tomorrow</source>
-        <translation>ئەتە ئەسكەرتسۇن</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-service/src/alarmManager/dalarmmanager.cpp" line="179"/>
         <source>Remind me later</source>
-        <translation>بىر ئازدىن كېيىن ئەسكەرتىش </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-service/src/alarmManager/dalarmmanager.cpp" line="181"/>
         <source>15 mins later</source>
-        <translation>15 مىنۇتتىن كېيىن</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-service/src/alarmManager/dalarmmanager.cpp" line="182"/>
         <source>1 hour later</source>
-        <translation>1 سائەتىن كېيىن</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-service/src/alarmManager/dalarmmanager.cpp" line="183"/>
         <source>4 hours later</source>
-        <translation>4 سائەتىن كېيىن</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-service/src/alarmManager/dalarmmanager.cpp" line="184"/>
         <location filename="../calendar-service/src/alarmManager/dalarmmanager.cpp" line="262"/>
         <location filename="../calendar-service/src/alarmManager/dalarmmanager.cpp" line="273"/>
         <source>Tomorrow</source>
-        <translation>ئەتە</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-service/src/alarmManager/dalarmmanager.cpp" line="191"/>
         <source>Schedule Reminder</source>
-        <translation>كۈنتەرتىپ ئەسكەرتىشى</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-service/src/alarmManager/dalarmmanager.cpp" line="230"/>
         <location filename="../calendar-service/src/alarmManager/dalarmmanager.cpp" line="239"/>
         <source>%1 to %2</source>
-        <translation>%1 دىن %2 گىچە</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-service/src/alarmManager/dalarmmanager.cpp" line="259"/>
         <location filename="../calendar-service/src/alarmManager/dalarmmanager.cpp" line="270"/>
         <source>Today</source>
-        <translation>Today</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1011,108 +976,98 @@
 <context>
     <name>JobTypeListView</name>
     <message>
-        <location filename="../calendar-client/src/customWidget/jobtypelistview.cpp" line="141"/>
-        <source>export</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../calendar-client/src/customWidget/jobtypelistview.cpp" line="212"/>
-        <source>import ICS file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../calendar-client/src/customWidget/jobtypelistview.cpp" line="400"/>
+        <location filename="../calendar-client/src/customWidget/jobtypelistview.cpp" line="270"/>
         <source>You are deleting an event type.</source>
-        <translation>كۈنتەرت تۈرىنى ئۆچۈرۈۋاتىسىز.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../calendar-client/src/customWidget/jobtypelistview.cpp" line="401"/>
+        <location filename="../calendar-client/src/customWidget/jobtypelistview.cpp" line="271"/>
         <source>All events under this type will be deleted and cannot be recovered.</source>
-        <translation>بۇ كۈنتەرتىپ تۈرى ئاستىدىكى بارلىق كۈنتەرتىپ ئۆچۈرۈلىدۇ ھەمدە ئەسلىگە كەلتۈرگىلى بولمايدۇ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../calendar-client/src/customWidget/jobtypelistview.cpp" line="402"/>
+        <location filename="../calendar-client/src/customWidget/jobtypelistview.cpp" line="272"/>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>بىكار قىلىش</translation>
+        <translation type="unfinished">بىكار قىلىش</translation>
     </message>
     <message>
-        <location filename="../calendar-client/src/customWidget/jobtypelistview.cpp" line="403"/>
+        <location filename="../calendar-client/src/customWidget/jobtypelistview.cpp" line="273"/>
         <source>Delete</source>
         <comment>button</comment>
-        <translation>ئۆچۈرۈش</translation>
+        <translation type="unfinished">ئۆچۈرۈش</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="93"/>
-        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="124"/>
-        <source>Manage calendar</source>
-        <translation>كالېندار باشقۇرۇش</translation>
-    </message>
-    <message>
-        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="109"/>
-        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="128"/>
-        <source>Event types</source>
-        <translation>كالېندار تۈرى</translation>
+        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="31"/>
+        <source>Account settings</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="35"/>
-        <source>Account settings</source>
-        <translation>ھېسابات تەڭشىكى</translation>
-    </message>
-    <message>
-        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="39"/>
         <source>Account</source>
-        <translation>ھېسابات</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="50"/>
+        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="46"/>
         <source>Select items to be synced</source>
-        <translation>ماس قەدەملەيدىغان تۈرلەرنى تەڭشەڭ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="53"/>
+        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="49"/>
         <source>Events</source>
-        <translation>كۈنتەرتىپ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="60"/>
-        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="143"/>
+        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="56"/>
+        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="139"/>
         <source>General settings</source>
-        <translation>ئادەتتىكى تەڭشەكلەر</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="71"/>
+        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="67"/>
         <source>Sync interval</source>
-        <translation>ماس قەدەملەش چاستوتىسى</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="101"/>
+        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="89"/>
+        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="120"/>
+        <source>Manage calendar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="97"/>
         <source>Calendar account</source>
-        <translation>كالېندار ھېساباتى:</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="105"/>
+        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="124"/>
+        <source>Event types</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="143"/>
+        <source>General</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="147"/>
-        <source>General</source>
-        <translation>ئۇنىۋېرسال</translation>
-    </message>
-    <message>
-        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="149"/>
         <source>First day of week</source>
-        <translation>ھەپتە قايسى كۈندىن باشلانسۇن</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="150"/>
+        <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="155"/>
         <source>Time</source>
-        <translation>ۋاقىت</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Return</name>
     <message>
-        <location filename="../calendar-client/src/widget/yearWidget/yearwindow.cpp" line="612"/>
+        <location filename="../calendar-client/src/widget/yearWidget/yearwindow.cpp" line="611"/>
         <source>Today</source>
         <comment>Return</comment>
         <translation>بۈگۈنگە قايتىش</translation>
@@ -1132,57 +1087,46 @@
 <context>
     <name>ScheduleTypeEditDlg</name>
     <message>
-        <location filename="../calendar-client/src/dialog/scheduletypeeditdlg.cpp" line="21"/>
-        <location filename="../calendar-client/src/dialog/scheduletypeeditdlg.cpp" line="47"/>
+        <location filename="../calendar-client/src/dialog/scheduletypeeditdlg.cpp" line="20"/>
         <source>New event type</source>
-        <translation>كۈنتەرتىپ تۈرى قوشۇش</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../calendar-client/src/dialog/scheduletypeeditdlg.cpp" line="31"/>
+        <location filename="../calendar-client/src/dialog/scheduletypeeditdlg.cpp" line="30"/>
         <source>Edit event type</source>
-        <translation>كۈنتەرتىپ تۈرىنى تەھرىرلەش</translation>
-    </message>
-    <message>
-        <location filename="../calendar-client/src/dialog/scheduletypeeditdlg.cpp" line="43"/>
-        <source>Import ICS file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../calendar-client/src/dialog/scheduletypeeditdlg.cpp" line="140"/>
+        <location filename="../calendar-client/src/dialog/scheduletypeeditdlg.cpp" line="117"/>
         <source>Name:</source>
-        <translation>نامى:</translation>
-    </message>
-    <message>
-        <location filename="../calendar-client/src/dialog/scheduletypeeditdlg.cpp" line="141"/>
-        <source>Color:</source>
-        <translation>رەڭ:</translation>
-    </message>
-    <message>
-        <location filename="../calendar-client/src/dialog/scheduletypeeditdlg.cpp" line="145"/>
-        <source>&lt;a href=&apos;https://wikipedia.org/wiki/ICalendar&apos;&gt;ICS&lt;/a&gt; File:</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../calendar-client/src/dialog/scheduletypeeditdlg.cpp" line="127"/>
+        <source>Color:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../calendar-client/src/dialog/scheduletypeeditdlg.cpp" line="155"/>
+        <source>Cancel</source>
+        <comment>button</comment>
+        <translation type="unfinished">بىكار قىلىش</translation>
     </message>
     <message>
         <location filename="../calendar-client/src/dialog/scheduletypeeditdlg.cpp" line="156"/>
-        <source>Cancel</source>
-        <comment>button</comment>
-        <translation>بىكار قىلىش</translation>
-    </message>
-    <message>
-        <location filename="../calendar-client/src/dialog/scheduletypeeditdlg.cpp" line="157"/>
         <source>Save</source>
         <comment>button</comment>
-        <translation>ساقلاش</translation>
+        <translation type="unfinished">ساقلاش</translation>
     </message>
     <message>
         <location filename="../calendar-client/src/dialog/scheduletypeeditdlg.cpp" line="205"/>
         <source>The name can not only contain whitespaces</source>
-        <translation>نامنىڭ ھەممىسى بوشلۇق بولسا بولمايدۇ، ئۆزگەرتىڭ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../calendar-client/src/dialog/scheduletypeeditdlg.cpp" line="241"/>
+        <location filename="../calendar-client/src/dialog/scheduletypeeditdlg.cpp" line="265"/>
         <source>Enter a name please</source>
-        <translation>نام قۇرۇق قالمىسۇن</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1228,12 +1172,12 @@
     <message>
         <location filename="../calendar-client/src/widget/sidebarWidget/sidebarcalendarwidget.cpp" line="126"/>
         <source>Y</source>
-        <translation>يىلى</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/widget/sidebarWidget/sidebarcalendarwidget.cpp" line="126"/>
         <source>M</source>
-        <translation>ئاي</translation>
+        <translation type="unfinished">ئاي</translation>
     </message>
 </context>
 <context>
@@ -1242,7 +1186,7 @@
         <location filename="../calendar-client/src/dialog/timejumpdialog.cpp" line="29"/>
         <source>Go</source>
         <comment>button</comment>
-        <translation>ئاتلاش</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1251,19 +1195,19 @@
         <location filename="../calendar-client/src/widget/settingWidget/userloginwidget.cpp" line="48"/>
         <source>Sign In</source>
         <comment>button</comment>
-        <translation>كىرىش</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../calendar-client/src/widget/settingWidget/userloginwidget.cpp" line="49"/>
         <source>Sign Out</source>
         <comment>button</comment>
-        <translation>چېكىنىش</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>YearFrame</name>
     <message>
-        <location filename="../calendar-client/src/widget/yearWidget/yearwindow.cpp" line="925"/>
+        <location filename="../calendar-client/src/widget/yearWidget/yearwindow.cpp" line="924"/>
         <source>Y</source>
         <translation>يىلى</translation>
     </message>
@@ -1277,8 +1221,8 @@
         <location filename="../calendar-client/src/widget/monthWidget/monthwindow.cpp" line="230"/>
         <location filename="../calendar-client/src/widget/weekWidget/weekwindow.cpp" line="55"/>
         <location filename="../calendar-client/src/widget/weekWidget/weekwindow.cpp" line="270"/>
-        <location filename="../calendar-client/src/widget/yearWidget/yearwindow.cpp" line="262"/>
-        <location filename="../calendar-client/src/widget/yearWidget/yearwindow.cpp" line="610"/>
+        <location filename="../calendar-client/src/widget/yearWidget/yearwindow.cpp" line="261"/>
+        <location filename="../calendar-client/src/widget/yearWidget/yearwindow.cpp" line="609"/>
         <source>Today</source>
         <comment>Today</comment>
         <translation>بۈگۈن</translation>

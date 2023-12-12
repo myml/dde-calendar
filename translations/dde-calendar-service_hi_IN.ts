@@ -35,59 +35,59 @@
     <name>CColorPickerWidget</name>
     <message>
         <source>Color</source>
-        <translation>रंग</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>रद्द करें</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save</source>
         <comment>button</comment>
-        <translation>संचित करें</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CDayMonthView</name>
     <message>
         <source>Monday</source>
-        <translation>सोमवार</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tuesday</source>
-        <translation>मंगलवार</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Wednesday</source>
-        <translation>बुधवार</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Thursday</source>
-        <translation>गुरुवार</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Friday</source>
-        <translation>शुक्रवार</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Saturday</source>
-        <translation>शनिवार</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sunday</source>
-        <translation>रविवार</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CDayWindow</name>
     <message>
         <source>Y</source>
-        <translation>Y</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>M</source>
-        <translation>M</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>D</source>
@@ -116,7 +116,7 @@
     <name>CMonthView</name>
     <message>
         <source>New event</source>
-        <translation>नया इवेंट</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>New Event</source>
@@ -127,7 +127,7 @@
     <name>CMonthWindow</name>
     <message>
         <source>Y</source>
-        <translation>Y</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -139,17 +139,17 @@
     <message>
         <source>OK</source>
         <comment>button</comment>
-        <translation>ठीक है</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
         <comment>button</comment>
-        <translation>हटाएँ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Edit</source>
         <comment>button</comment>
-        <translation>संपादित करें</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -176,11 +176,11 @@
     <message>
         <source>OK</source>
         <comment>button</comment>
-        <translation>ठीक है</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Never</source>
-        <translation>कभी नहीं</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>At time of event</source>
@@ -228,7 +228,7 @@
     </message>
     <message>
         <source>Type:</source>
-        <translation>प्रकार :</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Description:</source>
@@ -268,15 +268,15 @@
     </message>
     <message>
         <source>Type</source>
-        <translation>प्रकार</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Description</source>
-        <translation>विवरण</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>All Day</source>
-        <translation>पूरे दिन</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Time:</source>
@@ -308,7 +308,7 @@
     </message>
     <message>
         <source>Repeat</source>
-        <translation>दोहराएँ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Daily</source>
@@ -340,17 +340,17 @@
     </message>
     <message>
         <source>On</source>
-        <translation>चालू</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>रद्द करें</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save</source>
         <comment>button</comment>
-        <translation>संचित करें</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -366,7 +366,7 @@
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>रद्द करें</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Change All</source>
@@ -378,16 +378,16 @@
     </message>
     <message>
         <source>You are deleting an event.</source>
-        <translation>आप इस इवेंट को मिटाने वाले हैं</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Are you sure you want to delete this event?</source>
-        <translation>क्या आप निश्चित रूप से इस इवेंट को मिटाना करना चाहते है</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
         <comment>button</comment>
-        <translation>हटाएँ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Do you want to delete all occurrences of this event, or only the selected occurrence?</source>
@@ -399,7 +399,7 @@
     </message>
     <message>
         <source>Delete Only This Event</source>
-        <translation>केवल इसी इवेंट को मिटाये</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Do you want to delete this and all future occurrences of this event, or only the selected occurrence?</source>
@@ -440,18 +440,18 @@
     <message>
         <source>OK</source>
         <comment>button</comment>
-        <translation>ठीक है</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CScheduleSearchDateItem</name>
     <message>
         <source>Y</source>
-        <translation>Y</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>M</source>
-        <translation>M</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>D</source>
@@ -462,22 +462,22 @@
     <name>CScheduleSearchItem</name>
     <message>
         <source>Edit</source>
-        <translation>संपादित करें</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>हटाएँ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>All Day</source>
-        <translation>पूरे दिन</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CScheduleSearchView</name>
     <message>
         <source>No search results</source>
-        <translation>खोज का कोई परिणाम नहीं मिला</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -490,12 +490,24 @@
 <context>
     <name>CSettingDialog</name>
     <message>
-        <source>import ICS file</source>
+        <source>Sunday</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Monday</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>24-hour clock</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>12-hour clock</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Manual</source>
-        <translation>मैनुअल </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>15 mins</source>
@@ -507,7 +519,7 @@
     </message>
     <message>
         <source>1 hour</source>
-        <translation>1 घण्टा</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>24 hours</source>
@@ -519,46 +531,6 @@
     </message>
     <message>
         <source>Last sync</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Monday</source>
-        <translation>सोमवार</translation>
-    </message>
-    <message>
-        <source>Tuesday</source>
-        <translation type="unfinished">मंगलवार</translation>
-    </message>
-    <message>
-        <source>Wednesday</source>
-        <translation type="unfinished">बुधवार</translation>
-    </message>
-    <message>
-        <source>Thursday</source>
-        <translation type="unfinished">गुरुवार</translation>
-    </message>
-    <message>
-        <source>Friday</source>
-        <translation type="unfinished">शुक्रवार</translation>
-    </message>
-    <message>
-        <source>Saturday</source>
-        <translation type="unfinished">शनिवार</translation>
-    </message>
-    <message>
-        <source>Sunday</source>
-        <translation>रविवार</translation>
-    </message>
-    <message>
-        <source>12-hour clock</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>24-hour clock</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Please go to the &lt;a href=&apos;/&apos;&gt;Control Center&lt;/a&gt; to change settings</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -581,11 +553,11 @@
     <name>CTitleWidget</name>
     <message>
         <source>Y</source>
-        <translation>Y</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>M</source>
-        <translation>M</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>W</source>
@@ -604,31 +576,31 @@
     <name>CWeekWidget</name>
     <message>
         <source>Sun</source>
-        <translation>रवि </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Mon</source>
-        <translation>सोम</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tue</source>
-        <translation>मंगल</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Wed</source>
-        <translation>बुध </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Thu</source>
-        <translation>गुरु</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Fri</source>
-        <translation>शुक्र </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sat</source>
-        <translation>शनि</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -639,14 +611,14 @@
     </message>
     <message>
         <source>Y</source>
-        <translation>Y</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CYearScheduleView</name>
     <message>
         <source>All Day</source>
-        <translation>पूरे दिन</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>No event</source>
@@ -657,14 +629,14 @@
     <name>CYearWindow</name>
     <message>
         <source>Y</source>
-        <translation>Y</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CalendarWindow</name>
     <message>
         <source>Calendar</source>
-        <translation>दिनदर्शिका</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Calendar is a tool to view dates, and also a smart daily planner to schedule all things in life. </source>
@@ -675,7 +647,7 @@
     <name>Calendarmainwindow</name>
     <message>
         <source>Calendar</source>
-        <translation>दिनदर्शिका</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Manage</source>
@@ -702,7 +674,7 @@
     <name>CenterWidget</name>
     <message>
         <source>All Day</source>
-        <translation>पूरे दिन</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -772,15 +744,15 @@
     <name>DragInfoGraphicsView</name>
     <message>
         <source>Edit</source>
-        <translation>संपादित करें</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>हटाएँ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>New event</source>
-        <translation>नया इवेंट</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>New Event</source>
@@ -789,14 +761,6 @@
 </context>
 <context>
     <name>JobTypeListView</name>
-    <message>
-        <source>export</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>import ICS file</source>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
         <source>You are deleting an event type.</source>
         <translation type="unfinished"></translation>
@@ -808,12 +772,12 @@
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>रद्द करें</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
         <comment>button</comment>
-        <translation>हटाएँ</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -856,7 +820,7 @@
     </message>
     <message>
         <source>General</source>
-        <translation>सामान्य</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>First day of week</source>
@@ -872,7 +836,7 @@
     <message>
         <source>Today</source>
         <comment>Return</comment>
-        <translation>आज </translation>
+        <translation type="unfinished">आज </translation>
     </message>
 </context>
 <context>
@@ -880,7 +844,7 @@
     <message>
         <source>Today</source>
         <comment>Return Today</comment>
-        <translation>आज </translation>
+        <translation type="unfinished">आज </translation>
     </message>
 </context>
 <context>
@@ -894,30 +858,22 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Import ICS file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Name:</source>
-        <translation>नाम :</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Color:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>&lt;a href=&apos;https://wikipedia.org/wiki/ICalendar&apos;&gt;ICS&lt;/a&gt; File:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>रद्द करें</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save</source>
         <comment>button</comment>
-        <translation>संचित करें</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>The name can not only contain whitespaces</source>
@@ -932,7 +888,7 @@
     <name>Shortcut</name>
     <message>
         <source>Help</source>
-        <translation>सहायता</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete event</source>
@@ -940,34 +896,34 @@
     </message>
     <message>
         <source>Copy</source>
-        <translation>कॉपी करें</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cut</source>
-        <translation>काटें</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Paste</source>
-        <translation>चिपकाएँ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>हटाएँ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation>सबको चुनें</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>SidebarCalendarWidget</name>
     <message>
         <source>Y</source>
-        <translation>Y</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>M</source>
-        <translation>M</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -983,19 +939,19 @@
     <message>
         <source>Sign In</source>
         <comment>button</comment>
-        <translation>साइन इन </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sign Out</source>
         <comment>button</comment>
-        <translation>साइन आउट </translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>YearFrame</name>
     <message>
         <source>Y</source>
-        <translation>Y</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1003,7 +959,7 @@
     <message>
         <source>Today</source>
         <comment>Today</comment>
-        <translation>आज </translation>
+        <translation type="unfinished">आज </translation>
     </message>
 </context>
 </TS>

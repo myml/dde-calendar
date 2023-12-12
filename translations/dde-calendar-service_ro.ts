@@ -35,63 +35,63 @@
     <name>CColorPickerWidget</name>
     <message>
         <source>Color</source>
-        <translation>Culoare</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Anulează</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save</source>
         <comment>button</comment>
-        <translation>Salvare</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CDayMonthView</name>
     <message>
         <source>Monday</source>
-        <translation>Luni</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tuesday</source>
-        <translation>Marţi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Wednesday</source>
-        <translation>Miercuri</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Thursday</source>
-        <translation>Joi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Friday</source>
-        <translation>Vineri</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Saturday</source>
-        <translation>Sâmbătă</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sunday</source>
-        <translation>Duminică</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CDayWindow</name>
     <message>
         <source>Y</source>
-        <translation>Y</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>M</source>
-        <translation>l</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>D</source>
-        <translation>z</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Lunar</source>
@@ -102,54 +102,54 @@
     <name>CGraphicsView</name>
     <message>
         <source>New Event</source>
-        <translation>Eveniment nou</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CMonthScheduleNumItem</name>
     <message>
         <source>%1 more</source>
-        <translation>%1 mai mult</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CMonthView</name>
     <message>
         <source>New event</source>
-        <translation>Eveniment nou</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>New Event</source>
-        <translation>Eveniment nou</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CMonthWindow</name>
     <message>
         <source>Y</source>
-        <translation>A</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CMyScheduleView</name>
     <message>
         <source>My Event</source>
-        <translation>Evenimentul meu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>OK</source>
         <comment>button</comment>
-        <translation>Ok</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
         <comment>button</comment>
-        <translation>Ștergeți</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Edit</source>
         <comment>button</comment>
-        <translation>Editare</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -163,60 +163,60 @@
     <name>CScheduleDlg</name>
     <message>
         <source>New Event</source>
-        <translation>Eveniment nou</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Edit Event</source>
-        <translation>Editare eveniment</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>End time must be greater than start time</source>
-        <translation>Ora de încheiere trebuie să fie mai mare decât ora de început</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>OK</source>
         <comment>button</comment>
-        <translation>Ok</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Never</source>
-        <translation>Niciodată</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>At time of event</source>
-        <translation>La momentul evenimentului</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>15 minutes before</source>
-        <translation>Cu 15 minute înainte</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>30 minutes before</source>
-        <translation>Cu 30 minute înainte</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>1 hour before</source>
-        <translation>Cu 1 oră înainte</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>1 day before</source>
-        <translation>Cu 1 zi înainte</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>2 days before</source>
-        <translation>Cu 2 zile înainte</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>1 week before</source>
-        <translation>Cu 1 săptămână înainte</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>On start day (9:00 AM)</source>
-        <translation>Începutul zilei (9:00 AM)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>time(s)</source>
-        <translation>ori</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Enter a name please</source>
@@ -228,35 +228,35 @@
     </message>
     <message>
         <source>Type:</source>
-        <translation>Tip:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Description:</source>
-        <translation>Descriere:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>All Day:</source>
-        <translation>Toată ziua:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Starts:</source>
-        <translation>Începe:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ends:</source>
-        <translation>Se termină:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Remind Me:</source>
-        <translation>Aminteşte-mi:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Repeat:</source>
-        <translation>Repetă:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>End Repeat:</source>
-        <translation>Repetarea se termină:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Calendar account:</source>
@@ -268,15 +268,15 @@
     </message>
     <message>
         <source>Type</source>
-        <translation>Tip</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Description</source>
-        <translation>Descriere</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>All Day</source>
-        <translation>Toată ziua</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Time:</source>
@@ -296,142 +296,142 @@
     </message>
     <message>
         <source>Starts</source>
-        <translation>Începe</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Ends</source>
-        <translation>Se termină</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Remind Me</source>
-        <translation>Aminteşte-mi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Repeat</source>
-        <translation>Repetă</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Daily</source>
-        <translation>Zilnic</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Weekdays</source>
-        <translation>Zilele saptămânii</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Weekly</source>
-        <translation>Săptămânal</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Monthly</source>
-        <translation>Lunar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Yearly</source>
-        <translation>Anual</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>End Repeat</source>
-        <translation>Opreşte repetarea</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>After</source>
-        <translation>După</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>On</source>
-        <translation>Pornire</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Anulează</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save</source>
         <comment>button</comment>
-        <translation>Salvare</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CScheduleOperation</name>
     <message>
         <source>All occurrences of a repeating event must have the same all-day status.</source>
-        <translation>Toate aparițiile unui eveniment repetat trebuie să aibă același statut toată ziua.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Do you want to change all occurrences?</source>
-        <translation>Doriți să schimbați toate aparițiile?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Anulează</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Change All</source>
-        <translation>Schimbă tot</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>You are changing the repeating rule of this event.</source>
-        <translation>Modificați regula de repetare a acestui eveniment.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>You are deleting an event.</source>
-        <translation>Ştergeţi un eveniment.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Are you sure you want to delete this event?</source>
-        <translation>Sigur doriţi să ştergeţi acest eveniment?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
         <comment>button</comment>
-        <translation>Ștergeți</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Do you want to delete all occurrences of this event, or only the selected occurrence?</source>
-        <translation>Doriți să ștergeți toate aparițiile acestui eveniment sau doar evenimentul selectat?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete All</source>
-        <translation>Şterge tot</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete Only This Event</source>
-        <translation>Şterge doar acest eveniment</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Do you want to delete this and all future occurrences of this event, or only the selected occurrence?</source>
-        <translation>Doriți să ștergeți toate aparițiile acestui eveniment sau doar evenimentul selectat?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete All Future Events</source>
-        <translation>Şterge toate evenimentele viitoare</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>You are changing a repeating event.</source>
-        <translation>Modificați un eveniment care se repetă.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Do you want to change only this occurrence of the event, or all occurrences?</source>
-        <translation>Doriți să schimbați doar această apariție a evenimentului sau toate evenimentele?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>All</source>
-        <translation>Tot</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Only This Event</source>
-        <translation>Doar acest eveniment</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Do you want to change only this occurrence of the event, or this and all future occurrences?</source>
-        <translation>Doriți să schimbați doar această apariție a evenimentului sau aceasta și toate evenimentele viitoare?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>All Future Events</source>
-        <translation>Toate evenimentele viitoare</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>You have selected a leap month, and will be reminded according to the rules of the lunar calendar.</source>
@@ -440,62 +440,74 @@
     <message>
         <source>OK</source>
         <comment>button</comment>
-        <translation>Ok</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CScheduleSearchDateItem</name>
     <message>
         <source>Y</source>
-        <translation>A</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>M</source>
-        <translation>L</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>D</source>
-        <translation>Z</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CScheduleSearchItem</name>
     <message>
         <source>Edit</source>
-        <translation>Editează</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Șterge</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>All Day</source>
-        <translation>Toată ziua</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CScheduleSearchView</name>
     <message>
         <source>No search results</source>
-        <translation>Niciun rezultat la căutare</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CScheduleView</name>
     <message>
         <source>ALL DAY</source>
-        <translation>TOATĂ ZIUA</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CSettingDialog</name>
     <message>
-        <source>import ICS file</source>
+        <source>Sunday</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Monday</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>24-hour clock</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>12-hour clock</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Manual</source>
-        <translation>Manual</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>15 mins</source>
@@ -507,7 +519,7 @@
     </message>
     <message>
         <source>1 hour</source>
-        <translation>1 oră</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>24 hours</source>
@@ -519,46 +531,6 @@
     </message>
     <message>
         <source>Last sync</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Monday</source>
-        <translation>Luni</translation>
-    </message>
-    <message>
-        <source>Tuesday</source>
-        <translation type="unfinished">Marţi</translation>
-    </message>
-    <message>
-        <source>Wednesday</source>
-        <translation type="unfinished">Miercuri</translation>
-    </message>
-    <message>
-        <source>Thursday</source>
-        <translation type="unfinished">Joi</translation>
-    </message>
-    <message>
-        <source>Friday</source>
-        <translation type="unfinished">Vineri</translation>
-    </message>
-    <message>
-        <source>Saturday</source>
-        <translation type="unfinished">Sâmbătă</translation>
-    </message>
-    <message>
-        <source>Sunday</source>
-        <translation>Duminică</translation>
-    </message>
-    <message>
-        <source>12-hour clock</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>24-hour clock</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Please go to the &lt;a href=&apos;/&apos;&gt;Control Center&lt;/a&gt; to change settings</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -581,19 +553,19 @@
     <name>CTitleWidget</name>
     <message>
         <source>Y</source>
-        <translation>A</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>M</source>
-        <translation>L</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>W</source>
-        <translation>S</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>D</source>
-        <translation>Z</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Search events and festivals</source>
@@ -604,78 +576,78 @@
     <name>CWeekWidget</name>
     <message>
         <source>Sun</source>
-        <translation>Dum</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Mon</source>
-        <translation>Lu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tue</source>
-        <translation>Mar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Wed</source>
-        <translation>Mie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Thu</source>
-        <translation>Joi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Fri</source>
-        <translation>Vin</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sat</source>
-        <translation>Sâm</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CWeekWindow</name>
     <message>
         <source>Week</source>
-        <translation>Săptămână</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Y</source>
-        <translation>A</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CYearScheduleView</name>
     <message>
         <source>All Day</source>
-        <translation>Toată ziua</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>No event</source>
-        <translation>Nici un eveniment</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CYearWindow</name>
     <message>
         <source>Y</source>
-        <translation>A</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>CalendarWindow</name>
     <message>
         <source>Calendar</source>
-        <translation>Calendar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Calendar is a tool to view dates, and also a smart daily planner to schedule all things in life. </source>
-        <translation>Calendarul este un instrument pentru a vizualiza datele și, de asemenea, un planificator inteligent zilnic pentru a programa toate lucrurile din viață.</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Calendarmainwindow</name>
     <message>
         <source>Calendar</source>
-        <translation>Calendar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Manage</source>
@@ -683,11 +655,11 @@
     </message>
     <message>
         <source>Privacy Policy</source>
-        <translation>Politica de Confidențialitate</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Syncing...</source>
-        <translation>Sincronizare...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sync successful</source>
@@ -702,7 +674,7 @@
     <name>CenterWidget</name>
     <message>
         <source>All Day</source>
-        <translation>Toată ziua</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -772,31 +744,23 @@
     <name>DragInfoGraphicsView</name>
     <message>
         <source>Edit</source>
-        <translation>Editare</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Ștergeți</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>New event</source>
-        <translation>Eveniment nou</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>New Event</source>
-        <translation>Eveniment nou</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>JobTypeListView</name>
-    <message>
-        <source>export</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>import ICS file</source>
-        <translation type="unfinished"></translation>
-    </message>
     <message>
         <source>You are deleting an event type.</source>
         <translation type="unfinished"></translation>
@@ -808,12 +772,12 @@
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Anulează</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
         <comment>button</comment>
-        <translation>Ștergeți</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -824,7 +788,7 @@
     </message>
     <message>
         <source>Account</source>
-        <translation>Cont</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Select items to be synced</source>
@@ -856,7 +820,7 @@
     </message>
     <message>
         <source>General</source>
-        <translation>General</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>First day of week</source>
@@ -872,7 +836,7 @@
     <message>
         <source>Today</source>
         <comment>Return</comment>
-        <translation>Astăzi</translation>
+        <translation type="unfinished">Astăzi</translation>
     </message>
 </context>
 <context>
@@ -880,7 +844,7 @@
     <message>
         <source>Today</source>
         <comment>Return Today</comment>
-        <translation>Astăzi</translation>
+        <translation type="unfinished">Astăzi</translation>
     </message>
 </context>
 <context>
@@ -894,30 +858,22 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Import ICS file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Name:</source>
-        <translation>Nume:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Color:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>&lt;a href=&apos;https://wikipedia.org/wiki/ICalendar&apos;&gt;ICS&lt;/a&gt; File:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Anulează</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Save</source>
         <comment>button</comment>
-        <translation>Salvare</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>The name can not only contain whitespaces</source>
@@ -932,42 +888,42 @@
     <name>Shortcut</name>
     <message>
         <source>Help</source>
-        <translation>Ajutor</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete event</source>
-        <translation>Ştergere eveniment</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Copiere</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Cut</source>
-        <translation>Tăiere</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Paste</source>
-        <translation>Lipire</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Ștergeți</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation>Selectează totul</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>SidebarCalendarWidget</name>
     <message>
         <source>Y</source>
-        <translation>Y</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>M</source>
-        <translation>l</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -983,19 +939,19 @@
     <message>
         <source>Sign In</source>
         <comment>button</comment>
-        <translation>Conectați-vă</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sign Out</source>
         <comment>button</comment>
-        <translation>Deconectați-vă</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>YearFrame</name>
     <message>
         <source>Y</source>
-        <translation>A</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1003,7 +959,7 @@
     <message>
         <source>Today</source>
         <comment>Today</comment>
-        <translation>Astăzi</translation>
+        <translation type="unfinished">Astăzi</translation>
     </message>
 </context>
 </TS>
