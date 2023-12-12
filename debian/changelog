@@ -1,3 +1,13 @@
+dde-calendar (5.11.1) unstable; urgency=medium
+
+  * fix: remove unused dframeworkdbus
+    Thanks to Felix Yan
+  * chore: correct typos in en_US docs
+    Thanks to Felix Yan
+  * feat: hide account login in community version(Issue: https://github.com/linuxdeepin/developer-center/issues/5912)
+
+ -- myml <wurongjie@deepin.org>  Tue, 12 Dec 2023 13:25:42 +0800
+
 dde-calendar (5.11.0) unstable; urgency=medium
 
   [ Deepin Packages Builder ]

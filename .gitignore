@@ -25,6 +25,7 @@ build*/
 
 .vscode/
 build/
+.cache/
 .qmake.stash
 Makefile
 !debian/[source,changelog,compat,control,copyright,rules]
