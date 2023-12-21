@@ -3,6 +3,7 @@
 // SPDX-License-Identifier: LGPL-3.0-or-later
 
 #include "dbusrequestbase.h"
+#include "commondef.h"
 #include <QDebug>
 
 DbusRequestBase::DbusRequestBase(const QString &path, const QString &interface, const QDBusConnection &connection, QObject *parent)
@@ -10,7 +11,7 @@ DbusRequestBase::DbusRequestBase(const QString &path, const QString &interface, 
 {
     //关联后端dbus触发信号
     if (!QDBusConnection::sessionBus().connect(this->service(), this->path(), this->interface(), "", this, SLOT(slotDbusCall(QDBusMessage)))) {
-        qWarning() << "the connection was fail!"
+        qCWarning(CommonLogger) << "the connection was fail!"
                    << "path: " << this->path() << "interface: " << this->interface();
     };
 }

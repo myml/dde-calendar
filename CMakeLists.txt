@@ -83,3 +83,5 @@ qt5_create_translation(DTNG_QM_FILES
   
 file(GLOB APP_QM_FILES "translations/*.qm")
 install(FILES ${APP_QM_FILES} DESTINATION ${CMAKE_INSTALL_DATADIR}/dde-calendar/translations)
+# 安装日志搜集工具的配置
+install(FILES "org.deepin.calendar.json" DESTINATION ${CMAKE_INSTALL_DATADIR}/deepin-log-viewer/deepin-log.conf.d/)

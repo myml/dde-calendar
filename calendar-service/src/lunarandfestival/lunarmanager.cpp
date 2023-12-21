@@ -4,6 +4,7 @@
 
 #include "lunarmanager.h"
 #include "lunarcalendar.h"
+#include "commondef.h"
 #include "pinyin/pinyinsearch.h"
 
 #include <QDebug>
@@ -158,7 +159,7 @@ QList<stDayFestival> GetFestivalsInRange(const QDateTime &start, const QDateTime
             festivaldays.append(stdayfestival);
         }
     } else {
-        qDebug() << __FUNCTION__ << "start day later than  end day";
+        qCDebug(ServiceLogger) << __FUNCTION__ << "start day later than  end day";
     }
 
     return festivaldays;

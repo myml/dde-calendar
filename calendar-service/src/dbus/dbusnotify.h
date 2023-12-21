@@ -4,6 +4,7 @@
 
 #ifndef DBUSNOTIFY_H
 #define DBUSNOTIFY_H
+#include "commondef.h"
 #include <QtDBus/QtDBus>
 
 class DBusNotify : public QDBusAbstractInterface
@@ -17,13 +18,13 @@ public:
 
         int notifyid = -1;
         if (QDBusMessage::ReplyMessage == reply.type()) {
-            qDebug() << reply.type() << reply.errorName() << reply.errorMessage();
+            qCDebug(ServiceLogger) << reply.type() << reply.errorName() << reply.errorMessage();
             QDBusReply<quint32> id = reply;
             if (id.isValid()) {
                 notifyid = id.value();
             }
         } else {
-            qDebug() << reply.type() << reply.errorName() << reply.errorMessage();
+            qCDebug(ServiceLogger) << reply.type() << reply.errorName() << reply.errorMessage();
         }
         return notifyid;
     }

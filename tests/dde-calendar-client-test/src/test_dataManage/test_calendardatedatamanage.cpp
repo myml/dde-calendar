@@ -40,7 +40,7 @@
 //{
 //    QDate selectDate;
 //    selectDate = calendarDateDataManager->getSelectDate();
-//    //qInfo() << selectDate;
+//    //qCInfo(CommonLogger) << selectDate;
 //}
 
 ////void CalendarDateDataManager::setCurrentDateTime(const QDateTime &currentDateTime)

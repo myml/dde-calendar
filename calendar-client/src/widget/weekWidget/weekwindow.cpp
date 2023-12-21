@@ -7,6 +7,7 @@
 #include "constants.h"
 #include "weekheadview.h"
 #include "weekview.h"
+#include "commondef.h"
 #include "schedulesearchview.h"
 #include "todaybutton.h"
 #include <scheduledatamanage.h>
@@ -292,7 +293,7 @@ void CWeekWindow::updateShowDate(const bool isUpdateBar)
     m_stopDate = _weekShowData.last();
     //如果时间无效则打印log
     if (m_startDate.isNull() || m_stopDate.isNull()) {
-        qWarning() << "week start or stop date error";
+        qCWarning(ClientLogger) << "week start or stop date error";
     }
     //设置全天和非全天显示时间范围
     m_scheduleView->setRange(m_startDate, m_stopDate);

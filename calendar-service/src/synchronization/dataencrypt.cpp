@@ -14,13 +14,13 @@
 //    if (AES_set_encrypt_key(reinterpret_cast<const unsigned char *>(key.data()), key.size() * 8,
 //                            &aesKey)
 //            != 0) {
-//        qWarning() << "Init failed";
+//        qCWarning(ServiceLogger) << "Init failed";
 //        return result;
 //    }
 
 //    result = aesCbcEncrypt(data, aesKey, initialVector, AES_ENCRYPT);
 //    if (result.isEmpty())
-//        qWarning() << "Encrypt failed";
+//        qCWarning(ServiceLogger) << "Encrypt failed";
 
 //    return result;
 //}
@@ -33,13 +33,13 @@
 //    if (AES_set_decrypt_key(reinterpret_cast<const unsigned char *>(key.data()), key.size() * 8,
 //                            &aesKey)
 //            != 0) {
-//        qWarning() << "Init failed";
+//        qCWarning(ServiceLogger) << "Init failed";
 //        return result;
 //    }
 
 //    result = aesCbcEncrypt(data, aesKey, initialVector, AES_DECRYPT);
 //    if (result.isEmpty())
-//        qWarning() << "Decrypt failed";
+//        qCWarning(ServiceLogger) << "Decrypt failed";
 
 //    return result;
 //}
@@ -49,7 +49,7 @@
 //{
 //    QByteArray result;
 //    if (initialVector.size() != AES_BLOCK_SIZE) {
-//        qWarning() << "The length of init vector must be" << AES_BLOCK_SIZE;
+//        qCWarning(ServiceLogger) << "The length of init vector must be" << AES_BLOCK_SIZE;
 //        return result;
 //    }
 
@@ -75,13 +75,13 @@
 //    if (AES_set_encrypt_key(reinterpret_cast<const unsigned char *>(key.data()), key.size() * 8,
 //                            &aesKey)
 //            != 0) {
-//        qWarning() << "Init failed";
+//        qCWarning(ServiceLogger) << "Init failed";
 //        return result;
 //    }
 
 //    result = aesCfb128Encrypt(data, aesKey, initialVector, AES_ENCRYPT);
 //    if (result.isEmpty())
-//        qWarning() << "Encrypt failed";
+//        qCWarning(ServiceLogger) << "Encrypt failed";
 
 //    return result;
 //}
@@ -99,13 +99,13 @@
 //    if (AES_set_encrypt_key(reinterpret_cast<const unsigned char *>(key.data()), key.size() * 8,
 //                            &aesKey)
 //            != 0) {
-//        qWarning() << "Init failed";
+//        qCWarning(ServiceLogger) << "Init failed";
 //        return result;
 //    }
 
 //    result = aesCfb128Encrypt(data, aesKey, initialVector, AES_DECRYPT);
 //    if (result.isEmpty())
-//        qWarning() << "Decrypt failed";
+//        qCWarning(ServiceLogger) << "Decrypt failed";
 
 //    return result;
 //}
@@ -116,7 +116,7 @@
 //{
 //    QByteArray result;
 //    if (initialVector.size() != AES_BLOCK_SIZE) {
-//        qWarning() << "The length of init vector must be" << AES_BLOCK_SIZE;
+//        qCWarning(ServiceLogger) << "The length of init vector must be" << AES_BLOCK_SIZE;
 //        return result;
 //    }
 

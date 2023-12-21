@@ -3,6 +3,7 @@
 // SPDX-License-Identifier: LGPL-3.0-or-later
 
 #include "dbushuanglirequest.h"
+#include "commondef.h"
 #include <QDebug>
 
 DbusHuangLiRequest::DbusHuangLiRequest(QObject *parent)
@@ -22,7 +23,7 @@ bool DbusHuangLiRequest::getFestivalMonth(quint32 year, quint32 month, FestivalI
     QDBusPendingReply<QString> reply = call("getFestivalMonth", QVariant(year), QVariant(month));
 
     if (reply.isError()) {
-        qWarning() << reply.error().message();
+        qCWarning(ClientLogger) << reply.error().message();
         return false;
     }
 
@@ -84,7 +85,7 @@ bool DbusHuangLiRequest::getHuangLiDay(quint32 year, quint32 month, quint32 day,
     QDBusPendingReply<QString> reply = call("getHuangLiDay", QVariant(year), QVariant(month), QVariant(day));
 
     if (reply.isError()) {
-        qWarning() << reply.error().message();
+        qCWarning(ClientLogger) << reply.error().message();
         return false;
     }
 
@@ -105,7 +106,7 @@ bool DbusHuangLiRequest::getHuangLiMonth(quint32 year, quint32 month, bool fill,
 {
     QDBusPendingReply<QString> reply = call("getHuangLiMonth", QVariant(year), QVariant(month), QVariant(fill));
     if (reply.isError()) {
-        qWarning() << reply.error().message();
+        qCWarning(ClientLogger) << reply.error().message();
         return false;
     }
     QString json = reply.argumentAt<0>();
@@ -142,7 +143,7 @@ void DbusHuangLiRequest::getLunarMonthCalendar(quint32 year, quint32 month, bool
 void DbusHuangLiRequest::slotCallFinished(CDBusPendingCallWatcher* call)
 {
     if (call->isError()) {
-        qWarning() << call->reply().member() << call->error().message();
+        qCWarning(ClientLogger) << call->reply().member() << call->error().message();
         return;
     }
     call->deleteLater();

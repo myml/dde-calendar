@@ -127,7 +127,7 @@ void CScheduleBaseWidget::updateDBusData()
 //            //更新日程信息
 ////            _task->updateInfo(_startDate, _stopDate, getShowLunar());
 //        } else {
-//            qWarning() << "startDate or stopDate Err!";
+//            qCWarning(ClientLogger) << "startDate or stopDate Err!";
 //        }
 //    }
 }

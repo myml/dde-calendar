@@ -27,6 +27,7 @@
 #include "scheduletypeeditdlg.h"
 #include "accountmanager.h"
 #include "units.h"
+#include "commondef.h"
 
 #include <DHiDPIHelper>
 #include <DPalette>
@@ -201,7 +202,7 @@ void Calendarmainwindow::slotSetSearchFocus()
 void Calendarmainwindow::viewWindow(int type, const bool showAnimation)
 {
     if (type < 0 || type >= m_stackWidget->count()) {
-        qWarning() << "set view error,set index:" << type;
+        qCWarning(ClientLogger) << "set view error,set index:" << type;
         return;
     }
     if (showAnimation) {
@@ -502,7 +503,7 @@ void Calendarmainwindow::createview()
     //如果默认视图不在范围内则设置为月窗口显示
     if (m_defaultIndex < 0 || m_defaultIndex >= m_stackWidget->count()) {
         m_defaultIndex = 1;
-        qWarning() << "set default view index beyond,index:" << m_defaultIndex;
+        qCWarning(ClientLogger) << "set default view index beyond,index:" << m_defaultIndex;
     }
     m_stackWidget->setCurrentIndex(m_defaultIndex);
     m_buttonBox->button(m_defaultIndex)->setChecked(true);

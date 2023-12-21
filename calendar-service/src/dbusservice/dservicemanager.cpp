@@ -7,6 +7,7 @@
 #include "dhuangliservice.h"
 #include "daccountmanagerservice.h"
 #include "units.h"
+#include "commondef.h"
 
 #include "dbuscloudsync.h"
 #include <QDBusConnection>
@@ -19,7 +20,7 @@ DServiceManager::DServiceManager(QObject *parent)
     //注册服务
     QDBusConnection sessionBus = QDBusConnection::sessionBus();
     if (!sessionBus.registerService(serviceBaseName)) {
-        qCritical() << "registerService failed:" << sessionBus.lastError();
+        qCritical(ServiceLogger) << "registerService failed:" << sessionBus.lastError();
         exit(0x0001);
     }
 
@@ -27,21 +28,21 @@ DServiceManager::DServiceManager(QObject *parent)
     //创建黄历服务
     DServiceBase *huangliService = new class DHuangliService(this);
     if (!sessionBus.registerObject(huangliService->getPath(), huangliService->getInterface(), huangliService, options)) {
-        qCritical() << "registerObject huangliService failed:" << sessionBus.lastError();
+        qCritical(ServiceLogger) << "registerObject huangliService failed:" << sessionBus.lastError();
         exit(0x0002);
     }
 
     //创建帐户管理服务
     m_accountManagerService = new class DAccountManagerService(this);
     if (!sessionBus.registerObject(m_accountManagerService->getPath(), m_accountManagerService->getInterface(), m_accountManagerService, options)) {
-        qCritical() << "registerObject  accountManagerService failed:" << sessionBus.lastError();
+        qCritical(ServiceLogger) << "registerObject  accountManagerService failed:" << sessionBus.lastError();
         exit(0x0003);
     }
 
     //创建云同步回调服务
     DServiceBase *cloudsyncService = new class Dbuscloudsync(this);
     if (!sessionBus.registerObject(cloudsyncService->getPath(), cloudsyncService->getInterface(), cloudsyncService, options)) {
-        qCritical() << "registerObject  cloudsyncService failed:" << sessionBus.lastError();
+        qCritical(ServiceLogger) << "registerObject  cloudsyncService failed:" << sessionBus.lastError();
         exit(0x0004);
     }
 }

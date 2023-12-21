@@ -4,7 +4,7 @@
 
 #include "pinyinsearch.h"
 #include "pinyindict.h"
-
+#include "commondef.h"
 #include <QRegularExpression>
 #include <QFile>
 #include <QTextStream>
@@ -80,7 +80,7 @@ void pinyinsearch::initDict()
     QFile file(kDictFile);
 
     if (!file.open(QIODevice::ReadOnly)) {
-        qWarning() << "open dictFile error :" << file.error();
+        qCWarning(ServiceLogger) << "open dictFile error :" << file.error();
         return;
     }
 

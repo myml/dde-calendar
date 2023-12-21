@@ -9,6 +9,8 @@
 #include "accessible/accessible.h"
 #include "tabletconfig.h"
 #include "schedulemanager.h"
+#include "commondef.h"
+#include <LogManager.h>
 
 #include <DApplication>
 #include <DLog>
@@ -51,7 +53,7 @@ int main(int argc, char *argv[])
 #ifdef QT_DEBUG
         // 在开发调试时使用项目内的翻译文件
         auto tf = "../translations/dde-calendar_zh_CN";
-        qDebug() << "load translate" << tf;
+        qCDebug(ClientLogger) << "load translate" << tf;
         QTranslator translator;
         translator.load(tf);
         app->installTranslator(&translator);
@@ -78,6 +80,7 @@ int main(int argc, char *argv[])
             viewtype = 2;
         DLogManager::registerConsoleAppender();
         DLogManager::registerFileAppender();
+        DLogManager::registerJournalAppender();
         //获取应用配置
         DApplicationSettings applicationset(app);
         //为了与老版本配置兼容
@@ -90,13 +93,15 @@ int main(int argc, char *argv[])
         QDBusConnection dbus = QDBusConnection::sessionBus();
         //如果注册失败打印出失败信息
         if (!dbus.registerService("com.deepin.Calendar")) {
-            qWarning() << "registerService Error:" << dbus.lastError();
+            qCWarning(ClientLogger) << "registerService Error:" << dbus.lastError();
         }
         if (!dbus.registerObject("/com/deepin/Calendar", &ww)) {
-            qWarning() << "registerObject Error:" << dbus.lastError();
+            qCWarning(ClientLogger) << "registerObject Error:" << dbus.lastError();
         }
         ww.slotTheme(DGuiApplicationHelper::instance()->themeType());
         ww.show();
+
+        qCDebug(ClientLogger) << "dde-calendar-service start";
         return app->exec();
     }
     return 0;

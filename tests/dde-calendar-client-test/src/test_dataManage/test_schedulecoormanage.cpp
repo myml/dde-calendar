@@ -120,7 +120,7 @@
 //{
 //    QPointF pos(0, 0);
 //    QDateTime dateTime = cScheduleCoorManage->getDate(pos);
-//    qInfo() << dateTime;
+//    qCInfo(CommonLogger) << dateTime;
 //    QPointF pos1(-1, 0);
 //    QDateTime dateTime1 = cScheduleCoorManage->getDate(pos1);
 //}
@@ -130,7 +130,7 @@
 //{
 //    QPointF pos(0, 0);
 //    QDate date = cScheduleCoorManage->getsDate(pos);
-//    qInfo() << date;
+//    qCInfo(CommonLogger) << date;
 //    QPointF pos1(-1, 0);
 //    cScheduleCoorManage->getsDate(pos1);
 //}

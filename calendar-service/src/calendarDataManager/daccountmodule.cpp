@@ -215,7 +215,7 @@ bool DAccountModule::deleteScheduleTypeByID(const QString &typeID)
         }
     }
     if (scheduleType.isNull()) {
-        qWarning() << "scheduleType isNull, typeID:" << typeID;
+        qCWarning(ServiceLogger) << "scheduleType isNull, typeID:" << typeID;
         return false;
     }
 
@@ -239,7 +239,7 @@ bool DAccountModule::updateScheduleType(const QString &typeInfo)
     DScheduleType::Ptr oldScheduleType = m_accountDB->getScheduleTypeByID(scheduleType->typeID());
     //如果颜色有改动
     if (oldScheduleType.isNull()) {
-        qWarning() << "get oldScheduleType error,typeID:" << scheduleType->typeID();
+        qCWarning(ServiceLogger) << "get oldScheduleType error,typeID:" << scheduleType->typeID();
     } else {
         if (oldScheduleType->typeColor() != scheduleType->typeColor()) {
             if (!oldScheduleType->typeColor().isSysColorInfo()) {
@@ -649,7 +649,7 @@ void DAccountModule::remindJob(const QString &alarmID)
 void DAccountModule::accountDownload()
 {
     if (m_dataSync != nullptr) {
-        qInfo() << "开始下载数据";
+        qCInfo(ServiceLogger) << "开始下载数据";
         m_dataSync->syncData(this->account()->accountID(), this->account()->accountName(), (int)this->account()->accountState(), DDataSyncBase::Sync_Upload | DDataSyncBase::Sync_Download);
     }
 }
@@ -657,7 +657,7 @@ void DAccountModule::accountDownload()
 void DAccountModule::uploadNetWorkAccountData()
 {
     if (m_dataSync != nullptr) {
-        qInfo() << "开始上传数据";
+        qCInfo(ServiceLogger) << "开始上传数据";
         m_dataSync->syncData(this->account()->accountID(), this->account()->accountName(), (int)this->account()->accountState(), DDataSyncBase::Sync_Upload);
     }
 }
@@ -913,7 +913,7 @@ void DAccountModule::slotOpenCalendar(const QString &alarmID)
                                     this);
     DRemindData::Ptr remindData = m_accountDB->getRemindData(alarmID);
     if (remindData.isNull()) {
-        qWarning() << "No corresponding reminder ID found";
+        qCWarning(ServiceLogger) << "No corresponding reminder ID found";
         return;
     }
     DSchedule::Ptr schedule = getScheduleByRemind(remindData);
@@ -944,7 +944,7 @@ void DAccountModule::slotSyncState(const int syncState)
         m_account->setSyncState(DAccount::Sync_StorageFull);
         break;
     default:
-        qWarning()<<"syncState:"<<syncState<<"fun:"<<__FUNCTION__<<" line:"<<__LINE__;
+        qCWarning(ServiceLogger)<<"syncState:"<<syncState<<"fun:"<<__FUNCTION__<<" line:"<<__LINE__;
         //默认服务器异常
         m_account->setSyncState(DAccount::Sync_ServerException);
         break;
@@ -983,14 +983,14 @@ bool DAccountModule::importSchedule(const QString &icsFilePath, const QString &t
     KCalendarCore::MemoryCalendar::Ptr cal(new KCalendarCore::MemoryCalendar(timezone));
     auto ok = icalformat.load(cal, icsFilePath);
     if (!ok) {
-        qWarning() << "can not load ics file from" << icsFilePath;
+        qCWarning(ServiceLogger) << "can not load ics file from" << icsFilePath;
         return false;
     }
     auto events = cal->events();
     if (cleanExists) {
         ok = m_accountDB->deleteSchedulesByScheduleTypeID(typeID, true);
         if (!ok) {
-            qWarning() << "can not clean schedules from" << typeID;
+            qCWarning(ServiceLogger) << "can not clean schedules from" << typeID;
             return false;
         }
     };
@@ -998,7 +998,7 @@ bool DAccountModule::importSchedule(const QString &icsFilePath, const QString &t
         auto data = event.data();
         auto sch = DSchedule::Ptr(new DSchedule(*data));
         sch->setScheduleTypeID(typeID);
-        qInfo() << "import schedule" << event.data()->dtStart().toString()
+        qCInfo(ServiceLogger) << "import schedule" << event.data()->dtStart().toString()
                 << event.data()->summary() << m_accountDB->createSchedule(sch);
     };
     // 发送日程更新信号

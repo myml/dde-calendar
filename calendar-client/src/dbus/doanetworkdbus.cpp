@@ -3,6 +3,7 @@
 // SPDX-License-Identifier: LGPL-3.0-or-later
 
 #include "doanetworkdbus.h"
+#include "commondef.h"
 
 #include <QDBusPendingReply>
 #include <QDBusReply>
@@ -13,12 +14,12 @@ DOANetWorkDBus::DOANetWorkDBus(QObject *parent)
     : QDBusAbstractInterface(NETWORK_DBUS_NAME, NETWORK_DBUS_PATH, NETWORK_DBUS_INTEERFACENAME, QDBusConnection::sessionBus(), parent)
 {
     if (!this->isValid()) {
-        qWarning() << "Error connecting remote object, service:" << this->service() << ",path:" << this->path() << ",interface" << this->interface();
+        qCWarning(ClientLogger) << "Error connecting remote object, service:" << this->service() << ",path:" << this->path() << ",interface" << this->interface();
     }
 
     //关联后端dbus触发信号
     if (!QDBusConnection::sessionBus().connect(this->service(), this->path(), "org.freedesktop.DBus.Properties", "PropertiesChanged", "sa{sv}as", this, SLOT(propertiesChanged(QDBusMessage)))) {
-        qWarning() << "the connection was fail!";
+        qCWarning(ClientLogger) << "the connection was fail!";
     }
 }
 

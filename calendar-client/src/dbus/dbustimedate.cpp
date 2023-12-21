@@ -3,6 +3,7 @@
 // SPDX-License-Identifier: LGPL-3.0-or-later
 
 #include "dbustimedate.h"
+#include "commondef.h"
 
 #include <QDBusPendingReply>
 #include <QDBusReply>
@@ -22,8 +23,8 @@ DBusTimedate::DBusTimedate(QObject *parent)
                                                "org.freedesktop.DBus.Properties",
                                                QLatin1String("PropertiesChanged"), this,
                                                SLOT(propertiesChanged(QDBusMessage)))) {
-        qWarning() << "the PropertiesChanged was fail!";
-        qWarning() << this->lastError();
+        qCWarning(ClientLogger) << "the PropertiesChanged was fail!";
+        qCWarning(ClientLogger) << this->lastError();
     }
 
     m_hasDateTimeFormat = getHasDateTimeFormat();

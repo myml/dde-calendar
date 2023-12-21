@@ -4,8 +4,10 @@
 
 #include "selectandquerystate.h"
 #include "../globaldef.h"
+#include "commondef.h"
 #include "../task/schedulebasetask.h"
 #include "../data/changejsondata.h"
+#include <qloggingcategory.h>
 
 SelectAndQueryState::SelectAndQueryState(scheduleBaseTask *task)
     : scheduleState(task)
@@ -90,7 +92,7 @@ Reply SelectAndQueryState::normalEvent(const JsonData *jsonData)
         }
         return m_Task->getReplyBySelectSchedule(m_localData->SelectInfo());
     } else {
-        qDebug() << "offset <=0";
+        qCWarning(CommonLogger) << "offset <=0";
         Reply reply;
         REPLY_ONLY_TTS(reply, G_ERR_TTS, G_ERR_TTS, false);
         return reply;

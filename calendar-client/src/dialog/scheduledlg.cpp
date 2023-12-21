@@ -12,6 +12,7 @@
 #include "configsettings.h"
 #include "accountmanager.h"
 #include "units.h"
+#include "commondef.h"
 
 #include <DHiDPIHelper>
 #include <DFontSizeManager>
@@ -590,7 +591,7 @@ void CScheduleDlg::signalLogout(DAccount::Type type)
     if (DAccount::Account_UnionID == type && gUosAccountItem == m_accountItem) {
         if (m_type) {
             //TODO：弹窗提示？
-            qInfo() << m_accountComBox->currentText() << "帐户已退出";
+            qCInfo(ClientLogger) << m_accountComBox->currentText() << "帐户已退出";
             getButtons()[1]->setEnabled(false);
             m_accountItem.reset(nullptr);
         } else {

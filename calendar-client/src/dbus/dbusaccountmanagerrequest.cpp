@@ -3,6 +3,7 @@
 // SPDX-License-Identifier: LGPL-3.0-or-later
 
 #include "dbusaccountmanagerrequest.h"
+#include "commondef.h"
 #include <QDBusInterface>
 #include <QDebug>
 
@@ -132,7 +133,7 @@ void DbusAccountManagerRequest::slotCallFinished(CDBusPendingCallWatcher *call)
     //错误处理
     if (call->isError()) {
         //打印错误信息
-        qWarning() << call->reply().member() << call->error().message();
+        qCWarning(ClientLogger) << call->reply().member() << call->error().message();
         ret = 1;
     } else if (call->getmember() == "getAccountList") {
         //"getAccountList"方法回调事件
@@ -144,7 +145,7 @@ void DbusAccountManagerRequest::slotCallFinished(CDBusPendingCallWatcher *call)
         if (DAccount::fromJsonListString(accountList, str)) {
             emit signalGetAccountListFinish(accountList);
         } else {
-            qWarning() <<"AccountList Parsing failed!";
+            qCWarning(ClientLogger) <<"AccountList Parsing failed!";
             ret = 2;
         }
     } else if (call->getmember() == "getCalendarGeneralSettings") {
@@ -155,7 +156,7 @@ void DbusAccountManagerRequest::slotCallFinished(CDBusPendingCallWatcher *call)
         if (DCalendarGeneralSettings::fromJsonString(ptr, str)) {
             emit signalGetGeneralSettingsFinish(ptr);
         } else {
-            qWarning() <<"AccountList Parsing failed!";
+            qCWarning(ClientLogger) <<"AccountList Parsing failed!";
             ret = 2;
         }
     } else if (call->getmember() == "setCalendarGeneralSettings") {

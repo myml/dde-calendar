@@ -7,8 +7,14 @@
 
 #include <QString>
 #include <QStandardPaths>
+#include <QLoggingCategory>
 
 const QString CalendarServiceName = "com.deepin.dataserver.Calendar";
 const QString CalendarPath = "/com/deepin/dataserver/Calendar";
+
+const QLoggingCategory CommonLogger("org.deepin.dde-calendar.common");
+const QLoggingCategory ClientLogger("org.deepin.dde-calendar.client");
+const QLoggingCategory ServiceLogger("org.deepin.dde-calendar.service");
+
 
 #endif // COMMONDEF_H

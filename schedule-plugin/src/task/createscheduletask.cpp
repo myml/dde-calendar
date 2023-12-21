@@ -5,6 +5,7 @@
 #include "createscheduletask.h"
 
 #include "../globaldef.h"
+#include "commondef.h"
 #include "dscheduledatamanager.h"
 
 createScheduleTask::createScheduleTask()
@@ -40,7 +41,7 @@ Reply createScheduleTask::SchedulePress(semanticAnalysisTask &semanticTask)
     }
     if (shouldEndSession(createJsonData)) {
         if (!isValidDateTime) {
-            qInfo() << "schedule begintime or endtime is not valided!";
+            qCInfo(CommonLogger) << "schedule begintime or endtime is not valided!";
             //无效时间，直接返回回复语
             REPLY_ONLY_TTS(m_reply, replyNotValidDT, replyNotValidDT, true);
             //设置时间有效标志为true
@@ -48,11 +49,11 @@ Reply createScheduleTask::SchedulePress(semanticAnalysisTask &semanticTask)
             return m_reply;
         } else if (!beginDateTimeIsinHalfYear()) {
             if (beginDateTimeBeforeCurrent()) {
-                qInfo() << "schedule begintime is before currenttime!";
+                qCInfo(CommonLogger) << "schedule begintime is before currenttime!";
                 //"我现在有点慌，因为我还不会制定过去的提醒"
                 REPLY_ONLY_TTS(m_reply, createJsonData->SuggestMsg(), createJsonData->SuggestMsg(), true);
             } else if (beginDateTimeOutHalfYear()) {
-                qInfo() << "schedule begintime is after halfyear!";
+                qCInfo(CommonLogger) << "schedule begintime is after halfyear!";
                 //"只能创建未来半年的日程"
                 REPLY_ONLY_TTS(m_reply, CREATE_TIME_OUT_TTS, CREATE_TIME_OUT_TTS, true);
             }

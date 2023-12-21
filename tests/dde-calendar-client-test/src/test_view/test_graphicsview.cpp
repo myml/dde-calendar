@@ -114,7 +114,7 @@
 ////    QGraphicsItem *listItem = itemAt(point);
 ////    DragInfoItem *infoitem = dynamic_cast<DragInfoItem *>(listItem);
 ////    CScheduleItem *scheduleitem = dynamic_cast<CScheduleItem *>(infoitem);
-////    qInfo() << scheduleitem->getType();
+////    qCInfo(CommonLogger) << scheduleitem->getType();
 ////    cGraphicsView->ShowSchedule(infoitem);
 ////}
 

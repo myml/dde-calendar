@@ -8,6 +8,7 @@
 #include "../dialog/myscheduleview.h"
 #include "../widget/touchgestureoperation.h"
 #include "constants.h"
+#include "commondef.h"
 #include "graphicsItem/cmonthschedulenumitem.h"
 #include "cscenetabkeydeal.h"
 #include "ckeyenabledeal.h"
@@ -434,7 +435,7 @@ void CMonthGraphicsview::setSceneCurrentItemFocus(const QDate &focusDate)
         m_Scene->setCurrentFocusItem(m_DayItem.at(offset));
         m_Scene->currentFocusItemUpdate();
     } else {
-        qWarning() << "Switching time range error! focusDate:" << focusDate << " first item date:" << m_DayItem.first()->getDate();
+        qCWarning(ClientLogger) << "Switching time range error! focusDate:" << focusDate << " first item date:" << m_DayItem.first()->getDate();
     }
 }
 

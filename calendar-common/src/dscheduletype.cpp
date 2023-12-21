@@ -6,6 +6,7 @@
 
 #include "daccount.h"
 #include "units.h"
+#include "commondef.h"
 
 #include <QJsonObject>
 #include <QJsonDocument>
@@ -191,7 +192,7 @@ bool DScheduleType::fromJsonString(DScheduleType::Ptr &scheduleType, const QStri
     QJsonParseError jsonError;
     QJsonDocument jsonDoc(QJsonDocument::fromJson(jsonStr.toLocal8Bit(), &jsonError));
     if (jsonError.error != QJsonParseError::NoError) {
-        qWarning() << "error:" << jsonError.errorString();
+        qCWarning(CommonLogger) << "error:" << jsonError.errorString();
         return false;
     }
     QJsonObject rootObj = jsonDoc.object();
@@ -263,7 +264,7 @@ bool DScheduleType::fromJsonString(DScheduleType::Ptr &scheduleType, const QStri
 bool DScheduleType::toJsonString(const DScheduleType::Ptr &scheduleType, QString &jsonStr)
 {
     if (scheduleType.isNull()) {
-        qWarning() << "hold a reference to a null pointer.";
+        qCWarning(CommonLogger) << "hold a reference to a null pointer.";
         return false;
     }
     //序列化
@@ -299,7 +300,7 @@ bool DScheduleType::fromJsonListString(DScheduleType::List &stList, const QStrin
     QJsonParseError jsonError;
     QJsonDocument jsonDoc(QJsonDocument::fromJson(jsonStr.toLocal8Bit(), &jsonError));
     if (jsonError.error != QJsonParseError::NoError) {
-        qWarning() << "error:" << jsonError.errorString();
+        qCWarning(CommonLogger) << "error:" << jsonError.errorString();
         return false;
     }
     QJsonObject rootObj = jsonDoc.object();

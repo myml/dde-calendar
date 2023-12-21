@@ -3,10 +3,12 @@
 // SPDX-License-Identifier: LGPL-3.0-or-later
 
 #include "dschedule.h"
+#include "commondef.h"
 
 #include "icalformat.h"
 #include "memorycalendar.h"
 #include "units.h"
+#include "commondef.h"
 
 #include <QtDBus/QtDBus>
 
@@ -231,7 +233,7 @@ bool DSchedule::fromJsonString(DSchedule::Ptr &schedule, const QString &json)
     QJsonParseError jsonError;
     QJsonDocument jsonDoc(QJsonDocument::fromJson(json.toLocal8Bit(), &jsonError));
     if (jsonError.error != QJsonParseError::NoError) {
-        qWarning() << "error:" << jsonError.errorString();
+        qCWarning(CommonLogger) << "error:" << jsonError.errorString();
         return false;
     }
     bool resBool = false;
@@ -254,7 +256,7 @@ bool DSchedule::fromJsonString(DSchedule::Ptr &schedule, const QString &json)
 bool DSchedule::toJsonString(const DSchedule::Ptr &schedule, QString &json)
 {
     if (schedule.isNull()) {
-        qWarning() << "hold a reference to a null pointer.";
+        qCWarning(CommonLogger) << "hold a reference to a null pointer.";
         return false;
     }
     QJsonObject rootObject;
@@ -297,7 +299,7 @@ QMap<QDate, DSchedule::List> DSchedule::fromMapString(const QString &json)
     QJsonParseError jsonError;
     QJsonDocument jsonDoc(QJsonDocument::fromJson(json.toLocal8Bit(), &jsonError));
     if (jsonError.error != QJsonParseError::NoError) {
-        qWarning() << "error:" << jsonError.errorString();
+        qCWarning(CommonLogger) << "error:" << jsonError.errorString();
         return scheduleMap;
     }
     QJsonArray rootArray = jsonDoc.array();

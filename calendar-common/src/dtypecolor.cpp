@@ -5,6 +5,7 @@
 #include "dtypecolor.h"
 
 #include "units.h"
+#include "commondef.h"
 
 #include <QJsonObject>
 #include <QJsonDocument>
@@ -72,7 +73,7 @@ DTypeColor::List DTypeColor::fromJsonString(const QString &colorJson)
     QJsonParseError jsonError;
     QJsonDocument jsonDoc(QJsonDocument::fromJson(colorJson.toLocal8Bit(), &jsonError));
     if (jsonError.error != QJsonParseError::NoError) {
-        qWarning() << "error:" << jsonError.errorString();
+        qCWarning(CommonLogger) << "error:" << jsonError.errorString();
         return colorList;
     }
     QJsonArray rootArr = jsonDoc.array();

@@ -135,7 +135,7 @@ int DAlarmManager::remindJob(const DRemindData::Ptr &remindData, const DSchedule
 {
     //如果没有提醒
     if (schedule->alarms().size() == 0) {
-        qWarning() << "remind job failed id=%1" << schedule->uid();
+        qCWarning(ServiceLogger) << "remind job failed id=%1" << schedule->uid();
         return 0;
     }
 
@@ -196,7 +196,7 @@ int DAlarmManager::remindJob(const DRemindData::Ptr &remindData, const DSchedule
     qint32 timeout = 0;
     QList<QVariant> argumentList;
     argumentList << appname << replaces_id << appicon << title << body << actionlist << hints << timeout;
-    qDebug() << __FUNCTION__ << QString("remind now: %1, title:"
+    qCDebug(ServiceLogger) << __FUNCTION__ << QString("remind now: %1, title:"
                                         " %2, body: %3")
              .arg(QDateTime::currentDateTime().toString())
              .arg(title)

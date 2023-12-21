@@ -3,8 +3,7 @@
 // SPDX-License-Identifier: LGPL-3.0-or-later
 
 #include "dhuanglidatabase.h"
-#include "units.h"
-
+#include "commondef.h"
 #include <QSqlQuery>
 #include <QDebug>
 #include <QSqlError>
@@ -43,7 +42,7 @@ QString DHuangLiDataBase::queryFestivalList(quint32 year, quint8 month)
             if (!doctmp.isNull()) {
                 listarr = doctmp.array();
             } else {
-                qDebug() << __FUNCTION__ << error.errorString();
+                qCDebug(ServiceLogger) << __FUNCTION__ << error.errorString();
             }
             obj.insert("list", listarr);
             arr.append(obj);
@@ -51,7 +50,7 @@ QString DHuangLiDataBase::queryFestivalList(quint32 year, quint8 month)
         doc.setArray(arr);
         strjson = QString::fromUtf8(doc.toJson(QJsonDocument::Compact));
     } else {
-        qWarning() << Q_FUNC_INFO << query.lastError();
+        qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
     }
     if (query.isActive()) {
         query.finish();

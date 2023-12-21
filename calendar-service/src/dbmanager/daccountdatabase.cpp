@@ -4,6 +4,7 @@
 
 #include "daccountdatabase.h"
 
+#include "commondef.h"
 #include "units.h"
 #include "pinyin/pinyinsearch.h"
 
@@ -48,19 +49,19 @@ QString DAccountDataBase::createSchedule(const DSchedule::Ptr &schedule)
             query.addBindValue(0);
             if (!query.exec()) {
                 schedule->setUid("");
-                qWarning() << "createSchedule error:" << query.lastError();
+                qCWarning(ServiceLogger) << "createSchedule error:" << query.lastError();
             }
             if (query.isActive()) {
                 query.finish();
             }
         } else {
             schedule->setUid("");
-            qWarning() << "createSchedule error:" << query.lastError();
+            qCWarning(ServiceLogger) << "createSchedule error:" << query.lastError();
         }
 
     } else {
         schedule->setUid("");
-        qWarning() << "schedule is null";
+        qCWarning(ServiceLogger) << "schedule is null";
     }
 
     return schedule->uid();
@@ -92,13 +93,13 @@ bool DAccountDataBase::updateSchedule(const DSchedule::Ptr &schedule)
             if (query.exec()) {
                 resbool = true;
             } else {
-                qWarning() << Q_FUNC_INFO << query.lastError();
+                qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
             }
             if (query.isActive()) {
                 query.finish();
             }
         } else {
-            qWarning() << Q_FUNC_INFO << query.lastError();
+            qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
         }
     }
 
@@ -122,14 +123,14 @@ DSchedule::Ptr DAccountDataBase::getScheduleByScheduleID(const QString &schedule
                 schedule->setScheduleTypeID(query.value("scheduleTypeID").toString());
             }
         } else {
-            qWarning() << Q_FUNC_INFO << query.lastError();
+            qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
             return schedule;
         }
         if (query.isActive()) {
             query.finish();
         }
     } else {
-        qWarning() << Q_FUNC_INFO << query.lastError();
+        qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
         return schedule;
     }
 
@@ -148,13 +149,13 @@ QStringList DAccountDataBase::getScheduleIDListByTypeID(const QString &typeID)
                 scheduleIDList.append(query.value("scheduleID").toString());
             }
         } else {
-            qWarning() << Q_FUNC_INFO << query.lastError();
+            qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
         }
         if (query.isActive()) {
             query.finish();
         }
     } else {
-        qWarning() << Q_FUNC_INFO << query.lastError();
+        qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
     }
 
     return scheduleIDList;
@@ -175,7 +176,7 @@ bool DAccountDataBase::deleteScheduleByScheduleID(const QString &scheduleID, con
         resBool = query.exec();
     }
     if (!resBool) {
-        qWarning() << Q_FUNC_INFO << query.lastError();
+        qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
     }
 
     if (query.isActive()) {
@@ -201,7 +202,7 @@ bool DAccountDataBase::deleteSchedulesByScheduleTypeID(const QString &typeID, co
     }
 
     if (!resBool) {
-        qWarning() << Q_FUNC_INFO << query.lastError();
+        qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
     }
 
     if (query.isActive()) {
@@ -250,10 +251,10 @@ DSchedule::List DAccountDataBase::querySchedulesByKey(const QString &key)
                 scheduleList.append(schedule);
             }
         } else {
-            qWarning() << Q_FUNC_INFO << query.lastError();
+            qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
         }
     } else {
-        qWarning() << Q_FUNC_INFO << query.lastError();
+        qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
     }
 
     if (query.isActive()) {
@@ -293,10 +294,10 @@ DSchedule::List DAccountDataBase::querySchedulesByRRule(const QString &key, cons
                 }
             }
         } else {
-            qWarning() << Q_FUNC_INFO << query.lastError();
+            qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
         }
     } else {
-        qWarning() << Q_FUNC_INFO << query.lastError();
+        qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
     }
 
     if (query.isActive()) {
@@ -321,10 +322,10 @@ DSchedule::List DAccountDataBase::getRemindSchedule()
                 scheduleList.append(schedule);
             }
         } else {
-            qWarning() << Q_FUNC_INFO << query.lastError();
+            qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
         }
     } else {
-        qWarning() << Q_FUNC_INFO << query.lastError();
+        qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
     }
 
     if (query.isActive()) {
@@ -374,11 +375,11 @@ QString DAccountDataBase::createScheduleType(const DScheduleType::Ptr &scheduleT
         query.addBindValue(scheduleType->deleted());
 
         if (!query.exec()) {
-            qWarning() << __FUNCTION__ << query.lastError();
+            qCWarning(ServiceLogger) << __FUNCTION__ << query.lastError();
             scheduleType->setTypeID("");
         }
     } else {
-        qWarning() << __FUNCTION__ << query.lastError();
+        qCWarning(ServiceLogger) << __FUNCTION__ << query.lastError();
         scheduleType->setTypeID("");
     }
 
@@ -429,7 +430,7 @@ DScheduleType::Ptr DAccountDataBase::getScheduleTypeByID(const QString &typeID, 
             systemTypeTran(type);
         }
     } else {
-        qWarning() << query.lastError();
+        qCWarning(ServiceLogger) << query.lastError();
     }
     query.addBindValue(typeID);
     query.addBindValue(isDeleted);
@@ -482,10 +483,10 @@ DScheduleType::List DAccountDataBase::getScheduleTypeList(const int isDeleted)
                 typeList.append(type);
             }
         } else {
-            qWarning() << "getScheduleTypeList error:" << query.lastError();
+            qCWarning(ServiceLogger) << "getScheduleTypeList error:" << query.lastError();
         }
     } else {
-        qWarning() << "getScheduleTypeList error:" << query.lastError();
+        qCWarning(ServiceLogger) << "getScheduleTypeList error:" << query.lastError();
     }
 
     if (query.isActive()) {
@@ -507,7 +508,7 @@ bool DAccountDataBase::scheduleTypeByUsed(const QString &typeID, const int isDel
             typeCount = query.value(0).toInt();
         }
     } else {
-        qWarning() << query.lastError();
+        qCWarning(ServiceLogger) << query.lastError();
     }
 
     if (query.isActive()) {
@@ -534,13 +535,13 @@ bool DAccountDataBase::deleteScheduleTypeByID(const QString &typeID, const int i
         query.addBindValue(typeID);
         res = query.exec();
         if (!res) {
-            qWarning() << "DELETE scheduleType error by typeID:" << typeID << " " << query.lastError();
+            qCWarning(ServiceLogger) << "DELETE scheduleType error by typeID:" << typeID << " " << query.lastError();
         }
         if (query.isActive()) {
             query.finish();
         }
     } else {
-        qWarning() << "DELETE scheduleType error by typeID:" << typeID << " " << query.lastError();
+        qCWarning(ServiceLogger) << "DELETE scheduleType error by typeID:" << typeID << " " << query.lastError();
     }
 
     return res;
@@ -569,10 +570,10 @@ bool DAccountDataBase::updateScheduleType(const DScheduleType::Ptr &scheduleType
         if (query.exec()) {
             res = true;
         } else {
-            qWarning() << "updateScheduleType error:" << query.lastError();
+            qCWarning(ServiceLogger) << "updateScheduleType error:" << query.lastError();
         }
     } else {
-        qWarning() << "updateScheduleType error:" << query.lastError();
+        qCWarning(ServiceLogger) << "updateScheduleType error:" << query.lastError();
     }
 
     if (query.isActive()) {
@@ -592,11 +593,11 @@ QString DAccountDataBase::getFestivalTypeID()
                 typeID = query.value("typeID").toString();
             }
         } else {
-            qWarning() << "updateScheduleType error:" << query.lastError();
+            qCWarning(ServiceLogger) << "updateScheduleType error:" << query.lastError();
         }
 
     } else {
-        qWarning() << "updateScheduleType error:" << query.lastError();
+        qCWarning(ServiceLogger) << "updateScheduleType error:" << query.lastError();
     }
     if (query.isActive()) {
         query.finish();
@@ -625,7 +626,7 @@ void DAccountDataBase::getAccountInfo(const DAccount::Ptr &account)
         account->setIsExpandDisplay(query.value("expandStatus").toBool());
         account->setDtLastSync(dtFromString(query.value("dtLastUpdate").toString()));
     } else {
-        qWarning() << query.lastError();
+        qCWarning(ServiceLogger) << query.lastError();
     }
     if (query.isActive()) {
         query.finish();
@@ -652,10 +653,10 @@ void DAccountDataBase::updateAccountInfo()
         query.addBindValue(m_account->isExpandDisplay());
         query.addBindValue(dtToString(m_account->dtLastSync()));
         if (!query.exec()) {
-            qWarning() << query.lastError();
+            qCWarning(ServiceLogger) << query.lastError();
         }
     } else {
-        qWarning() << query.lastError();
+        qCWarning(ServiceLogger) << query.lastError();
     }
 
     if (query.isActive()) {
@@ -694,10 +695,10 @@ bool DAccountDataBase::addTypeColor(DTypeColor &typeColor)
         if (query.exec()) {
             res = true;
         } else {
-            qWarning() << __FUNCTION__ << query.lastError();
+            qCWarning(ServiceLogger) << __FUNCTION__ << query.lastError();
         }
     } else {
-        qWarning() << __FUNCTION__ << query.lastError();
+        qCWarning(ServiceLogger) << __FUNCTION__ << query.lastError();
     }
 
     if (query.isActive()) {
@@ -713,10 +714,10 @@ void DAccountDataBase::deleteTypeColor(const QString &colorNo)
     if (query.prepare(strSql)) {
         query.addBindValue(colorNo);
         if (!query.exec()) {
-            qWarning() << __FUNCTION__ << query.lastError();
+            qCWarning(ServiceLogger) << __FUNCTION__ << query.lastError();
         }
     } else {
-        qWarning() << __FUNCTION__ << query.lastError();
+        qCWarning(ServiceLogger) << __FUNCTION__ << query.lastError();
     }
 
     if (query.isActive()) {
@@ -740,7 +741,7 @@ DTypeColor::List DAccountDataBase::getSysColor()
             typeColorList.append(color);
         }
     } else {
-        qWarning() << __FUNCTION__ << query.lastError();
+        qCWarning(ServiceLogger) << __FUNCTION__ << query.lastError();
     }
     if (query.isActive()) {
         query.finish();
@@ -766,10 +767,10 @@ void DAccountDataBase::createRemindInfo(const DRemindData::Ptr &remind)
         query.addBindValue(dtToString(remind->dtStart()));
         query.addBindValue(dtToString(remind->dtEnd()));
         if (!query.exec()) {
-            qWarning() << Q_FUNC_INFO << query.lastError();
+            qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
         }
     } else {
-        qWarning() << Q_FUNC_INFO << query.lastError();
+        qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
     }
 }
 
@@ -790,10 +791,10 @@ void DAccountDataBase::updateRemindInfo(const DRemindData::Ptr &remind)
         query.addBindValue(dtToString(remind->dtEnd()));
         query.addBindValue(remind->alarmID());
         if (!query.exec()) {
-            qWarning() << Q_FUNC_INFO << query.lastError();
+            qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
         }
     } else {
-        qWarning() << Q_FUNC_INFO << query.lastError();
+        qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
     }
 }
 
@@ -804,10 +805,10 @@ void DAccountDataBase::deleteRemindInfoByAlarmID(const QString &alarmID)
     if (query.prepare(strSql)) {
         query.addBindValue(alarmID);
         if (!query.exec()) {
-            qWarning() << Q_FUNC_INFO << query.lastError();
+            qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
         }
     } else {
-        qWarning() << Q_FUNC_INFO << query.lastError();
+        qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
     }
 
     if (query.isActive()) {
@@ -837,10 +838,10 @@ DRemindData::Ptr DAccountDataBase::getRemindData(const QString &alarmID)
                 remindData->setRecurrenceId(dtFromString(query.value("recurID").toString()));
             }
         } else {
-            qWarning() << Q_FUNC_INFO << query.lastError();
+            qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
         }
     } else {
-        qWarning() << Q_FUNC_INFO << query.lastError();
+        qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
     }
 
     if (query.isActive()) {
@@ -873,10 +874,10 @@ DRemindData::List DAccountDataBase::getValidRemindJob()
                 remindList.append(remindData);
             }
         } else {
-            qWarning() << Q_FUNC_INFO << query.lastError();
+            qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
         }
     } else {
-        qWarning() << Q_FUNC_INFO << query.lastError();
+        qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
     }
 
     if (query.isActive()) {
@@ -894,7 +895,7 @@ void DAccountDataBase::clearRemindJobDatabase()
             query.finish();
         }
     } else {
-        qWarning() << __FUNCTION__ << query.lastError();
+        qCWarning(ServiceLogger) << __FUNCTION__ << query.lastError();
     }
 }
 
@@ -921,10 +922,10 @@ DRemindData::List DAccountDataBase::getRemindByScheduleID(const QString &schedul
                 remindList.append(remindData);
             }
         } else {
-            qWarning() << Q_FUNC_INFO << query.lastError();
+            qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
         }
     } else {
-        qWarning() << Q_FUNC_INFO << query.lastError();
+        qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
     }
 
     if (query.isActive()) {
@@ -947,10 +948,10 @@ void DAccountDataBase::addUploadTask(const DUploadTaskData::Ptr &uploadTask)
         query.addBindValue(uploadTask->objectId());
         query.addBindValue(dtToString(QDateTime::currentDateTime()));
         if (!query.exec()) {
-            qWarning() << Q_FUNC_INFO << query.lastError();
+            qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
         }
     } else {
-        qWarning() << Q_FUNC_INFO << query.lastError();
+        qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
     }
 
     if (query.isActive()) {
@@ -975,7 +976,7 @@ DUploadTaskData::List DAccountDataBase::getUploadTask()
             uploadList.append(upload);
         }
     } else {
-        qWarning() << Q_FUNC_INFO << query.lastError();
+        qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
     }
     if (query.isActive()) {
         query.finish();
@@ -990,10 +991,10 @@ void DAccountDataBase::deleteUploadTask(const QString &taskID)
     if (query.prepare(strSql)) {
         query.addBindValue(taskID);
         if (!query.exec()) {
-            qWarning() << Q_FUNC_INFO << query.lastError();
+            qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
         }
     } else {
-        qWarning() << Q_FUNC_INFO << query.lastError();
+        qCWarning(ServiceLogger) << Q_FUNC_INFO << query.lastError();
     }
 
     if (query.isActive()) {
@@ -1013,7 +1014,7 @@ void DAccountDataBase::createDB()
     }
     //将权限修改为600（对文件的所有者可以读写，其他用户不可读不可写）
     if (!file.setPermissions(QFile::WriteOwner | QFile::ReadOwner)) {
-        qWarning() << "permissions cannot be modified，error:" << file.errorString();
+        qCWarning(ServiceLogger) << "permissions cannot be modified，error:" << file.errorString();
     }
     if (m_database.open()) {
         SqliteQuery query(m_database);
@@ -1021,37 +1022,37 @@ void DAccountDataBase::createDB()
         //帐户信息表
         res = query.exec(sql_create_account);
         if (!res) {
-            qWarning() << "account create failed.error:" << query.lastError();
+            qCWarning(ServiceLogger) << "account create failed.error:" << query.lastError();
         }
 
         //日程表
         res = query.exec(sql_create_schedules);
         if (!res) {
-            qWarning() << "schedules create failed.error:" << query.lastError();
+            qCWarning(ServiceLogger) << "schedules create failed.error:" << query.lastError();
         }
 
         //类型表
         res = query.exec(sql_create_scheduleType);
         if (!res) {
-            qWarning() << "scheduleType create failed.error:" << query.lastError();
+            qCWarning(ServiceLogger) << "scheduleType create failed.error:" << query.lastError();
         }
 
         //颜色表
         res = query.exec(sql_create_typeColor);
         if (!res) {
-            qWarning() << "typeColorSql create failed.error:" << query.lastError();
+            qCWarning(ServiceLogger) << "typeColorSql create failed.error:" << query.lastError();
         }
 
         //创建上传任务表
         res = query.exec(sql_create_uploadTask);
         if (!res) {
-            qWarning() << "uploadTask create failed.error:" << query.lastError();
+            qCWarning(ServiceLogger) << "uploadTask create failed.error:" << query.lastError();
         }
 
         //创建提醒任务表
         res = query.exec(sql_create_remindTask);
         if (!res) {
-            qWarning() << "remindTask create failed.error:" << query.lastError();
+            qCWarning(ServiceLogger) << "remindTask create failed.error:" << query.lastError();
         }
 
         if (query.isActive()) {
@@ -1187,10 +1188,10 @@ void DAccountDataBase::initAccountDB()
         query.addBindValue(m_account->syncTag());
         query.addBindValue(m_account->isExpandDisplay());
         if (!query.exec()) {
-            qWarning() << "initAccountDB error:" << query.lastError();
+            qCWarning(ServiceLogger) << "initAccountDB error:" << query.lastError();
         }
     } else {
-        qWarning() << "initAccountDB error:" << query.lastError();
+        qCWarning(ServiceLogger) << "initAccountDB error:" << query.lastError();
     }
 
     if (query.isActive()) {

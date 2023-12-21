@@ -6,6 +6,7 @@
 #include <QJsonObject>
 #include <QJsonDocument>
 #include "units.h"
+#include "commondef.h"
 
 Dbuscloudsync::Dbuscloudsync(QObject *parent)
     : DServiceBase(serviceBasePath + "/CloudSync", serviceBaseName + ".CloudSync", parent)
@@ -21,6 +22,6 @@ void Dbuscloudsync::MsgCallBack(const QByteArray &msg)
 
     //TODO:解析获取到的数据，依据需要做后续操作
 
-    qWarning() << "Get " << " error.";
+    qCWarning(CommonLogger) << "Get " << " error.";
 }
 

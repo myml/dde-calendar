@@ -5,6 +5,7 @@
 #include "dsyncdatafactory.h"
 
 #include "dunioniddav.h"
+#include "commondef.h"
 
 #include <QDebug>
 
@@ -18,7 +19,7 @@ DDataSyncBase *DSyncDataFactory::createDataSync(const DAccount::Ptr &account)
     switch (account->accountType()) {
     case DAccount::Account_UnionID:
         syncBase = new DUnionIDDav();
-        qInfo() << "创建同步任务";
+        qCInfo(ServiceLogger) << "创建同步任务";
         break;
     default:
         syncBase = nullptr;

@@ -5,6 +5,7 @@
 #include "dschedulequerypar.h"
 
 #include "units.h"
+#include "commondef.h"
 
 #include <QJsonDocument>
 #include <QJsonObject>
@@ -53,7 +54,7 @@ DScheduleQueryPar::Ptr DScheduleQueryPar::fromJsonString(const QString &queryStr
     QJsonParseError jsonError;
     QJsonDocument jsonDoc(QJsonDocument::fromJson(queryStr.toLocal8Bit(), &jsonError));
     if (jsonError.error != QJsonParseError::NoError) {
-        qWarning() << "error:" << jsonError.errorString() << " queryStr:" << queryStr;
+        qCWarning(CommonLogger) << "error:" << jsonError.errorString() << " queryStr:" << queryStr;
         return nullptr;
     }
     DScheduleQueryPar::Ptr queryPar = DScheduleQueryPar::Ptr(new DScheduleQueryPar);
@@ -92,7 +93,7 @@ DScheduleQueryPar::Ptr DScheduleQueryPar::fromJsonString(const QString &queryStr
 QString DScheduleQueryPar::toJsonString(const DScheduleQueryPar::Ptr &queryPar)
 {
     if (queryPar.isNull()) {
-        qWarning() << "hold a reference to a null pointer.";
+        qCWarning(CommonLogger) << "hold a reference to a null pointer.";
         return QString();
     }
     QJsonObject jsonObj;

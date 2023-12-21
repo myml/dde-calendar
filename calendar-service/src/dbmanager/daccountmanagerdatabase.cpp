@@ -6,6 +6,7 @@
 
 #include "units.h"
 
+#include "commondef.h"
 #include <QSqlQuery>
 #include <QtDebug>
 #include <QSqlError>
@@ -48,7 +49,7 @@ DAccount::List DAccountManagerDataBase::getAccountList()
             accountList.append(account);
         }
     } else {
-        qWarning() << "getAccountList error:" << query.lastError();
+        qCWarning(ServiceLogger) << "getAccountList error:" << query.lastError();
     }
     return accountList;
 }
@@ -77,10 +78,10 @@ DAccount::Ptr DAccountManagerDataBase::getAccountByID(const QString &accountID)
             account->setDtCreate(QDateTime::fromString(query.value("dtCreate").toString(), Qt::ISODate));
             return account;
         } else {
-            qWarning() << "getAccountByID error:" << query.lastError();
+            qCWarning(ServiceLogger) << "getAccountByID error:" << query.lastError();
         }
     } else {
-        qWarning() << "getAccountByID error:" << query.lastError();
+        qCWarning(ServiceLogger) << "getAccountByID error:" << query.lastError();
     }
 
     return nullptr;
@@ -113,11 +114,11 @@ QString DAccountManagerDataBase::addAccountInfo(const DAccount::Ptr &accountInfo
         query.addBindValue(accountInfo->isExpandDisplay());
         query.addBindValue(0);
         if (!query.exec()) {
-            qWarning() << "addAccountInfo error:" << query.lastError();
+            qCWarning(ServiceLogger) << "addAccountInfo error:" << query.lastError();
             accountInfo->setAccountID("");
         }
     } else {
-        qWarning() << "addAccountInfo error:" << query.lastError();
+        qCWarning(ServiceLogger) << "addAccountInfo error:" << query.lastError();
         accountInfo->setAccountID("");
     }
 
@@ -147,7 +148,7 @@ bool DAccountManagerDataBase::updateAccountInfo(const DAccount::Ptr &accountInfo
         res = query.exec();
     }
     if (!res) {
-        qWarning() << "updateAccountInfo error:" << query.lastError();
+        qCWarning(ServiceLogger) << "updateAccountInfo error:" << query.lastError();
     }
 
     return res;
@@ -165,7 +166,7 @@ bool DAccountManagerDataBase::deleteAccountInfo(const QString &accountID)
     }
 
     if (!res) {
-        qWarning() << "deleteAccountInfo error:" << query.lastError();
+        qCWarning(ServiceLogger) << "deleteAccountInfo error:" << query.lastError();
     }
     return res;
 }
@@ -191,13 +192,13 @@ void DAccountManagerDataBase::setCalendarGeneralSettings(const DCalendarGeneralS
     query.prepare("update calendargeneralsettings set vch_value = ? where vch_key = 'firstDayOfWeek' ");
     query.addBindValue(cgSet->firstDayOfWeek());
     if (!query.exec()) {
-        qWarning() << "UPDATE calendargeneralsettings error," << query.lastError();
+        qCWarning(ServiceLogger) << "UPDATE calendargeneralsettings error," << query.lastError();
     }
 
     query.prepare("update calendargeneralsettings set vch_value = ? where vch_key = 'timeShowType' ");
     query.addBindValue(cgSet->timeShowType());
     if (!query.exec()) {
-        qWarning() << "UPDATE calendargeneralsettings error," << query.lastError();
+        qCWarning(ServiceLogger) << "UPDATE calendargeneralsettings error," << query.lastError();
     }
 }
 
@@ -214,7 +215,7 @@ void DAccountManagerDataBase::createDB()
     }
     //将权限修改为600（对文件的所有者可以读写，其他用户不可读不可写）
     if (!file.setPermissions(QFile::WriteOwner | QFile::ReadOwner)) {
-        qWarning() << "permissions cannot be modified，error:" << file.errorString();
+        qCWarning(ServiceLogger) << "permissions cannot be modified，error:" << file.errorString();
     }
 
     if (m_database.open()) {
@@ -223,14 +224,14 @@ void DAccountManagerDataBase::createDB()
         //创建帐户管理表
         res = query.exec(sql_create_accountManager);
         if (!res) {
-            qWarning() << "accountManager create failed.error:" << query.lastError();
+            qCWarning(ServiceLogger) << "accountManager create failed.error:" << query.lastError();
         }
 
 
         //日历通用设置
         res = query.exec(sql_create_calendargeneralsettings);
         if (!res) {
-            qWarning() << "uploadTask create failed.error:" << query.lastError();
+            qCWarning(ServiceLogger) << "uploadTask create failed.error:" << query.lastError();
         }
 
         //创建calendargeneralsettings的触发器，数据有变动时，更新dt_update
@@ -301,10 +302,10 @@ void DAccountManagerDataBase::initAccountManagerDB()
                     query.finish();
                 }
             } else {
-                qWarning() << __FUNCTION__ << query.lastError();
+                qCWarning(ServiceLogger) << __FUNCTION__ << query.lastError();
             }
         } else {
-            qWarning() << __FUNCTION__ << query.lastError();
+            qCWarning(ServiceLogger) << __FUNCTION__ << query.lastError();
         }
     }
 
@@ -316,7 +317,7 @@ void DAccountManagerDataBase::initAccountManagerDB()
                        "('timeShowType',    '0')")) {
             m_database.commit();
         } else {
-            qWarning() << __FUNCTION__ << query.lastError();
+            qCWarning(ServiceLogger) << __FUNCTION__ << query.lastError();
         }
     }
 }

@@ -4,7 +4,7 @@
 
 #include "dservicemanager.h"
 #include "ddatabasemanagement.h"
-
+#include "commondef.h"
 #include <DLog>
 
 #include <QDBusConnection>
@@ -51,10 +51,11 @@ int main(int argc, char *argv[])
 
     Dtk::Core::DLogManager::registerConsoleAppender();
     Dtk::Core::DLogManager::registerFileAppender();
+    Dtk::Core::DLogManager::registerJournalAppender();
 
     //加载翻译
     if (!loadTranslator(&a)) {
-        qDebug() << "loadtranslator failed";
+        qCDebug(ServiceLogger) << "loadtranslator failed";
     }
 
     DDataBaseManagement dbManagement;
@@ -68,6 +69,6 @@ int main(int argc, char *argv[])
           serviceManager.updateRemindJob();
         });
     }
-
+    qCDebug(ServiceLogger) << "dde-calendar-service start";
     return a.exec();
 }

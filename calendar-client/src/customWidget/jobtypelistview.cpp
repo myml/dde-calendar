@@ -4,6 +4,7 @@
 
 #include "jobtypelistview.h"
 #include "cscheduleoperation.h"
+#include "commondef.h"
 #include "scheduletypeeditdlg.h"
 #include "schedulectrldlg.h"
 #include "accountmanager.h"
@@ -215,7 +216,7 @@ void JobTypeListView::slotImportScheduleType()
     }
     auto fileinfo = QFileInfo(filename);
     if (!fileinfo.exists()) {
-        qWarning() << "ics file not exists";
+        qCWarning(ClientLogger) << "ics file not exists";
         return;
     }
     AccountItem::Ptr account = gAccountManager->getAccountItemByAccountId(m_account_id);
@@ -264,7 +265,7 @@ void JobTypeListView::slotImportScheduleType()
         // 二来在导入大文件时堵塞dbus调用，延迟可以避免客户端在日程类型更新信号执行的槽函数被堵塞。
         QTimer::singleShot(1000, &event, &QEventLoop::quit);
     });
-    qDebug() << "import" << typeID << "from" << filename;
+    qCDebug(ClientLogger) << "import" << typeID << "from" << filename;
     // 等待日程创建完毕
     event.exec();
     // 导入ics文件
@@ -296,9 +297,9 @@ void JobTypeListView::slotExportScheduleType()
     QEventLoop event;
     m_waitDialog->show();
     auto typeID = info.typeID();
-    qDebug() << "export" << typeID << "to" << filename;
+    qCDebug(ClientLogger) << "export" << typeID << "to" << filename;
     account->exportSchedule(filename, typeID, [&filename, &event](CallMessge msg) {
-        qDebug() << msg.code << msg.msg;
+        qCDebug(ClientLogger) << msg.code << msg.msg;
         if (msg.code == 0) {
             DDesktopServices::showFileItem(filename);
         }

@@ -3,6 +3,7 @@
 // SPDX-License-Identifier: LGPL-3.0-or-later
 
 #include "dbusaccountrequest.h"
+#include "commondef.h"
 #include <QDBusInterface>
 
 #include <QDBusReply>
@@ -174,7 +175,7 @@ DSchedule::Ptr DbusAccountRequest::getScheduleByScheduleID(const QString &schedu
     pCall.waitForFinished();
     QDBusMessage reply = pCall.reply();
     if (reply.type() != QDBusMessage::ReplyMessage) {
-        qWarning() << "getScheduleTypeByID error ," << reply;
+        qCWarning(ClientLogger) << "getScheduleTypeByID error ," << reply;
         return nullptr;
     }
     QDBusReply<QString> scheduleReply = reply;
@@ -228,7 +229,7 @@ bool DbusAccountRequest::querySchedulesByExternal(const DScheduleQueryPar::Ptr &
 {
     QDBusPendingReply<QString> reply = call("querySchedulesWithParameter", QVariant(params));
     if (reply.isError()) {
-        qWarning() << reply.error().message();
+        qCWarning(ClientLogger) << reply.error().message();
         return false;
     }
     json = reply.argumentAt<0>();
@@ -254,7 +255,7 @@ void DbusAccountRequest::slotCallFinished(CDBusPendingCallWatcher *call)
     QVariant msg;
 
     if (call->isError()) {
-        qWarning() << call->reply().member() << call->error().message();
+        qCWarning(ClientLogger) << call->reply().member() << call->error().message();
         ret = 1;
     } else {
         if (call->getmember() == "getAccountInfo") {
@@ -265,7 +266,7 @@ void DbusAccountRequest::slotCallFinished(CDBusPendingCallWatcher *call)
             if (DAccount::fromJsonString(ptr, str)) {
                 emit signalGetAccountInfoFinish(ptr);
             } else {
-                qWarning() << "AccountInfo Parsing failed!";
+                qCWarning(ClientLogger) << "AccountInfo Parsing failed!";
                 ret = 2;
             }
         } else if (call->getmember() == "getScheduleTypeList") {
@@ -275,7 +276,7 @@ void DbusAccountRequest::slotCallFinished(CDBusPendingCallWatcher *call)
             if (DScheduleType::fromJsonListString(stList, str)) {
                 emit signalGetScheduleTypeListFinish(stList);
             } else {
-                qWarning() << "ScheduleTypeList Parsing failed!";
+                qCWarning(ClientLogger) << "ScheduleTypeList Parsing failed!";
                 ret = 2;
             }
         } else if (call->getmember() == "querySchedulesWithParameter") {

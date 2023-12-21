@@ -3,6 +3,7 @@
 // SPDX-License-Identifier: LGPL-3.0-or-later
 
 #include "dbushuanglirequest.h"
+#include "commondef.h"
 #include <QDebug>
 
 DbusHuangLiRequest::DbusHuangLiRequest(QObject *parent)
@@ -72,7 +73,7 @@ void DbusHuangLiRequest::getLunarMonthCalendar(quint32 year, quint32 month, bool
 void DbusHuangLiRequest::slotCallFinished(CDBusPendingCallWatcher *call)
 {
     if (call->isError()) {
-        qWarning() << call->reply().member() << call->error().message();
+        qCWarning(CommonLogger) << call->reply().member() << call->error().message();
         return;
     }
 

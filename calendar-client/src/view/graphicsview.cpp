@@ -8,6 +8,7 @@
 #include "scheduledlg.h"
 #include "scheduledatamanage.h"
 #include "schedulectrldlg.h"
+#include "commondef.h"
 #include "myscheduleview.h"
 #include "constants.h"
 
@@ -198,7 +199,7 @@ void CGraphicsView::upDateInfoShow(const CGraphicsView::DragStatus &status, cons
                         //添加“...”item
                         int index = tNum - 2;
                         if (index < 0) {
-                            qWarning() << "week view create error,tNum -2 :" << index;
+                            qCWarning(ClientLogger) << "week view create error,tNum -2 :" << index;
                             index = 1;
                         }
                         DSchedule::Ptr tdetaliinfo(info.at(m).vData.at(index)->clone());

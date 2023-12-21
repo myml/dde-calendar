@@ -3,6 +3,7 @@
 // SPDX-License-Identifier: LGPL-3.0-or-later
 
 #include "dcalendargeneralsettings.h"
+#include "commondef.h"
 
 #include <QJsonDocument>
 #include <QJsonObject>
@@ -61,7 +62,7 @@ bool DCalendarGeneralSettings::fromJsonString(Ptr &cgSet, const QString &jsonStr
     QJsonParseError jsonError;
     QJsonDocument jsonDoc(QJsonDocument::fromJson(jsonStr.toLocal8Bit(), &jsonError));
     if (jsonError.error != QJsonParseError::NoError) {
-        qWarning() << "error:" << jsonError.errorString();
+        qCWarning(CommonLogger) << "error:" << jsonError.errorString();
         return false;
     }
 

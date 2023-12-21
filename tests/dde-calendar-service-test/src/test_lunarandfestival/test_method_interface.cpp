@@ -33,13 +33,13 @@ TEST_F(test_method_interface, GetLunarDayName)
     // "初八"
     int lundayname = 8;
     QString lunarDayName = GetLunarDayName(lundayname);
-    //qInfo() << lunarDayName;
+    //qCInfo(CommonLogger) << lunarDayName;
     assert("初八" == lunarDayName);
 
     // "廿五"
     lundayname = 25;
     lunarDayName = GetLunarDayName(lundayname);
-    //qInfo() << lunarDayName;
+    //qCInfo(CommonLogger) << lunarDayName;
     assert("廿五" == lunarDayName);
 }
 
@@ -52,7 +52,7 @@ TEST_F(test_method_interface, GetLunarDayFestival)
     int lunarmonthdays = 30;
     int solarterm = 1;
     QString dayFestival = GetLunarDayFestival(monthname, lunarday, lunarmonthdays, solarterm);
-    //qInfo() << dayFestival;
+    //qCInfo(CommonLogger) << dayFestival;
     assert("除夕" == dayFestival);
 
     // "清明节"
@@ -61,7 +61,7 @@ TEST_F(test_method_interface, GetLunarDayFestival)
     lunarmonthdays = 23;
     solarterm = 1;
     dayFestival = GetLunarDayFestival(monthname, lunarday, lunarmonthdays, solarterm);
-    //qInfo() << dayFestival;
+    //qCInfo(CommonLogger) << dayFestival;
     assert("清明节" == dayFestival);
 
     // ""
@@ -70,7 +70,7 @@ TEST_F(test_method_interface, GetLunarDayFestival)
     lunarmonthdays = 13;
     solarterm = 0;
     dayFestival = GetLunarDayFestival(monthname, lunarday, lunarmonthdays, solarterm);
-    //qInfo() << dayFestival;
+    //qCInfo(CommonLogger) << dayFestival;
     assert("" == dayFestival);
 }
 
@@ -174,7 +174,7 @@ TEST_F(test_method_interface, DmsToRadians)
 TEST_F(test_method_interface, GetDateTimeFromJulianDay)
 {
     QString strJulianDay = "周五 3月 20 03:49:33 2020 GMT";
-    //qInfo() << julianDay.toString();
+    //qCInfo(CommonLogger) << julianDay.toString();
     assert(strJulianDay.contains(GetDateTimeFromJulianDay(GetSolarTermJD(2020, 0)).toString()));
 }
 
@@ -217,5 +217,5 @@ TEST_F(test_method_interface, CalcEarthObliquityNutation)
 TEST_F(test_method_interface, lightAberration)
 {
     lightAberration();
-    //qInfo() << lightAb;
+    //qCInfo(CommonLogger) << lightAb;
 }
