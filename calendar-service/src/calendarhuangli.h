@@ -6,6 +6,8 @@
 #define CALENDARHUANGLI_H
 
 #include "dhuanglidatabase.h"
+#include "huangliData/dbusdatastruct.h"
+#include <QJsonArray>
 
 #include <QObject>
 
@@ -17,7 +19,7 @@ class CalendarHuangLi : public QObject
 public:
     explicit CalendarHuangLi(QObject *parent = nullptr);
 
-    QString getFestivalMonth(quint32 year, quint32 month);
+    QJsonArray getFestivalMonth(quint32 year, quint32 month);
     QString getHuangLiDay(quint32 year, quint32 month, quint32 day);
     QString getHuangLiMonth(quint32 year, quint32 month, bool fill);
     CaLunarDayInfo getLunarInfoBySolar(quint32 year, quint32 month, quint32 day);

@@ -8,6 +8,10 @@
 
 #include <QDebug>
 #include <QSqlError>
+#include <QFile>
+#include <QJsonDocument>
+#include <QJsonObject>
+#include <QJsonArray>
 
 const QString HolidayDir = ":/holiday-cn";
 
@@ -23,37 +27,49 @@ DHuangLiDataBase::DHuangLiDataBase(QObject *parent)
     dbOpen();
 }
 
-QString DHuangLiDataBase::queryFestivalList(quint32 year, quint8 month)
+// readJSON 会读取一个JSON文件，如果 cache 为 true，则会缓存对象，以供下次使用
+QJsonDocument DHuangLiDataBase::readJSON(QString filename, bool cache)
+{
+    if (cache && readJSONCache.contains(filename)) {
+        return readJSONCache.value(filename);
+    }
+    qCDebug(ServiceLogger) << "read json file" << filename;
+    QJsonDocument doc;
+    QFile file(filename);
+    if (!file.open(QIODevice::ReadOnly)) {
+        qCWarning(ServiceLogger) << "cannot open json file" << filename;
+    } else {
+        auto data = file.readAll();
+        doc = QJsonDocument::fromJson(data);
+    }
+    readJSONCache.insert(filename, doc);
+    return readJSONCache.value(filename);
+}
+
+// queryFestivalList 查询指定月份的节假日列表
+QJsonArray DHuangLiDataBase::queryFestivalList(quint32 year, quint8 month)
 {
     qCDebug(ServiceLogger) << "query festival list"
                            << "year" << year << "month" << month;
     QJsonArray dataset;
-    QFile file(QString("%1/%2.json").arg(HolidayDir).arg(year));
-    qCDebug(ServiceLogger) << "festival file name" << file.fileName();
-    if (file.open(QIODevice::ReadOnly)) {
-        auto data = file.readAll();
-        file.close();
-        auto doc = QJsonDocument::fromJson(data);
-        for (auto val : doc.object().value("days").toArray()) {
-            auto day = val.toObject();
-            auto name = day.value("name").toString();
-            auto date = QDate::fromString(day.value("date").toString(), "yyyy-MM-dd");
-            auto isOffday = day.value("isOffDay").toBool();
-            if (quint32(date.year()) == year && quint32(date.month()) == month) {
-                qCDebug(ServiceLogger) << "festival day" << name << date << isOffday;
-                QJsonObject obj;
-                obj.insert("name", name);
-                obj.insert("date", date.toString("yyyy-MM-dd"));
-                obj.insert("status", isOffday ? 1 : 2);
-                dataset.append(obj);
-            }
+    auto filename = QString("%1/%2.json").arg(HolidayDir).arg(year);
+    qCDebug(ServiceLogger) << "festival file name" << filename;
+    auto doc = readJSON(filename, true);
+    for (auto val : doc.object().value("days").toArray()) {
+        auto day = val.toObject();
+        auto name = day.value("name").toString();
+        auto date = QDate::fromString(day.value("date").toString(), "yyyy-MM-dd");
+        auto isOffday = day.value("isOffDay").toBool();
+        if (quint32(date.year()) == year && quint32(date.month()) == month) {
+            qCDebug(ServiceLogger) << "festival day" << name << date << isOffday;
+            QJsonObject obj;
+            obj.insert("name", name);
+            obj.insert("date", date.toString("yyyy-MM-dd"));
+            obj.insert("status", isOffday ? 1 : 2);
+            dataset.append(obj);
         }
-        file.close();
     }
-    QJsonDocument result;
-    QJsonObject obj;
-    result.setArray(dataset);
-    return QString(result.toJson(QJsonDocument::Compact));
+    return dataset;
 }
 
 QList<stHuangLi> DHuangLiDataBase::queryHuangLiByDays(const QList<stDay> &days)
