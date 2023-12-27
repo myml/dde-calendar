@@ -5,10 +5,6 @@
 #include "calendarhuangli.h"
 #include "lunarandfestival/lunarmanager.h"
 
-#include <QJsonObject>
-#include <QJsonDocument>
-#include <QJsonArray>
-
 CalendarHuangLi::CalendarHuangLi(QObject *parent)
     : QObject(parent)
     , m_database(new DHuangLiDataBase(this))
@@ -16,9 +12,9 @@ CalendarHuangLi::CalendarHuangLi(QObject *parent)
 }
 
 //获取指定公历月的假日信息
-QString CalendarHuangLi::getFestivalMonth(quint32 year, quint32 month)
+QJsonArray CalendarHuangLi::getFestivalMonth(quint32 year, quint32 month)
 {
-    return m_database->queryFestivalList(year, static_cast<quint8>(month));
+    return m_database->queryFestivalList(year, month);
 }
 
 QString CalendarHuangLi::getHuangLiDay(quint32 year, quint32 month, quint32 day)
