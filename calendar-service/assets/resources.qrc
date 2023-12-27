@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file>pinyin.dict</file>
+        <file>holiday-cn/2024.json</file>
     </qresource>
 </RCC>
