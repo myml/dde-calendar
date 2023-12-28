@@ -1,3 +1,11 @@
+dde-calendar (5.12.0) unstable; urgency=medium
+
+  * feat: add deepin-log config
+  * feat: Supplement the holidays for the year 2024
+  * feat: Optimize holiday query, change the return type to QJsonArray
+
+ -- myml <wurongjie@deepin.org> Thu, 28 Dec 2023 10:23:56 +0800
+
 dde-calendar (5.11.1) unstable; urgency=medium
 
   * fix: remove unused dframeworkdbus
