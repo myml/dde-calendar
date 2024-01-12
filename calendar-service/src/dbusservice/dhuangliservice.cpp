@@ -18,13 +18,23 @@ DHuangliService::DHuangliService(QObject *parent)
 }
 
 // 获取指定公历月的假日信息
+// !这个接口 dde-daemon 在使用，不能变动!
 QString DHuangliService::getFestivalMonth(quint32 year, quint32 month)
 {
     DServiceExitControl exitControl;
-    auto arr = m_huangli->getFestivalMonth(year, month);
-    QJsonDocument result;
-    result.setArray(arr);
-    return result.toJson(QJsonDocument::Compact);
+    auto list = m_huangli->getFestivalMonth(year, month);
+    // 保持接口返回值兼容
+    QJsonArray result;
+    if (!list.empty()) {
+        QJsonObject obj;
+        obj.insert("id", list.at(0)["date"]);
+        obj.insert("description", "");
+        obj.insert("list", list);
+        result.push_back(obj);
+    }
+    QJsonDocument doc;
+    doc.setArray(result);
+    return doc.toJson(QJsonDocument::Compact);
 }
 
 // 获取指定公历日的黄历信息
