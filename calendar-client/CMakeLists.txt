@@ -98,3 +98,4 @@ install(DIRECTORY ${APP_RES_DIR}/dde-calendar
         DESTINATION ${CMAKE_INSTALL_DATADIR}/deepin-manual/manual-assets/application/)
 install(FILES ${APP_DESKTOP} DESTINATION ${CMAKE_INSTALL_DATADIR}/applications)
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/dbus/com.deepin.Calendar.service DESTINATION ${CMAKE_INSTALL_DATADIR}/dbus-1/services)
+install(FILES assets/org.deepin.calendar.metainfo.xml DESTINATION ${CMAKE_INSTALL_DATADIR}/metainfo)
