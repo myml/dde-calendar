@@ -14,6 +14,7 @@
 #include <QObject>
 #include <QSharedPointer>
 #include <QTimer>
+#include <DConfig>
 
 //帐户类型总数，若支持的类型增加则需要修改
 const int accountTypeCount = 3;
@@ -80,6 +81,10 @@ private:
     //获取设置开关状态
     void setUidSwitchStatus(const DAccount::Ptr &account);
 
+    DCalendarGeneralSettings::Ptr getGeneralSettings();
+
+    void setGeneralSettings(const DCalendarGeneralSettings::Ptr &cgSet);
+
 signals:
     void firstDayOfWeekChange();
     void timeFormatTypeChange();
@@ -105,6 +110,7 @@ private:
     QMap<QString, DAccountModule::Ptr> m_accountModuleMap;
     QMap<QString, DAccountService::Ptr> m_AccountServiceMap[accountTypeCount];
     DCalendarGeneralSettings::Ptr m_generalSetting;
+    DTK_CORE_NAMESPACE::DConfig *m_reginFormatConfig;
     QTimer m_timer;
     bool m_isSupportUid = false;
 };
