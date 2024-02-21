@@ -35,63 +35,63 @@
     <name>CColorPickerWidget</name>
     <message>
         <source>Color</source>
-        <translation type="unfinished"></translation>
+        <translation>Warna</translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Batal</translation>
     </message>
     <message>
         <source>Save</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Simpan</translation>
     </message>
 </context>
 <context>
     <name>CDayMonthView</name>
     <message>
         <source>Monday</source>
-        <translation type="unfinished"></translation>
+        <translation>Isnin</translation>
     </message>
     <message>
         <source>Tuesday</source>
-        <translation type="unfinished"></translation>
+        <translation>Selasa</translation>
     </message>
     <message>
         <source>Wednesday</source>
-        <translation type="unfinished"></translation>
+        <translation>Rabu</translation>
     </message>
     <message>
         <source>Thursday</source>
-        <translation type="unfinished"></translation>
+        <translation>Khamis</translation>
     </message>
     <message>
         <source>Friday</source>
-        <translation type="unfinished"></translation>
+        <translation>Jumaat</translation>
     </message>
     <message>
         <source>Saturday</source>
-        <translation type="unfinished"></translation>
+        <translation>Sabtu</translation>
     </message>
     <message>
         <source>Sunday</source>
-        <translation type="unfinished"></translation>
+        <translation>Ahad</translation>
     </message>
 </context>
 <context>
     <name>CDayWindow</name>
     <message>
         <source>Y</source>
-        <translation type="unfinished"></translation>
+        <translation>T</translation>
     </message>
     <message>
         <source>M</source>
-        <translation type="unfinished"></translation>
+        <translation>B</translation>
     </message>
     <message>
         <source>D</source>
-        <translation type="unfinished"></translation>
+        <translation>H</translation>
     </message>
     <message>
         <source>Lunar</source>
@@ -102,54 +102,54 @@
     <name>CGraphicsView</name>
     <message>
         <source>New Event</source>
-        <translation type="unfinished"></translation>
+        <translation>Peristiwa Baharu</translation>
     </message>
 </context>
 <context>
     <name>CMonthScheduleNumItem</name>
     <message>
         <source>%1 more</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 lagi</translation>
     </message>
 </context>
 <context>
     <name>CMonthView</name>
     <message>
         <source>New event</source>
-        <translation type="unfinished"></translation>
+        <translation>Peristiwa baharu</translation>
     </message>
     <message>
         <source>New Event</source>
-        <translation type="unfinished"></translation>
+        <translation>Peristiwa Baharu</translation>
     </message>
 </context>
 <context>
     <name>CMonthWindow</name>
     <message>
         <source>Y</source>
-        <translation type="unfinished"></translation>
+        <translation>T</translation>
     </message>
 </context>
 <context>
     <name>CMyScheduleView</name>
     <message>
         <source>My Event</source>
-        <translation type="unfinished"></translation>
+        <translation>Peristiwa Saya</translation>
     </message>
     <message>
         <source>OK</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Delete</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Padam</translation>
     </message>
     <message>
         <source>Edit</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Sunting</translation>
     </message>
 </context>
 <context>
@@ -163,60 +163,60 @@
     <name>CScheduleDlg</name>
     <message>
         <source>New Event</source>
-        <translation type="unfinished"></translation>
+        <translation>Peristiwa Baharu</translation>
     </message>
     <message>
         <source>Edit Event</source>
-        <translation type="unfinished"></translation>
+        <translation>Sunting Peristiwa</translation>
     </message>
     <message>
         <source>End time must be greater than start time</source>
-        <translation type="unfinished"></translation>
+        <translation>Masa tamat mesti lebih besar dari masa mula</translation>
     </message>
     <message>
         <source>OK</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Never</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak sesekali</translation>
     </message>
     <message>
         <source>At time of event</source>
-        <translation type="unfinished"></translation>
+        <translation>Semua tempoh peristiwa</translation>
     </message>
     <message>
         <source>15 minutes before</source>
-        <translation type="unfinished"></translation>
+        <translation>15 minit sebelum</translation>
     </message>
     <message>
         <source>30 minutes before</source>
-        <translation type="unfinished"></translation>
+        <translation>30 minit sebelum</translation>
     </message>
     <message>
         <source>1 hour before</source>
-        <translation type="unfinished"></translation>
+        <translation>1 jam sebelum</translation>
     </message>
     <message>
         <source>1 day before</source>
-        <translation type="unfinished"></translation>
+        <translation>1 hari sebelum</translation>
     </message>
     <message>
         <source>2 days before</source>
-        <translation type="unfinished"></translation>
+        <translation>2 hari sebelum</translation>
     </message>
     <message>
         <source>1 week before</source>
-        <translation type="unfinished"></translation>
+        <translation>1 minggu sebelum</translation>
     </message>
     <message>
         <source>On start day (9:00 AM)</source>
-        <translation type="unfinished"></translation>
+        <translation>Pada hari mula (9:00 AM)</translation>
     </message>
     <message>
         <source>time(s)</source>
-        <translation type="unfinished"></translation>
+        <translation>kali</translation>
     </message>
     <message>
         <source>Enter a name please</source>
@@ -228,35 +228,35 @@
     </message>
     <message>
         <source>Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Jenis:</translation>
     </message>
     <message>
         <source>Description:</source>
-        <translation type="unfinished"></translation>
+        <translation>Keterangan:</translation>
     </message>
     <message>
         <source>All Day:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sepanjang Hari:</translation>
     </message>
     <message>
         <source>Starts:</source>
-        <translation type="unfinished"></translation>
+        <translation>Mula:</translation>
     </message>
     <message>
         <source>Ends:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tamat:</translation>
     </message>
     <message>
         <source>Remind Me:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingatkan Saya:</translation>
     </message>
     <message>
         <source>Repeat:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ulang:</translation>
     </message>
     <message>
         <source>End Repeat:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tamat Ulang:</translation>
     </message>
     <message>
         <source>Calendar account:</source>
@@ -268,15 +268,15 @@
     </message>
     <message>
         <source>Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Jenis</translation>
     </message>
     <message>
         <source>Description</source>
-        <translation type="unfinished"></translation>
+        <translation>Keterangan</translation>
     </message>
     <message>
         <source>All Day</source>
-        <translation type="unfinished"></translation>
+        <translation>Sepanjang Hari</translation>
     </message>
     <message>
         <source>Time:</source>
@@ -284,7 +284,7 @@
     </message>
     <message>
         <source>Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Masa</translation>
     </message>
     <message>
         <source>Solar</source>
@@ -296,142 +296,142 @@
     </message>
     <message>
         <source>Starts</source>
-        <translation type="unfinished"></translation>
+        <translation>Mula</translation>
     </message>
     <message>
         <source>Ends</source>
-        <translation type="unfinished"></translation>
+        <translation>Tamat</translation>
     </message>
     <message>
         <source>Remind Me</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingatkan Saya</translation>
     </message>
     <message>
         <source>Repeat</source>
-        <translation type="unfinished"></translation>
+        <translation>Ulang</translation>
     </message>
     <message>
         <source>Daily</source>
-        <translation type="unfinished"></translation>
+        <translation>Harian</translation>
     </message>
     <message>
         <source>Weekdays</source>
-        <translation type="unfinished"></translation>
+        <translation>Hari Bekerja</translation>
     </message>
     <message>
         <source>Weekly</source>
-        <translation type="unfinished"></translation>
+        <translation>Mingguan</translation>
     </message>
     <message>
         <source>Monthly</source>
-        <translation type="unfinished"></translation>
+        <translation>Bulanan</translation>
     </message>
     <message>
         <source>Yearly</source>
-        <translation type="unfinished"></translation>
+        <translation>Tahunan</translation>
     </message>
     <message>
         <source>End Repeat</source>
-        <translation type="unfinished"></translation>
+        <translation>Tamat Ulang</translation>
     </message>
     <message>
         <source>After</source>
-        <translation type="unfinished"></translation>
+        <translation>Selepas</translation>
     </message>
     <message>
         <source>On</source>
-        <translation type="unfinished"></translation>
+        <translation>Pada</translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Batal</translation>
     </message>
     <message>
         <source>Save</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Simpan</translation>
     </message>
 </context>
 <context>
     <name>CScheduleOperation</name>
     <message>
         <source>All occurrences of a repeating event must have the same all-day status.</source>
-        <translation type="unfinished"></translation>
+        <translation>Semua kemunculan bagi peristiwa berulang mesti mempunyai status sepanjang-hari yang sama.</translation>
     </message>
     <message>
         <source>Do you want to change all occurrences?</source>
-        <translation type="unfinished"></translation>
+        <translation>Anda pasti mahu mengubah semua kemunculan?</translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Batal</translation>
     </message>
     <message>
         <source>Change All</source>
-        <translation type="unfinished"></translation>
+        <translation>Ubah Semua</translation>
     </message>
     <message>
         <source>You are changing the repeating rule of this event.</source>
-        <translation type="unfinished"></translation>
+        <translation>Anda mengubah peraturan berulang bagi peristiwa ini.</translation>
     </message>
     <message>
         <source>You are deleting an event.</source>
-        <translation type="unfinished"></translation>
+        <translation>Anda telah memadam satu peristiwa.</translation>
     </message>
     <message>
         <source>Are you sure you want to delete this event?</source>
-        <translation type="unfinished"></translation>
+        <translation>Anda pasti mahu memadam peristiwa ini?</translation>
     </message>
     <message>
         <source>Delete</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Padam</translation>
     </message>
     <message>
         <source>Do you want to delete all occurrences of this event, or only the selected occurrence?</source>
-        <translation type="unfinished"></translation>
+        <translation>Anda pasti mahu memadam semua kemunculan peristiwa ini, atau hanya kemunculan terpilih?</translation>
     </message>
     <message>
         <source>Delete All</source>
-        <translation type="unfinished"></translation>
+        <translation>Padam Semua</translation>
     </message>
     <message>
         <source>Delete Only This Event</source>
-        <translation type="unfinished"></translation>
+        <translation>Hanya Padam Peristiwa Ini</translation>
     </message>
     <message>
         <source>Do you want to delete this and all future occurrences of this event, or only the selected occurrence?</source>
-        <translation type="unfinished"></translation>
+        <translation>Anda pasti mahu memadam semua kemunculan peristiwa ini dan akan datang, atau hanya kemunculan terpilih?</translation>
     </message>
     <message>
         <source>Delete All Future Events</source>
-        <translation type="unfinished"></translation>
+        <translation>Padam Semua Peristiwa Akan Datang</translation>
     </message>
     <message>
         <source>You are changing a repeating event.</source>
-        <translation type="unfinished"></translation>
+        <translation>Anda mengubah satu peristiwa berulang.</translation>
     </message>
     <message>
         <source>Do you want to change only this occurrence of the event, or all occurrences?</source>
-        <translation type="unfinished"></translation>
+        <translation>Anda pasti mahu mengubah hanya kemunculan peristiwa ini, atau semua kemunculan?</translation>
     </message>
     <message>
         <source>All</source>
-        <translation type="unfinished"></translation>
+        <translation>Semua</translation>
     </message>
     <message>
         <source>Only This Event</source>
-        <translation type="unfinished"></translation>
+        <translation>Hanya Peristiwa Ini</translation>
     </message>
     <message>
         <source>Do you want to change only this occurrence of the event, or this and all future occurrences?</source>
-        <translation type="unfinished"></translation>
+        <translation>Anda pasti mahu mengubah hanya kemunculan peristiwa ini, atau ini dan semua kemunculan masa hadapan?</translation>
     </message>
     <message>
         <source>All Future Events</source>
-        <translation type="unfinished"></translation>
+        <translation>Semua Peristiwa Masa Hadapan</translation>
     </message>
     <message>
         <source>You have selected a leap month, and will be reminded according to the rules of the lunar calendar.</source>
@@ -440,74 +440,62 @@
     <message>
         <source>OK</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
     <name>CScheduleSearchDateItem</name>
     <message>
         <source>Y</source>
-        <translation type="unfinished"></translation>
+        <translation>T</translation>
     </message>
     <message>
         <source>M</source>
-        <translation type="unfinished"></translation>
+        <translation>B</translation>
     </message>
     <message>
         <source>D</source>
-        <translation type="unfinished"></translation>
+        <translation>H</translation>
     </message>
 </context>
 <context>
     <name>CScheduleSearchItem</name>
     <message>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Sunting</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Padam</translation>
     </message>
     <message>
         <source>All Day</source>
-        <translation type="unfinished"></translation>
+        <translation>Sepanjang Hari</translation>
     </message>
 </context>
 <context>
     <name>CScheduleSearchView</name>
     <message>
         <source>No search results</source>
-        <translation type="unfinished"></translation>
+        <translation>Tiada keputusan gelintar</translation>
     </message>
 </context>
 <context>
     <name>CScheduleView</name>
     <message>
         <source>ALL DAY</source>
-        <translation type="unfinished"></translation>
+        <translation>SEPANJANG HARI</translation>
     </message>
 </context>
 <context>
     <name>CSettingDialog</name>
     <message>
-        <source>Sunday</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Monday</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>24-hour clock</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>12-hour clock</source>
+        <source>import ICS file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Manual</source>
-        <translation type="unfinished"></translation>
+        <translation>Manual</translation>
     </message>
     <message>
         <source>15 mins</source>
@@ -519,7 +507,7 @@
     </message>
     <message>
         <source>1 hour</source>
-        <translation type="unfinished"></translation>
+        <translation>1 jam</translation>
     </message>
     <message>
         <source>24 hours</source>
@@ -531,6 +519,46 @@
     </message>
     <message>
         <source>Last sync</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Monday</source>
+        <translation>Isnin</translation>
+    </message>
+    <message>
+        <source>Tuesday</source>
+        <translation type="unfinished">Selasa</translation>
+    </message>
+    <message>
+        <source>Wednesday</source>
+        <translation type="unfinished">Rabu</translation>
+    </message>
+    <message>
+        <source>Thursday</source>
+        <translation type="unfinished">Khamis</translation>
+    </message>
+    <message>
+        <source>Friday</source>
+        <translation type="unfinished">Jumaat</translation>
+    </message>
+    <message>
+        <source>Saturday</source>
+        <translation type="unfinished">Sabtu</translation>
+    </message>
+    <message>
+        <source>Sunday</source>
+        <translation>Ahad</translation>
+    </message>
+    <message>
+        <source>12-hour clock</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>24-hour clock</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Please go to the &lt;a href=&apos;/&apos;&gt;Control Center&lt;/a&gt; to change settings</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -553,19 +581,19 @@
     <name>CTitleWidget</name>
     <message>
         <source>Y</source>
-        <translation type="unfinished"></translation>
+        <translation>T</translation>
     </message>
     <message>
         <source>M</source>
-        <translation type="unfinished"></translation>
+        <translation>B</translation>
     </message>
     <message>
         <source>W</source>
-        <translation type="unfinished"></translation>
+        <translation>M</translation>
     </message>
     <message>
         <source>D</source>
-        <translation type="unfinished"></translation>
+        <translation>H</translation>
     </message>
     <message>
         <source>Search events and festivals</source>
@@ -576,78 +604,78 @@
     <name>CWeekWidget</name>
     <message>
         <source>Sun</source>
-        <translation type="unfinished"></translation>
+        <translation>Ahd</translation>
     </message>
     <message>
         <source>Mon</source>
-        <translation type="unfinished"></translation>
+        <translation>Isn</translation>
     </message>
     <message>
         <source>Tue</source>
-        <translation type="unfinished"></translation>
+        <translation>Sel</translation>
     </message>
     <message>
         <source>Wed</source>
-        <translation type="unfinished"></translation>
+        <translation>Rab</translation>
     </message>
     <message>
         <source>Thu</source>
-        <translation type="unfinished"></translation>
+        <translation>Kha</translation>
     </message>
     <message>
         <source>Fri</source>
-        <translation type="unfinished"></translation>
+        <translation>Jum</translation>
     </message>
     <message>
         <source>Sat</source>
-        <translation type="unfinished"></translation>
+        <translation>Sab</translation>
     </message>
 </context>
 <context>
     <name>CWeekWindow</name>
     <message>
         <source>Week</source>
-        <translation type="unfinished"></translation>
+        <translation>Minggu</translation>
     </message>
     <message>
         <source>Y</source>
-        <translation type="unfinished"></translation>
+        <translation>T</translation>
     </message>
 </context>
 <context>
     <name>CYearScheduleView</name>
     <message>
         <source>All Day</source>
-        <translation type="unfinished"></translation>
+        <translation>Sepanjang Hari</translation>
     </message>
     <message>
         <source>No event</source>
-        <translation type="unfinished"></translation>
+        <translation>Tiada peristiwa</translation>
     </message>
 </context>
 <context>
     <name>CYearWindow</name>
     <message>
         <source>Y</source>
-        <translation type="unfinished"></translation>
+        <translation>T</translation>
     </message>
 </context>
 <context>
     <name>CalendarWindow</name>
     <message>
         <source>Calendar</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalendar</translation>
     </message>
     <message>
         <source>Calendar is a tool to view dates, and also a smart daily planner to schedule all things in life. </source>
-        <translation type="unfinished"></translation>
+        <translation>Kalendar ialah sebuah alat untuk melihat tarikh, dan juga satu perancang harian pintar yang dapat menjadualkan semua perkara dalam hidup ini.</translation>
     </message>
 </context>
 <context>
     <name>Calendarmainwindow</name>
     <message>
         <source>Calendar</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalendar</translation>
     </message>
     <message>
         <source>Manage</source>
@@ -655,11 +683,11 @@
     </message>
     <message>
         <source>Privacy Policy</source>
-        <translation type="unfinished"></translation>
+        <translation>Dasar Persendirian</translation>
     </message>
     <message>
         <source>Syncing...</source>
-        <translation type="unfinished"></translation>
+        <translation>Menyegerak...</translation>
     </message>
     <message>
         <source>Sync successful</source>
@@ -674,7 +702,7 @@
     <name>CenterWidget</name>
     <message>
         <source>All Day</source>
-        <translation type="unfinished"></translation>
+        <translation>Sepanjang Hari</translation>
     </message>
 </context>
 <context>
@@ -744,23 +772,31 @@
     <name>DragInfoGraphicsView</name>
     <message>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Sunting</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Padam</translation>
     </message>
     <message>
         <source>New event</source>
-        <translation type="unfinished"></translation>
+        <translation>Peristiwa baharu</translation>
     </message>
     <message>
         <source>New Event</source>
-        <translation type="unfinished"></translation>
+        <translation>Peristiwa Baharu</translation>
     </message>
 </context>
 <context>
     <name>JobTypeListView</name>
+    <message>
+        <source>export</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>import ICS file</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message>
         <source>You are deleting an event type.</source>
         <translation type="unfinished"></translation>
@@ -772,12 +808,12 @@
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Batal</translation>
     </message>
     <message>
         <source>Delete</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Padam</translation>
     </message>
 </context>
 <context>
@@ -788,7 +824,7 @@
     </message>
     <message>
         <source>Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Akaun</translation>
     </message>
     <message>
         <source>Select items to be synced</source>
@@ -820,7 +856,7 @@
     </message>
     <message>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>Am</translation>
     </message>
     <message>
         <source>First day of week</source>
@@ -828,7 +864,7 @@
     </message>
     <message>
         <source>Time</source>
-        <translation type="unfinished"></translation>
+        <translation>Masa</translation>
     </message>
 </context>
 <context>
@@ -836,7 +872,7 @@
     <message>
         <source>Today</source>
         <comment>Return</comment>
-        <translation type="unfinished">Hari ini</translation>
+        <translation>Hari ini</translation>
     </message>
 </context>
 <context>
@@ -844,7 +880,7 @@
     <message>
         <source>Today</source>
         <comment>Return Today</comment>
-        <translation type="unfinished">Hari ini</translation>
+        <translation>Hari ini</translation>
     </message>
 </context>
 <context>
@@ -858,22 +894,30 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Name:</source>
+        <source>Import ICS file</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Nama:</translation>
     </message>
     <message>
         <source>Color:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>&lt;a href=&apos;https://wikipedia.org/wiki/ICalendar&apos;&gt;ICS&lt;/a&gt; File:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Batal</translation>
     </message>
     <message>
         <source>Save</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Simpan</translation>
     </message>
     <message>
         <source>The name can not only contain whitespaces</source>
@@ -888,42 +932,42 @@
     <name>Shortcut</name>
     <message>
         <source>Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Bantuan</translation>
     </message>
     <message>
         <source>Delete event</source>
-        <translation type="unfinished"></translation>
+        <translation>Padam peristiwa</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation type="unfinished"></translation>
+        <translation>Salin</translation>
     </message>
     <message>
         <source>Cut</source>
-        <translation type="unfinished"></translation>
+        <translation>Potong</translation>
     </message>
     <message>
         <source>Paste</source>
-        <translation type="unfinished"></translation>
+        <translation>Tampal</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Padam</translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation type="unfinished"></translation>
+        <translation>Pilih semua</translation>
     </message>
 </context>
 <context>
     <name>SidebarCalendarWidget</name>
     <message>
         <source>Y</source>
-        <translation type="unfinished"></translation>
+        <translation>T</translation>
     </message>
     <message>
         <source>M</source>
-        <translation type="unfinished"></translation>
+        <translation>B</translation>
     </message>
 </context>
 <context>
@@ -939,19 +983,19 @@
     <message>
         <source>Sign In</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Daftar Masuk</translation>
     </message>
     <message>
         <source>Sign Out</source>
         <comment>button</comment>
-        <translation type="unfinished"></translation>
+        <translation>Daftar Keluar</translation>
     </message>
 </context>
 <context>
     <name>YearFrame</name>
     <message>
         <source>Y</source>
-        <translation type="unfinished"></translation>
+        <translation>T</translation>
     </message>
 </context>
 <context>
@@ -959,7 +1003,7 @@
     <message>
         <source>Today</source>
         <comment>Today</comment>
-        <translation type="unfinished">Hari ini</translation>
+        <translation>Hari ini</translation>
     </message>
 </context>
 </TS>
