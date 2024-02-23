@@ -1,708 +1,698 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="sq">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="sq">
 <context>
     <name>AccountItem</name>
     <message>
         <source>Sync successful</source>
-        <translation>Njëkohësim i suksesshëm</translation>
+        <translation type="vanished">Njëkohësim i suksesshëm</translation>
     </message>
     <message>
         <source>Network error</source>
-        <translation>Gabim rrjeti</translation>
+        <translation type="vanished">Gabim rrjeti</translation>
     </message>
     <message>
         <source>Server exception</source>
-        <translation>Përjashtim në shërbyes</translation>
+        <translation type="vanished">Përjashtim në shërbyes</translation>
     </message>
     <message>
         <source>Storage full</source>
-        <translation>Depozitë e plotë</translation>
+        <translation type="vanished">Depozitë e plotë</translation>
     </message>
 </context>
 <context>
     <name>AccountManager</name>
     <message>
         <source>Local account</source>
-        <translation>Llogari vendore</translation>
+        <translation type="vanished">Llogari vendore</translation>
     </message>
     <message>
         <source>Event types</source>
-        <translation>Lloje veprimtarish</translation>
+        <translation type="vanished">Lloje veprimtarish</translation>
     </message>
 </context>
 <context>
     <name>CColorPickerWidget</name>
     <message>
         <source>Color</source>
-        <translation>Ngjyrë</translation>
+        <translation type="vanished">Ngjyrë</translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Anuloje</translation>
+        <translation type="vanished">Anuloje</translation>
     </message>
     <message>
         <source>Save</source>
         <comment>button</comment>
-        <translation>Ruaje</translation>
+        <translation type="vanished">Ruaje</translation>
     </message>
 </context>
 <context>
     <name>CDayMonthView</name>
     <message>
         <source>Monday</source>
-        <translation>E hënë</translation>
+        <translation type="vanished">E hënë</translation>
     </message>
     <message>
         <source>Tuesday</source>
-        <translation>E martë</translation>
+        <translation type="vanished">E martë</translation>
     </message>
     <message>
         <source>Wednesday</source>
-        <translation>E mërkurë</translation>
+        <translation type="vanished">E mërkurë</translation>
     </message>
     <message>
         <source>Thursday</source>
-        <translation>E enjte</translation>
+        <translation type="vanished">E enjte</translation>
     </message>
     <message>
         <source>Friday</source>
-        <translation>E premte</translation>
+        <translation type="vanished">E premte</translation>
     </message>
     <message>
         <source>Saturday</source>
-        <translation>E shtunë</translation>
+        <translation type="vanished">E shtunë</translation>
     </message>
     <message>
         <source>Sunday</source>
-        <translation>E diel</translation>
+        <translation type="vanished">E diel</translation>
     </message>
 </context>
 <context>
     <name>CDayWindow</name>
     <message>
         <source>Y</source>
-        <translation>V</translation>
+        <translation type="vanished">V</translation>
     </message>
     <message>
         <source>M</source>
-        <translation>M</translation>
+        <translation type="vanished">M</translation>
     </message>
     <message>
         <source>D</source>
-        <translation>D</translation>
+        <translation type="vanished">D</translation>
     </message>
     <message>
         <source>Lunar</source>
-        <translation>Hënor</translation>
+        <translation type="vanished">Hënor</translation>
     </message>
 </context>
 <context>
     <name>CGraphicsView</name>
     <message>
         <source>New Event</source>
-        <translation>Veprimtari e Re</translation>
+        <translation type="vanished">Veprimtari e Re</translation>
     </message>
 </context>
 <context>
     <name>CMonthScheduleNumItem</name>
     <message>
         <source>%1 more</source>
-        <translation>%1 më tepër</translation>
+        <translation type="vanished">%1 më tepër</translation>
     </message>
 </context>
 <context>
     <name>CMonthView</name>
     <message>
         <source>New event</source>
-        <translation>Veprimtari e re</translation>
+        <translation type="vanished">Veprimtari e re</translation>
     </message>
     <message>
         <source>New Event</source>
-        <translation>Veprimtari e Re</translation>
+        <translation type="vanished">Veprimtari e Re</translation>
     </message>
 </context>
 <context>
     <name>CMonthWindow</name>
     <message>
         <source>Y</source>
-        <translation>V</translation>
+        <translation type="vanished">V</translation>
     </message>
 </context>
 <context>
     <name>CMyScheduleView</name>
     <message>
         <source>My Event</source>
-        <translation>Veprimtari e Imja</translation>
+        <translation type="vanished">Veprimtari e Imja</translation>
     </message>
     <message>
         <source>OK</source>
         <comment>button</comment>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Delete</source>
         <comment>button</comment>
-        <translation>Fshije</translation>
+        <translation type="vanished">Fshije</translation>
     </message>
     <message>
         <source>Edit</source>
         <comment>button</comment>
-        <translation>Përpunojeni</translation>
+        <translation type="vanished">Përpunojeni</translation>
     </message>
 </context>
 <context>
     <name>CPushButton</name>
     <message>
         <source>New event type</source>
-        <translation>Lloj i ri veprimtarie</translation>
+        <translation type="vanished">Lloj i ri veprimtarie</translation>
     </message>
 </context>
 <context>
     <name>CScheduleDlg</name>
     <message>
         <source>New Event</source>
-        <translation>Veprimtari e Re</translation>
+        <translation type="vanished">Veprimtari e Re</translation>
     </message>
     <message>
         <source>Edit Event</source>
-        <translation>Përpunoni Veprimtari</translation>
+        <translation type="vanished">Përpunoni Veprimtari</translation>
     </message>
     <message>
         <source>End time must be greater than start time</source>
-        <translation>Koha e përfundimit duhet të jetë më e madhe se koha e fillimit</translation>
+        <translation type="vanished">Koha e përfundimit duhet të jetë më e madhe se koha e fillimit</translation>
     </message>
     <message>
         <source>OK</source>
         <comment>button</comment>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
         <source>Never</source>
-        <translation>Kurrë</translation>
+        <translation type="vanished">Kurrë</translation>
     </message>
     <message>
         <source>At time of event</source>
-        <translation>Në kohën e veprimtarisë</translation>
+        <translation type="vanished">Në kohën e veprimtarisë</translation>
     </message>
     <message>
         <source>15 minutes before</source>
-        <translation>15 minuta para</translation>
+        <translation type="vanished">15 minuta para</translation>
     </message>
     <message>
         <source>30 minutes before</source>
-        <translation>30 minuta para</translation>
+        <translation type="vanished">30 minuta para</translation>
     </message>
     <message>
         <source>1 hour before</source>
-        <translation>1 orë para</translation>
+        <translation type="vanished">1 orë para</translation>
     </message>
     <message>
         <source>1 day before</source>
-        <translation>1 ditë para</translation>
+        <translation type="vanished">1 ditë para</translation>
     </message>
     <message>
         <source>2 days before</source>
-        <translation>2 ditë para</translation>
+        <translation type="vanished">2 ditë para</translation>
     </message>
     <message>
         <source>1 week before</source>
-        <translation>1 javë para</translation>
+        <translation type="vanished">1 javë para</translation>
     </message>
     <message>
         <source>On start day (9:00 AM)</source>
-        <translation>Ditën e fillimit (9:00 AM)</translation>
+        <translation type="vanished">Ditën e fillimit (9:00 AM)</translation>
     </message>
     <message>
         <source>time(s)</source>
-        <translation>kohë(ra)</translation>
+        <translation type="vanished">kohë()</translation>
     </message>
     <message>
         <source>Enter a name please</source>
-        <translation>Ju lutemi, jepni një emër</translation>
+        <translation type="vanished">Ju lutemi, jepni një emër</translation>
     </message>
     <message>
         <source>The name can not only contain whitespaces</source>
-        <translation>Emri s’mund të përmbajë vetëm hapësira të zbrazëta</translation>
+        <translation type="vanished">Emri s’mund të përmbajë vetëm hapësira të zbrazëta</translation>
     </message>
     <message>
         <source>Type:</source>
-        <translation>Lloj:</translation>
+        <translation type="vanished">Lloj:</translation>
     </message>
     <message>
         <source>Description:</source>
-        <translation>Përshkrim:</translation>
+        <translation type="vanished">Përshkrim:</translation>
     </message>
     <message>
         <source>All Day:</source>
-        <translation>Tërë Ditën:</translation>
+        <translation type="vanished">Tërë Ditën:</translation>
     </message>
     <message>
         <source>Starts:</source>
-        <translation>Fillon më:</translation>
+        <translation type="vanished">Fillon më:</translation>
     </message>
     <message>
         <source>Ends:</source>
-        <translation>Përfundon më:</translation>
+        <translation type="vanished">Përfundon më:</translation>
     </message>
     <message>
         <source>Remind Me:</source>
-        <translation>Kujtoma:</translation>
+        <translation type="vanished">Kujtoma:</translation>
     </message>
     <message>
         <source>Repeat:</source>
-        <translation>Përsërite:</translation>
+        <translation type="vanished">Përsërite:</translation>
     </message>
     <message>
         <source>End Repeat:</source>
-        <translation>Përfundoje Përsëritjen Më:</translation>
+        <translation type="vanished">Përfundoje Përsëritjen Më:</translation>
     </message>
     <message>
         <source>Calendar account:</source>
-        <translation>Llogari Kalendari:</translation>
+        <translation type="vanished">Llogari Kalendari:</translation>
     </message>
     <message>
         <source>Calendar account</source>
-        <translation>Llogari Kalendari</translation>
+        <translation type="vanished">Llogari Kalendari</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Lloj</translation>
+        <translation type="vanished">Lloj</translation>
     </message>
     <message>
         <source>Description</source>
-        <translation>Përshkrim</translation>
+        <translation type="vanished">Përshkrim</translation>
     </message>
     <message>
         <source>All Day</source>
-        <translation>Tërë Ditën</translation>
+        <translation type="vanished">Tërë Ditën</translation>
     </message>
     <message>
         <source>Time:</source>
-        <translation>Kohë:</translation>
+        <translation type="vanished">Kohë:</translation>
     </message>
     <message>
         <source>Time</source>
-        <translation>Kohë</translation>
+        <translation type="vanished">Kohë</translation>
     </message>
     <message>
         <source>Solar</source>
-        <translation>Diellore</translation>
+        <translation type="vanished">Diellore</translation>
     </message>
     <message>
         <source>Lunar</source>
-        <translation>Hënore</translation>
+        <translation type="vanished">Hënore</translation>
     </message>
     <message>
         <source>Starts</source>
-        <translation>Fillon më</translation>
+        <translation type="vanished">Fillon më</translation>
     </message>
     <message>
         <source>Ends</source>
-        <translation>Përfundon më</translation>
+        <translation type="vanished">Përfundon më</translation>
     </message>
     <message>
         <source>Remind Me</source>
-        <translation>Kujtoma më</translation>
+        <translation type="vanished">Kujtoma më</translation>
     </message>
     <message>
         <source>Repeat</source>
-        <translation>Përsërite</translation>
+        <translation type="vanished">Përsërite</translation>
     </message>
     <message>
         <source>Daily</source>
-        <translation>Ditore</translation>
+        <translation type="vanished">Ditore</translation>
     </message>
     <message>
         <source>Weekdays</source>
-        <translation>Ditë të javës</translation>
+        <translation type="vanished">Ditë të javës</translation>
     </message>
     <message>
         <source>Weekly</source>
-        <translation>Çdo javë</translation>
+        <translation type="vanished">Çdo javë</translation>
     </message>
     <message>
         <source>Monthly</source>
-        <translation>Çdo muaj</translation>
+        <translation type="vanished">Çdo muaj</translation>
     </message>
     <message>
         <source>Yearly</source>
-        <translation>Çdo vit</translation>
+        <translation type="vanished">Çdo vit</translation>
     </message>
     <message>
         <source>End Repeat</source>
-        <translation>Përfundoje Përsëritjen Më</translation>
+        <translation type="vanished">Përfundoje Përsëritjen Më</translation>
     </message>
     <message>
         <source>After</source>
-        <translation>Pas</translation>
+        <translation type="vanished">Pas</translation>
     </message>
     <message>
         <source>On</source>
-        <translation>Më</translation>
+        <translation type="vanished">Më</translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Anuloje</translation>
+        <translation type="vanished">Anuloje</translation>
     </message>
     <message>
         <source>Save</source>
         <comment>button</comment>
-        <translation>Ruaje</translation>
+        <translation type="vanished">Ruaje</translation>
     </message>
 </context>
 <context>
     <name>CScheduleOperation</name>
     <message>
         <source>All occurrences of a repeating event must have the same all-day status.</source>
-        <translation>Krejt rastet e një veprimtarie që përsëritet duhet të kenë të njëjtën gjendje gjithë-ditën.</translation>
+        <translation type="vanished">Krejt rastet e një veprimtarie që përsëritet duhet të kenë të njëjtën gjendje gjithë-ditën.</translation>
     </message>
     <message>
         <source>Do you want to change all occurrences?</source>
-        <translation>Doni të ndryshohen krejt përsëritjet?</translation>
+        <translation type="vanished">Doni të ndryshohen krejt përsëritjet?</translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Anuloje</translation>
+        <translation type="vanished">Anuloje</translation>
     </message>
     <message>
         <source>Change All</source>
-        <translation>Ndryshoji Krejt</translation>
+        <translation type="vanished">Ndryshoji Krejt</translation>
     </message>
     <message>
         <source>You are changing the repeating rule of this event.</source>
-        <translation>Po ndryshoni rregullin e përsëritjes së kësaj veprimtarie.</translation>
+        <translation type="vanished">Po ndryshoni rregullin e përsëritjes së kësaj veprimtarie.</translation>
     </message>
     <message>
         <source>You are deleting an event.</source>
-        <translation>Po fshini një veprimtari.</translation>
+        <translation type="vanished">Po fshini një veprimtari.</translation>
     </message>
     <message>
         <source>Are you sure you want to delete this event?</source>
-        <translation>Jeni i sigurt se doni të fshihet kjo veprimtari?</translation>
+        <translation type="vanished">Jeni i sigurt se doni të fshihet kjo veprimtari?</translation>
     </message>
     <message>
         <source>Delete</source>
         <comment>button</comment>
-        <translation>Fshije</translation>
+        <translation type="vanished">Fshije</translation>
     </message>
     <message>
         <source>Do you want to delete all occurrences of this event, or only the selected occurrence?</source>
-        <translation>Doni të fshihen krejt përsëritjet e kësaj veprimtarie, apo vetëm përsëritjen e përzgjedhur?</translation>
+        <translation type="vanished">Doni të fshihen krejt përsëritjet e kësaj veprimtarie, apo vetëm përsëritjen e përzgjedhur?</translation>
     </message>
     <message>
         <source>Delete All</source>
-        <translation>Fshiji Krejt</translation>
+        <translation type="vanished">Fshiji Krejt</translation>
     </message>
     <message>
         <source>Delete Only This Event</source>
-        <translation>Fshi Vetëm Këtë Veprimtari</translation>
+        <translation type="vanished">Fshi Vetëm Këtë Veprimtari</translation>
     </message>
     <message>
         <source>Do you want to delete this and all future occurrences of this event, or only the selected occurrence?</source>
-        <translation>Doni të fshihet kjo dhe krejt përsëritjet në të ardhmen të kësaj veprimtarie, apo vetëm përsëritjen e përzgjedhur?</translation>
+        <translation type="vanished">Doni të fshihet kjo dhe krejt përsëritjet në të ardhmen të kësaj veprimtarie, apo vetëm përsëritjen e përzgjedhur?</translation>
     </message>
     <message>
         <source>Delete All Future Events</source>
-        <translation>Fshi Krejt Veprimtaritë e Ardhshme</translation>
+        <translation type="vanished">Fshi Krejt Veprimtaritë e Ardhshme</translation>
     </message>
     <message>
         <source>You are changing a repeating event.</source>
-        <translation>Po ndryshoni një veprimtari me përsëritje.</translation>
+        <translation type="vanished">Po ndryshoni një veprimtari me përsëritje.</translation>
     </message>
     <message>
         <source>Do you want to change only this occurrence of the event, or all occurrences?</source>
-        <translation>Doni të ndryshohet vetëm kjo përsëritje e veprimtarisë, apo krejt përsëritjet?</translation>
+        <translation type="vanished">Doni të ndryshohet vetëm kjo përsëritje e veprimtarisë, apo krejt përsëritjet?</translation>
     </message>
     <message>
         <source>All</source>
-        <translation>Krejt</translation>
+        <translation type="vanished">Krejt</translation>
     </message>
     <message>
         <source>Only This Event</source>
-        <translation>Vetëm Këtë Veprimtari</translation>
+        <translation type="vanished">Vetëm Këtë Veprimtari</translation>
     </message>
     <message>
         <source>Do you want to change only this occurrence of the event, or this and all future occurrences?</source>
-        <translation>Doni të ndryshohet vetëm kjo përsëritje e veprimtarisë, apo këtë dhe krejt përsëritjet në të ardhmen?</translation>
+        <translation type="vanished">Doni të ndryshohet vetëm kjo përsëritje e veprimtarisë, apo këtë dhe krejt përsëritjet në të ardhmen?</translation>
     </message>
     <message>
         <source>All Future Events</source>
-        <translation>Krejt Veprimtaritë e Ardhshme</translation>
+        <translation type="vanished">Krejt Veprimtaritë e Ardhshme</translation>
     </message>
     <message>
         <source>You have selected a leap month, and will be reminded according to the rules of the lunar calendar.</source>
-        <translation>Keni përzgjedhur një muaj të brishtë dhe do t’ju kujtohet në përputhje me rregullat e kalendarit hënor.</translation>
+        <translation type="vanished">Keni përzgjedhur një muaj të brishtë dhe do t’ju kujtohet në përputhje me rregullat e kalendarit hënor.</translation>
     </message>
     <message>
         <source>OK</source>
         <comment>button</comment>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
 </context>
 <context>
     <name>CScheduleSearchDateItem</name>
     <message>
         <source>Y</source>
-        <translation>V</translation>
+        <translation type="vanished">V</translation>
     </message>
     <message>
         <source>M</source>
-        <translation>M</translation>
+        <translation type="vanished">M</translation>
     </message>
     <message>
         <source>D</source>
-        <translation>D</translation>
+        <translation type="vanished">D</translation>
     </message>
 </context>
 <context>
     <name>CScheduleSearchItem</name>
     <message>
         <source>Edit</source>
-        <translation>Përpunojeni</translation>
+        <translation type="vanished">Përpunojeni</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Fshije</translation>
+        <translation type="vanished">Fshije</translation>
     </message>
     <message>
         <source>All Day</source>
-        <translation>Tërë Ditën</translation>
+        <translation type="vanished">Tërë Ditën</translation>
     </message>
 </context>
 <context>
     <name>CScheduleSearchView</name>
     <message>
         <source>No search results</source>
-        <translation>S’ka përfundime kërkimi</translation>
+        <translation type="vanished">S’ka përfundime kërkimi</translation>
     </message>
 </context>
 <context>
     <name>CScheduleView</name>
     <message>
         <source>ALL DAY</source>
-        <translation>TËRË DITËN</translation>
+        <translation type="vanished">TËRË DITËN</translation>
     </message>
 </context>
 <context>
     <name>CSettingDialog</name>
     <message>
-        <source>import ICS file</source>
-        <translation>importo kartelë ICS</translation>
-    </message>
-    <message>
         <source>Manual</source>
-        <translation>Dorazi</translation>
+        <translation type="vanished">Dorazi</translation>
     </message>
     <message>
         <source>15 mins</source>
-        <translation>15 min.</translation>
+        <translation type="vanished">15 min.</translation>
     </message>
     <message>
         <source>30 mins</source>
-        <translation>30 min.</translation>
+        <translation type="vanished">30 min.</translation>
     </message>
     <message>
         <source>1 hour</source>
-        <translation>1 orë</translation>
+        <translation type="vanished">1 orë</translation>
     </message>
     <message>
         <source>24 hours</source>
-        <translation>24 orë</translation>
+        <translation type="vanished">24 orë</translation>
     </message>
     <message>
         <source>Sync Now</source>
-        <translation>Njëkohësoje Tani</translation>
+        <translation type="vanished">Njëkohësoje Tani</translation>
     </message>
     <message>
         <source>Last sync</source>
-        <translation>Njëkohësimi i fundit</translation>
+        <translation type="vanished">Njëkohësimi i fundit</translation>
     </message>
     <message>
         <source>Monday</source>
-        <translation>E hënë</translation>
-    </message>
-    <message>
-        <source>Tuesday</source>
-        <translation type="unfinished">E martë</translation>
-    </message>
-    <message>
-        <source>Wednesday</source>
-        <translation type="unfinished">E mërkurë</translation>
-    </message>
-    <message>
-        <source>Thursday</source>
-        <translation type="unfinished">E enjte</translation>
-    </message>
-    <message>
-        <source>Friday</source>
-        <translation type="unfinished">E premte</translation>
-    </message>
-    <message>
-        <source>Saturday</source>
-        <translation type="unfinished">E shtunë</translation>
+        <translation type="vanished">E hënë</translation>
     </message>
     <message>
         <source>Sunday</source>
-        <translation>E diel</translation>
+        <translation type="vanished">E diel</translation>
     </message>
     <message>
         <source>12-hour clock</source>
-        <translation>Sahat 12-orësh</translation>
+        <translation type="vanished">Sahat 12-orësh</translation>
     </message>
     <message>
         <source>24-hour clock</source>
-        <translation>Sahat 24-orësh</translation>
+        <translation type="vanished">Sahat 24-orësh</translation>
     </message>
     <message>
-        <source>Please go to the &lt;a href=&apos;/&apos;&gt;Control Center&lt;/a&gt; to change settings</source>
-        <translation type="unfinished"></translation>
+        <source>Tuesday</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>Wednesday</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>Thursday</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>Friday</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>Saturday</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>CTimeEdit</name>
     <message>
         <source>(%1 mins)</source>
-        <translation>(%1 min.)</translation>
+        <translation type="vanished">(%1 min.)</translation>
     </message>
     <message>
         <source>(%1 hour)</source>
-        <translation>(%1 orë)</translation>
+        <translation type="vanished">(%1 orë)</translation>
     </message>
     <message>
         <source>(%1 hours)</source>
-        <translation>(%1 orë)</translation>
+        <translation type="vanished">(%1 orë)</translation>
     </message>
 </context>
 <context>
     <name>CTitleWidget</name>
     <message>
         <source>Y</source>
-        <translation>V</translation>
+        <translation type="vanished">V</translation>
     </message>
     <message>
         <source>M</source>
-        <translation>M</translation>
+        <translation type="vanished">M</translation>
     </message>
     <message>
         <source>W</source>
-        <translation>J</translation>
+        <translation type="vanished">J</translation>
     </message>
     <message>
         <source>D</source>
-        <translation>D</translation>
+        <translation type="vanished">D</translation>
     </message>
     <message>
         <source>Search events and festivals</source>
-        <translation>Kërkoni në veprimtari dhe festivale</translation>
+        <translation type="vanished">Kërkoni në veprimtari dhe festivale</translation>
     </message>
 </context>
 <context>
     <name>CWeekWidget</name>
     <message>
         <source>Sun</source>
-        <translation>Die</translation>
+        <translation type="vanished">Die</translation>
     </message>
     <message>
         <source>Mon</source>
-        <translation>Hën</translation>
+        <translation type="vanished">Hën</translation>
     </message>
     <message>
         <source>Tue</source>
-        <translation>Mar</translation>
+        <translation type="vanished">Mar</translation>
     </message>
     <message>
         <source>Wed</source>
-        <translation>Mër</translation>
+        <translation type="vanished">Mër</translation>
     </message>
     <message>
         <source>Thu</source>
-        <translation>Enj</translation>
+        <translation type="vanished">Enj</translation>
     </message>
     <message>
         <source>Fri</source>
-        <translation>Pre</translation>
+        <translation type="vanished">Pre</translation>
     </message>
     <message>
         <source>Sat</source>
-        <translation>Sht</translation>
+        <translation type="vanished">Sht</translation>
     </message>
 </context>
 <context>
     <name>CWeekWindow</name>
     <message>
         <source>Week</source>
-        <translation>Javë</translation>
+        <translation type="vanished">Javë</translation>
     </message>
     <message>
         <source>Y</source>
-        <translation>V</translation>
+        <translation type="vanished">V</translation>
     </message>
 </context>
 <context>
     <name>CYearScheduleView</name>
     <message>
         <source>All Day</source>
-        <translation>Tërë Ditën</translation>
+        <translation type="vanished">Tërë Ditën</translation>
     </message>
     <message>
         <source>No event</source>
-        <translation>S’ka veprimtari</translation>
+        <translation type="vanished">S’ka veprimtari</translation>
     </message>
 </context>
 <context>
     <name>CYearWindow</name>
     <message>
         <source>Y</source>
-        <translation>V</translation>
+        <translation type="vanished">V</translation>
     </message>
 </context>
 <context>
     <name>CalendarWindow</name>
     <message>
         <source>Calendar</source>
-        <translation>Kalendar</translation>
+        <translation type="vanished">Kalendar</translation>
     </message>
     <message>
         <source>Calendar is a tool to view dates, and also a smart daily planner to schedule all things in life. </source>
-        <translation>Kalendari është një mjet për parje datash, si dhe një planifikues i përditshëm për të vënë në plan krejt gjërat e jetës së përditshme. </translation>
+        <translation type="vanished">Kalendari është një mjet për parje datash, si dhe një planifikues i përditshëm për të vënë në plan krejt gjërat e jetës së përditshme. </translation>
     </message>
 </context>
 <context>
     <name>Calendarmainwindow</name>
     <message>
         <source>Calendar</source>
-        <translation>Kalendar</translation>
+        <translation type="vanished">Kalendar</translation>
     </message>
     <message>
         <source>Manage</source>
-        <translation>Administrojeni</translation>
+        <translation type="vanished">Administrojeni</translation>
     </message>
     <message>
         <source>Privacy Policy</source>
-        <translation>Rregulla Privatësie</translation>
+        <translation type="vanished">Rregulla Privatësie</translation>
     </message>
     <message>
         <source>Syncing...</source>
-        <translation>Po njëkohësohet…</translation>
+        <translation type="vanished">Po njëkohësohet…</translation>
     </message>
     <message>
         <source>Sync successful</source>
-        <translation>Njëkohësim i suksesshëm</translation>
+        <translation type="vanished">Njëkohësim i suksesshëm</translation>
     </message>
     <message>
         <source>Sync failed, please try later</source>
-        <translation>Njëkohësimi dështoi, ju lutemi, provoni më vonë</translation>
+        <translation type="vanished">Njëkohësimi dështoi, ju lutemi, provoni më vonë</translation>
     </message>
 </context>
 <context>
     <name>CenterWidget</name>
     <message>
         <source>All Day</source>
-        <translation>Tërë Ditën</translation>
+        <translation type="vanished">Tërë Ditën</translation>
     </message>
 </context>
 <context>
@@ -772,99 +762,91 @@
     <name>DragInfoGraphicsView</name>
     <message>
         <source>Edit</source>
-        <translation>Përpunim</translation>
+        <translation type="vanished">Përpunim</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Fshije</translation>
+        <translation type="vanished">Fshije</translation>
     </message>
     <message>
         <source>New event</source>
-        <translation>Veprimtari e re</translation>
+        <translation type="vanished">Veprimtari e re</translation>
     </message>
     <message>
         <source>New Event</source>
-        <translation>Veprimtari e Re</translation>
+        <translation type="vanished">Veprimtari e Re</translation>
     </message>
 </context>
 <context>
     <name>JobTypeListView</name>
     <message>
-        <source>export</source>
-        <translation>eksportim</translation>
-    </message>
-    <message>
-        <source>import ICS file</source>
-        <translation type="unfinished">importo kartelë ICS</translation>
-    </message>
-    <message>
         <source>You are deleting an event type.</source>
-        <translation>Po fshini një lloj veprimtarish.</translation>
+        <translation type="vanished">Po fshini një lloj veprimtarish.</translation>
     </message>
     <message>
         <source>All events under this type will be deleted and cannot be recovered.</source>
-        <translation>Krejt veprimtaritë nën këtë lloj do të fshihen dhe s’mund të rikthehen.</translation>
+        <translation type="vanished">Krejt veprimtaritë nën këtë lloj do të fshihen dhe s’mund të rikthehen.</translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Anuloje</translation>
+        <translation type="vanished">Anuloje</translation>
     </message>
     <message>
         <source>Delete</source>
         <comment>button</comment>
-        <translation>Fshije</translation>
+        <translation type="vanished">Fshije</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
         <source>Account settings</source>
-        <translation>Rregullime llogarie</translation>
+        <translation type="vanished">Rregullime llogarie</translation>
     </message>
     <message>
         <source>Account</source>
-        <translation>Llogari</translation>
+        <translation type="vanished">Llogari</translation>
     </message>
     <message>
         <source>Select items to be synced</source>
-        <translation>Përzgjidhni objekte për t’u njëkohësuar</translation>
+        <translation type="vanished">Përzgjidhni objekte për t’u njëkohësuar</translation>
     </message>
     <message>
         <source>Events</source>
-        <translation>Veprimtari</translation>
+        <translation type="vanished">Veprimtari</translation>
     </message>
     <message>
         <source>General settings</source>
-        <translation>Rregullime të përgjithshme</translation>
+        <translation type="vanished">Rregullime të përgjithshme</translation>
     </message>
     <message>
         <source>Sync interval</source>
-        <translation>Interval njëkohësimi</translation>
+        <translation type="vanished">Interval njëkohësimi</translation>
     </message>
     <message>
         <source>Manage calendar</source>
-        <translation>Administroni kalendar</translation>
+        <translation type="vanished">Administroni kalendar</translation>
     </message>
     <message>
         <source>Calendar account</source>
-        <translation>Llogari Kalendari</translation>
+        <translation type="vanished">Llogari Kalendari</translation>
     </message>
     <message>
         <source>Event types</source>
-        <translation>Lloje veprimtarish</translation>
+        <translation type="vanished">Lloje veprimtarish</translation>
     </message>
     <message>
         <source>General</source>
-        <translation>Të përgjithshme</translation>
+        <translation type="vanished">Të përgjithshme</translation>
     </message>
     <message>
         <source>First day of week</source>
-        <translation>Ditën e parë të javës</translation>
+        <translation type="vanished">Ditën e parë të javës</translation>
     </message>
     <message>
         <source>Time</source>
-        <translation>Kohë</translation>
+        <translation type="vanished">Kohë</translation>
     </message>
 </context>
 <context>
@@ -872,7 +854,7 @@
     <message>
         <source>Today</source>
         <comment>Return</comment>
-        <translation>Sot</translation>
+        <translation type="vanished">Sot</translation>
     </message>
 </context>
 <context>
@@ -880,94 +862,86 @@
     <message>
         <source>Today</source>
         <comment>Return Today</comment>
-        <translation>Sot</translation>
+        <translation type="vanished">Sot</translation>
     </message>
 </context>
 <context>
     <name>ScheduleTypeEditDlg</name>
     <message>
         <source>New event type</source>
-        <translation>Lloj i ri veprimtarie</translation>
+        <translation type="vanished">Lloj i ri veprimtarie</translation>
     </message>
     <message>
         <source>Edit event type</source>
-        <translation>Përpunoni lloj veprimtarie</translation>
-    </message>
-    <message>
-        <source>Import ICS file</source>
-        <translation>Importo kartelë ICS</translation>
+        <translation type="vanished">Përpunoni lloj veprimtarie</translation>
     </message>
     <message>
         <source>Name:</source>
-        <translation>Emër:</translation>
+        <translation type="vanished">Emër:</translation>
     </message>
     <message>
         <source>Color:</source>
-        <translation>Ngjyrë:</translation>
-    </message>
-    <message>
-        <source>&lt;a href=&apos;https://wikipedia.org/wiki/ICalendar&apos;&gt;ICS&lt;/a&gt; File:</source>
-        <translation>Kartelë &lt;a href=&apos;https://wikipedia.org/wiki/ICalendar&apos;&gt;ICS&lt;/a&gt;:</translation>
+        <translation type="vanished">Ngjyrë:</translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Anuloje</translation>
+        <translation type="vanished">Anuloje</translation>
     </message>
     <message>
         <source>Save</source>
         <comment>button</comment>
-        <translation>Ruaje</translation>
+        <translation type="vanished">Ruaje</translation>
     </message>
     <message>
         <source>The name can not only contain whitespaces</source>
-        <translation>Emri s’mund të përmbajë vetëm hapësira të zbrazëta</translation>
+        <translation type="vanished">Emri s’mund të përmbajë vetëm hapësira të zbrazëta</translation>
     </message>
     <message>
         <source>Enter a name please</source>
-        <translation>Ju lutemi, jepni një emër</translation>
+        <translation type="vanished">Ju lutemi, jepni një emër</translation>
     </message>
 </context>
 <context>
     <name>Shortcut</name>
     <message>
         <source>Help</source>
-        <translation>Ndihmë</translation>
+        <translation type="vanished">Ndihmë</translation>
     </message>
     <message>
         <source>Delete event</source>
-        <translation>Fshije veprimtarinë</translation>
+        <translation type="vanished">Fshije veprimtarinë</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Kopjoje</translation>
+        <translation type="vanished">Kopjoje</translation>
     </message>
     <message>
         <source>Cut</source>
-        <translation>Prije</translation>
+        <translation type="vanished">Prije</translation>
     </message>
     <message>
         <source>Paste</source>
-        <translation>Ngjite</translation>
+        <translation type="vanished">Ngjite</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Fshije</translation>
+        <translation type="vanished">Fshije</translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation>Përzgjidhi krejt</translation>
+        <translation type="vanished">Përzgjidhi krejt</translation>
     </message>
 </context>
 <context>
     <name>SidebarCalendarWidget</name>
     <message>
         <source>Y</source>
-        <translation>Y</translation>
+        <translation type="vanished">Y</translation>
     </message>
     <message>
         <source>M</source>
-        <translation>M</translation>
+        <translation type="vanished">M</translation>
     </message>
 </context>
 <context>
@@ -975,7 +949,7 @@
     <message>
         <source>Go</source>
         <comment>button</comment>
-        <translation>Jepi</translation>
+        <translation type="vanished">Jepi</translation>
     </message>
 </context>
 <context>
@@ -983,19 +957,19 @@
     <message>
         <source>Sign In</source>
         <comment>button</comment>
-        <translation>Hyni</translation>
+        <translation type="vanished">Hyni</translation>
     </message>
     <message>
         <source>Sign Out</source>
         <comment>button</comment>
-        <translation>Dilni</translation>
+        <translation type="vanished">Dilni</translation>
     </message>
 </context>
 <context>
     <name>YearFrame</name>
     <message>
         <source>Y</source>
-        <translation>V</translation>
+        <translation type="vanished">V</translation>
     </message>
 </context>
 <context>
@@ -1003,7 +977,7 @@
     <message>
         <source>Today</source>
         <comment>Today</comment>
-        <translation>Sot</translation>
+        <translation type="vanished">Sot</translation>
     </message>
 </context>
 </TS>

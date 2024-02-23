@@ -1,708 +1,698 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="nl">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="nl">
 <context>
     <name>AccountItem</name>
     <message>
         <source>Sync successful</source>
-        <translation>Sychroniseren voltooid</translation>
+        <translation type="vanished">Sychroniseren voltooid</translation>
     </message>
     <message>
         <source>Network error</source>
-        <translation>Netwerkfout</translation>
+        <translation type="vanished">Netwerkfout</translation>
     </message>
     <message>
         <source>Server exception</source>
-        <translation>Serveruitzondering</translation>
+        <translation type="vanished">Serveruitzondering</translation>
     </message>
     <message>
         <source>Storage full</source>
-        <translation>Geen vrije schijfruimte</translation>
+        <translation type="vanished">Geen vrije schijfruimte</translation>
     </message>
 </context>
 <context>
     <name>AccountManager</name>
     <message>
         <source>Local account</source>
-        <translation>Lokaal account</translation>
+        <translation type="vanished">Lokaal account</translation>
     </message>
     <message>
         <source>Event types</source>
-        <translation>Afspraaktypes</translation>
+        <translation type="vanished">Afspraaktypes</translation>
     </message>
 </context>
 <context>
     <name>CColorPickerWidget</name>
     <message>
         <source>Color</source>
-        <translation>Kleur</translation>
+        <translation type="vanished">Kleur</translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Annuleren</translation>
+        <translation type="vanished">Annuleren</translation>
     </message>
     <message>
         <source>Save</source>
         <comment>button</comment>
-        <translation>Opslaan</translation>
+        <translation type="vanished">Opslaan</translation>
     </message>
 </context>
 <context>
     <name>CDayMonthView</name>
     <message>
         <source>Monday</source>
-        <translation>Maandag</translation>
+        <translation type="vanished">Maandag</translation>
     </message>
     <message>
         <source>Tuesday</source>
-        <translation>Dinsdag</translation>
+        <translation type="vanished">Dinsdag</translation>
     </message>
     <message>
         <source>Wednesday</source>
-        <translation>Woensdag</translation>
+        <translation type="vanished">Woensdag</translation>
     </message>
     <message>
         <source>Thursday</source>
-        <translation>Donderdag</translation>
+        <translation type="vanished">Donderdag</translation>
     </message>
     <message>
         <source>Friday</source>
-        <translation>Vrijdag</translation>
+        <translation type="vanished">Vrijdag</translation>
     </message>
     <message>
         <source>Saturday</source>
-        <translation>Zaterdag</translation>
+        <translation type="vanished">Zaterdag</translation>
     </message>
     <message>
         <source>Sunday</source>
-        <translation>Zondag</translation>
+        <translation type="vanished">Zondag</translation>
     </message>
 </context>
 <context>
     <name>CDayWindow</name>
     <message>
         <source>Y</source>
-        <translation>J</translation>
+        <translation type="vanished">J</translation>
     </message>
     <message>
         <source>M</source>
-        <translation>M</translation>
+        <translation type="vanished">M</translation>
     </message>
     <message>
         <source>D</source>
-        <translation>D</translation>
+        <translation type="vanished">D</translation>
     </message>
     <message>
         <source>Lunar</source>
-        <translation>Maan</translation>
+        <translation type="vanished">Maan</translation>
     </message>
 </context>
 <context>
     <name>CGraphicsView</name>
     <message>
         <source>New Event</source>
-        <translation>Nieuwe afspraak</translation>
+        <translation type="vanished">Nieuwe afspraak</translation>
     </message>
 </context>
 <context>
     <name>CMonthScheduleNumItem</name>
     <message>
         <source>%1 more</source>
-        <translation>Nog %1 andere</translation>
+        <translation type="vanished">Nog %1 andere</translation>
     </message>
 </context>
 <context>
     <name>CMonthView</name>
     <message>
         <source>New event</source>
-        <translation>Nieuwe afspraak</translation>
+        <translation type="vanished">Nieuwe afspraak</translation>
     </message>
     <message>
         <source>New Event</source>
-        <translation>Nieuwe afspraak</translation>
+        <translation type="vanished">Nieuwe afspraak</translation>
     </message>
 </context>
 <context>
     <name>CMonthWindow</name>
     <message>
         <source>Y</source>
-        <translation>J</translation>
+        <translation type="vanished">J</translation>
     </message>
 </context>
 <context>
     <name>CMyScheduleView</name>
     <message>
         <source>My Event</source>
-        <translation>Mijn afspraak</translation>
+        <translation type="vanished">Mijn afspraak</translation>
     </message>
     <message>
         <source>OK</source>
         <comment>button</comment>
-        <translation>Oké</translation>
+        <translation type="vanished">Oké</translation>
     </message>
     <message>
         <source>Delete</source>
         <comment>button</comment>
-        <translation>Verwijderen</translation>
+        <translation type="vanished">Verwijderen</translation>
     </message>
     <message>
         <source>Edit</source>
         <comment>button</comment>
-        <translation>Bewerken</translation>
+        <translation type="vanished">Bewerken</translation>
     </message>
 </context>
 <context>
     <name>CPushButton</name>
     <message>
         <source>New event type</source>
-        <translation>Nieuw afspraaktype</translation>
+        <translation type="vanished">Nieuw afspraaktype</translation>
     </message>
 </context>
 <context>
     <name>CScheduleDlg</name>
     <message>
         <source>New Event</source>
-        <translation>Nieuwe afspraak</translation>
+        <translation type="vanished">Nieuwe afspraak</translation>
     </message>
     <message>
         <source>Edit Event</source>
-        <translation>Afspraak bewerken</translation>
+        <translation type="vanished">Afspraak bewerken</translation>
     </message>
     <message>
         <source>End time must be greater than start time</source>
-        <translation>De eindtijd moet later zijn dan de begintijd</translation>
+        <translation type="vanished">De eindtijd moet later zijn dan de begintijd</translation>
     </message>
     <message>
         <source>OK</source>
         <comment>button</comment>
-        <translation>Oké</translation>
+        <translation type="vanished">Oké</translation>
     </message>
     <message>
         <source>Never</source>
-        <translation>Nooit</translation>
+        <translation type="vanished">Nooit</translation>
     </message>
     <message>
         <source>At time of event</source>
-        <translation>Bij aanvang</translation>
+        <translation type="vanished">Bij aanvang</translation>
     </message>
     <message>
         <source>15 minutes before</source>
-        <translation>15 minuten van tevoren</translation>
+        <translation type="vanished">15 minuten van tevoren</translation>
     </message>
     <message>
         <source>30 minutes before</source>
-        <translation>30 minuten van tevoren</translation>
+        <translation type="vanished">30 minuten van tevoren</translation>
     </message>
     <message>
         <source>1 hour before</source>
-        <translation>1 uur van tevoren</translation>
+        <translation type="vanished">1 uur van tevoren</translation>
     </message>
     <message>
         <source>1 day before</source>
-        <translation>1 dag van tevoren</translation>
+        <translation type="vanished">1 dag van tevoren</translation>
     </message>
     <message>
         <source>2 days before</source>
-        <translation>2 dagen van tevoren</translation>
+        <translation type="vanished">2 dagen van tevoren</translation>
     </message>
     <message>
         <source>1 week before</source>
-        <translation>1 week van tevoren</translation>
+        <translation type="vanished">1 week van tevoren</translation>
     </message>
     <message>
         <source>On start day (9:00 AM)</source>
-        <translation>Op de dag van de afspraak (9:00 AM)</translation>
+        <translation type="vanished">Op de dag van de afspraak (9:00 AM)</translation>
     </message>
     <message>
         <source>time(s)</source>
-        <translation>keer</translation>
+        <translation type="vanished">keer</translation>
     </message>
     <message>
         <source>Enter a name please</source>
-        <translation>Voer een naam in</translation>
+        <translation type="vanished">Voer een naam in</translation>
     </message>
     <message>
         <source>The name can not only contain whitespaces</source>
-        <translation>De naam mag niet alleen bestaan uit spaties</translation>
+        <translation type="vanished">De naam mag niet alleen bestaan uit spaties</translation>
     </message>
     <message>
         <source>Type:</source>
-        <translation>Soort:</translation>
+        <translation type="vanished">Soort:</translation>
     </message>
     <message>
         <source>Description:</source>
-        <translation>Omschrijving:</translation>
+        <translation type="vanished">Omschrijving:</translation>
     </message>
     <message>
         <source>All Day:</source>
-        <translation>Hele dag:</translation>
+        <translation type="vanished">Hele dag:</translation>
     </message>
     <message>
         <source>Starts:</source>
-        <translation>Begint om:</translation>
+        <translation type="vanished">Begint om:</translation>
     </message>
     <message>
         <source>Ends:</source>
-        <translation>Eindigt om:</translation>
+        <translation type="vanished">Eindigt om:</translation>
     </message>
     <message>
         <source>Remind Me:</source>
-        <translation>Herinneren:</translation>
+        <translation type="vanished">Herinneren:</translation>
     </message>
     <message>
         <source>Repeat:</source>
-        <translation>Herhalen:</translation>
+        <translation type="vanished">Herhalen:</translation>
     </message>
     <message>
         <source>End Repeat:</source>
-        <translation>Herhaling eindigt op:</translation>
+        <translation type="vanished">Herhaling eindigt op:</translation>
     </message>
     <message>
         <source>Calendar account:</source>
-        <translation>Agenda-account:</translation>
+        <translation type="vanished">Agenda-account:</translation>
     </message>
     <message>
         <source>Calendar account</source>
-        <translation>Agenda-account</translation>
+        <translation type="vanished">Agenda-account</translation>
     </message>
     <message>
         <source>Type</source>
-        <translation>Soort</translation>
+        <translation type="vanished">Soort</translation>
     </message>
     <message>
         <source>Description</source>
-        <translation>Omschrijving</translation>
+        <translation type="vanished">Omschrijving</translation>
     </message>
     <message>
         <source>All Day</source>
-        <translation>Hele dag</translation>
+        <translation type="vanished">Hele dag</translation>
     </message>
     <message>
         <source>Time:</source>
-        <translation>Tijdstip:</translation>
+        <translation type="vanished">Tijdstip:</translation>
     </message>
     <message>
         <source>Time</source>
-        <translation>Tijdstip</translation>
+        <translation type="vanished">Tijdstip</translation>
     </message>
     <message>
         <source>Solar</source>
-        <translation>Zon</translation>
+        <translation type="vanished">Zon</translation>
     </message>
     <message>
         <source>Lunar</source>
-        <translation>Maan</translation>
+        <translation type="vanished">Maan</translation>
     </message>
     <message>
         <source>Starts</source>
-        <translation>Begint om</translation>
+        <translation type="vanished">Begint om</translation>
     </message>
     <message>
         <source>Ends</source>
-        <translation>Eindigt om</translation>
+        <translation type="vanished">Eindigt om</translation>
     </message>
     <message>
         <source>Remind Me</source>
-        <translation>Herinneren</translation>
+        <translation type="vanished">Herinneren</translation>
     </message>
     <message>
         <source>Repeat</source>
-        <translation>Herhalen</translation>
+        <translation type="vanished">Herhalen</translation>
     </message>
     <message>
         <source>Daily</source>
-        <translation>Dagelijks</translation>
+        <translation type="vanished">Dagelijks</translation>
     </message>
     <message>
         <source>Weekdays</source>
-        <translation>Weekdagen</translation>
+        <translation type="vanished">Weekdagen</translation>
     </message>
     <message>
         <source>Weekly</source>
-        <translation>Wekelijks</translation>
+        <translation type="vanished">Wekelijks</translation>
     </message>
     <message>
         <source>Monthly</source>
-        <translation>Maandelijks</translation>
+        <translation type="vanished">Maandelijks</translation>
     </message>
     <message>
         <source>Yearly</source>
-        <translation>Jaarlijks</translation>
+        <translation type="vanished">Jaarlijks</translation>
     </message>
     <message>
         <source>End Repeat</source>
-        <translation>Herhaling eindigt op</translation>
+        <translation type="vanished">Herhaling eindigt op</translation>
     </message>
     <message>
         <source>After</source>
-        <translation>Na</translation>
+        <translation type="vanished">Na</translation>
     </message>
     <message>
         <source>On</source>
-        <translation>Op</translation>
+        <translation type="vanished">Op</translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Annuleren</translation>
+        <translation type="vanished">Annuleren</translation>
     </message>
     <message>
         <source>Save</source>
         <comment>button</comment>
-        <translation>Opslaan</translation>
+        <translation type="vanished">Opslaan</translation>
     </message>
 </context>
 <context>
     <name>CScheduleOperation</name>
     <message>
         <source>All occurrences of a repeating event must have the same all-day status.</source>
-        <translation>Alle afspraken in reeks moeten voorzien zijn van de status &apos;hele dag&apos;.</translation>
+        <translation type="vanished">Alle afspraken in reeks moeten voorzien zijn van de status &apos;hele dag&apos;.</translation>
     </message>
     <message>
         <source>Do you want to change all occurrences?</source>
-        <translation>Wil je alle afspraken in de reeks bewerken?</translation>
+        <translation type="vanished">Wil je alle afspraken in de reeks bewerken?</translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Annuleren</translation>
+        <translation type="vanished">Annuleren</translation>
     </message>
     <message>
         <source>Change All</source>
-        <translation>Reeks bewerken</translation>
+        <translation type="vanished">Reeks bewerken</translation>
     </message>
     <message>
         <source>You are changing the repeating rule of this event.</source>
-        <translation>Je past de herhaalinstellingen van deze afspraak aan.</translation>
+        <translation type="vanished">Je past de herhaalinstellingen van deze afspraak aan.</translation>
     </message>
     <message>
         <source>You are deleting an event.</source>
-        <translation>Je verwijdert een afspraak.</translation>
+        <translation type="vanished">Je verwijdert een afspraak.</translation>
     </message>
     <message>
         <source>Are you sure you want to delete this event?</source>
-        <translation>Weet je zeker dat je deze afspraak wilt verwijderen?</translation>
+        <translation type="vanished">Weet je zeker dat je deze afspraak wilt verwijderen?</translation>
     </message>
     <message>
         <source>Delete</source>
         <comment>button</comment>
-        <translation>Verwijderen</translation>
+        <translation type="vanished">Verwijderen</translation>
     </message>
     <message>
         <source>Do you want to delete all occurrences of this event, or only the selected occurrence?</source>
-        <translation>Wil je alle afspraken in de reeks verwijderen of enkel deze?</translation>
+        <translation type="vanished">Wil je alle afspraken in de reeks verwijderen of enkel deze?</translation>
     </message>
     <message>
         <source>Delete All</source>
-        <translation>Reeks verwijderen</translation>
+        <translation type="vanished">Reeks verwijderen</translation>
     </message>
     <message>
         <source>Delete Only This Event</source>
-        <translation>Deze afspraak verwijderen</translation>
+        <translation type="vanished">Deze afspraak verwijderen</translation>
     </message>
     <message>
         <source>Do you want to delete this and all future occurrences of this event, or only the selected occurrence?</source>
-        <translation>Wil je deze en toekomstige afspraken verwijderen of enkel de deze?</translation>
+        <translation type="vanished">Wil je deze en toekomstige afspraken verwijderen of enkel de deze?</translation>
     </message>
     <message>
         <source>Delete All Future Events</source>
-        <translation>Toekomstige afspraken verwijderen</translation>
+        <translation type="vanished">Toekomstige afspraken verwijderen</translation>
     </message>
     <message>
         <source>You are changing a repeating event.</source>
-        <translation>Je past een reeks afspraken aan.</translation>
+        <translation type="vanished">Je past een reeks afspraken aan.</translation>
     </message>
     <message>
         <source>Do you want to change only this occurrence of the event, or all occurrences?</source>
-        <translation>Wil je deze en toekomstige afspraken aanpassen of enkel deze?</translation>
+        <translation type="vanished">Wil je deze en toekomstige afspraken aanpassen of enkel deze?</translation>
     </message>
     <message>
         <source>All</source>
-        <translation>Reeks</translation>
+        <translation type="vanished">Reeks</translation>
     </message>
     <message>
         <source>Only This Event</source>
-        <translation>Deze afspraak</translation>
+        <translation type="vanished">Deze afspraak</translation>
     </message>
     <message>
         <source>Do you want to change only this occurrence of the event, or this and all future occurrences?</source>
-        <translation>Wil je deze en toekomstige afspraken aanpassen of enkel deze?</translation>
+        <translation type="vanished">Wil je deze en toekomstige afspraken aanpassen of enkel deze?</translation>
     </message>
     <message>
         <source>All Future Events</source>
-        <translation>Toekomstige afspraken</translation>
+        <translation type="vanished">Toekomstige afspraken</translation>
     </message>
     <message>
         <source>You have selected a leap month, and will be reminded according to the rules of the lunar calendar.</source>
-        <translation>Je hebt een schrikkelmaand gekozen. De herinnering wordt op basis van de maankalender getoond.</translation>
+        <translation type="vanished">Je hebt een schrikkelmaand gekozen. De herinnering wordt op basis van de maankalender getoond.</translation>
     </message>
     <message>
         <source>OK</source>
         <comment>button</comment>
-        <translation>Oké</translation>
+        <translation type="vanished">Oké</translation>
     </message>
 </context>
 <context>
     <name>CScheduleSearchDateItem</name>
     <message>
         <source>Y</source>
-        <translation>J</translation>
+        <translation type="vanished">J</translation>
     </message>
     <message>
         <source>M</source>
-        <translation>M</translation>
+        <translation type="vanished">M</translation>
     </message>
     <message>
         <source>D</source>
-        <translation>D</translation>
+        <translation type="vanished">D</translation>
     </message>
 </context>
 <context>
     <name>CScheduleSearchItem</name>
     <message>
         <source>Edit</source>
-        <translation>Bewerken</translation>
+        <translation type="vanished">Bewerken</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Verwijderen</translation>
+        <translation type="vanished">Verwijderen</translation>
     </message>
     <message>
         <source>All Day</source>
-        <translation>Hele dag</translation>
+        <translation type="vanished">Hele dag</translation>
     </message>
 </context>
 <context>
     <name>CScheduleSearchView</name>
     <message>
         <source>No search results</source>
-        <translation>Geen zoekresultaten</translation>
+        <translation type="vanished">Geen zoekresultaten</translation>
     </message>
 </context>
 <context>
     <name>CScheduleView</name>
     <message>
         <source>ALL DAY</source>
-        <translation>HELE DAG</translation>
+        <translation type="vanished">HELE DAG</translation>
     </message>
 </context>
 <context>
     <name>CSettingDialog</name>
     <message>
-        <source>import ICS file</source>
-        <translation>Ics-bestand importeren</translation>
-    </message>
-    <message>
         <source>Manual</source>
-        <translation>Handmatig</translation>
+        <translation type="vanished">Handmatig</translation>
     </message>
     <message>
         <source>15 mins</source>
-        <translation>15 min.</translation>
+        <translation type="vanished">15 min.</translation>
     </message>
     <message>
         <source>30 mins</source>
-        <translation>30 min.</translation>
+        <translation type="vanished">30 min.</translation>
     </message>
     <message>
         <source>1 hour</source>
-        <translation>1 uur</translation>
+        <translation type="vanished">1 uur</translation>
     </message>
     <message>
         <source>24 hours</source>
-        <translation>24 uur</translation>
+        <translation type="vanished">24 uur</translation>
     </message>
     <message>
         <source>Sync Now</source>
-        <translation>Nu synchroniseren</translation>
+        <translation type="vanished">Nu synchroniseren</translation>
     </message>
     <message>
         <source>Last sync</source>
-        <translation>Recentste synchronisatie</translation>
+        <translation type="vanished">Recentste synchronisatie</translation>
     </message>
     <message>
         <source>Monday</source>
-        <translation>maandag</translation>
-    </message>
-    <message>
-        <source>Tuesday</source>
-        <translation type="unfinished">Dinsdag</translation>
-    </message>
-    <message>
-        <source>Wednesday</source>
-        <translation type="unfinished">Woensdag</translation>
-    </message>
-    <message>
-        <source>Thursday</source>
-        <translation type="unfinished">Donderdag</translation>
-    </message>
-    <message>
-        <source>Friday</source>
-        <translation type="unfinished">Vrijdag</translation>
-    </message>
-    <message>
-        <source>Saturday</source>
-        <translation type="unfinished">Zaterdag</translation>
+        <translation type="vanished">maandag</translation>
     </message>
     <message>
         <source>Sunday</source>
-        <translation>zondag</translation>
+        <translation type="vanished">zondag</translation>
     </message>
     <message>
         <source>12-hour clock</source>
-        <translation>12-uursklok</translation>
+        <translation type="vanished">12-uursklok</translation>
     </message>
     <message>
         <source>24-hour clock</source>
-        <translation>24-uursklok</translation>
+        <translation type="vanished">24-uursklok</translation>
     </message>
     <message>
-        <source>Please go to the &lt;a href=&apos;/&apos;&gt;Control Center&lt;/a&gt; to change settings</source>
-        <translation type="unfinished"></translation>
+        <source>Tuesday</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>Wednesday</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>Thursday</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>Friday</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <source>Saturday</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>CTimeEdit</name>
     <message>
         <source>(%1 mins)</source>
-        <translation>(%1 min.)</translation>
+        <translation type="vanished">(%1 min.)</translation>
     </message>
     <message>
         <source>(%1 hour)</source>
-        <translation>(%1 uur)</translation>
+        <translation type="vanished">(%1 uur)</translation>
     </message>
     <message>
         <source>(%1 hours)</source>
-        <translation>(%1 uur)</translation>
+        <translation type="vanished">(%1 uur)</translation>
     </message>
 </context>
 <context>
     <name>CTitleWidget</name>
     <message>
         <source>Y</source>
-        <translation>J</translation>
+        <translation type="vanished">J</translation>
     </message>
     <message>
         <source>M</source>
-        <translation>M</translation>
+        <translation type="vanished">M</translation>
     </message>
     <message>
         <source>W</source>
-        <translation>W</translation>
+        <translation type="vanished">W</translation>
     </message>
     <message>
         <source>D</source>
-        <translation>D</translation>
+        <translation type="vanished">D</translation>
     </message>
     <message>
         <source>Search events and festivals</source>
-        <translation>Zoeken naar afspraken en festivals</translation>
+        <translation type="vanished">Zoeken naar afspraken en festivals</translation>
     </message>
 </context>
 <context>
     <name>CWeekWidget</name>
     <message>
         <source>Sun</source>
-        <translation>zo</translation>
+        <translation type="vanished">zo</translation>
     </message>
     <message>
         <source>Mon</source>
-        <translation>ma</translation>
+        <translation type="vanished">ma</translation>
     </message>
     <message>
         <source>Tue</source>
-        <translation>di</translation>
+        <translation type="vanished">di</translation>
     </message>
     <message>
         <source>Wed</source>
-        <translation>woe</translation>
+        <translation type="vanished">woe</translation>
     </message>
     <message>
         <source>Thu</source>
-        <translation>do</translation>
+        <translation type="vanished">do</translation>
     </message>
     <message>
         <source>Fri</source>
-        <translation>vrij</translation>
+        <translation type="vanished">vrij</translation>
     </message>
     <message>
         <source>Sat</source>
-        <translation>za</translation>
+        <translation type="vanished">za</translation>
     </message>
 </context>
 <context>
     <name>CWeekWindow</name>
     <message>
         <source>Week</source>
-        <translation>Week</translation>
+        <translation type="vanished">Week</translation>
     </message>
     <message>
         <source>Y</source>
-        <translation>J</translation>
+        <translation type="vanished">J</translation>
     </message>
 </context>
 <context>
     <name>CYearScheduleView</name>
     <message>
         <source>All Day</source>
-        <translation>Hele dag</translation>
+        <translation type="vanished">Hele dag</translation>
     </message>
     <message>
         <source>No event</source>
-        <translation>Geen afspraak</translation>
+        <translation type="vanished">Geen afspraak</translation>
     </message>
 </context>
 <context>
     <name>CYearWindow</name>
     <message>
         <source>Y</source>
-        <translation>J</translation>
+        <translation type="vanished">J</translation>
     </message>
 </context>
 <context>
     <name>CalendarWindow</name>
     <message>
         <source>Calendar</source>
-        <translation>Kalender</translation>
+        <translation type="vanished">Kalender</translation>
     </message>
     <message>
         <source>Calendar is a tool to view dates, and also a smart daily planner to schedule all things in life. </source>
-        <translation>Met Kalender kun je je afspraken en planning beheren, zowel werk als privé.</translation>
+        <translation type="vanished">Met Kalender kun je je afspraken en planning beheren, zowel werk als privé.</translation>
     </message>
 </context>
 <context>
     <name>Calendarmainwindow</name>
     <message>
         <source>Calendar</source>
-        <translation>Kalender</translation>
+        <translation type="vanished">Kalender</translation>
     </message>
     <message>
         <source>Manage</source>
-        <translation>Beheren</translation>
+        <translation type="vanished">Beheren</translation>
     </message>
     <message>
         <source>Privacy Policy</source>
-        <translation>Privacybeleid</translation>
+        <translation type="vanished">Privacybeleid</translation>
     </message>
     <message>
         <source>Syncing...</source>
-        <translation>Bezig met synchroniseren…</translation>
+        <translation type="vanished">Bezig met synchroniseren…</translation>
     </message>
     <message>
         <source>Sync successful</source>
-        <translation>Sychroniseren voltooid</translation>
+        <translation type="vanished">Sychroniseren voltooid</translation>
     </message>
     <message>
         <source>Sync failed, please try later</source>
-        <translation>Synchroniseren mislukt - probeer het later opnieuw</translation>
+        <translation type="vanished">Synchroniseren mislukt - probeer het later opnieuw</translation>
     </message>
 </context>
 <context>
     <name>CenterWidget</name>
     <message>
         <source>All Day</source>
-        <translation>Hele dag</translation>
+        <translation type="vanished">Hele dag</translation>
     </message>
 </context>
 <context>
@@ -772,99 +762,91 @@
     <name>DragInfoGraphicsView</name>
     <message>
         <source>Edit</source>
-        <translation>Aanpassen</translation>
+        <translation type="vanished">Aanpassen</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Verwijderen</translation>
+        <translation type="vanished">Verwijderen</translation>
     </message>
     <message>
         <source>New event</source>
-        <translation>Nieuwe afspraak</translation>
+        <translation type="vanished">Nieuwe afspraak</translation>
     </message>
     <message>
         <source>New Event</source>
-        <translation>Nieuwe afspraak</translation>
+        <translation type="vanished">Nieuwe afspraak</translation>
     </message>
 </context>
 <context>
     <name>JobTypeListView</name>
     <message>
-        <source>export</source>
-        <translation>Exporteren</translation>
-    </message>
-    <message>
-        <source>import ICS file</source>
-        <translation type="unfinished">Ics-bestand importeren</translation>
-    </message>
-    <message>
         <source>You are deleting an event type.</source>
-        <translation>Je staat op het punt om een afspraaktype te verwijderen.</translation>
+        <translation type="vanished">Je staat op het punt om een afspraaktype te verwijderen.</translation>
     </message>
     <message>
         <source>All events under this type will be deleted and cannot be recovered.</source>
-        <translation>Alle bijbehorende afspraken worden verwijderd en kunnen niet worden hersteld.</translation>
+        <translation type="vanished">Alle bijbehorende afspraken worden verwijderd en kunnen niet worden hersteld.</translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Annuleren</translation>
+        <translation type="vanished">Annuleren</translation>
     </message>
     <message>
         <source>Delete</source>
         <comment>button</comment>
-        <translation>Verwijderen</translation>
+        <translation type="vanished">Verwijderen</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
         <source>Account settings</source>
-        <translation>Accountinstellingen</translation>
+        <translation type="vanished">Accountinstellingen</translation>
     </message>
     <message>
         <source>Account</source>
-        <translation>Account</translation>
+        <translation type="vanished">Account</translation>
     </message>
     <message>
         <source>Select items to be synced</source>
-        <translation>Selecteer de te synchroniseren items</translation>
+        <translation type="vanished">Selecteer de te synchroniseren items</translation>
     </message>
     <message>
         <source>Events</source>
-        <translation>Afspraken</translation>
+        <translation type="vanished">Afspraken</translation>
     </message>
     <message>
         <source>General settings</source>
-        <translation>Algemene instellingen</translation>
+        <translation type="vanished">Algemene instellingen</translation>
     </message>
     <message>
         <source>Sync interval</source>
-        <translation>Synchroniseren, elke</translation>
+        <translation type="vanished">Synchroniseren, elke</translation>
     </message>
     <message>
         <source>Manage calendar</source>
-        <translation>Agenda beheren</translation>
+        <translation type="vanished">Agenda beheren</translation>
     </message>
     <message>
         <source>Calendar account</source>
-        <translation>Agenda-account</translation>
+        <translation type="vanished">Agenda-account</translation>
     </message>
     <message>
         <source>Event types</source>
-        <translation>Afspraaktypes</translation>
+        <translation type="vanished">Afspraaktypes</translation>
     </message>
     <message>
         <source>General</source>
-        <translation>Algemeen</translation>
+        <translation type="vanished">Algemeen</translation>
     </message>
     <message>
         <source>First day of week</source>
-        <translation>Eerste dag van de week</translation>
+        <translation type="vanished">Eerste dag van de week</translation>
     </message>
     <message>
         <source>Time</source>
-        <translation>Tijdstip</translation>
+        <translation type="vanished">Tijdstip</translation>
     </message>
 </context>
 <context>
@@ -872,7 +854,7 @@
     <message>
         <source>Today</source>
         <comment>Return</comment>
-        <translation>Vandaag</translation>
+        <translation type="vanished">Vandaag</translation>
     </message>
 </context>
 <context>
@@ -880,94 +862,86 @@
     <message>
         <source>Today</source>
         <comment>Return Today</comment>
-        <translation>Vandaag</translation>
+        <translation type="vanished">Vandaag</translation>
     </message>
 </context>
 <context>
     <name>ScheduleTypeEditDlg</name>
     <message>
         <source>New event type</source>
-        <translation>Nieuw afspraaktype</translation>
+        <translation type="vanished">Nieuw afspraaktype</translation>
     </message>
     <message>
         <source>Edit event type</source>
-        <translation>Afspraaktype bewerken</translation>
-    </message>
-    <message>
-        <source>Import ICS file</source>
-        <translation>Ics-bestand importeren</translation>
+        <translation type="vanished">Afspraaktype bewerken</translation>
     </message>
     <message>
         <source>Name:</source>
-        <translation>Naam:</translation>
+        <translation type="vanished">Naam:</translation>
     </message>
     <message>
         <source>Color:</source>
-        <translation>Kleur:</translation>
-    </message>
-    <message>
-        <source>&lt;a href=&apos;https://wikipedia.org/wiki/ICalendar&apos;&gt;ICS&lt;/a&gt; File:</source>
-        <translation>&lt;a href=&apos;https://wikipedia.org/wiki/ICalendar&apos;&gt;Ics&lt;/a&gt;-bestand:</translation>
+        <translation type="vanished">Kleur:</translation>
     </message>
     <message>
         <source>Cancel</source>
         <comment>button</comment>
-        <translation>Annuleren</translation>
+        <translation type="vanished">Annuleren</translation>
     </message>
     <message>
         <source>Save</source>
         <comment>button</comment>
-        <translation>Opslaan</translation>
+        <translation type="vanished">Opslaan</translation>
     </message>
     <message>
         <source>The name can not only contain whitespaces</source>
-        <translation>De naam mag niet alleen bestaan uit spaties</translation>
+        <translation type="vanished">De naam mag niet alleen bestaan uit spaties</translation>
     </message>
     <message>
         <source>Enter a name please</source>
-        <translation>Voer een naam in</translation>
+        <translation type="vanished">Voer een naam in</translation>
     </message>
 </context>
 <context>
     <name>Shortcut</name>
     <message>
         <source>Help</source>
-        <translation>Hulp</translation>
+        <translation type="vanished">Hulp</translation>
     </message>
     <message>
         <source>Delete event</source>
-        <translation>Afspraak verwijderen</translation>
+        <translation type="vanished">Afspraak verwijderen</translation>
     </message>
     <message>
         <source>Copy</source>
-        <translation>Kopiëren</translation>
+        <translation type="vanished">Kopiëren</translation>
     </message>
     <message>
         <source>Cut</source>
-        <translation>Knippen</translation>
+        <translation type="vanished">Knippen</translation>
     </message>
     <message>
         <source>Paste</source>
-        <translation>Plakken</translation>
+        <translation type="vanished">Plakken</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Verwijderen</translation>
+        <translation type="vanished">Verwijderen</translation>
     </message>
     <message>
         <source>Select all</source>
-        <translation>Alles selecteren</translation>
+        <translation type="vanished">Alles selecteren</translation>
     </message>
 </context>
 <context>
     <name>SidebarCalendarWidget</name>
     <message>
         <source>Y</source>
-        <translation>J</translation>
+        <translation type="vanished">J</translation>
     </message>
     <message>
         <source>M</source>
-        <translation>M</translation>
+        <translation type="vanished">M</translation>
     </message>
 </context>
 <context>
@@ -975,7 +949,7 @@
     <message>
         <source>Go</source>
         <comment>button</comment>
-        <translation>Ga</translation>
+        <translation type="vanished">Ga</translation>
     </message>
 </context>
 <context>
@@ -983,19 +957,19 @@
     <message>
         <source>Sign In</source>
         <comment>button</comment>
-        <translation>Inloggen</translation>
+        <translation type="vanished">Inloggen</translation>
     </message>
     <message>
         <source>Sign Out</source>
         <comment>button</comment>
-        <translation>Uitloggen</translation>
+        <translation type="vanished">Uitloggen</translation>
     </message>
 </context>
 <context>
     <name>YearFrame</name>
     <message>
         <source>Y</source>
-        <translation>J</translation>
+        <translation type="vanished">J</translation>
     </message>
 </context>
 <context>
@@ -1003,7 +977,7 @@
     <message>
         <source>Today</source>
         <comment>Today</comment>
-        <translation>Vandaag</translation>
+        <translation type="vanished">Vandaag</translation>
     </message>
 </context>
 </TS>
