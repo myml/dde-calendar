@@ -4,7 +4,7 @@ Upstream-Contact: haifeng.chen <chenhaifeng@uniontech.com>
 Source: 
 
 # README 
-Files: README.md CHANGELOG.md README.zh_CN.md calendar-client/README.md
+Files: README.md CHANGELOG.md README.zh_CN.md calendar-client/README.md docs/*
 Copyright: None
 License: CC-BY-4.0
 
