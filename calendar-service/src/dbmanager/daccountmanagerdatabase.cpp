@@ -170,7 +170,7 @@ bool DAccountManagerDataBase::deleteAccountInfo(const QString &accountID)
     }
     return res;
 }
-
+// 保存通用设置
 DCalendarGeneralSettings::Ptr DAccountManagerDataBase::getCalendarGeneralSettings()
 {
     DCalendarGeneralSettings::Ptr cgSet(new DCalendarGeneralSettings);
@@ -185,7 +185,7 @@ DCalendarGeneralSettings::Ptr DAccountManagerDataBase::getCalendarGeneralSetting
 
     return cgSet;
 }
-
+// 获取通用设置
 void DAccountManagerDataBase::setCalendarGeneralSettings(const DCalendarGeneralSettings::Ptr &cgSet)
 {
     SqliteQuery query(m_database);

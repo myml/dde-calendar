@@ -20,6 +20,14 @@ public:
     void setFirstDayofWeek(int);
     //设置时间显示格式
     void setTimeFormatType(int);
+    //设置一周首日来源
+    void setFirstDayofWeekSource(DCalendarGeneralSettings::GeneralSettingSource);
+    //设置时间显示格式来源
+    void setTimeFormatTypeSource(DCalendarGeneralSettings::GeneralSettingSource);
+    //设置一周首日来源
+    DCalendarGeneralSettings::GeneralSettingSource getFirstDayofWeekSource();
+    //设置时间显示格式来源
+    DCalendarGeneralSettings::GeneralSettingSource getTimeFormatTypeSource();
 
     //获取帐户列表
     void getAccountList();
@@ -29,8 +37,6 @@ public:
     void uploadNetWorkAccountData();
     //获取通用设置
     void getCalendarGeneralSettings();
-    //设置通用设置
-    void setCalendarGeneralSettings(DCalendarGeneralSettings::Ptr ptr);
     //
     void clientIsShow(bool isShow);
     //获取是否支持云同步

@@ -7,6 +7,7 @@
 
 #include "dbus/dbusaccountmanagerrequest.h"
 #include "accountitem.h"
+#include "dcalendargeneralsettings.h"
 
 //所有帐户管理类
 class AccountManager : public QObject
@@ -33,13 +34,18 @@ public:
     //更新网络帐户数据
     void uploadNetWorkAccountData(CallbackFunc callback = nullptr);
 
-    //设置通用设置
-    void setCalendarGeneralSettings(DCalendarGeneralSettings::Ptr ptr, CallbackFunc callback = nullptr);
-
     //设置一周首日
     void setFirstDayofWeek(int);
     //设置时间显示格式
     void setTimeFormatType(int);
+    //设置一周首日来源
+    void setFirstDayofWeekSource(DCalendarGeneralSettings::GeneralSettingSource);
+    //设置时间显示格式来源
+    void setTimeFormatTypeSource(DCalendarGeneralSettings::GeneralSettingSource);
+    //获取一周首日来源
+    DCalendarGeneralSettings::GeneralSettingSource getFirstDayofWeekSource();
+    //获取时间显示格式来源
+    DCalendarGeneralSettings::GeneralSettingSource getTimeFormatTypeSource();
     //帐户登录
     void login();
     //帐户登出

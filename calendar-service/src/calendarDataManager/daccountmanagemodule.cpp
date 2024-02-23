@@ -6,16 +6,20 @@
 #include "commondef.h"
 #include "units.h"
 #include "calendarprogramexitcontrol.h"
+#include <qstandardpaths.h>
 #include <DSysInfo>
 
 const QString firstDayOfWeek_key = "firstDayOfWeek";
 const QString shortTimeFormat_key = "shortTimeFormat";
+const QString firstDayOfWeekSource_key = "firstDayOfWeekSource";
+const QString shortTimeFormatSource_key = "shortTimeFormatSource";
 
 DAccountManageModule::DAccountManageModule(QObject *parent)
     : QObject(parent)
     , m_syncFileManage(new SyncFileManage())
     , m_accountManagerDB(new DAccountManagerDataBase)
     , m_reginFormatConfig(DTK_CORE_NAMESPACE::DConfig::createGeneric("org.deepin.region-format", QString(), this))
+    , m_settings(QStandardPaths::writableLocation(QStandardPaths::AppConfigLocation) + "/config.ini", QSettings::IniFormat)
 {
     if (m_reginFormatConfig->isValid()) {
         connect(m_reginFormatConfig,
@@ -330,23 +334,24 @@ void DAccountManageModule::setUidSwitchStatus(const DAccount::Ptr &account)
 DCalendarGeneralSettings::Ptr DAccountManageModule::getGeneralSettings()
 {
     auto cg = m_accountManagerDB->getCalendarGeneralSettings();
-    // 如果读取控制中心的配置失败，则使用数据库的配置
-    if (!m_reginFormatConfig->isValid()) {
-        qWarning() << "regin format config invalid";
-        return cg;
+    if(getFirstDayOfWeekSource()==DCalendarGeneralSettings::Source_System){
+        bool ok;
+        auto dayofWeek = Qt::DayOfWeek(m_reginFormatConfig->value(firstDayOfWeek_key).toInt(&ok));
+        if (ok) {
+            cg->setFirstDayOfWeek(dayofWeek);
+        } else {
+            qWarning() << "Unable to get first day of week from control center config file";
+        }
     }
-    bool ok;
-    auto dayofWeek = Qt::DayOfWeek(m_reginFormatConfig->value(firstDayOfWeek_key).toInt(&ok));
-    if (ok) {
-        cg->setFirstDayOfWeek(dayofWeek);
-    } else {
-        qWarning() << "Unable to get first day of week from control center";
-    }
-    auto shortTimeFormat = m_reginFormatConfig->value(shortTimeFormat_key).toString();
-    if (shortTimeFormat.contains("ap")) {
-        cg->setTimeShowType(DCalendarGeneralSettings::Twelve);
-    } else {
-        cg->setTimeShowType(DCalendarGeneralSettings::TwentyFour);
+    if(getTimeFormatTypeSource()==DCalendarGeneralSettings::Source_System){
+        auto shortTimeFormat = m_reginFormatConfig->value(shortTimeFormat_key).toString();
+        if (shortTimeFormat.isEmpty()) {
+            qWarning() << "Unable to short time format from control center config file";
+        } else if (shortTimeFormat.contains("ap")) {
+            cg->setTimeShowType(DCalendarGeneralSettings::Twelve);
+        } else {
+            cg->setTimeShowType(DCalendarGeneralSettings::TwentyFour);
+        }
     }
     return cg;
 }
@@ -371,6 +376,30 @@ void DAccountManageModule::slotTimeFormatType(const int timeType)
         setTimeFormatType(timeType);
         emit timeFormatTypeChange();
     }
+}
+
+DCalendarGeneralSettings::GeneralSettingSource DAccountManageModule::getFirstDayOfWeekSource()
+{
+    auto val = m_settings.value(firstDayOfWeekSource_key, DCalendarGeneralSettings::Source_Database);
+    return static_cast<DCalendarGeneralSettings::GeneralSettingSource>(val.toInt());
+}
+
+void DAccountManageModule::setFirstDayOfWeekSource(const DCalendarGeneralSettings::GeneralSettingSource source)
+{
+    m_settings.setValue(firstDayOfWeekSource_key, source);
+    emit firstDayOfWeekChange();
+}
+
+DCalendarGeneralSettings::GeneralSettingSource DAccountManageModule::getTimeFormatTypeSource()
+{
+    auto val = m_settings.value(shortTimeFormatSource_key, DCalendarGeneralSettings::GeneralSettingSource::Source_Database);
+    return static_cast<DCalendarGeneralSettings::GeneralSettingSource>(val.toInt());
+}
+
+void DAccountManageModule::setTimeFormatTypeSource(const DCalendarGeneralSettings::GeneralSettingSource source)
+{
+    m_settings.setValue(shortTimeFormatSource_key, source);
+    emit timeFormatTypeChange();
 }
 
 void DAccountManageModule::slotUidLoginStatueChange(const int status)

@@ -82,6 +82,8 @@ void DAccountManagerService::setCalendarGeneralSettings(const QString &cgSet)
     if (!clientWhite(0)) {
         return;
     }
+    m_accountManager->setFirstDayOfWeekSource(DCalendarGeneralSettings::Source_Database);
+    m_accountManager->setTimeFormatTypeSource(DCalendarGeneralSettings::Source_Database);
     m_accountManager->setCalendarGeneralSettings(cgSet);
 }
 
@@ -131,6 +133,7 @@ int DAccountManagerService::getfirstDayOfWeek() const
 void DAccountManagerService::setFirstDayOfWeek(const int firstday)
 {
     DServiceExitControl exitControl;
+    m_accountManager->setFirstDayOfWeekSource(DCalendarGeneralSettings::Source_Database);
     m_accountManager->setFirstDayOfWeek(firstday);
 }
 
@@ -143,5 +146,33 @@ int DAccountManagerService::getTimeFormatType() const
 void DAccountManagerService::setTimeFormatType(const int timeType)
 {
     DServiceExitControl exitControl;
+    m_accountManager->setTimeFormatTypeSource(DCalendarGeneralSettings::Source_Database);
     m_accountManager->setTimeFormatType(timeType);
+}
+
+int DAccountManagerService::getFirstDayOfWeekSource()
+{
+    return static_cast<int>(m_accountManager->getFirstDayOfWeekSource());
+}
+
+void DAccountManagerService::setFirstDayOfWeekSource(const int source)
+{
+    if (source >= 0 && source < DCalendarGeneralSettings::GeneralSettingSource::Source_Unknown) {
+        auto val = static_cast<DCalendarGeneralSettings::GeneralSettingSource>(source);
+        m_accountManager->setFirstDayOfWeekSource(val);
+    }
+}
+
+int DAccountManagerService::getTimeFormatTypeSource()
+{
+    return static_cast<int>(m_accountManager->getTimeFormatTypeSource());
+}
+
+void DAccountManagerService::setTimeFormatTypeSource(const int source)
+{
+    qDebug() << "setTimeFormatTypeSource" << source;
+    if (source >= 0 && source < DCalendarGeneralSettings::GeneralSettingSource::Source_Unknown) {
+        auto val = static_cast<DCalendarGeneralSettings::GeneralSettingSource>(source);
+        m_accountManager->setTimeFormatTypeSource(val);
+    }
 }

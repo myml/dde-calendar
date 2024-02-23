@@ -160,12 +160,6 @@ void AccountManager::uploadNetWorkAccountData(CallbackFunc callback)
     m_dbusRequest->uploadNetWorkAccountData();
 }
 
-void AccountManager::setCalendarGeneralSettings(DCalendarGeneralSettings::Ptr ptr, CallbackFunc callback)
-{
-    m_dbusRequest->setCallbackFunc(callback);
-    m_dbusRequest->setCalendarGeneralSettings(ptr);
-}
-
 void AccountManager::setFirstDayofWeek(int value)
 {
     m_settings->setFirstDayOfWeek(static_cast<Qt::DayOfWeek>(value));
@@ -177,6 +171,26 @@ void AccountManager::setTimeFormatType(int value)
     m_settings->setTimeShowType(static_cast<DCalendarGeneralSettings::TimeShowType>(value));
     m_dbusRequest->setTimeFormatType(value);
 }
+
+// 设置一周首日来源
+void AccountManager::setFirstDayofWeekSource(DCalendarGeneralSettings::GeneralSettingSource value){
+    m_dbusRequest->setFirstDayofWeekSource(value);
+};
+
+// 设置时间显示格式来源
+void AccountManager::setTimeFormatTypeSource(DCalendarGeneralSettings::GeneralSettingSource value){
+    m_dbusRequest->setTimeFormatTypeSource(value);
+};
+
+// 设置一周首日来源
+DCalendarGeneralSettings::GeneralSettingSource AccountManager::getFirstDayofWeekSource(){
+    return m_dbusRequest->getFirstDayofWeekSource();
+};
+
+// 设置时间显示格式来源
+DCalendarGeneralSettings::GeneralSettingSource AccountManager::getTimeFormatTypeSource(){
+    return m_dbusRequest->getTimeFormatTypeSource();
+};
 
 /**
  * @brief login

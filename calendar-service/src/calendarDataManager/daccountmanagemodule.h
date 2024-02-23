@@ -5,6 +5,7 @@
 #ifndef DACCOUNTMANAGEMODULE_H
 #define DACCOUNTMANAGEMODULE_H
 
+#include "dcalendargeneralsettings.h"
 #include "syncfilemanage.h"
 #include "daccount.h"
 #include "daccountmodule.h"
@@ -40,6 +41,11 @@ public:
     void setFirstDayOfWeek(const int firstday);
     int getTimeFormatType();
     void setTimeFormatType(const int timeType);
+
+    DCalendarGeneralSettings::GeneralSettingSource getFirstDayOfWeekSource();
+    void setFirstDayOfWeekSource(const DCalendarGeneralSettings::GeneralSettingSource source);
+    DCalendarGeneralSettings::GeneralSettingSource getTimeFormatTypeSource();
+    void setTimeFormatTypeSource(const DCalendarGeneralSettings::GeneralSettingSource source);
 
     void remindJob(const QString &accountID, const QString &alarmID);
 
@@ -113,6 +119,7 @@ private:
     DTK_CORE_NAMESPACE::DConfig *m_reginFormatConfig;
     QTimer m_timer;
     bool m_isSupportUid = false;
+    QSettings m_settings;
 };
 
 #endif // DACCOUNTMANAGEMODULE_H

@@ -77,11 +77,11 @@ private:
 private:
     //一周首日
     QWidget *m_firstDayofWeekWidget = nullptr;
-    QLabel *m_firstDayofWeekLabel= nullptr;
+    QComboBox *m_firstDayofWeekCombobox= nullptr;
 
     //时间格式
     QWidget *m_timeTypeWidget = nullptr;
-    QLabel *m_timeTypeLabel = nullptr;
+    QComboBox *m_timeTypeCombobox = nullptr;
 
     //帐户选择
     QComboBox *m_accountComboBox = nullptr;

@@ -4,6 +4,7 @@
 
 #include "dbusaccountmanagerrequest.h"
 #include "commondef.h"
+#include "dcalendargeneralsettings.h"
 #include <QDBusInterface>
 #include <QDebug>
 
@@ -31,6 +32,66 @@ void DbusAccountManagerRequest::setTimeFormatType(int value)
 {
     QDBusInterface interface(this->service(), this->path(), this->interface(), QDBusConnection::sessionBus(), this);
     interface.setProperty("timeFormatType", QVariant(value));
+}
+
+/**
+ * @brief setFirstDayofWeek
+ * 设置一周首日
+ */
+void DbusAccountManagerRequest::setFirstDayofWeekSource(DCalendarGeneralSettings::GeneralSettingSource value)
+{
+    QDBusInterface interface(this->service(), this->path(), this->interface(), QDBusConnection::sessionBus(), this);
+    interface.setProperty("firstDayOfWeekSource", QVariant(value));
+}
+
+/**
+ * @brief DbusAccountManagerRequest::setTimeFormatType
+ * 设置时间显示格式
+ */
+void DbusAccountManagerRequest::setTimeFormatTypeSource(DCalendarGeneralSettings::GeneralSettingSource value)
+{
+    QDBusInterface interface(this->service(), this->path(), this->interface(), QDBusConnection::sessionBus(), this);
+    interface.setProperty("timeFormatTypeSource", QVariant(value));
+}
+
+/**
+ * @brief setFirstDayofWeek
+ * 设置一周首日
+ */
+DCalendarGeneralSettings::GeneralSettingSource DbusAccountManagerRequest::getFirstDayofWeekSource()
+{
+    QDBusInterface interface(this->service(),
+                             this->path(),
+                             this->interface(),
+                             QDBusConnection::sessionBus(),
+                             this);
+    bool ok;
+    auto val = interface.property("firstDayOfWeekSource").toInt(&ok);
+    if (ok) {
+        return static_cast<DCalendarGeneralSettings::GeneralSettingSource>(val);
+    } else {
+        return DCalendarGeneralSettings::Source_Database;
+    }
+}
+
+/**
+ * @brief DbusAccountManagerRequest::setTimeFormatType
+ * 设置时间显示格式
+ */
+DCalendarGeneralSettings::GeneralSettingSource DbusAccountManagerRequest::getTimeFormatTypeSource()
+{
+    QDBusInterface interface(this->service(),
+                             this->path(),
+                             this->interface(),
+                             QDBusConnection::sessionBus(),
+                             this);
+    bool ok;
+    auto val = interface.property("timeFormatTypeSource").toInt(&ok);
+    if (ok) {
+        return static_cast<DCalendarGeneralSettings::GeneralSettingSource>(val);
+    } else {
+        return DCalendarGeneralSettings::Source_Database;
+    }
 }
 
 /**
@@ -68,18 +129,6 @@ void DbusAccountManagerRequest::uploadNetWorkAccountData()
 void DbusAccountManagerRequest::getCalendarGeneralSettings()
 {
     asyncCall("getCalendarGeneralSettings");
-}
-
-/**
- * @brief DbusAccountManagerRequest::setCalendarGeneralSettings
- * 设置通用设置
- * @param ptr   通用设置
- */
-void DbusAccountManagerRequest::setCalendarGeneralSettings(DCalendarGeneralSettings::Ptr ptr)
-{
-    QString jsonStr;
-    DCalendarGeneralSettings::toJsonString(ptr, jsonStr);
-    asyncCall("setCalendarGeneralSettings", QVariant(jsonStr));
 }
 
 /**
@@ -128,6 +177,7 @@ bool DbusAccountManagerRequest::getIsSupportUid()
  */
 void DbusAccountManagerRequest::slotCallFinished(CDBusPendingCallWatcher *call)
 {
+    qDebug() << "slotCallFinished" << call->getmember();
     int ret = 0;
     bool canCall = true;
     //错误处理
@@ -175,6 +225,7 @@ void DbusAccountManagerRequest::slotCallFinished(CDBusPendingCallWatcher *call)
 
 void DbusAccountManagerRequest::slotDbusCall(const QDBusMessage &msg)
 {
+    qDebug() << "DbusAccountManagerRequest::slotDbusCall" << msg.member();
     if (msg.member() == "accountUpdate") {
         getAccountList();
     }else if (msg.member() == "PropertiesChanged") {
