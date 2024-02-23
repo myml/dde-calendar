@@ -35,8 +35,8 @@ void DbusAccountManagerRequest::setTimeFormatType(int value)
 }
 
 /**
- * @brief setFirstDayofWeek
- * 设置一周首日
+ * @brief setFirstDayofWeekSource
+ * 设置一周首日来源
  */
 void DbusAccountManagerRequest::setFirstDayofWeekSource(DCalendarGeneralSettings::GeneralSettingSource value)
 {
@@ -45,8 +45,8 @@ void DbusAccountManagerRequest::setFirstDayofWeekSource(DCalendarGeneralSettings
 }
 
 /**
- * @brief DbusAccountManagerRequest::setTimeFormatType
- * 设置时间显示格式
+ * @brief setTimeFormatTypeSource
+ * 设置时间显示格式来源
  */
 void DbusAccountManagerRequest::setTimeFormatTypeSource(DCalendarGeneralSettings::GeneralSettingSource value)
 {
@@ -55,8 +55,8 @@ void DbusAccountManagerRequest::setTimeFormatTypeSource(DCalendarGeneralSettings
 }
 
 /**
- * @brief setFirstDayofWeek
- * 设置一周首日
+ * @brief getFirstDayofWeekSource
+ * 获取一周首日来源
  */
 DCalendarGeneralSettings::GeneralSettingSource DbusAccountManagerRequest::getFirstDayofWeekSource()
 {
@@ -75,8 +75,8 @@ DCalendarGeneralSettings::GeneralSettingSource DbusAccountManagerRequest::getFir
 }
 
 /**
- * @brief DbusAccountManagerRequest::setTimeFormatType
- * 设置时间显示格式
+ * @brief getTimeFormatTypeSource
+ * 获取时间显示格式来源
  */
 DCalendarGeneralSettings::GeneralSettingSource DbusAccountManagerRequest::getTimeFormatTypeSource()
 {
@@ -177,7 +177,6 @@ bool DbusAccountManagerRequest::getIsSupportUid()
  */
 void DbusAccountManagerRequest::slotCallFinished(CDBusPendingCallWatcher *call)
 {
-    qDebug() << "slotCallFinished" << call->getmember();
     int ret = 0;
     bool canCall = true;
     //错误处理
@@ -225,7 +224,6 @@ void DbusAccountManagerRequest::slotCallFinished(CDBusPendingCallWatcher *call)
 
 void DbusAccountManagerRequest::slotDbusCall(const QDBusMessage &msg)
 {
-    qDebug() << "DbusAccountManagerRequest::slotDbusCall" << msg.member();
     if (msg.member() == "accountUpdate") {
         getAccountList();
     }else if (msg.member() == "PropertiesChanged") {

@@ -24,7 +24,7 @@ public:
     enum GeneralSettingSource {
         Source_Database, // 来自系统设置（即控制中心）
         Source_System,   // 来自数据库（旧版本日历配置存放在数据库）
-        Source_Unknown,  // 用于确定边界
+        Source_Unknown,  // 用于确定枚举边界
     };
 
     typedef QSharedPointer<DCalendarGeneralSettings> Ptr;

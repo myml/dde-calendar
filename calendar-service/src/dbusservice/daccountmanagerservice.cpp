@@ -170,7 +170,6 @@ int DAccountManagerService::getTimeFormatTypeSource()
 
 void DAccountManagerService::setTimeFormatTypeSource(const int source)
 {
-    qDebug() << "setTimeFormatTypeSource" << source;
     if (source >= 0 && source < DCalendarGeneralSettings::GeneralSettingSource::Source_Unknown) {
         auto val = static_cast<DCalendarGeneralSettings::GeneralSettingSource>(source);
         m_accountManager->setTimeFormatTypeSource(val);

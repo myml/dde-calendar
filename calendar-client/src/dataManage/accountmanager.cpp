@@ -173,22 +173,26 @@ void AccountManager::setTimeFormatType(int value)
 }
 
 // 设置一周首日来源
-void AccountManager::setFirstDayofWeekSource(DCalendarGeneralSettings::GeneralSettingSource value){
+void AccountManager::setFirstDayofWeekSource(DCalendarGeneralSettings::GeneralSettingSource value)
+{
     m_dbusRequest->setFirstDayofWeekSource(value);
 };
 
 // 设置时间显示格式来源
-void AccountManager::setTimeFormatTypeSource(DCalendarGeneralSettings::GeneralSettingSource value){
+void AccountManager::setTimeFormatTypeSource(DCalendarGeneralSettings::GeneralSettingSource value)
+{
     m_dbusRequest->setTimeFormatTypeSource(value);
 };
 
-// 设置一周首日来源
-DCalendarGeneralSettings::GeneralSettingSource AccountManager::getFirstDayofWeekSource(){
+// 获取一周首日来源
+DCalendarGeneralSettings::GeneralSettingSource AccountManager::getFirstDayofWeekSource()
+{
     return m_dbusRequest->getFirstDayofWeekSource();
 };
 
-// 设置时间显示格式来源
-DCalendarGeneralSettings::GeneralSettingSource AccountManager::getTimeFormatTypeSource(){
+// 获取时间显示格式来源
+DCalendarGeneralSettings::GeneralSettingSource AccountManager::getTimeFormatTypeSource()
+{
     return m_dbusRequest->getTimeFormatTypeSource();
 };
 
