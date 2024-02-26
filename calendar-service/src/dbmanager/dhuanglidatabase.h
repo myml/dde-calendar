@@ -10,6 +10,7 @@
 #include "lunarandfestival.h"
 #include <QJsonArray>
 #include <QJsonDocument>
+#include <QSettings>
 
 class DHuangLiDataBase : public DDataBase
 {
@@ -23,6 +24,8 @@ public:
 private:
     QJsonDocument readJSON(QString filename, bool cache);
     QHash<QString, QJsonDocument> readJSONCache;
+    void updateFestivalList();
+    QSettings m_settings;
 protected:
     //创建数据库
     void createDB() override;

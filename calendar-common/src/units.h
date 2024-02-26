@@ -8,6 +8,9 @@
 #include <QString>
 #include <QDateTime>
 #include <QMap>
+#include <QDir>
+#include <QProcess>
+#include <QSharedPointer>
 
 const QString serviceBaseName = "com.deepin.dataserver.Calendar";
 const QString serviceBasePath = "/com/deepin/dataserver/Calendar";
@@ -38,6 +41,9 @@ bool isChineseEnv();
 
 //获取家配置目录
 QString getHomeConfigPath();
+QDir getAppConfigDir();
+QDir getAppCacheDir();
+QSharedPointer<QProcess> DownloadFile(QString url, QString filename);
 
 //时间转换
 QDateTime dtConvert(const QDateTime &datetime);

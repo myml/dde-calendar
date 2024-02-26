@@ -19,7 +19,7 @@ DAccountManageModule::DAccountManageModule(QObject *parent)
     , m_syncFileManage(new SyncFileManage())
     , m_accountManagerDB(new DAccountManagerDataBase)
     , m_reginFormatConfig(DTK_CORE_NAMESPACE::DConfig::createGeneric("org.deepin.region-format", QString(), this))
-    , m_settings(QStandardPaths::writableLocation(QStandardPaths::AppConfigLocation) + "/config.ini", QSettings::IniFormat)
+    , m_settings( getAppConfigDir().filePath( "config.ini"), QSettings::IniFormat)
 {
     if (m_reginFormatConfig->isValid()) {
         connect(m_reginFormatConfig,
@@ -334,7 +334,7 @@ void DAccountManageModule::setUidSwitchStatus(const DAccount::Ptr &account)
 DCalendarGeneralSettings::Ptr DAccountManageModule::getGeneralSettings()
 {
     auto cg = m_accountManagerDB->getCalendarGeneralSettings();
-    if(getFirstDayOfWeekSource()==DCalendarGeneralSettings::Source_System){
+    if (getFirstDayOfWeekSource() == DCalendarGeneralSettings::Source_System) {
         bool ok;
         auto dayofWeek = Qt::DayOfWeek(m_reginFormatConfig->value(firstDayOfWeek_key).toInt(&ok));
         if (ok) {
@@ -343,7 +343,7 @@ DCalendarGeneralSettings::Ptr DAccountManageModule::getGeneralSettings()
             qWarning() << "Unable to get first day of week from control center config file";
         }
     }
-    if(getTimeFormatTypeSource()==DCalendarGeneralSettings::Source_System){
+    if (getTimeFormatTypeSource() == DCalendarGeneralSettings::Source_System) {
         auto shortTimeFormat = m_reginFormatConfig->value(shortTimeFormat_key).toString();
         if (shortTimeFormat.isEmpty()) {
             qWarning() << "Unable to short time format from control center config file";

@@ -86,9 +86,9 @@ private:
     void updateUIdAccount(const DAccount::Ptr &oldAccount, const DAccount::Ptr &uidAccount);
     //获取设置开关状态
     void setUidSwitchStatus(const DAccount::Ptr &account);
-
+    // 获取通用配置
     DCalendarGeneralSettings::Ptr getGeneralSettings();
-
+    // 保存通用配置
     void setGeneralSettings(const DCalendarGeneralSettings::Ptr &cgSet);
 
 signals:
