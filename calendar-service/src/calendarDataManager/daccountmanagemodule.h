@@ -11,6 +11,7 @@
 #include "daccountmodule.h"
 #include "daccountmanagerdatabase.h"
 #include "daccountservice.h"
+#include "dbustimedate.h"
 
 #include <QObject>
 #include <QSharedPointer>
@@ -120,6 +121,7 @@ private:
     QTimer m_timer;
     bool m_isSupportUid = false;
     QSettings m_settings;
+    DBusTimedate m_timeDateDbus;
 };
 
 #endif // DACCOUNTMANAGEMODULE_H

@@ -13,13 +13,16 @@ class DBusTimedate : public QDBusAbstractInterface
     Q_OBJECT
     Q_PROPERTY(int ShortTimeFormat READ shortTimeFormat NOTIFY ShortTimeFormatChanged)
     Q_PROPERTY(int ShortDateFormat READ shortDateFormat NOTIFY ShortDateFormatChanged)
+    Q_PROPERTY(int WeekBegins READ weekBegins NOTIFY WeekBeginsChanged)
 public:
     explicit DBusTimedate(QObject *parent = nullptr);
     int shortTimeFormat();
     int shortDateFormat();
+    Qt::DayOfWeek weekBegins();
 signals:
     void ShortDateFormatChanged(int  value) const;
     void ShortTimeFormatChanged(int  value) const;
+    void WeekBeginsChanged(int value) const;
 
 public slots:
     void propertiesChanged(const QDBusMessage &msg);

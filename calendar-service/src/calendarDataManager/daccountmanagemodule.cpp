@@ -26,6 +26,15 @@ DAccountManageModule::DAccountManageModule(QObject *parent)
                 &DTK_CORE_NAMESPACE::DConfig::valueChanged,
                 this,
                 &DAccountManageModule::slotSettingChange);
+    } else {
+        connect(&m_timeDateDbus,
+                &DBusTimedate::ShortTimeFormatChanged,
+                this,
+                &DAccountManageModule::slotSettingChange);
+        connect(&m_timeDateDbus,
+                &DBusTimedate::WeekBeginsChanged,
+                this,
+                &DAccountManageModule::slotSettingChange);
     }
     m_isSupportUid = m_syncFileManage->getSyncoperation()->hasAvailable();
     if(Dtk::Core::DSysInfo::isCommunityEdition()){
@@ -335,22 +344,39 @@ DCalendarGeneralSettings::Ptr DAccountManageModule::getGeneralSettings()
 {
     auto cg = m_accountManagerDB->getCalendarGeneralSettings();
     if (getFirstDayOfWeekSource() == DCalendarGeneralSettings::Source_System) {
-        bool ok;
-        auto dayofWeek = Qt::DayOfWeek(m_reginFormatConfig->value(firstDayOfWeek_key).toInt(&ok));
-        if (ok) {
-            cg->setFirstDayOfWeek(dayofWeek);
+        // deepin23使用dconfig存储系统配置
+        if (m_reginFormatConfig->isValid()) {
+            bool ok;
+            auto dayofWeek =
+                Qt::DayOfWeek(m_reginFormatConfig->value(firstDayOfWeek_key).toInt(&ok));
+            if (ok) {
+                cg->setFirstDayOfWeek(dayofWeek);
+            } else {
+                qWarning() << "Unable to get first day of week from control center config file";
+            }
         } else {
-            qWarning() << "Unable to get first day of week from control center config file";
+            // 在deepin20.9使用dbus获取系统配置
+            cg->setFirstDayOfWeek(m_timeDateDbus.weekBegins());
         }
     }
     if (getTimeFormatTypeSource() == DCalendarGeneralSettings::Source_System) {
-        auto shortTimeFormat = m_reginFormatConfig->value(shortTimeFormat_key).toString();
-        if (shortTimeFormat.isEmpty()) {
-            qWarning() << "Unable to short time format from control center config file";
-        } else if (shortTimeFormat.contains("ap")) {
-            cg->setTimeShowType(DCalendarGeneralSettings::Twelve);
+        // 在deepin23使用dconfig获取系统配置
+        if (m_reginFormatConfig->isValid()) {
+            auto shortTimeFormat = m_reginFormatConfig->value(shortTimeFormat_key).toString();
+            if (shortTimeFormat.isEmpty()) {
+                qWarning() << "Unable to short time format from control center config file";
+            } else if (shortTimeFormat.contains("ap")) {
+                cg->setTimeShowType(DCalendarGeneralSettings::Twelve);
+            } else {
+                cg->setTimeShowType(DCalendarGeneralSettings::TwentyFour);
+            }
         } else {
-            cg->setTimeShowType(DCalendarGeneralSettings::TwentyFour);
+            // 在deepin20.9使用dbus获取系统配置
+            if (m_timeDateDbus.shortTimeFormat() == 0) {
+                cg->setTimeShowType(DCalendarGeneralSettings::Twelve);
+            } else {
+                cg->setTimeShowType(DCalendarGeneralSettings::TwentyFour);
+            }
         }
     }
     return cg;

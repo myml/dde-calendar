@@ -42,6 +42,15 @@ int DBusTimedate::shortDateFormat()
     return m_hasDateTimeFormat ? getPropertyByName("ShortDateFormat").toInt() : 1;
 }
 
+Qt::DayOfWeek DBusTimedate::weekBegins()
+{
+    if (m_hasDateTimeFormat) {
+        // WeekBegins是从0开始的，加1才能对应DayOfWeek
+        return Qt::DayOfWeek(getPropertyByName("WeekBegins").toInt() + 1);
+    }
+    return Qt::Monday;
+}
+
 void DBusTimedate::propertiesChanged(const QDBusMessage &msg)
 {
     QList<QVariant> arguments = msg.arguments();
