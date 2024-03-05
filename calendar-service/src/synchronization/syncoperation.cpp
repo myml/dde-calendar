@@ -4,6 +4,7 @@
 
 #include "syncoperation.h"
 #include "commondef.h"
+#include <QLoggingCategory>
 
 
 Syncoperation::Syncoperation(QObject *parent)
@@ -77,6 +78,7 @@ SyncoptResult Syncoperation::optUpload(const QString &key)
 
 SyncoptResult Syncoperation::optDownload(const QString &key, const QString &path)
 {
+    qCDebug(ServiceLogger) << "download" << key << path;
     SyncoptResult result;
     QDBusPendingReply<QString> reply = m_syncInter->Download(key, path);
     reply.waitForFinished();

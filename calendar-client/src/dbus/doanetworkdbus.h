@@ -7,9 +7,9 @@
 
 #include <QDBusAbstractInterface>
 
-#define NETWORK_DBUS_INTEERFACENAME "com.deepin.daemon.Network"
-#define NETWORK_DBUS_NAME "com.deepin.daemon.Network"
-#define NETWORK_DBUS_PATH "/com/deepin/daemon/Network"
+#define NETWORK_DBUS_INTEERFACENAME "org.deepin.dde.Network1"
+#define NETWORK_DBUS_NAME "org.deepin.dde.Network1"
+#define NETWORK_DBUS_PATH "/org/deepin/dde/Network1"
 
 class DOANetWorkDBus : public QDBusAbstractInterface
 {

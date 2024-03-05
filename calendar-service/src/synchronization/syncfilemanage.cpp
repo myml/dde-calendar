@@ -128,10 +128,6 @@ bool SyncFileManage::syncDataDelete(const QString &filepath)
 DAccount::Ptr SyncFileManage::getuserInfo()
 {
     QVariantMap userInfoMap;
-    //如果为社区版本则返回空
-    if (Dtk::Core::DSysInfo::uosEditionType() == Dtk::Core::DSysInfo::UosCommunity) {
-        return nullptr;
-    }
 
     if (!m_syncoperation->optUserData(userInfoMap)) {
         qCInfo(ServiceLogger) << "can't get userinfo";
