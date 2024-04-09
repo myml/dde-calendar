@@ -4,6 +4,7 @@
 
 #include "csystemdtimercontrol.h"
 
+#include "commondef.h"
 #include "units.h"
 
 #include <QDir>
@@ -106,6 +107,9 @@ void CSystemdTimerControl::removeRemindFile(const QString &accountID)
 
 void CSystemdTimerControl::startCalendarServiceSystemdTimer()
 {
+    // 清理玲珑包的残留
+    QFile(m_systemdPath + "com.dde.calendarserver.calendar.service").remove();
+    QFile(m_systemdPath + "com.dde.calendarserver.calendar.timer").remove();
     QFileInfo fileInfo(m_systemdPath + "timers.target.wants/com.dde.calendarserver.calendar.timer");
     //如果没有设置定时任务则开启定时任务
     if (!fileInfo.exists()) {
