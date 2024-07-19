@@ -1,3 +1,13 @@
+dde-calendar (5.14.0) unstable; urgency=medium
+
+  * fix: build error in uos system
+  * fix: problem of not displaying the floating frame
+  * chore(CI): add debian check workflow
+    Thanks to kuchune
+  * feat: Delayed start of service
+
+ -- myml <wurongjie@deepin.org>  Fri, 19 Jul 2024 14:21:37 +0800
+
 dde-calendar (5.13.1) unstable; urgency=medium
 
   * fix: install deb package error(Issue: https://github.com/linuxdeepin/developer-center/issues/7763)
