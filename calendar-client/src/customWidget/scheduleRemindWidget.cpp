@@ -12,7 +12,7 @@
 
 DGUI_USE_NAMESPACE
 ScheduleRemindWidget::ScheduleRemindWidget(QWidget *parent)
-    : DArrowRectangle(DArrowRectangle::ArrowLeft, DArrowRectangle::FloatWindow, parent)
+    : DArrowRectangle(DArrowRectangle::ArrowLeft, DArrowRectangle::FloatWidget, parent)
     , m_centerWidget(new CenterWidget(this))
 {
     //如果dtk版本为5.3以上则使用新接口

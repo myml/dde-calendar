@@ -291,7 +291,7 @@ void CYearScheduleView::paintItem(QPainter &painter)
 }
 
 CYearScheduleOutView::CYearScheduleOutView(QWidget *parent)
-    : DArrowRectangle(DArrowRectangle::ArrowLeft, parent)
+    : DArrowRectangle(DArrowRectangle::ArrowLeft, DArrowRectangle::FloatWidget, parent)
 {
     //如果dtk版本为5.3以上则使用新接口
 #if (DTK_VERSION > DTK_VERSION_CHECK(5, 3, 0, 0))

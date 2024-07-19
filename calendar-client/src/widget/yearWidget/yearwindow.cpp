@@ -650,14 +650,15 @@ void CYearWindow::slotMousePress(const QDate &selectDate, const int pressType)
         QVariant variant;
         CalendarGlobalEnv::getGlobalEnv()->getValueByKey(DDECalendar::CursorPointKey, variant);
         QPoint pos22 = variant.value<QPoint>();
-        QDesktopWidget *w = QApplication::desktop();
-        if (pos22.x() + 10 + m_scheduleView->width() < w->width()) {
+        // 因为将提示框从window改为widget，要转换为相对窗口的坐标
+        auto rPos = this->mapFromGlobal(pos22);
+        // 默认在左边显示，空间不够时在右边显示
+        if ( this->width() - rPos.x() > m_scheduleView->width() ) {
             m_scheduleView->setDirection(DArrowRectangle::ArrowLeft);
-            m_scheduleView->show(pos22.x() + 10, pos22.y());
         } else {
             m_scheduleView->setDirection(DArrowRectangle::ArrowRight);
-            m_scheduleView->show(pos22.x() - 10, pos22.y());
         }
+        m_scheduleView->show(rPos.x(), rPos.y());
         update();
         break;
     }

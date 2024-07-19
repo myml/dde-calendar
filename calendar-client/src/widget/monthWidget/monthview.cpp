@@ -73,17 +73,17 @@ void CMonthView::slotScheduleRemindWidget(const bool isShow, const DSchedule::Pt
         //根据类型获取颜色
         CSchedulesColor gdColor = CScheduleDataManage::getScheduleDataManage()->getScheduleColorByType(out->scheduleTypeID());
         m_remindWidget->setData(out, gdColor);
-        //获取屏幕大小
-        QRect desktopRect = QApplication::desktop()->rect();
+        // 因为将提示框从window改为widget，要转换为相对窗口的坐标
+        auto rPos = this->mapFromGlobal(remindPos);
         //根据提示框在屏幕的位置设置箭头方向
-        if ((remindPos.x() + m_remindWidget->width() + 10) > desktopRect.width()) {
-            m_remindWidget->setDirection(DArrowRectangle::ArrowRight);
-            remindPos.setX(remindPos.x() - 5);
-        } else {
+        qWarning() << this->window()->width() << rPos << m_remindWidget->width();
+        if (this->window()->width() - rPos.x() > m_remindWidget->width()) {
             m_remindWidget->setDirection(DArrowRectangle::ArrowLeft);
-            remindPos.setX(remindPos.x() + 5);
+        } else {
+            m_remindWidget->setDirection(DArrowRectangle::ArrowRight);
         }
-        m_remindWidget->show(remindPos.x(), remindPos.y());
+        // 因为将提示框从window改为widget，要转换为相对窗口的坐标
+        m_remindWidget->show(rPos.x(), rPos.y());
     } else {
         m_remindWidget->hide();
     }
