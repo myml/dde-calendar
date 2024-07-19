@@ -1,3 +1,9 @@
+dde-calendar (5.14.1) unstable; urgency=medium
+
+  * fix: cloud sync dbus error
+
+ -- myml <wurongjie@deepin.org>  Mon, 22 Jul 2024 10:41:23 +0800
+
 dde-calendar (5.14.0) unstable; urgency=medium
 
   * fix: build error in uos system

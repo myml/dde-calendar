@@ -4,14 +4,19 @@
 
 #include "dunioniddbus.h"
 #include "commondef.h"
+#include <QLoggingCategory>
 
 DUnionIDDbus::DUnionIDDbus(const QString &service, const QString &path, const QDBusConnection &connection, QObject *parent)
     : QDBusAbstractInterface(service, path, staticInterfaceName(), connection, parent)
 {
-    if (!this->isValid()) {
+    auto reply = this->SwitcherDump();
+    reply.waitForFinished();
+    if (!reply.isValid()) {
         qCWarning(ServiceLogger) << "Error connecting remote object, service:" << this->service() << ",path:" << this->path() << ",interface" << this->interface();
-        qCWarning(ServiceLogger) << this->lastError();
-        
+        qCWarning(ServiceLogger) << reply.error();
+    } else {
+        qCInfo(ServiceLogger) << "connected remote object, service:" << this->service() << ",path:" << this->path() << ",interface" << this->interface();
+        qCInfo(ServiceLogger) << "switcher dump" << reply.value();
     }
 }
 
