@@ -178,10 +178,9 @@ bool Syncoperation::hasAvailable()
                                                       QStringLiteral("Introspect"));
 
     QDBusMessage reply =  QDBusConnection::sessionBus().call(msg);
-
+    qCInfo(ServiceLogger) << "Syncoperation hasAvailable" << reply.type();
     if (reply.type() == QDBusMessage::ReplyMessage) {
-        QVariant variant = reply.arguments().first();
-        return variant.toString().contains("\"Available\"");
+        return true;
     } else {
         return false;
     }
