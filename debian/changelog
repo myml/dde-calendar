@@ -1,3 +1,10 @@
+dde-calendar (5.14.2) unstable; urgency=medium
+
+  * chore: dbus activation adapt to AM(Issue: https://github.com/linuxdeepin/developer-center/issues/9742)
+  * fix: cloud sync being unavailable at startup
+
+ -- myml <wurongjie@deepin.org>  Fri, 26 Jul 2024 13:14:34 +0800
+
 dde-calendar (5.14.1) unstable; urgency=medium
 
   * fix: cloud sync dbus error
