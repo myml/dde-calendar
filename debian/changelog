@@ -1,3 +1,9 @@
+dde-calendar (5.14.3) unstable; urgency=medium
+
+  * fix: dialog window display position error(Issue: https://github.com/linuxdeepin/developer-center/issues/10141)
+
+ -- myml <wurongjie@deepin.org>  Mon, 05 Aug 2024 14:16:16 +0800
+
 dde-calendar (5.14.2) unstable; urgency=medium
 
   * chore: dbus activation adapt to AM(Issue: https://github.com/linuxdeepin/developer-center/issues/9742)
