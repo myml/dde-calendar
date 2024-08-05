@@ -7,6 +7,7 @@
 #include "scheduledatamanage.h"
 #include "cdynamicicon.h"
 #include "constants.h"
+#include <QTimer>
 
 #include <DMessageBox>
 #include <DPushButton>
@@ -135,8 +136,12 @@ void CScheduleCtrlDlg::changeEvent(QEvent *event)
             button->setText(text_button);
         }
     }
-    setFixedHeight(36 + 48 + height_firstLabel + height_seconLabel + 30);
-    gwi->setFixedHeight(height_firstLabel + height_seconLabel);
+    // 在changeEvent里使用setFixedHeight会导致弹出的确认对话框会显示在左上角
+    // 推测是窗口的问题, 先通过延迟在应用层临时解决
+    QTimer::singleShot(10, this, [this, height_firstLabel, height_seconLabel]{
+        setFixedHeight(36 + 48 + height_firstLabel + height_seconLabel + 30);
+        gwi->setFixedHeight(height_firstLabel + height_seconLabel);
+    });
 }
 
 void CScheduleCtrlDlg::buttonJudge(int id)
