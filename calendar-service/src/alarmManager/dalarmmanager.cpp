@@ -4,8 +4,10 @@
 
 #include "dalarmmanager.h"
 
+#include "commondef.h"
 #include "csystemdtimercontrol.h"
 #include "dbus/dbusnotify.h"
+#include <QLoggingCategory>
 
 #define Millisecond 1
 #define Second 1000 * Millisecond
@@ -46,6 +48,7 @@ DAlarmManager::DAlarmManager(QObject *parent)
 
 void DAlarmManager::updateRemind(const DRemindData::List &remindList)
 {
+    qCDebug(ServiceLogger) << "updateRemind" << "list size:" << remindList.size();
     if (remindList.size() == 0)
         return;
     QString &&accountID = remindList.at(0)->accountID();

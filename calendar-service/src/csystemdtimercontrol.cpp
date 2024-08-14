@@ -6,7 +6,8 @@
 
 #include "commondef.h"
 #include "units.h"
-#include <qloggingcategory.h>
+#include <QDebug>
+#include <QLoggingCategory>
 
 #include <QDir>
 #include <QStandardPaths>
@@ -28,6 +29,7 @@ CSystemdTimerControl::~CSystemdTimerControl()
 
 void CSystemdTimerControl::buildingConfiggure(const QVector<SystemDInfo> &infoVector)
 {
+    qCDebug(ServiceLogger) << "buildingConfiggure";
     if (infoVector.size() == 0)
         return;
     QStringList fileNameList{};
@@ -36,6 +38,7 @@ void CSystemdTimerControl::buildingConfiggure(const QVector<SystemDInfo> &infoVe
         createService(fileNameList.last(), info);
         createTimer(fileNameList.last(), info.triggerTimer);
     }
+    execLinuxCommand("systemctl --user daemon-reload");
     startSystemdTimer(fileNameList);
 }
 
@@ -251,6 +254,7 @@ QString CSystemdTimerControl::execLinuxCommand(const QString &command)
     process.start("/bin/bash", QStringList() << "-c" << command);
     process.waitForFinished();
     QString strResult = process.readAllStandardOutput();
+    qCDebug(ServiceLogger)<< "exec: " << command << "output: " << strResult; 
     return strResult;
 }
 
