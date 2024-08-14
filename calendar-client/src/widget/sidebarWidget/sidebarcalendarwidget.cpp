@@ -123,7 +123,7 @@ void SidebarCalendarWidget::setKeyDate(QDate date)
         return;
     }
     QString fd = "";
-    fd.append("yyyy").append(tr("Y")).append("MM").append(tr("M"));
+    fd.append("yyyy").append(tr("Y")).append(" ").append("MM").append(tr("M"));
     m_dateLabel->setText(date.toString(fd));
     SidebarCalendarKeyButton::setDisplayedMonth(date);
 
