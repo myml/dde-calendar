@@ -76,14 +76,16 @@ void CMonthView::slotScheduleRemindWidget(const bool isShow, const DSchedule::Pt
         // 因为将提示框从window改为widget，要转换为相对窗口的坐标
         auto rPos = this->mapFromGlobal(remindPos);
         //根据提示框在屏幕的位置设置箭头方向
-        qWarning() << this->window()->width() << rPos << m_remindWidget->width();
-        if (this->window()->width() - rPos.x() > m_remindWidget->width()) {
+        qWarning() <<  "window width: " << this->window()->width() << "pos:" << rPos << "remind width: " << m_remindWidget->width();
+        if (rPos.x() < this->window()->width() / 2) {
+            // 显示到右侧
             m_remindWidget->setDirection(DArrowRectangle::ArrowLeft);
+            m_remindWidget->show(rPos.x()+10, rPos.y());
         } else {
+            // 显示到左侧
             m_remindWidget->setDirection(DArrowRectangle::ArrowRight);
+            m_remindWidget->show(rPos.x()-10, rPos.y());
         }
-        // 因为将提示框从window改为widget，要转换为相对窗口的坐标
-        m_remindWidget->show(rPos.x(), rPos.y());
     } else {
         m_remindWidget->hide();
     }

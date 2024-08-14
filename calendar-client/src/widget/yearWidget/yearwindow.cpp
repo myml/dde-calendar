@@ -652,13 +652,16 @@ void CYearWindow::slotMousePress(const QDate &selectDate, const int pressType)
         QPoint pos22 = variant.value<QPoint>();
         // 因为将提示框从window改为widget，要转换为相对窗口的坐标
         auto rPos = this->mapFromGlobal(pos22);
-        // 默认在左边显示，空间不够时在右边显示
-        if ( this->width() - rPos.x() > m_scheduleView->width() ) {
+        // 根据鼠标位置，决定悬浮框显示位置
+        if (rPos.x() < this->width() / 2) {
+            // 显示到右侧
             m_scheduleView->setDirection(DArrowRectangle::ArrowLeft);
+            m_scheduleView->show(rPos.x()+10, rPos.y());
         } else {
+            // 显示到左侧
             m_scheduleView->setDirection(DArrowRectangle::ArrowRight);
+            m_scheduleView->show(rPos.x()-10, rPos.y());
         }
-        m_scheduleView->show(rPos.x(), rPos.y());
         update();
         break;
     }
