@@ -1,3 +1,11 @@
+dde-calendar (5.14.5) unstable; urgency=medium
+
+  * fix: sidebar calendar widget(Issue: https://github.com/linuxdeepin/developer-center/issues/10343)
+  * feat: Execute reload after changing systemd(Issue: https://github.com/linuxdeepin/developer-center/issues/10093)
+  * fix: remind widget display position(Issue: https://github.com/linuxdeepin/developer-center/issues/10341)
+
+ -- myml <wurongjie@deepin.org>  Wed, 14 Aug 2024 16:37:30 +0800
+
 dde-calendar (5.14.4) unstable; urgency=medium
 
   * feat: Unable to set timer reminder in Linglong environment
