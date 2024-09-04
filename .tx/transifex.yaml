@@ -18,4 +18,4 @@ filters:
     source_language: en_US
     translation_files_expression: translations/dde-calendar-service_<lang>.ts
 settings:
-  pr_branch_name: o:linuxdeepin:p:deepin-desktop-environment:r:dde-calendar-service
+  pr_branch_name: transifex_update_<br_unique_id>
