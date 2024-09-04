@@ -723,7 +723,7 @@
     <message>
         <location filename="../calendar-client/src/dialog/settingdialog.cpp" line="770"/>
         <source>Please go to the &lt;a href=&apos;/&apos;&gt;Control Center&lt;/a&gt; to change system settings</source>
-        <translation type="unfinished"/>
+        <translation>Që të ndryshoni rregullime sistemit, ju lutemi, kaloni te &lt;a href=&apos;/&apos;&gt;Qendra e Kontrollit&lt;/a&gt;</translation>
     </message>
 </context>
 <context>
