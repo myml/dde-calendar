@@ -115,7 +115,7 @@ void CDateEdit::slotRefreshLineEditTextFormat(const QString &text)
 {
     QFont font = lineEdit()->font();
     QFontMetrics fm(font);
-    int textWidth = fm.width(text);
+    int textWidth = fm.horizontalAdvance(text);
     int maxWidth = lineEdit()->width() - 25; //文本能正常显示的最大宽度
     if (textWidth > maxWidth) {
         setToolTip(text);
@@ -224,7 +224,7 @@ bool CDateEdit::showGongli()
 {
     QString str = m_strCurrrentDate;
     QFontMetrics fontMetrice(lineEdit()->font());
-    if (fontMetrice.width(str) > lineEdit()->width() - 20) {
+    if (fontMetrice.horizontalAdvance(str) > lineEdit()->width() - 20) {
         return false;
     }
     return true;

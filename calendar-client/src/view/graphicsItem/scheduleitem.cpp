@@ -80,7 +80,7 @@ void CScheduleItem::splitText(QFont font, int w, int h, QString str, QStringList
 
     for (int i = 0; i < str.count(); i++) {
         tStr.append(str.at(i));
-        int widthT = fontMetrics.width(tStr) + 5;
+        int widthT = fontMetrics.horizontalAdvance(tStr) + 5;
 
         if (widthT >= w) {
             tStr.chop(1);
@@ -107,7 +107,7 @@ void CScheduleItem::splitText(QFont font, int w, int h, QString str, QStringList
                 QString c = str.at(0);
                 QString str = c + "...";
                 QFontMetrics fm(font);
-                while (f_st.width(str) > w && f_st.width(str) > 24) {
+                while (f_st.horizontalAdvance(str) > w && f_st.horizontalAdvance(str) > 24) {
                     str.chop(1);
                 }
                 listStr.append(str);
@@ -255,11 +255,11 @@ void CScheduleItem::paintBackground(QPainter *painter, const QRectF &rect, const
             QFontMetrics fontMetrics(font);
             qreal drawTextWidth = rect.width() - m_offset * 2;
 
-            if (fm.width(str) > drawTextWidth - 5) {
+            if (fm.horizontalAdvance(str) > drawTextWidth - 5) {
                 QString tStr;
                 for (int i = 0; i < str.count(); i++) {
                     tStr.append(str.at(i));
-                    int widthT = fm.width(tStr) - 5;
+                    int widthT = fm.horizontalAdvance(tStr) - 5;
 
                     if (widthT >= drawTextWidth) {
                         if (i < 1) {

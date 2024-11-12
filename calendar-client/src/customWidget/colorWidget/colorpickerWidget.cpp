@@ -117,7 +117,7 @@ void CColorPickerWidget::setLabelText() {
     }
     QString  str = m_strColorLabel;
     QFontMetrics fontMetrice(m_wordLabel->font());
-    if(fontMetrice.width(str) > (m_wordLabel->width()+4)) {
+    if(fontMetrice.horizontalAdvance(str) > (m_wordLabel->width()+4)) {
         str = fontMetrice.elidedText(str,Qt::ElideRight,m_wordLabel->width());
     }
     m_wordLabel->setText(str);

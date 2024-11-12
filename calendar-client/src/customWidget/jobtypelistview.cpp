@@ -454,7 +454,7 @@ void JobTypeListViewStyle::paint(QPainter *painter, const QStyleOptionViewItem &
     // 获取当前字体的信息
     QFontMetrics fontMetrics(opt.font);
     // 当前文字长度是否大于显示框长度
-    if (fontMetrics.width(displayName) > (opt.rect.width() - 90)) {
+    if (fontMetrics.horizontalAdvance(displayName) > (opt.rect.width() - 90)) {
         displayName = fontMetrics.elidedText(displayName, Qt::ElideRight, opt.rect.width() - 90); // 截取字符串长度用...代替
     }
     if (view && view->m_iIndexCurrentHover == index.row()) {

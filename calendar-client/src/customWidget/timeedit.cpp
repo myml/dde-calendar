@@ -196,7 +196,7 @@ void CTimeEdit::showPopup()
         int maxLen = 0;
         QFontMetrics fontMet(view()->font());
         for (int i = 0 ; i < count() ; ++i) {
-            int &&itemWidth = fontMet.width(this->itemText(i));
+            int &&itemWidth = fontMet.horizontalAdvance(this->itemText(i));
             maxLen = qMax(maxLen, itemWidth);
         }
         maxLen += 45;   //选项前√占用的大小

@@ -118,7 +118,7 @@ void CenterWidget::UpdateTextList()
 {
     testList.clear();
     QFontMetrics metrics(textfont);
-    textwidth = metrics.width(m_ScheduleInfo->summary());
+    textwidth = metrics.horizontalAdvance(m_ScheduleInfo->summary());
     textheight = metrics.height();
     const int  h_count = qCeil(textwidth / textRectWidth);
     QString text;
@@ -131,7 +131,7 @@ void CenterWidget::UpdateTextList()
 
         for (int i = 0; i < m_ScheduleInfo->summary().count(); ++i) {
             text += m_ScheduleInfo->summary().at(i);
-            if (metrics.width(text) > textRectWidth) {
+            if (metrics.horizontalAdvance(text) > textRectWidth) {
                 text.remove(text.count() - 1, 1);
                 testList.append(text);
                 text = "";
@@ -172,7 +172,7 @@ void CenterWidget::paintEvent(QPaintEvent *e)
     QFontMetrics metrics(timeFont);
     if (m_ScheduleInfo->allDay())
         timestr = tr("All Day");
-    int timewidth = metrics.width(timestr);
+    int timewidth = metrics.horizontalAdvance(timestr);
     int timeheight = metrics.height();
 
     painter.drawText(QRect(x + 13, 7, timewidth, timeheight), Qt::AlignLeft | Qt::AlignTop, timestr);

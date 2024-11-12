@@ -122,8 +122,8 @@ void CScheduleCtrlDlg::changeEvent(QEvent *event)
     QFontMetrics font_button(font);
     QFontMetrics font_firstLabel(font);
     QFontMetrics font_seconLabel(font);
-    int height_firstLabel = (font_firstLabel.width(m_firstLabel->text()) / 300 + 1) * font_firstLabel.height();
-    int height_seconLabel = (font_seconLabel.width(m_seconLabel->text()) / 300 + 1) * font_seconLabel.height();
+    int height_firstLabel = (font_firstLabel.horizontalAdvance(m_firstLabel->text()) / 300 + 1) * font_firstLabel.height();
+    int height_seconLabel = (font_seconLabel.horizontalAdvance(m_seconLabel->text()) / 300 + 1) * font_seconLabel.height();
 
     for (int i = 0; i < buttonCount(); i++) {
         QAbstractButton *button = getButton(i);

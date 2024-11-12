@@ -82,7 +82,7 @@ void CMonthScheduleNumItem::paint(QPainter *painter, const QStyleOptionGraphicsI
     QString tStr;
     for (int i = 0; i < str.count(); i++) {
         tStr.append(str.at(i));
-        int widthT = fm.width(tStr) + 5;
+        int widthT = fm.horizontalAdvance(tStr) + 5;
         if (widthT >= labelwidth) {
             tStr.chop(2);
             break;

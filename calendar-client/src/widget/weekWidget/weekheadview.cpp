@@ -327,7 +327,7 @@ void CWeekHeadView::paintCell(QWidget *cell)
 
         QFontMetrics fm = painter.fontMetrics();
 
-        while (fm.width(dayWeek) > cell->width() / 2)
+        while (fm.horizontalAdvance(dayWeek) > cell->width() / 2)
             dayWeek.chop(1);
         //水平右对齐，上下居中
         painter.drawText(QRect(0, bh, (cell->width() / 2), 26), Qt::AlignRight | Qt::AlignVCenter, dayWeek);

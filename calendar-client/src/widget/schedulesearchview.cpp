@@ -294,7 +294,7 @@ void CScheduleSearchItem::paintEvent(QPaintEvent *e)
     for (int i = 0; i < str.count(); i++) {
         tStr.append(str.at(i));
         tStr.append(ellipsis);
-        int widthT = fm.width(tStr);
+        int widthT = fm.horizontalAdvance(tStr);
         tStr.remove(ellipsis);
         if (widthT >= tilenameW) {
             tStr.chop(1);

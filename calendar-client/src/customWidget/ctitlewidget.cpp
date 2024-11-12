@@ -240,7 +240,7 @@ void CTitleWidget::resizeEvent(QResizeEvent *event)
     }
     QString str  = m_strPlaceHolder;
     QFontMetrics fontMetrice(m_searchEdit->font());
-    if (fontMetrice.width(str) > (m_searchEdit->width() - 30) && m_clickShowLeft == false && !m_buttonBox->isHidden()) {
+    if (fontMetrice.horizontalAdvance(str) > (m_searchEdit->width() - 30) && m_clickShowLeft == false && !m_buttonBox->isHidden()) {
         str = fontMetrice.elidedText(str, Qt::ElideRight, m_searchEdit->width() - 30);
         m_searchEdit->setPlaceHolder(str);
         m_searchEdit->setPlaceholderText(str);
@@ -263,7 +263,7 @@ void  CTitleWidget::updateSearchEditPlaceHolder()
 {
     QString str  = m_strPlaceHolder;
     QFontMetrics fontMetrice(m_searchEdit->font());
-    if (fontMetrice.width(str) > (m_searchEdit->width() - 30)) {
+    if (fontMetrice.horizontalAdvance(str) > (m_searchEdit->width() - 30)) {
         str = fontMetrice.elidedText(str, Qt::ElideRight, m_searchEdit->width() - 30);
         m_searchEdit->setPlaceHolder(str);
         m_searchEdit->setPlaceholderText(str);

@@ -51,7 +51,7 @@ void CustomFrame::setTextStr(const QString &strc)
 
     if (!m_fixsizeflag) {
         QFontMetrics fm(m_font);
-        int w = fm.width(m_text);
+        int w = fm.horizontalAdvance(m_text);
         setMinimumWidth(w);
     }
     update();
@@ -69,7 +69,7 @@ void CustomFrame::setTextFont(const QFont &font)
 
     if (!m_fixsizeflag) {
         QFontMetrics fm(m_font);
-        int w = fm.width(m_text);
+        int w = fm.horizontalAdvance(m_text);
         setMinimumWidth(w);
     }
 }

@@ -64,7 +64,7 @@ void CMyScheduleView::slotAutoFeed(const QFont &font)
     labelF.setWeight(QFont::Medium);
     labelF = DFontSizeManager::instance()->get(DFontSizeManager::T6, labelF);
     QFontMetrics fm(labelF);
-    int titlewidth = fm.width(strText);
+    int titlewidth = fm.horizontalAdvance(strText);
     QStringList strList;
     QString str;
     int h = fm.height();
@@ -77,7 +77,7 @@ void CMyScheduleView::slotAutoFeed(const QFont &font)
         for (int i = 0; i < strText.count(); i++) {
             str += strText.at(i);
 
-            if (fm.width(str) > 330) {
+            if (fm.horizontalAdvance(str) > 330) {
                 str.remove(str.count() - 1, 1);
                 strList.append(str);
                 resultStr += str + "\n";
@@ -108,7 +108,7 @@ void CMyScheduleView::slotAutoFeed(const QFont &font)
         if (index != -1) {
             timeName[index - 1] = ' ';
             QFontMetrics fm(m_timeLabel->font());
-            int textWidth = fm.width(m_timeLabel->text());
+            int textWidth = fm.horizontalAdvance(m_timeLabel->text());
             if (textWidth > m_timeLabel->width()) {
                 timeName[index - 1] = '\n';
                 m_timeLabelH = 58;

@@ -160,7 +160,7 @@ void CMonthDayItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *opt
     //绘制农历
     if (m_LunarVisible) {
         QFontMetrics metrics(m_LunerFont);
-        int Lunarwidth = metrics.width(m_DayLunar);
+        int Lunarwidth = metrics.horizontalAdvance(m_DayLunar);
         qreal filleRectX = this->rect().width() - 12 - 3 - (58 + Lunarwidth) / 2;
         QRectF fillRectT(this->rect().x() + filleRectX,
                          this->rect().y() + 9,

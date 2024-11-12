@@ -246,7 +246,7 @@ void CYearScheduleView::paintItem(QPainter &painter, DSchedule::Ptr info, int in
 
         for (int i = 0; i < str.count(); i++) {
             tStr.append(str.at(i));
-            int widthT = fm.width(tStr) + 5;
+            int widthT = fm.horizontalAdvance(tStr) + 5;
             if (widthT >= tilenameW) {
                 tStr.chop(1);
                 break;
