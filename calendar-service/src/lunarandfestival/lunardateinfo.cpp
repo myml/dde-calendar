@@ -186,7 +186,7 @@ LunarDateInfo::LunnarRRule LunarDateInfo::ParseRRule(const QString &rule)
     //无规则的不走这里判断所以此处默认rule不为空
     //局部变量初始化
     LunnarRRule options = RRule_None;
-    QStringList rruleslist = rule.split(";", QString::SkipEmptyParts);
+    QStringList rruleslist = rule.split(";", Qt::SkipEmptyParts);
     //rpeat重复规则 0 无  1 每天 2 每个工作日 3 每周 4每月 5每年
     //type结束重复类型 0 永不 1  多少次结束  2 结束日期
     if (rruleslist.contains("FREQ=MONTHLY")) {

@@ -292,7 +292,7 @@ DSchedule::List DDataBaseManagement::queryOldJobData(QSqlDatabase &db, const boo
             QString remind = query.value("remind").toString();
             if (!remind.isEmpty()) {
                 //提醒规则
-                QStringList strList = remind.split(";", QString::SkipEmptyParts);
+                QStringList strList = remind.split(";", Qt::SkipEmptyParts);
 
                 int remindNum = strList.at(0).toInt();
                 //小于0表示不提醒

@@ -95,7 +95,7 @@ QString DDE_Calendar::getExternalSchedule(const DSchedule::Map &scheduleMap)
 void DDE_Calendar::setAlarmByOldRemind(const DSchedule::Ptr &schedule, const QString &remind)
 {
     //提醒规则
-    QStringList strList = remind.split(";", QString::SkipEmptyParts);
+    QStringList strList = remind.split(";", Qt::SkipEmptyParts);
 
     int remindNum = strList.at(0).toInt();
     //小于0表示不提醒

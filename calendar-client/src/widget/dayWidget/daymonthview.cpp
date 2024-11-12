@@ -347,8 +347,8 @@ void CDayMonthView::updateDateLunarDay()
 {
     if (!m_huanglistate) return;
     m_currentLuna->setTextStr(m_huangLiInfo.mGanZhiYear + "年 " + "【" + m_huangLiInfo.mZodiac + "年】" + m_huangLiInfo.mGanZhiMonth + "月 " + m_huangLiInfo.mGanZhiDay + "日 ");
-    QStringList yiList = m_huangLiInfo.mSuit.split(".", QString::SkipEmptyParts);
-    QStringList jiList = m_huangLiInfo.mAvoid.split(".", QString::SkipEmptyParts);
+    QStringList yiList = m_huangLiInfo.mSuit.split(".", Qt::SkipEmptyParts);
+    QStringList jiList = m_huangLiInfo.mAvoid.split(".", Qt::SkipEmptyParts);
     m_yiLabel->setHuangLiText(yiList);
     m_jiLabel->setHuangLiText(jiList, 1);
 }

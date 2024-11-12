@@ -1747,7 +1747,7 @@ void ICalFormatImpl::readIncidence(icalcomponent *parent, const Incidence::Ptr &
             // We can't change that -- in order to retain backwards compatibility.
             text = icalproperty_get_categories(p);
             const QString val = QString::fromUtf8(text);
-            const QStringList lstVal = val.split(QLatin1Char(','), QString::SkipEmptyParts);
+            const QStringList lstVal = val.split(QLatin1Char(','), Qt::SkipEmptyParts);
             for (const QString &cat : lstVal) {
                 // ensure no duplicates
                 if (!categories.contains(cat)) {
