@@ -157,7 +157,7 @@ void CTimeEdit::slotEditingFinished()
 void CTimeEdit::initUI()
 {
     //关闭自动补全
-    this->setAutoCompletion(false);
+    this->setCompleter(nullptr);
     //设置edit的宽度
     m_timeEdit->getLineEdit()->setFixedWidth(100);
     m_timeEdit->setDisplayFormat(m_timeFormat);

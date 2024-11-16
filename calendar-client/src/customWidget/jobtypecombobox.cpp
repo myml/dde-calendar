@@ -19,7 +19,7 @@ JobTypeComboBox::JobTypeComboBox(QWidget *parent) : DComboBox(parent)
 {
     initUI();
     //不启用自动匹配
-    setAutoCompletion(false);
+    setCompleter(nullptr);
     //设置不接受回车键插入
     setInsertPolicy(QComboBox::NoInsert);
     this->view()->setTextElideMode(Qt::ElideRight);
