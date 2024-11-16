@@ -1237,7 +1237,7 @@ void CScheduleDlg::initConnection()
             &CScheduleDlg::sloteRpeatactivated);
     connect(m_typeComBox, QOverload<int>::of(&QComboBox::activated), this,
             &CScheduleDlg::slotTypeRpeatactivated);
-    connect(m_accountComBox, QOverload<const QString &>::of(&QComboBox::activated), this,
+    connect(m_accountComBox, &QComboBox::textActivated, this,
             &CScheduleDlg::slotAccoutBoxActivated);
     connect(m_beginDateEdit, &DDateEdit::userDateChanged, this, &CScheduleDlg::slotBDateEidtInfo);
     QShortcut *shortcut = new QShortcut(this);

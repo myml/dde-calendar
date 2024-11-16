@@ -174,7 +174,7 @@ void CTimeEdit::initConnection()
     connect(m_timeEdit, &CCustomTimeEdit::signalUpdateFocus, this, &CTimeEdit::slotFocusDraw);
     connect(m_timeEdit->getLineEdit(), &QLineEdit::editingFinished, this,
             &CTimeEdit::slotEditingFinished);
-    connect(this, static_cast<void (CTimeEdit::*)(const QString &)>(&CTimeEdit::activated), this,
+    connect(this, &CTimeEdit::textActivated, this,
             &CTimeEdit::slotActivated);
 }
 
