@@ -86,7 +86,7 @@ void viewschedulewidget::setQueryEndDateTime(QDateTime enddatetime)
 void viewschedulewidget::slotItemPress(const DSchedule::Ptr &info)
 {
     QProcess proc;
-    proc.startDetached(PROCESS_OPEN_CALENDAR);
+    proc.startDetached(PROCESS_OPEN_CALENDAR_PROGRAM, QString(PROCESS_OPEN_CALENDAR_ARGUMENTS).split(" "));
     QThread::msleep(750);
     QString schedulestr;
     DSchedule::toJsonString(info, schedulestr);

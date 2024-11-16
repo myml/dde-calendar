@@ -33,7 +33,7 @@ void OpenCalendarWidget::mousePressEvent(QMouseEvent *event)
 {
     if (event->button() == Qt::LeftButton) {
         QProcess proc;
-        proc.startDetached(PROCESS_OPEN_CALENDAR);
+        proc.startDetached(PROCESS_OPEN_CALENDAR_PROGRAM, QString(PROCESS_OPEN_CALENDAR_ARGUMENTS).split(" "));
     }
 }
 

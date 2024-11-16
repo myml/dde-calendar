@@ -27,8 +27,8 @@
 #define TIMEFORMAT "hh:mm:ss"
 
 
-#define PROCESS_OPEN_CALENDAR "dbus-send --print-reply --dest=com.deepin.Calendar /com/deepin/Calendar com.deepin.Calendar.RaiseWindow"
-
+#define PROCESS_OPEN_CALENDAR_PROGRAM "dbus-send"
+#define PROCESS_OPEN_CALENDAR_ARGUMENTS "--print-reply --dest=com.deepin.Calendar /com/deepin/Calendar com.deepin.Calendar.RaiseWindow"
 //日程重复类型
 //每天
 #define DBUS_RRUL_EVED "FREQ=DAILY"
