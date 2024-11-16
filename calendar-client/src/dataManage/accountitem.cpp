@@ -315,8 +315,8 @@ void AccountItem::deleteSchedulesByTypeID(const QString &typeID, CallbackFunc ca
 
 void AccountItem::querySchedulesWithParameter(const int year, CallbackFunc callback)
 {
-    QDateTime start = QDateTime(QDate(year - 1, 12, 1));
-    QDateTime end = QDateTime(QDate(year + 1, 1, 31));
+    QDateTime start = QDate(year - 1, 12, 1).startOfDay();
+    QDateTime end = QDate(year + 1, 1, 31).startOfDay();
     querySchedulesWithParameter(start, end, callback);
 }
 

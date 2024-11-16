@@ -14,6 +14,8 @@
 #include "../state/repeatfeedbackstate.h"
 #include "../state/getchangedatastate.h"
 #include "dscheduledatamanager.h"
+#include <QDateTime>
+#include <QDate>
 
 changeScheduleTask::changeScheduleTask()
     : scheduleBaseTask(new queryScheduleState(this))
@@ -293,7 +295,7 @@ bool changeScheduleTask::getNewInfo()
             //如果存在日期信息
             if (m_ToTime.at(0).hasDate) {
                 //设置修改的开始日期
-                m_NewInfo->setDtStart(QDateTime(m_ToTime.at(0).m_Date));
+                m_NewInfo->setDtStart(m_ToTime.at(0).m_Date.startOfDay());
             }
             //如果修改的DateTime带时间则设置该时间，否则保持原来的时间点
             if (m_ToTime.at(0).hasTime) {
@@ -302,7 +304,7 @@ bool changeScheduleTask::getNewInfo()
             //如果存在日期信息
             if (m_ToTime.at(1).hasDate) {
                 //设置修改的结束日期
-                m_NewInfo->setDtEnd(QDateTime(m_ToTime.at(1).m_Date));
+                m_NewInfo->setDtEnd(m_ToTime.at(1).m_Date.startOfDay());
             }
             //如果修改的DateTime带时间则设置该时间，否则保持原来的时间点
             if (m_ToTime.at(1).hasTime)
