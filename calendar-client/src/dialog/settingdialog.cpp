@@ -20,7 +20,7 @@
 #include <DSettingsOption>
 #include <DSettingsWidgetFactory>
 #include <DBackgroundGroup>
-#include <DHiDPIHelper>
+#include <DIcon>
 
 #include <qglobal.h>
 #include <qloggingcategory.h>
@@ -734,9 +734,9 @@ QPair<QWidget *, QWidget *> CSettingDialog::createSyncTagRadioButton(QObject *ob
     QLabel *iconLabel = new QLabel;
     iconLabel->setFixedSize(24, 24);
     if (DAccount::Account_Calendar == type)
-        iconLabel->setPixmap(DHiDPIHelper::loadNxPixmap(":/icons/deepin/builtin/icons/dde_calendar_sync_schedule_32px.svg"));
+        iconLabel->setPixmap(DIcon::loadNxPixmap(":/icons/deepin/builtin/icons/dde_calendar_sync_schedule_32px.svg"));
     if (DAccount::Account_Setting == type)
-        iconLabel->setPixmap(DHiDPIHelper::loadNxPixmap(":/icons/deepin/builtin/icons/dde_calendar_sync_setting_32px.svg"));
+        iconLabel->setPixmap(DIcon::loadNxPixmap(":/icons/deepin/builtin/icons/dde_calendar_sync_setting_32px.svg"));
 
     //iconWidget
     QHBoxLayout *layout = new QHBoxLayout;

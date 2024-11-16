@@ -4,7 +4,7 @@
 
 #include "cdynamicicon.h"
 
-#include <DHiDPIHelper>
+
 #include <DAboutDialog>
 #include <DLog>
 

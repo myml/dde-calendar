@@ -8,7 +8,7 @@
 #include "units.h"
 
 #include <DPalette>
-#include <DHiDPIHelper>
+
 
 #include <QHBoxLayout>
 #include <QPainter>

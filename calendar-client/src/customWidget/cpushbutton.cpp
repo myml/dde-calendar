@@ -4,7 +4,7 @@
 
 #include "cpushbutton.h"
 #include <DPaletteHelper>
-#include <DHiDPIHelper>
+
 #include <DGuiApplicationHelper>
 #include <QMouseEvent>
 #include <QPainter>

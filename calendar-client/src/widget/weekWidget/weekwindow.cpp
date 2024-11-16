@@ -13,7 +13,7 @@
 #include <scheduledatamanage.h>
 
 #include <DPalette>
-#include <DHiDPIHelper>
+
 
 #include <QMessageBox>
 #include <QDate>

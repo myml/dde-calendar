@@ -7,7 +7,7 @@
 #include "scheduledatamanage.h"
 
 #include <DPalette>
-#include <DHiDPIHelper>
+
 
 #include <QHBoxLayout>
 #include <QPainter>

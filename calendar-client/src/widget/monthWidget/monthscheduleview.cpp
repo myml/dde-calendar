@@ -9,7 +9,7 @@
 #include "myscheduleview.h"
 #include "graphicsItem/cmonthschedulenumitem.h"
 
-#include <DHiDPIHelper>
+
 
 #include <QPainter>
 #include <QHBoxLayout>

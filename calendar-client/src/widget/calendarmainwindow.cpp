@@ -29,7 +29,7 @@
 #include "units.h"
 #include "commondef.h"
 
-#include <DHiDPIHelper>
+
 #include <DPalette>
 #include <DFontSizeManager>
 #include <DWidgetUtil>

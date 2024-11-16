@@ -11,7 +11,7 @@
 
 #include <DMessageBox>
 #include <DPushButton>
-#include <DHiDPIHelper>
+
 #include <DPalette>
 #include <DFontSizeManager>
 

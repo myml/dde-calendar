@@ -6,12 +6,10 @@
 #include "constants.h"
 #include "scheduledatamanage.h"
 
-#include <DHiDPIHelper>
+#include <DIcon>
 
 #include <QPainter>
 #include <QPainterPath>
-
-DWIDGET_USE_NAMESPACE
 
 bool CMonthDayItem::m_LunarVisible = false;
 CMonthDayItem::CMonthDayItem(QGraphicsItem *parent)
@@ -173,11 +171,11 @@ void CMonthDayItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *opt
             painter->setRenderHint(QPainter::Antialiasing);
             switch (m_DayStatus) {
             case H_WORK: {
-                QPixmap pixmap = DHiDPIHelper::loadNxPixmap(":/icons/deepin/builtin/icons/dde_calendar_ban_32px.svg");
+                QPixmap pixmap = DIcon::loadNxPixmap(":/icons/deepin/builtin/icons/dde_calendar_ban_32px.svg");
                 painter->drawPixmap(fillRectT.toRect(), pixmap);
             } break;
             case H_REST: {
-                QPixmap pixmap = DHiDPIHelper::loadNxPixmap(":/icons/deepin/builtin/icons/dde_calendar_xiu.svg");
+                QPixmap pixmap = DIcon::loadNxPixmap(":/icons/deepin/builtin/icons/dde_calendar_xiu.svg");
                 painter->drawPixmap(fillRectT.toRect(), pixmap);
             } break;
             default:

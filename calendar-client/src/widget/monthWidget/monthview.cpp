@@ -7,7 +7,7 @@
 #include "scheduledatamanage.h"
 #include "calendarglobalenv.h"
 
-#include <DHiDPIHelper>
+
 #include <DPalette>
 
 #include <QPainter>

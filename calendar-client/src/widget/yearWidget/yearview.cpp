@@ -6,7 +6,7 @@
 #include "constants.h"
 #include "configsettings.h"
 
-#include <DHiDPIHelper>
+
 #include <DPalette>
 
 #include <QPainter>

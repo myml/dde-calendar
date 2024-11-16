@@ -10,7 +10,7 @@
 #include "calendarglobalenv.h"
 
 #include <DPalette>
-#include <DHiDPIHelper>
+
 
 #include <QMessageBox>
 #include <QMenuBar>

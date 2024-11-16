@@ -14,7 +14,7 @@
 #include "units.h"
 #include "commondef.h"
 
-#include <DHiDPIHelper>
+
 #include <DFontSizeManager>
 #include <DRadioButton>
 #include <DLabel>

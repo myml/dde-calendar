@@ -9,7 +9,7 @@
 
 #include <DSettingsWidgetFactory>
 #include <DSettingsOption>
-#include <DHiDPIHelper>
+
 
 #include <qglobal.h>
 

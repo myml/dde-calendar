@@ -5,7 +5,7 @@
 #include "dayhuangliview.h"
 #include "scheduledlg.h"
 
-#include <DHiDPIHelper>
+#include <DIcon>
 
 #include <QAction>
 #include <QListWidget>
@@ -14,6 +14,7 @@
 #include <QHBoxLayout>
 #include <QStylePainter>
 #include <QRect>
+
 CDayHuangLiLabel::CDayHuangLiLabel(QWidget *parent)
     : DLabel(parent)
 {
@@ -60,9 +61,9 @@ void CDayHuangLiLabel::paintEvent(QPaintEvent *e)
     painter.drawRoundedRect(fillRect, 12, 12);
     QPixmap pixmap;
     if (m_type == 0)
-        pixmap = DHiDPIHelper::loadNxPixmap(":/icons/deepin/builtin/icons/dde_calendar_yi_32px.svg");
+        pixmap = DIcon::loadNxPixmap(":/icons/deepin/builtin/icons/dde_calendar_yi_32px.svg");
     else {
-        pixmap = DHiDPIHelper::loadNxPixmap(":/icons/deepin/builtin/icons/dde_calendar_ji_32px.svg");
+        pixmap = DIcon::loadNxPixmap(":/icons/deepin/builtin/icons/dde_calendar_ji_32px.svg");
     }
     pixmap.setDevicePixelRatio(devicePixelRatioF());
     painter.save();

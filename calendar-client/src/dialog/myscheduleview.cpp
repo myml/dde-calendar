@@ -10,7 +10,7 @@
 #include "cscheduleoperation.h"
 #include "lunarmanager.h"
 
-#include <DHiDPIHelper>
+
 #include <DPalette>
 #include <DFontSizeManager>
 #include <DLabel>

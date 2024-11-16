@@ -13,7 +13,7 @@
 
 #include <DPalette>
 #include <DHorizontalLine>
-#include <DHiDPIHelper>
+
 
 #include <QGridLayout>
 #include <QPainter>

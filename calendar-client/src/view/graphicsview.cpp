@@ -12,7 +12,7 @@
 #include "myscheduleview.h"
 #include "constants.h"
 
-#include <DHiDPIHelper>
+
 #include <DPalette>
 
 #include <QMimeData>

@@ -13,7 +13,7 @@
 #include "calendarmanage.h"
 #include "calendarglobalenv.h"
 
-#include <DHiDPIHelper>
+
 #include <DPalette>
 #include <DGuiApplicationHelper>
 

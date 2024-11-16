@@ -11,7 +11,7 @@
 #include "constants.h"
 #include "scheduledaterangeinfo.h"
 
-#include <DHiDPIHelper>
+
 #include <DPalette>
 #include <DMenu>
 
