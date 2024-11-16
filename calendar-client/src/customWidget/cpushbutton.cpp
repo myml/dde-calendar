@@ -3,7 +3,7 @@
 // SPDX-License-Identifier: LGPL-3.0-or-later
 
 #include "cpushbutton.h"
-#include <DApplicationHelper>
+#include <DPaletteHelper>
 #include <DHiDPIHelper>
 #include <DGuiApplicationHelper>
 #include <QMouseEvent>
@@ -28,7 +28,7 @@ CPushButton::CPushButton(QWidget *parent) : QWidget(parent)
     m_iconButton->setFixedSize(16, 16);
     m_iconButton->setFlat(true);
 
-    DPalette palette = DApplicationHelper::instance()->palette(this);
+    DPalette palette = DPaletteHelper::instance()->palette(this);
     QPalette pa = m_textLabel->palette();
 
     //设置深浅色主题下正常状态时的文本颜色，与下拉框颜色对其
@@ -78,7 +78,7 @@ void CPushButton::mouseReleaseEvent(QMouseEvent *event)
 void CPushButton::paintEvent(QPaintEvent *event)
 {
     QWidget::paintEvent(event);
-    DPalette palette = DApplicationHelper::instance()->palette(this);
+    DPalette palette = DPaletteHelper::instance()->palette(this);
     QPainter painter(this);
     // 反走样
     painter.setRenderHint(QPainter::Antialiasing);

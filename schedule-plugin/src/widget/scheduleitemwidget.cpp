@@ -6,7 +6,6 @@
 
 #include "../globaldef.h"
 
-#include <DApplicationHelper>
 #include <DPushButton>
 
 #include <QMouseEvent>

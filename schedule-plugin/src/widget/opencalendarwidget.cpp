@@ -9,7 +9,7 @@
 
 #include "../globaldef.h"
 
-#include <DApplicationHelper>
+#include <DGuiApplicationHelper>
 
 OpenCalendarWidget::OpenCalendarWidget(QWidget *parent)
     : DWidget(parent)
@@ -20,7 +20,7 @@ OpenCalendarWidget::OpenCalendarWidget(QWidget *parent)
 void OpenCalendarWidget::paintEvent(QPaintEvent *event)
 {
     Q_UNUSED(event);
-    setTheMe(DApplicationHelper::instance()->themeType());
+    setTheMe(Dtk::Gui::DGuiApplicationHelper::instance()->themeType());
     QPainter painter(this);
     painter.setPen(TitleColor());
     painter.setFont(TitleFont());

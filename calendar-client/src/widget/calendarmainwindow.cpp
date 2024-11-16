@@ -34,7 +34,6 @@
 #include <DFontSizeManager>
 #include <DWidgetUtil>
 #include <DTitlebar>
-#include <DApplicationHelper>
 #include <DSettings>
 #include <DSettingsGroup>
 #include <DSettingsOption>

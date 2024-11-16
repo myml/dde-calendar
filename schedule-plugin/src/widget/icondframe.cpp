@@ -7,11 +7,11 @@
 #include <QDate>
 #include <QSvgRenderer>
 #include <QVBoxLayout>
-
-#include <DApplicationHelper>
+#include <DGuiApplicationHelper>
 
 #include "../globaldef.h"
 #include "../interface/reply.h"
+#include <dguiapplicationhelper.h>
 
 IconDFrame::IconDFrame(QWidget *parent)
     : DFrame(parent)
@@ -49,7 +49,7 @@ void IconDFrame::setCenterLayout(QLayout *layout)
 
 void IconDFrame::paintEvent(QPaintEvent *event)
 {
-    setTheMe(DGuiApplicationHelper::instance()->themeType());
+    setTheMe(Dtk::Gui::DGuiApplicationHelper::instance()->themeType());
     DFrame::paintEvent(event);
     QPainter painter(this);
     painter.setRenderHint(QPainter::Antialiasing); // 反锯齿;
@@ -59,7 +59,7 @@ void IconDFrame::paintEvent(QPaintEvent *event)
         //设置边框为2
         pen.setWidth(2);
         //设置边框颜色为活动色
-        pen.setColor(DGuiApplicationHelper::instance()->applicationPalette().highlight().color());
+        pen.setColor(Dtk::Gui::DGuiApplicationHelper::instance()->applicationPalette().highlight().color());
         painter.setPen(pen);
         //设置边框矩形，由于插件widget会被助手覆盖一个像素，所以需要减去一个像素的外边
         QRect _showRect(1, 1, this->width() - 2, this->height() - 2);

@@ -7,8 +7,7 @@
 
 #include <DPalette>
 #include <DStyle>
-#include <DApplicationHelper>
-#include <DApplicationHelper>
+#include <DPaletteHelper>
 
 #include <QLabel>
 #include <QTableView>
@@ -93,7 +92,7 @@ private:
 
 QColor CalenderStyle::getColor(const QStyleOption *option, DPalette::ColorType type, const QWidget *widget) const
 {
-    const DPalette &pa = DApplicationHelper::instance()->palette(widget, option->palette);
+    const DPalette &pa = DPaletteHelper::instance()->palette(widget, option->palette);
     return pa.brush(type).color();
 }
 

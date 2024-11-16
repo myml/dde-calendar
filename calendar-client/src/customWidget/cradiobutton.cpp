@@ -3,7 +3,7 @@
 // SPDX-License-Identifier: LGPL-3.0-or-later
 
 #include "cradiobutton.h"
-#include <DApplicationHelper>
+#include <DPaletteHelper>
 #include <QPainterPath>
 #include <QPainter>
 
@@ -49,7 +49,7 @@ void CRadioButton::paintEvent(QPaintEvent *event)
         painter.setBrush(c);
         painter.drawPath(path);
     } else {
-        DPalette palette = DApplicationHelper::instance()->palette(this);
+        DPalette palette = DPaletteHelper::instance()->palette(this);
         QPainterPath path;
         path.addEllipse(0, 0, w, h);
         path.addEllipse(2, 2, w - 4, h - 4);

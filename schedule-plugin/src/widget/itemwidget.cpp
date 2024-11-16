@@ -4,7 +4,7 @@
 
 #include "itemwidget.h"
 
-#include <DApplicationHelper>
+#include <DGuiApplicationHelper>
 #include <QPainterPath>
 
 ItemWidget::ItemWidget(QWidget *parent)
@@ -20,7 +20,7 @@ ItemWidget::ItemWidget(QWidget *parent)
 
 void ItemWidget::paintEvent(QPaintEvent *event)
 {
-    setTheMe(DApplicationHelper::instance()->themeType());
+    setTheMe(DGuiApplicationHelper::instance()->themeType());
     DWidget::paintEvent(event);
     QPainter painter(this);
     painter.setRenderHint(QPainter::Antialiasing); // 反锯齿;
