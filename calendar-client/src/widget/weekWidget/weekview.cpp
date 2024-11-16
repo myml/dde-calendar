@@ -95,7 +95,7 @@ void CWeekView::wheelEvent(QWheelEvent *event)
     //判断是否是拖拽状态
     if (!isDragging) {
         //左移切换上周,右移切换下周
-        if (event->delta() > 0) {
+        if (event->angleDelta().y() > 0) {
             //上一周
             signalBtnPrev();
         } else {

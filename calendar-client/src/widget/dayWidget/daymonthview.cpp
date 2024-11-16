@@ -365,7 +365,7 @@ void CDayMonthView::wheelEvent(QWheelEvent *event)
     emit signalIsDragging(isDragging);
     if (isDragging)
         return;
-    if (event->delta() < 0) {
+    if (event->angleDelta().y() < 0) {
         //切换前一天
         changeSelectDate(m_selectDate.addDays(1));
     } else {

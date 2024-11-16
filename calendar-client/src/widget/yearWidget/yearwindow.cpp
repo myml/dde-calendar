@@ -694,7 +694,7 @@ void CYearWindow::wheelEvent(QWheelEvent *event)
     //如果为左右方向则退出
     if (event->angleDelta().x() != 0 )
         return;
-    if (event->delta() < 0) {
+    if (event->angleDelta().y() < 0) {
         slotnext();
     } else {
         slotprev();

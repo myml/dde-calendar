@@ -447,7 +447,7 @@ void CGraphicsView::wheelEvent(QWheelEvent *event)
     if (event->angleDelta().x() != 0 ) {
         return;
     }
-    int test = event->delta();
+    int test = event->angleDelta().y();
     int viewWidth = viewport()->width();
     int viewHeight = viewport()->height();
     QPoint newCenter(viewWidth / 2, viewHeight / 2 - test);
