@@ -18,6 +18,7 @@
 #include <QSqlRecord>
 #include <QThread>
 #include <QMutex>
+#include <QSet>
 
 #include <unistd.h>
 
@@ -571,7 +572,9 @@ bool SyncStack::repairTable(const QString &table_name, const QString &connection
     };
 
     //本地数据的字段 都需要 在服务端数据库里
-    QSet<QString> header_ready = exceptFunc(local_header_info.keys().toSet(), server_header_info.keys().toSet());
+    auto local_header_info_keys = QSet<QString>(local_header_info.keys().begin(),local_header_info.keys().end());
+    auto server_header_info_keys = QSet<QString>(server_header_info.keys().begin(),server_header_info.keys().end());
+    QSet<QString> header_ready = exceptFunc(local_header_info_keys, server_header_info_keys);
     if (header_ready.isEmpty())
         return true;
 
