@@ -413,7 +413,7 @@ void CMonthGraphicsview::changeEvent(QEvent *event)
 void CMonthGraphicsview::wheelEvent(QWheelEvent *e)
 {
     //如果滚动为上下则发送信号
-    if (e->orientation() == Qt::Orientation::Vertical) {
+    if (e->angleDelta().y() != 0) {
         emit signalAngleDelta(e->angleDelta().y());
     }
 }

@@ -82,7 +82,7 @@ void CMonthDayView::setSearchflag(bool flag)
 void CMonthDayView::wheelEvent(QWheelEvent *e)
 {
     //如果滚动为左右则触发信号
-    if (e->orientation() == Qt::Orientation::Horizontal) {
+    if (e->angleDelta().x() != 0 ) {
         emit signalAngleDelta(e->angleDelta().x());
     } else {
         emit signalAngleDelta(e->angleDelta().y());

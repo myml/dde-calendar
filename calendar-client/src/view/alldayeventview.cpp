@@ -324,7 +324,7 @@ void CAllDayEventWeekView::mouseDoubleClickEvent(QMouseEvent *event)
 void CAllDayEventWeekView::wheelEvent(QWheelEvent *event)
 {
     //若滚轮事件为左右方向则退出
-    if (event->orientation() == Qt::Orientation::Horizontal) {
+    if (event->angleDelta().x() != 0 ) {
         return;
     }
     emit signalScheduleShow(false);

@@ -444,7 +444,7 @@ void CGraphicsView::wheelEvent(QWheelEvent *event)
 {
     emit signalScheduleShow(false);
     //非全天部分如果滚动为左右则退出
-    if (event->orientation() == Qt::Orientation::Horizontal) {
+    if (event->angleDelta().x() != 0 ) {
         return;
     }
     int test = event->delta();

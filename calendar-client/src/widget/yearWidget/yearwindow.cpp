@@ -692,7 +692,7 @@ void CYearWindow::slotMousePress(const QDate &selectDate, const int pressType)
 void CYearWindow::wheelEvent(QWheelEvent *event)
 {
     //如果为左右方向则退出
-    if (event->orientation() == Qt::Orientation::Horizontal)
+    if (event->angleDelta().x() != 0 )
         return;
     if (event->delta() < 0) {
         slotnext();

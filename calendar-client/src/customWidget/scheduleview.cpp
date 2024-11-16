@@ -360,7 +360,7 @@ void CScheduleView::resizeEvent(QResizeEvent *event)
 
 void CScheduleView::wheelEvent(QWheelEvent *e)
 {
-    if (e->orientation() == Qt::Orientation::Horizontal) {
+    if (e->angleDelta().x() != 0 ) {
         emit signalAngleDelta(e->angleDelta().x());
     }
 }
