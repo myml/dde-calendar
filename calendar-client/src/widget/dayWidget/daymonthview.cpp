@@ -383,7 +383,7 @@ void CDayMonthView::paintEvent(QPaintEvent *e)
     QPainter painter(this);
     painter.setRenderHint(QPainter::Antialiasing); // 反锯齿;
     painter.save();
-    painter.setBrush(aniPa.background());
+    painter.setBrush(aniPa.window());
     painter.setPen(Qt::NoPen);
     QPainterPath painterPath;
     painterPath.moveTo(0, 0);

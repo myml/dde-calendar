@@ -60,7 +60,6 @@ QString DAccountDataBase::createSchedule(const DSchedule::Ptr &schedule)
         }
 
     } else {
-        schedule->setUid("");
         qCWarning(ServiceLogger) << "schedule is null";
     }
 

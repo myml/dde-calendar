@@ -364,7 +364,7 @@ void CWeekHeadView::paintCell(QWidget *cell)
 void CWeekHeadView::wheelEvent(QWheelEvent *e)
 {
     //如果滚轮为左右方向则触发信号
-    if (e->angleDelta().x() != 0 ) {
+    if (e->angleDelta().x() != 0) {
         emit signalAngleDelta(e->angleDelta().x());
     }
 }

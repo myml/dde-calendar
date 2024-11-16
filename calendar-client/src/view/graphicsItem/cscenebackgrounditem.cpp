@@ -7,6 +7,7 @@
 #include <QGraphicsScene>
 #include <QDebug>
 #include <QMarginsF>
+#include <algorithm>
 
 CSceneBackgroundItem::CSceneBackgroundItem(ItemOnView view, QGraphicsItem *parent)
     : CFocusItem(parent)
@@ -93,7 +94,7 @@ void CSceneBackgroundItem::updateShowItem()
             m_item.append(item);
         }
     }
-    qSort(m_item.begin(), m_item.end(), compareItemData);
+    std::sort(m_item.begin(), m_item.end(), compareItemData);
     updateCurrentItemShow();
 }
 

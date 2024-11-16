@@ -227,7 +227,6 @@ void JobTypeListView::slotImportScheduleType()
     KCalendarCore::ICalFormat icalformat;
     QTimeZone timezone = QDateTime::currentDateTime().timeZone();
     KCalendarCore::MemoryCalendar::Ptr cal(new KCalendarCore::MemoryCalendar(timezone));
-    auto ok = icalformat.load(cal, filename);
     auto typeID = cal->nonKDECustomProperty("X-DDE-CALENDAR-TYPE-ID");
     auto typeName = cal->nonKDECustomProperty("X-DDE-CALENDAR-TYPE-NAME");
     auto typeColor = cal->nonKDECustomProperty("X-DDE-CALENDAR-TYPE-COLOR");

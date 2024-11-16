@@ -81,8 +81,6 @@ int main(int argc, char *argv[])
         DLogManager::registerConsoleAppender();
         DLogManager::registerFileAppender();
         DLogManager::registerJournalAppender();
-        //获取应用配置
-        DApplicationSettings applicationset(app);
         //为了与老版本配置兼容
         Calendarmainwindow ww(viewtype - 1);
         ExportedInterface einterface(&ww);

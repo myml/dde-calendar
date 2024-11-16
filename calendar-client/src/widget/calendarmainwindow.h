@@ -99,7 +99,7 @@ private slots:
     //快捷键删除选中日程
     void slotDeleteitem();
     //设置最大大小
-    void slotSetMaxSize(int size = 0);
+    void slotSetMaxSize();
     void slotSearchFocusSwitch();
     //帐户侧边栏状态发生改变事件
     void slotSidebarStatusChange(bool);

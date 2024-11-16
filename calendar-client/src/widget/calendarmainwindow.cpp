@@ -49,6 +49,7 @@
 #include <QSizePolicy>
 #include <QHBoxLayout>
 #include <QWidget>
+#include <QScreen>
 #include <QMenuBar>
 #include <QMouseEvent>
 #include <QColorDialog>
@@ -97,11 +98,11 @@ Calendarmainwindow::Calendarmainwindow(int index, QWidget *w)
     connect(viewshortcut, SIGNAL(activated()), this, SLOT(slotViewShortcut()));
 
     setTitlebarShadowEnabled(true);
-    //获取桌面窗口大小
-    QDesktopWidget *desktopwidget = QApplication::desktop();
     //若分辨率改变则重新设置最大尺寸
-    connect(desktopwidget, &QDesktopWidget::resized, this, &Calendarmainwindow::slotSetMaxSize);
-    slotSetMaxSize();
+    const auto screens = QGuiApplication::screens();
+    for (QScreen *screen : screens) {
+        connect(screen, &QScreen::geometryChanged, this, &Calendarmainwindow::slotSetMaxSize);
+    }
 
     //兼容以前的配置信息
     if (CConfigSettings::getInstance()->contains("base.geometry")) {
@@ -789,9 +790,8 @@ void Calendarmainwindow::slotDeleteitem()
  * @brief Calendarmainwindow::slotSetMaxSize    根据屏幕分辨率调整窗口最大尺寸
  * @param size
  */
-void Calendarmainwindow::slotSetMaxSize(int size)
+void Calendarmainwindow::slotSetMaxSize()
 {
-    Q_UNUSED(size);
     //获取屏幕大小
     QSize deskSize = QApplication::desktop()->size();
     //设置最大尺寸为屏幕尺寸
