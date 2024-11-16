@@ -18,7 +18,7 @@ void ColorSeletorWidget::init()
     initView();
     m_colorGroup = new QButtonGroup(this);
     m_colorGroup->setExclusive(true);
-    connect(m_colorGroup, QOverload<int>::of(&QButtonGroup::buttonClicked), this, &ColorSeletorWidget::slotButtonClicked);
+    connect(m_colorGroup, &QButtonGroup::idClicked, this, &ColorSeletorWidget::slotButtonClicked);
 
     m_colorInfo.reset(new DTypeColor());
 }

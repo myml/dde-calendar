@@ -1248,7 +1248,7 @@ void CScheduleDlg::initConnection()
             &CScheduleDlg::slotBeginTimeChange);
     connect(m_endTimeEdit, &CTimeEdit::signaleditingFinished, this, &CScheduleDlg::slotEndTimeChange);
     connect(m_endDateEdit, &QDateEdit::userDateChanged, this, &CScheduleDlg::slotEndDateChange);
-    connect(m_calendarCategoryRadioGroup, QOverload<int>::of(&QButtonGroup::buttonClicked), this, &CScheduleDlg::slotRadioBtnClicked);
+    connect(m_calendarCategoryRadioGroup, &QButtonGroup::idClicked, this, &CScheduleDlg::slotRadioBtnClicked);
     connect(m_typeComBox, &JobTypeComboBox::signalAddTypeBtnClicked, this, &CScheduleDlg::slotBtnAddItemClicked);
     connect(m_typeComBox, &JobTypeComboBox::editTextChanged, this, &CScheduleDlg::slotTypeEditTextChanged);
     connect(m_typeComBox, &JobTypeComboBox::editingFinished, this, &CScheduleDlg::slotJobComboBoxEditingFinished);
